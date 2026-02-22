@@ -20,13 +20,13 @@ export default function HireAssistantsPage() {
   const profiles = [
     {
       name: "Maria R.",
-      location: "Philippines (UTC+8)",
+      location: "Dubai, UAE (UTC+4)",
       badge: "Vetted Assistant",
       bio: "Highly organized executive assistant with 7+ years of experience supporting C-level executives. Expert in calendar management, travel planning, email management, and project coordination. Excellent communication skills and attention to detail.",
       skills: ["Executive Support", "Calendar Management", "Travel Planning", "Email Management", "Data Entry", "Research", "+6"],
       availability: "Full-Time & Freelance",
       previousCompany: { name: "Top Company", logo: "" },
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/women/38.jpg"
     }
   ];
 

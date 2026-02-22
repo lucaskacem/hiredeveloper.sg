@@ -34,7 +34,7 @@ export default function HireMarketersPage() {
             skills: ["SEO", "Content Strategy", "Google Ads", "Growth Hacking", "Analytics", "Copywriting", "+5"],
             availability: "Full-Time & Freelance",
             previousCompany: { name: "Top Agency", logo: "" },
-            avatar: ""
+            avatar: "https://randomuser.me/api/portraits/women/25.jpg"
         },
         {
             name: "Omar B.",
@@ -44,7 +44,7 @@ export default function HireMarketersPage() {
             skills: ["Paid Ads", "Meta Ads", "Email Marketing", "CRO", "A/B Testing", "+8"],
             availability: "Full-Time & Freelance",
             previousCompany: { name: "Top Brand", logo: "" },
-            avatar: ""
+            avatar: "https://randomuser.me/api/portraits/men/37.jpg"
         },
         {
             name: "Sophie W.",
@@ -54,7 +54,7 @@ export default function HireMarketersPage() {
             skills: ["Content Strategy", "Copywriting", "Programmatic SEO", "Email Sequences", "Social Content", "+6"],
             availability: "Full-Time & Freelance",
             previousCompany: { name: "Top Company", logo: "" },
-            avatar: ""
+            avatar: "https://randomuser.me/api/portraits/women/31.jpg"
         }
     ];
 

@@ -20,13 +20,13 @@ export default function HireProductManagersPage() {
   const profiles = [
     {
       name: "Jennifer L.",
-      location: "Canada (UTC-4)",
+      location: "Dubai, UAE (UTC+4)",
       badge: "Vetted Product Manager",
       bio: "Strategic product manager with 8+ years of experience leading cross-functional teams. Expert in product strategy, roadmap planning, and agile methodologies. Successfully launched 15+ products from 0 to 1.",
       skills: ["Product Strategy", "Agile", "Scrum", "Data Analysis", "User Research", "Roadmapping", "Jira", "+10"],
       availability: "Full-Time & Freelance",
       previousCompany: { name: "Top Company", logo: "" },
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/women/47.jpg"
     }
   ];
 

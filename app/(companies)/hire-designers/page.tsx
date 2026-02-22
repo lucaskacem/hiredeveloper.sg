@@ -24,36 +24,36 @@ export default function HireDesignersPage() {
   const profiles = [
     {
       name: "Soheil O.",
-      location: "United States (UTC-7)",
+      location: "Dubai, UAE (UTC+4)",
       badge: "Vetted",
       bio: "Experienced Product Design Leader with over 20 years of experience crafting user-centric solutions that drive significant results. Successfully led groundbreaking GenAI projects at leading tech companies, consistently delivering scalable products that increased user engagement by up to 15% and improved conversion rates by 8%. Expertise in data-driven design, user research, and A/B testing, paired with a proven track record of building design teams from a few members to over 50.",
       primarySkill: { name: "Product Design", experience: "10 years" },
       skills: ["UI Design", "Branding", "Visual Design", "Figma", "Team Collaboration", "User Testing", "+13"],
       availability: "Full-Time & Freelance",
       previousCompany: { name: "Top Company", logo: "" },
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/42.jpg"
     },
     {
       name: "Audrey W.",
-      location: "United States (UTC+8)",
+      location: "Abu Dhabi, UAE (UTC+4)",
       badge: "Vetted",
       bio: "I am a product designer with a background in cognitive science and human-centered design, fascinated by how we think and interact with the world around us. I enjoy breaking down complex problems and collaborating on design solutions. With 7+ years of experience, I have led products in both large enterprises and early-stage teams, and am currently open to part-time freelance work.",
       primarySkill: { name: "Product Design", experience: "6 years" },
       skills: ["User Research", "Wireframing/Prototyping", "Figma", "Design Systems", "Strategy", "Branding", "+3"],
       availability: "Full-Time & Freelance",
       previousCompany: { name: "Top Company", logo: "" },
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/women/19.jpg"
     },
     {
       name: "Vincent B.",
-      location: "United States (UTC-4)",
+      location: "Sharjah, UAE (UTC+4)",
       badge: "Vetted",
       bio: "Vincent Boutaud is an experienced agile Product Owner, project manager, and technology specialist with 17+ years of experience driving innovation at the intersection of 3D visualization, Building Information Modeling, and software development. Brings leadership-level expertise in product strategy, quality operations, and cross-functional leadership.",
       primarySkill: { name: "Product Management", experience: "17+ years" },
       skills: ["CRM Systems", "Jira/Confluence", "Figma", "UI Design", "UX/UI Design", "Design Systems", "+3"],
       availability: "Full-Time & Freelance",
       previousCompany: { name: "Top Company", logo: "" },
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/58.jpg"
     }
   ];
 

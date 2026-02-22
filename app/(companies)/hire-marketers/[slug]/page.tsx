@@ -83,7 +83,7 @@ export default async function MarketerSubcategoryPage({ params }: Props) {
       title: 'CEO',
       titleAr: 'الرئيس التنفيذي',
       company: 'SaaS Company',
-      avatar: '',
+      avatar: 'https://randomuser.me/api/portraits/men/22.jpg',
     },
     {
       quote: 'I found former founders, senior engineers, and even CMOs in less than 48 hours.',
@@ -92,7 +92,7 @@ export default async function MarketerSubcategoryPage({ params }: Props) {
       title: 'Founder & CEO',
       titleAr: 'المؤسس والرئيس التنفيذي',
       company: 'Tech Startup',
-      avatar: '',
+      avatar: 'https://randomuser.me/api/portraits/men/35.jpg',
     },
   ];
 

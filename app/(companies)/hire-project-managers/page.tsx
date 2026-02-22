@@ -20,13 +20,13 @@ export default function HireProjectManagersPage() {
   const profiles = [
     {
       name: "David K.",
-      location: "Australia (UTC+10)",
+      location: "Abu Dhabi, UAE (UTC+4)",
       badge: "Vetted Project Manager",
       bio: "Certified PMP with 12+ years of experience managing complex technical projects. Expert in agile and waterfall methodologies, risk management, and stakeholder communication. Delivered 50+ projects on time and within budget.",
       skills: ["PMP", "Agile", "Scrum", "Jira", "Risk Management", "Stakeholder Management", "Waterfall", "+9"],
       availability: "Full-Time & Freelance",
       previousCompany: { name: "Top Company", logo: "" },
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/62.jpg"
     }
   ];
 

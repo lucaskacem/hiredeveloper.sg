@@ -41,7 +41,7 @@ export default function HireDevelopersPage() {
         name: "Top Company",
         logo: ""
       },
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/15.jpg"
     },
     {
       name: "Nathaniel H.",
@@ -54,7 +54,7 @@ export default function HireDevelopersPage() {
         name: "Top Company",
         logo: ""
       },
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/28.jpg"
     }
   ];
 
