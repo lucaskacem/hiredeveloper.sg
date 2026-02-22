@@ -52,21 +52,22 @@ interface MarketingProfileTemplate {
   location: string;
   company: { name: string; logo: string };
   availability: string;
+  gender: 'men' | 'women';
 }
 
 const marketerProfilePool: MarketingProfileTemplate[] = [
-  { name: 'Layla K.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Agency', logo: '' }, availability: 'Full-time & Freelance' },
-  { name: 'Omar B.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Brand', logo: '' }, availability: 'Full-time & Freelance' },
-  { name: 'Priya D.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance' },
-  { name: 'Khalid M.', location: 'Riyadh, Saudi Arabia (UTC+3)', company: { name: 'Top Agency', logo: '' }, availability: 'Full-time' },
-  { name: 'Sophie W.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Brand', logo: '' }, availability: 'Full-time & Freelance' },
-  { name: 'Rashed A.', location: 'Sharjah, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance' },
-  { name: 'Nadia S.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Agency', logo: '' }, availability: 'Full-time & Freelance' },
-  { name: 'James C.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Brand', logo: '' }, availability: 'Full-time' },
-  { name: 'Fatima H.', location: 'Doha, Qatar (UTC+3)', company: { name: 'Top Agency', logo: '' }, availability: 'Freelance' },
-  { name: 'Vikram R.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance' },
-  { name: 'Sara T.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Brand', logo: '' }, availability: 'Freelance' },
-  { name: 'Alex M.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Agency', logo: '' }, availability: 'Full-time & Freelance' },
+  { name: 'Layla K.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Agency', logo: '' }, availability: 'Full-time & Freelance', gender: 'women' },
+  { name: 'Omar B.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Brand', logo: '' }, availability: 'Full-time & Freelance', gender: 'men' },
+  { name: 'Priya D.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance', gender: 'women' },
+  { name: 'Khalid M.', location: 'Riyadh, Saudi Arabia (UTC+3)', company: { name: 'Top Agency', logo: '' }, availability: 'Full-time', gender: 'men' },
+  { name: 'Sophie W.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Brand', logo: '' }, availability: 'Full-time & Freelance', gender: 'women' },
+  { name: 'Rashed A.', location: 'Sharjah, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance', gender: 'men' },
+  { name: 'Nadia S.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Agency', logo: '' }, availability: 'Full-time & Freelance', gender: 'women' },
+  { name: 'James C.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Brand', logo: '' }, availability: 'Full-time', gender: 'men' },
+  { name: 'Fatima H.', location: 'Doha, Qatar (UTC+3)', company: { name: 'Top Agency', logo: '' }, availability: 'Freelance', gender: 'women' },
+  { name: 'Vikram R.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance', gender: 'men' },
+  { name: 'Sara T.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Brand', logo: '' }, availability: 'Freelance', gender: 'women' },
+  { name: 'Alex M.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Agency', logo: '' }, availability: 'Full-time & Freelance', gender: 'men' },
 ];
 
 const marketingBioTemplatesByCategory: Record<string, ((n: string, s: string[]) => string)[]> = {
@@ -119,6 +120,9 @@ function generateMarketingProfiles(name: string, skills: string[]): MarketingPro
   const p1 = marketerProfilePool[idx1];
   const p2 = marketerProfilePool[idx2 === idx1 ? (idx2 + 1) % marketerProfilePool.length : idx2];
 
+  const avatarNum1 = (hash + idx1) % 100;
+  const avatarNum2 = (hash + idx2 + 50) % 100;
+
   const bios = marketingBioTemplatesByCategory[parentCategory] || marketingBioTemplatesByCategory['Growth & Strategy'];
   const bio1 = bios[hash % bios.length];
   const bio2 = bios[(hash + 2) % bios.length];
@@ -138,7 +142,7 @@ function generateMarketingProfiles(name: string, skills: string[]): MarketingPro
       skills: skillSet1,
       availability: p1.availability,
       previousCompany: p1.company,
-      avatar: '',
+      avatar: `https://randomuser.me/api/portraits/${p1.gender}/${avatarNum1}.jpg`,
     },
     {
       name: p2.name,
@@ -148,7 +152,7 @@ function generateMarketingProfiles(name: string, skills: string[]): MarketingPro
       skills: skillSet2,
       availability: p2.availability,
       previousCompany: p2.company,
-      avatar: '',
+      avatar: `https://randomuser.me/api/portraits/${p2.gender}/${avatarNum2}.jpg`,
     },
   ];
 }

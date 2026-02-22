@@ -52,21 +52,22 @@ interface ProfileTemplate {
   location: string;
   company: { name: string; logo: string };
   availability: string;
+  gender: 'men' | 'women';
 }
 
 const profilePool: ProfileTemplate[] = [
-  { name: 'Ahmed K.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance' },
-  { name: 'Sarah M.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance' },
-  { name: 'Raj P.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance' },
-  { name: 'Fatima A.', location: 'Sharjah, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance' },
-  { name: 'Omar H.', location: 'Riyadh, Saudi Arabia (UTC+3)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time' },
-  { name: 'Priya S.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance' },
-  { name: 'Mohammed R.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance' },
-  { name: 'Elena V.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time' },
-  { name: 'Hassan B.', location: 'Doha, Qatar (UTC+3)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance' },
-  { name: 'Aisha T.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance' },
-  { name: 'James W.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance' },
-  { name: 'Noor L.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance' },
+  { name: 'Ahmed K.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance', gender: 'men' },
+  { name: 'Sarah M.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance', gender: 'women' },
+  { name: 'Raj P.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance', gender: 'men' },
+  { name: 'Fatima A.', location: 'Sharjah, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance', gender: 'women' },
+  { name: 'Omar H.', location: 'Riyadh, Saudi Arabia (UTC+3)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time', gender: 'men' },
+  { name: 'Priya S.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance', gender: 'women' },
+  { name: 'Mohammed R.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance', gender: 'men' },
+  { name: 'Elena V.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time', gender: 'women' },
+  { name: 'Hassan B.', location: 'Doha, Qatar (UTC+3)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance', gender: 'men' },
+  { name: 'Aisha T.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance', gender: 'women' },
+  { name: 'James W.', location: 'Abu Dhabi, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Freelance', gender: 'men' },
+  { name: 'Noor L.', location: 'Dubai, UAE (UTC+4)', company: { name: 'Top Company', logo: '' }, availability: 'Full-time & Freelance', gender: 'women' },
 ];
 
 const bioTemplatesByCategory: Record<string, ((n: string, s: string[]) => string)[]> = {
@@ -137,6 +138,9 @@ function generateProfiles(name: string, skills: string[]): ProfileData[] {
   const p1 = profilePool[idx1];
   const p2 = profilePool[idx2 === idx1 ? (idx2 + 1) % profilePool.length : idx2];
 
+  const avatarNum1 = (hash + idx1) % 100;
+  const avatarNum2 = (hash + idx2 + 50) % 100;
+
   const bios = bioTemplatesByCategory[parentCategory] || bioTemplatesByCategory['Other'];
   const bio1 = bios[hash % bios.length];
   const bio2 = bios[(hash + 2) % bios.length];
@@ -156,7 +160,7 @@ function generateProfiles(name: string, skills: string[]): ProfileData[] {
       skills: skillSet1,
       availability: p1.availability,
       previousCompany: p1.company,
-      avatar: '',
+      avatar: `https://randomuser.me/api/portraits/${p1.gender}/${avatarNum1}.jpg`,
     },
     {
       name: p2.name,
@@ -166,7 +170,7 @@ function generateProfiles(name: string, skills: string[]): ProfileData[] {
       skills: skillSet2,
       availability: p2.availability,
       previousCompany: p2.company,
-      avatar: '',
+      avatar: `https://randomuser.me/api/portraits/${p2.gender}/${avatarNum2}.jpg`,
     },
   ];
 }

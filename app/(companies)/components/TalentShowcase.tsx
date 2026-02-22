@@ -62,9 +62,13 @@ export default function TalentShowcase({ heading, profiles, category }: TalentSh
               <div className="flex items-start gap-6">
                 {/* Avatar */}
                 <div className="relative flex-shrink-0">
-                  <div className={`w-16 h-16 rounded-full ${profileGradients[index % profileGradients.length]} flex items-center justify-center shadow-md`}>
-                    <span className="text-white font-bold text-lg">{getInitials(profile.name)}</span>
-                  </div>
+                  {profile.avatar && profile.avatar.startsWith('http') ? (
+                    <img src={profile.avatar} alt={profile.name} className="w-16 h-16 rounded-full object-cover shadow-md" />
+                  ) : (
+                    <div className={`w-16 h-16 rounded-full ${profileGradients[index % profileGradients.length]} flex items-center justify-center shadow-md`}>
+                      <span className="text-white font-bold text-lg">{getInitials(profile.name)}</span>
+                    </div>
+                  )}
                   {/* Vetted Badge */}
                   <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[rgb(23,162,69)] rounded-full flex items-center justify-center">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
