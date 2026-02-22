@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(node -e:*)",
+      "Bash(npx tsc:*)",
+      "Bash(python3:*)",
+      "Bash(npx next build:*)",
+      "Bash(node:*)",
+      "Bash(curl:*)",
+      "Bash(find:*)",
+      "WebSearch",
+      "Bash(wc:*)",
+      "WebFetch(domain:www.remotion.dev)",
+      "Bash(npm install:*)",
+      "Bash(npx remotion studio:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(brew install:*)",
+      "Bash(npx remotion render:*)",
+      "Bash(grep:*)"
+    ]
+  }
+}

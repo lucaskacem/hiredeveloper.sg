@@ -1,0 +1,114 @@
+{
+  "pageUrl": "https://arc.dev/en-ar",
+  "images": {
+    "total": 19,
+    "successful": 19,
+    "failed": 0,
+    "skipped": 0,
+    "list": [
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fshorter-hero%2Ffinger-up.png&w=48&q=75",
+        "file": "image_8253699f.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Ficon%2Fvetted-badge.png&w=48&q=75",
+        "file": "image_366a46e8.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fassets.arc.dev%2Flogos%2FElectronic%20Arts.jpg&w=48&q=75",
+        "file": "image_0742e1ec.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fassets.arc.dev%2Flogos%2FPfizer.jpg&w=48&q=75",
+        "file": "image_81ad1aee.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fassets.arc.dev%2Flogos%2FTelefo%CC%81nica.jpg&w=48&q=75",
+        "file": "image_c0e1c81d.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fassets.arc.dev%2Flogos%2FSiemens.jpg&w=48&q=75",
+        "file": "image_a6f51133.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient-onboarding%2Fright-column%2FMoishe_Groger.png&w=48&q=75",
+        "file": "image_9949fd89.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient-onboarding%2Fright-column%2FChris_Bakke.png&w=48&q=75",
+        "file": "image_be1cb67f.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient-onboarding%2Fright-column%2FKristen_Hadjis.png&w=48&q=75",
+        "file": "image_5bd90ddd.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fhire-designers%2Ftrustpilot-full-star.png&w=48&q=75",
+        "file": "image_708fb479.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fhire-designers%2Ftrustpilot-half-star.png&w=48&q=75",
+        "file": "image_0280ad92.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Faccess_vetted_talent.png&w=256&q=75",
+        "file": "image_ae8fc29e.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fview_matches_in_second.png&w=256&q=75",
+        "file": "image_d24ccb80.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fsave_with_global_hires.png&w=256&q=75",
+        "file": "image_63847339.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fget_real_human_support.png&w=256&q=75",
+        "file": "image_581b27bc.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fhire-talent%2Fmitchum-owen.jpg&w=128&q=75",
+        "file": "image_0a956112.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fhire-talent%2Fmatt-gysel.jpg&w=128&q=75",
+        "file": "image_ef3bfb72.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fhire-talent%2Fphilip-tsai.jpg&w=128&q=75",
+        "file": "image_425247f3.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Ftalent-landing%2Fstar-highlight-icon.png&w=48&q=75",
+        "file": "image_81bfb0d4.jpg",
+        "success": true
+      }
+    ]
+  },
+  "videos": {
+    "total": 0,
+    "successful": 0,
+    "failed": 0,
+    "skipped": 0,
+    "list": []
+  },
+  "timestamp": "2026-02-06T04:54:12.180Z"
+}

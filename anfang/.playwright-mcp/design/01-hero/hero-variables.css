@@ -1,0 +1,226 @@
+/**
+ * Hero Section - CSS Variables
+ * Design tokens extracted from arc.dev hero section
+ */
+
+:root {
+  /* ============================================
+     COLORS - Hero Section
+     ============================================ */
+  
+  /* Background Colors */
+  --hero-bg-primary: #000000;
+  --hero-card-bg: #FFFFFF;
+  --hero-overlay-bg: rgba(60, 60, 60, 0.95);
+  
+  /* Text Colors */
+  --hero-text-primary: #FFFFFF;
+  --hero-text-secondary: rgba(255, 255, 255, 0.85);
+  --hero-text-muted: rgba(255, 255, 255, 0.6);
+  --hero-text-accent: #00D4FF; /* Cyan highlight */
+  
+  /* CTA Colors */
+  --hero-cta-bg: #00C48C;
+  --hero-cta-bg-hover: #00A878;
+  --hero-cta-text: #FFFFFF;
+  
+  /* Border Colors */
+  --hero-border-light: #E5E5E5;
+  --hero-border-subtle: rgba(255, 255, 255, 0.2);
+  
+  /* Accent Colors */
+  --hero-accent-yellow: #FFB84D;
+  --hero-accent-green: #00C48C;
+  
+  
+  /* ============================================
+     TYPOGRAPHY - Hero Section
+     ============================================ */
+  
+  /* Font Family */
+  --hero-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --hero-font-mono: 'Monaco', 'Courier New', monospace;
+  
+  /* Font Sizes */
+  --hero-heading-size: 56px;
+  --hero-heading-size-tablet: 48px;
+  --hero-heading-size-mobile: 36px;
+  
+  --hero-subheading-size: 18px;
+  --hero-subheading-size-mobile: 16px;
+  
+  --hero-button-size: 18px;
+  --hero-nav-size: 15px;
+  --hero-nav-secondary-size: 14px;
+  --hero-badge-size: 14px;
+  --hero-overlay-size: 14px;
+  
+  /* Font Weights */
+  --hero-weight-normal: 400;
+  --hero-weight-medium: 500;
+  --hero-weight-semibold: 600;
+  --hero-weight-bold: 700;
+  
+  /* Line Heights */
+  --hero-heading-line-height: 1.1;
+  --hero-subheading-line-height: 1.6;
+  --hero-overlay-line-height: 1.5;
+  
+  /* Letter Spacing */
+  --hero-heading-letter-spacing: -0.02em;
+  --hero-nav-letter-spacing: 0;
+  --hero-badge-letter-spacing: 0.5px;
+  
+  
+  /* ============================================
+     SPACING - Hero Section
+     ============================================ */
+  
+  /* Container Padding */
+  --hero-container-padding-x: 48px;
+  --hero-container-padding-x-mobile: 24px;
+  --hero-container-padding-y: 80px;
+  --hero-container-padding-y-mobile: 48px;
+  
+  /* Header Padding */
+  --hero-header-padding-y: 16px;
+  --hero-header-padding-x: 48px;
+  
+  /* Section Gaps */
+  --hero-grid-gap: 64px;
+  --hero-grid-gap-tablet: 48px;
+  --hero-grid-gap-mobile: 32px;
+  
+  /* Component Spacing */
+  --hero-heading-margin-bottom: 24px;
+  --hero-subheading-margin-bottom: 32px;
+  --hero-button-margin-top: 0;
+  --hero-badge-margin-top: 16px;
+  
+  /* Navigation Gaps */
+  --hero-nav-gap: 32px;
+  --hero-nav-gap-mobile: 16px;
+  --hero-button-gap: 12px;
+  
+  /* Trust Section */
+  --hero-trust-gap: 80px;
+  --hero-trust-gap-mobile: 32px;
+  --hero-logo-gap: 40px;
+  --hero-logo-gap-mobile: 24px;
+  
+  
+  /* ============================================
+     SIZING - Hero Section
+     ============================================ */
+  
+  /* Container */
+  --hero-container-max-width: 1280px;
+  
+  /* Grid Columns */
+  --hero-grid-left: 45%;
+  --hero-grid-right: 55%;
+  
+  /* Button Sizing */
+  --hero-button-padding-y: 16px;
+  --hero-button-padding-x: 48px;
+  --hero-button-max-width: 400px;
+  
+  --hero-nav-button-padding-y: 10px;
+  --hero-nav-button-padding-x: 20px;
+  
+  /* Card Sizing */
+  --hero-card-padding: 48px 40px;
+  --hero-card-border-width: 4px;
+  --hero-illustration-aspect-ratio: 4 / 3;
+  
+  /* Badge & Icon Sizes */
+  --hero-badge-icon-size: 16px;
+  --hero-laurel-size: 80px;
+  --hero-logo-height: 28px;
+  --hero-divider-height: 40px;
+  
+  
+  /* ============================================
+     BORDER RADIUS - Hero Section
+     ============================================ */
+  
+  --hero-border-radius-sm: 6px;
+  --hero-border-radius-md: 8px;
+  --hero-border-radius-lg: 16px;
+  
+  
+  /* ============================================
+     SHADOWS - Hero Section
+     ============================================ */
+  
+  --hero-card-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  --hero-button-shadow-hover: 0 4px 12px rgba(0, 196, 140, 0.3);
+  
+  
+  /* ============================================
+     TRANSITIONS - Hero Section
+     ============================================ */
+  
+  --hero-transition-fast: 0.2s ease;
+  --hero-transition-medium: 0.3s ease;
+  --hero-transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  
+  /* ============================================
+     Z-INDEX - Hero Section
+     ============================================ */
+  
+  --hero-header-z: 1000;
+  --hero-overlay-z: 10;
+  --hero-illustration-z: 1;
+  
+  
+  /* ============================================
+     BREAKPOINTS - Hero Section
+     ============================================ */
+  
+  --hero-breakpoint-desktop: 1280px;
+  --hero-breakpoint-tablet: 768px;
+  --hero-breakpoint-mobile: 640px;
+  
+  
+  /* ============================================
+     FILTERS - Hero Section
+     ============================================ */
+  
+  --hero-logo-filter: brightness(0) invert(1);
+  --hero-backdrop-blur: blur(8px);
+}
+
+
+/* ============================================
+   MEDIA QUERY HELPERS
+   ============================================ */
+
+@media (max-width: 1280px) {
+  :root {
+    --hero-container-padding-x: 32px;
+    --hero-grid-gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --hero-heading-size: 48px;
+    --hero-container-padding-x: 24px;
+    --hero-container-padding-y: 48px;
+    --hero-grid-gap: 32px;
+    --hero-trust-gap: 32px;
+    --hero-logo-gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --hero-heading-size: 36px;
+    --hero-subheading-size: 16px;
+    --hero-button-padding-x: 32px;
+    --hero-nav-gap: 16px;
+  }
+}
+

@@ -1,0 +1,528 @@
+{
+  "section": "hero",
+  "name": "Hero Section with Header",
+  "description": "Full hero section including navigation header, main content with 2-column layout, and trust badges",
+  
+  "layout": {
+    "type": "full-width",
+    "background": "#000000",
+    "minHeight": "100vh",
+    "structure": "header + hero-content + trust-badges"
+  },
+
+  "components": {
+    "header": {
+      "position": "sticky-top",
+      "background": "#000000",
+      "padding": {
+        "top": "16px",
+        "bottom": "16px",
+        "horizontal": "48px"
+      },
+      "zIndex": 1000,
+      
+      "topBar": {
+        "display": "flex",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "marginBottom": "12px",
+        
+        "logo": {
+          "text": "arc()",
+          "fontSize": "24px",
+          "fontWeight": 600,
+          "color": "#FFFFFF",
+          "fontFamily": "monospace-style"
+        },
+        
+        "navigation": {
+          "display": "flex",
+          "gap": "32px",
+          
+          "dropdownMenus": [
+            {
+              "label": "For companies",
+              "hasDropdown": true,
+              "fontSize": "15px",
+              "color": "#FFFFFF",
+              "icon": "chevron-down"
+            },
+            {
+              "label": "For talent",
+              "hasDropdown": true,
+              "fontSize": "15px",
+              "color": "#FFFFFF",
+              "icon": "chevron-down"
+            }
+          ]
+        },
+        
+        "ctaButtons": {
+          "display": "flex",
+          "gap": "12px",
+          
+          "buttons": [
+            {
+              "id": "login",
+              "text": "Log In",
+              "variant": "text",
+              "fontSize": "15px",
+              "color": "#FFFFFF",
+              "background": "transparent",
+              "border": "none",
+              "padding": "8px 16px",
+              "hover": {
+                "opacity": 0.8
+              }
+            },
+            {
+              "id": "find-jobs",
+              "text": "Find jobs",
+              "variant": "outline",
+              "fontSize": "15px",
+              "color": "#FFFFFF",
+              "background": "transparent",
+              "border": "1px solid #FFFFFF",
+              "borderRadius": "6px",
+              "padding": "10px 20px",
+              "hover": {
+                "background": "rgba(255, 255, 255, 0.1)"
+              }
+            },
+            {
+              "id": "hire-talent-header",
+              "text": "Hire talent",
+              "variant": "filled",
+              "fontSize": "15px",
+              "fontWeight": 600,
+              "color": "#000000",
+              "background": "#FFFFFF",
+              "border": "none",
+              "borderRadius": "6px",
+              "padding": "10px 24px",
+              "hover": {
+                "background": "#F0F0F0"
+              }
+            }
+          ]
+        }
+      },
+      
+      "secondaryNav": {
+        "display": "flex",
+        "gap": "32px",
+        "fontSize": "14px",
+        "color": "#FFFFFF",
+        
+        "links": [
+          "Developers",
+          "Designers",
+          "Marketers",
+          "Product Managers",
+          "Project Managers",
+          "Assistants",
+          "Countries"
+        ],
+        
+        "linkStyle": {
+          "color": "#FFFFFF",
+          "textDecoration": "none",
+          "hover": {
+            "color": "#00D4FF"
+          }
+        }
+      }
+    },
+
+    "heroContent": {
+      "container": {
+        "maxWidth": "1280px",
+        "margin": "0 auto",
+        "padding": {
+          "top": "80px",
+          "bottom": "80px",
+          "horizontal": "48px"
+        }
+      },
+      
+      "layout": {
+        "display": "grid",
+        "gridTemplateColumns": "45% 55%",
+        "gap": "64px",
+        "alignItems": "center"
+      },
+      
+      "leftColumn": {
+        "content": {
+          "heading": {
+            "lines": [
+              {
+                "text": "Hire the world's",
+                "color": "#FFFFFF"
+              },
+              {
+                "text": "top remote talent",
+                "color": "#00D4FF",
+                "highlight": true
+              },
+              {
+                "text": "without the search",
+                "color": "#FFFFFF"
+              }
+            ],
+            "fontSize": "56px",
+            "lineHeight": 1.1,
+            "fontWeight": 700,
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "letterSpacing": "-0.02em",
+            "marginBottom": "24px"
+          },
+          
+          "subheading": {
+            "text": "Freelance or full-time developers, designers, marketers, product managers, project managers, assistants, and more. Vetted & ready to interview.",
+            "fontSize": "18px",
+            "lineHeight": 1.6,
+            "color": "rgba(255, 255, 255, 0.85)",
+            "maxWidth": "520px",
+            "marginBottom": "32px"
+          },
+          
+          "ctaButton": {
+            "text": "Hire talent",
+            "fontSize": "18px",
+            "fontWeight": 600,
+            "color": "#FFFFFF",
+            "background": "#00C48C",
+            "border": "none",
+            "borderRadius": "8px",
+            "padding": "16px 48px",
+            "width": "100%",
+            "maxWidth": "400px",
+            "cursor": "pointer",
+            "transition": "all 0.2s ease",
+            "hover": {
+              "background": "#00A878",
+              "transform": "translateY(-2px)",
+              "boxShadow": "0 4px 12px rgba(0, 196, 140, 0.3)"
+            }
+          },
+          
+          "badge": {
+            "display": "flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": "8px",
+            "marginTop": "16px",
+            
+            "icon": {
+              "emoji": "🔥",
+              "fontSize": "16px"
+            },
+            
+            "text": {
+              "content": "$0 until you hire",
+              "fontSize": "14px",
+              "color": "#FFFFFF",
+              "fontWeight": 500
+            }
+          }
+        }
+      },
+      
+      "rightColumn": {
+        "card": {
+          "background": "#FFFFFF",
+          "borderRadius": "16px",
+          "padding": "48px 40px",
+          "boxShadow": "0 20px 60px rgba(0, 0, 0, 0.3)",
+          "border": "4px solid #E5E5E5",
+          "position": "relative",
+          
+          "illustration": {
+            "type": "hand-drawn",
+            "style": "minimalist line art",
+            "colors": {
+              "primary": "#000000",
+              "accent": "#FFB84D",
+              "background": "transparent"
+            },
+            "elements": [
+              {
+                "type": "person-with-laptop",
+                "position": "left",
+                "color": "#000000",
+                "accentColor": "#FFB84D"
+              },
+              {
+                "type": "person-waving",
+                "position": "right",
+                "color": "#000000",
+                "accentColor": "#FFB84D",
+                "features": "happy face in yellow circle"
+              }
+            ],
+            "width": "100%",
+            "height": "auto",
+            "aspectRatio": "4/3"
+          },
+          
+          "textOverlay": {
+            "position": "absolute",
+            "bottom": "32px",
+            "left": "50%",
+            "transform": "translateX(-50%)",
+            "width": "calc(100% - 64px)",
+            
+            "background": "rgba(60, 60, 60, 0.95)",
+            "backdropFilter": "blur(8px)",
+            "borderRadius": "8px",
+            "padding": "12px 20px",
+            
+            "text": {
+              "content": "Plus, our team of real humans supports you along the way.",
+              "fontSize": "14px",
+              "lineHeight": 1.5,
+              "color": "#FFFFFF",
+              "textAlign": "center",
+              "fontWeight": 500
+            }
+          }
+        }
+      }
+    },
+
+    "trustBadges": {
+      "container": {
+        "maxWidth": "1280px",
+        "margin": "0 auto",
+        "padding": {
+          "top": "40px",
+          "bottom": "60px",
+          "horizontal": "48px"
+        }
+      },
+      
+      "layout": {
+        "display": "flex",
+        "alignItems": "center",
+        "gap": "80px"
+      },
+      
+      "productHunt": {
+        "display": "flex",
+        "alignItems": "center",
+        "gap": "16px",
+        
+        "badge": {
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "center",
+          "position": "relative",
+          
+          "laurelWreath": {
+            "color": "#F5F5DC",
+            "width": "80px",
+            "height": "80px"
+          },
+          
+          "text": {
+            "position": "absolute",
+            "textAlign": "center",
+            
+            "topLine": {
+              "content": "Product Hunt",
+              "fontSize": "10px",
+              "color": "#FFFFFF",
+              "textTransform": "uppercase",
+              "letterSpacing": "0.5px"
+            },
+            
+            "middleLine": {
+              "content": "Product of the day",
+              "fontSize": "9px",
+              "color": "rgba(255, 255, 255, 0.7)"
+            },
+            
+            "rank": {
+              "content": "1st",
+              "fontSize": "24px",
+              "fontWeight": 700,
+              "color": "#FFFFFF"
+            }
+          }
+        }
+      },
+      
+      "trustedBy": {
+        "display": "flex",
+        "alignItems": "center",
+        "gap": "32px",
+        "flex": 1,
+        
+        "label": {
+          "content": "Trusted by",
+          "fontSize": "14px",
+          "color": "rgba(255, 255, 255, 0.6)",
+          "marginRight": "8px"
+        },
+        
+        "divider": {
+          "width": "1px",
+          "height": "40px",
+          "background": "rgba(255, 255, 255, 0.2)"
+        },
+        
+        "logos": {
+          "display": "flex",
+          "alignItems": "center",
+          "gap": "40px",
+          "flexWrap": "wrap",
+          
+          "companies": [
+            {
+              "name": "Spotify",
+              "logo": "spotify-logo.svg",
+              "height": "32px",
+              "filter": "brightness(0) invert(1)"
+            },
+            {
+              "name": "Splice",
+              "logo": "splice-logo.svg",
+              "height": "28px",
+              "filter": "brightness(0) invert(1)"
+            },
+            {
+              "name": "Automattic",
+              "logo": "automattic-logo.svg",
+              "height": "24px",
+              "filter": "brightness(0) invert(1)"
+            },
+            {
+              "name": "hims",
+              "logo": "hims-logo.svg",
+              "height": "24px",
+              "filter": "brightness(0) invert(1)"
+            },
+            {
+              "name": "hopper",
+              "logo": "hopper-logo.svg",
+              "height": "28px",
+              "filter": "brightness(0) invert(1)"
+            },
+            {
+              "name": "Udacity",
+              "logo": "udacity-logo.svg",
+              "height": "32px",
+              "filter": "brightness(0) invert(1)"
+            }
+          ],
+          
+          "logoStyle": {
+            "opacity": 0.8,
+            "transition": "opacity 0.2s ease",
+            "hover": {
+              "opacity": 1
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "responsive": {
+    "breakpoints": {
+      "desktop": "1280px",
+      "tablet": "768px",
+      "mobile": "640px"
+    },
+    
+    "tablet": {
+      "heroContent": {
+        "gridTemplateColumns": "1fr",
+        "gap": "48px"
+      },
+      "heading": {
+        "fontSize": "48px"
+      },
+      "trustBadges": {
+        "flexDirection": "column",
+        "gap": "32px"
+      }
+    },
+    
+    "mobile": {
+      "heading": {
+        "fontSize": "36px"
+      },
+      "subheading": {
+        "fontSize": "16px"
+      },
+      "padding": {
+        "horizontal": "24px"
+      },
+      "logos": {
+        "gap": "24px",
+        "flexWrap": "wrap"
+      }
+    }
+  },
+
+  "animations": {
+    "pageLoad": {
+      "heading": {
+        "effect": "fade-in-up",
+        "duration": "0.6s",
+        "delay": "0.1s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "subheading": {
+        "effect": "fade-in-up",
+        "duration": "0.6s",
+        "delay": "0.2s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "button": {
+        "effect": "fade-in-up",
+        "duration": "0.6s",
+        "delay": "0.3s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "illustration": {
+        "effect": "fade-in-right",
+        "duration": "0.8s",
+        "delay": "0.2s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    }
+  },
+
+  "accessibility": {
+    "heading": {
+      "tag": "h1",
+      "ariaLabel": "Hire the world's top remote talent without the search"
+    },
+    "buttons": {
+      "ariaLabels": {
+        "hireTalent": "Hire talent - Get started with Arc",
+        "findJobs": "Find remote jobs",
+        "login": "Log in to your account"
+      }
+    },
+    "illustration": {
+      "role": "img",
+      "ariaLabel": "Illustration showing team collaboration with human support"
+    }
+  },
+
+  "notes": [
+    "Typography uses Inter font family (or similar modern sans-serif)",
+    "Cyan highlight color (#00D4FF) is used consistently for key phrases",
+    "Green CTA color (#00C48C) is the primary action color",
+    "All company logos are rendered in white/grayscale for consistency",
+    "Illustration uses hand-drawn style for friendly, approachable feel",
+    "Dark background creates high contrast for better readability",
+    "Sticky header ensures navigation is always accessible",
+    "Trust badges provide social proof immediately below hero content"
+  ]
+}
+

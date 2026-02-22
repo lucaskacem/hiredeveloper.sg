@@ -1,0 +1,39 @@
+{
+  "name": "hiredeveloper-ae",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "drip-publish": "npx tsx scripts/drip-publish.ts",
+    "drip-publish:dry": "npx tsx scripts/drip-publish.ts --dry-run",
+    "drip-publish:reset": "npx tsx scripts/drip-publish.ts --reset",
+    "drip-sitemap": "npx tsx scripts/generate-drip-sitemap.ts",
+    "drip-sitemap:stats": "npx tsx scripts/generate-drip-sitemap.ts --stats",
+    "remotion:preview": "npx remotion studio remotion/index.ts",
+    "remotion:render": "npx remotion render remotion/index.ts MarketingVideo --codec vp8 public/videos/hero.webm",
+    "remotion:render:mp4": "npx remotion render remotion/index.ts MarketingVideo public/videos/hero.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.421",
+    "@remotion/player": "^4.0.421",
+    "next": "16.1.6",
+    "nodemailer": "^8.0.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "^4.0.421"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^7.0.9",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "5.9.3"
+  }
+}

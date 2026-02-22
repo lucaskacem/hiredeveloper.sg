@@ -1,0 +1,813 @@
+{
+  "page": "hire-designers",
+  "url": "https://arc.dev/hire-designers",
+  "title": "Hire the Top 2% of Remote Freelance Designers in Feb 2026",
+  "pageHeight": "8998px",
+  "sections": [
+    {
+      "id": 1,
+      "name": "Hero Section",
+      "description": "Main hero section with headline and CTA",
+      "content": {
+        "breadcrumb": "Home / Designers",
+        "headline": {
+          "text": "Hire the Top 2% of Remote Designers",
+          "highlight": "Top 2%"
+        },
+        "subheadline": "Your vision deserves a great product designer to bring it to life. Finding the right fit alone is challenging alone, but Arc makes hiring the best freelance or full-time remote product designers easy. Save time by connecting directly with vetted product designers ready to interview.",
+        "badges": [
+          "Freelance contractors",
+          "Full-time roles",
+          "Global teams"
+        ],
+        "cta": {
+          "primary": "Hire talent",
+          "badge": "$0 until you hire"
+        },
+        "trustedBy": {
+          "text": "Trusted by",
+          "logos": ["automattic", "hims", "hopper", "splice", "spotify", "udacity"]
+        }
+      },
+      "design": {
+        "background": "Black",
+        "textColor": "White",
+        "layout": "Center aligned",
+        "heroImage": "finger-up.png badge"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Talent Showcase",
+      "description": "Display of available designers with profiles",
+      "content": {
+        "heading": "2,005 Remote product designers and experts available to hire:",
+        "profiles": [
+          {
+            "name": "Soheil O.",
+            "badge": "Vetted",
+            "location": "United States (UTC-7)",
+            "title": "product designer",
+            "bio": "Accomplished Product Design leader with over 20 years of experience crafting user-centric solutions that drive substantial results. Successfully led groundbreaking GenAI projects at Pinterest, Twitter, and Walmart+...",
+            "primarySkill": {
+              "name": "Product design",
+              "experience": "10 yrs"
+            },
+            "skills": [
+              "UI design",
+              "Branding",
+              "Visual design",
+              "Figma",
+              "Team collaboration",
+              "User Testing",
+              "+13"
+            ],
+            "availability": "Full-time & Freelance",
+            "previousCompany": {
+              "name": "Pinterest",
+              "logo": "pinterest.jpg"
+            },
+            "cta": "Hire now"
+          },
+          {
+            "name": "Audrey W.",
+            "badge": "Vetted",
+            "location": "United States (UTC+8)",
+            "title": "product designer",
+            "bio": "I'm a product designer with a background in cognitive science and human centered design fascinated by how we think and interact with the world around us...",
+            "primarySkill": {
+              "name": "Product design",
+              "experience": "6 yrs"
+            },
+            "skills": [
+              "User Research",
+              "Wireframing/prototyping",
+              "Figma",
+              "Design Systems",
+              "Strategy",
+              "Branding",
+              "+3"
+            ],
+            "availability": "Full-time & Freelance",
+            "previousCompany": {
+              "name": "Salesforce",
+              "logo": "salesforce.jpg"
+            },
+            "cta": "Hire now"
+          },
+          {
+            "name": "Vincent B.",
+            "badge": "Vetted",
+            "location": "United States (UTC-4)",
+            "title": "product designer",
+            "bio": "Vincent Boutaud is a seasoned agile Product Owner, Project Manager, and technology specialist with 17+ years of experience driving innovation...",
+            "primarySkill": {
+              "name": "Product Management",
+              "experience": "17+ yrs"
+            },
+            "skills": [
+              "Salesforce",
+              "Jira/confluence",
+              "Figma",
+              "UI design",
+              "Jira",
+              "UX/UI Design",
+              "Salesforce lightning",
+              "+3"
+            ],
+            "availability": "Full-time & Freelance",
+            "previousCompany": {
+              "name": "Epic Games",
+              "logo": "epic-games.jpg"
+            },
+            "cta": "Hire now"
+          }
+        ],
+        "cta": {
+          "text": "Discover more remote product designers today",
+          "button": "Start hiring"
+        }
+      },
+      "design": {
+        "background": "White",
+        "cardStyle": "White cards with subtle shadow",
+        "layout": "Grid of profile cards"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Stats & Testimonials",
+      "description": "Key statistics and client testimonials",
+      "content": {
+        "heading": "Remote hiring made easy",
+        "stats": [
+          {
+            "value": "75%",
+            "label": "faster to hire",
+            "prefix": "Up to"
+          },
+          {
+            "value": "58%",
+            "label": "cost savings",
+            "prefix": "Up to"
+          },
+          {
+            "value": "800+",
+            "label": "hires made"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "We've tried hiring from traditional platforms before, but the quality of developers at Arc is far more superior.",
+            "author": "Moishe Groger",
+            "position": "CEO",
+            "company": "Tentaroo",
+            "photo": "Moishe_Groger.png"
+          },
+          {
+            "quote": "I've sourced former founders, senior engineers, and even CMOs in less than 72 hours.",
+            "author": "Chris Bakke",
+            "position": "Founder & CEO",
+            "company": "Laskie",
+            "photo": "Chris_Bakke.png"
+          },
+          {
+            "quote": "Highly skilled and diverse pool of talent at an affordable cost!",
+            "author": "Kristen Hadjis",
+            "position": "Lead Recruiter",
+            "company": "Stem",
+            "photo": "Kristen_Hadjis.png"
+          }
+        ],
+        "cta": "Hire now",
+        "trustpilot": {
+          "rating": "Excellent",
+          "stars": 4.5
+        }
+      },
+      "design": {
+        "background": "Light gray/white",
+        "statsLayout": "Horizontal cards",
+        "testimonialsLayout": "Carousel/Grid"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Why Choose Arc",
+      "description": "6 reasons to choose Arc for hiring (REUSE from home page WhyChooseArc component)",
+      "content": {
+        "heading": "Why choose Arc to hire product designers",
+        "features": [
+          {
+            "icon": "vetted-icon",
+            "title": "Pre-vetted talent",
+            "description": "Product designers pass rigorous vetting, with portfolio reviews and expert interviews."
+          },
+          {
+            "icon": "global-icon",
+            "title": "Trusted global talent pool",
+            "description": "Access "hidden gem" freelance and full-time product designers outside your local area."
+          },
+          {
+            "icon": "fast-icon",
+            "title": "Hire 4x faster",
+            "description": "Hire a product designer in less than 72 hours after chatting with us."
+          },
+          {
+            "icon": "language-icon",
+            "title": "Zero language barrier",
+            "description": "All product designers are fluent in English and ready to work with your team."
+          },
+          {
+            "icon": "cost-icon",
+            "title": "No hidden costs",
+            "description": "See the total amount you'll pay per hour with no hidden or extra fees."
+          },
+          {
+            "icon": "support-icon",
+            "title": "We handle everything",
+            "description": "We'll handle invoices and paperwork while you hire the best product designers!"
+          }
+        ],
+        "cta": {
+          "button": "Hire a designer",
+          "subtext": "Risk-free trial for any hire."
+        }
+      },
+      "design": {
+        "background": "White",
+        "layout": "3x2 grid",
+        "iconStyle": "Colorful icons"
+      }
+    },
+    {
+      "id": 5,
+      "name": "How It Works",
+      "description": "3-step process for hiring",
+      "content": {
+        "heading": "It's easy to hire with Arc",
+        "subheading": "Hire vetted freelance and full-time product designers in 3 simple steps.",
+        "steps": [
+          {
+            "number": 1,
+            "title": "Share your requirements",
+            "description": "Tell us about the role and project, the skills required, your hiring budget, and desired location of your freelance designers.",
+            "icon": "step-1-icon"
+          },
+          {
+            "number": 2,
+            "title": "Start interviewing",
+            "description": "We'll connect you with pre-screened remote designers who perfectly match your requirements and are ready to be interviewed.",
+            "icon": "step-2-icon"
+          },
+          {
+            "number": 3,
+            "title": "Make a hire",
+            "description": "When ready, hire a remote freelance designer, sign an NDA, and we'll take care of the rest.",
+            "icon": "step-3-icon"
+          }
+        ],
+        "cta": {
+          "button": "Start hiring now",
+          "subtext": "Risk-free trial for any hire."
+        }
+      },
+      "design": {
+        "background": "Light background",
+        "layout": "3 cards in horizontal row",
+        "visualization": "Illustrations for each step"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Dedicated Team Section",
+      "description": "Build your dedicated team CTA section",
+      "content": {
+        "heading": "Build your dedicated team of product designers",
+        "description": "Work with your team seamlessly with Arc's project management tools, time tracking, and more.",
+        "cta": {
+          "button": "Build your team",
+          "subtext": "Risk-free trial for any hire."
+        },
+        "image": "team-illustration.webp"
+      },
+      "design": {
+        "background": "Gradient or colored background",
+        "layout": "Text left, image right",
+        "ctaStyle": "Primary button"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Hiring Guide",
+      "description": "Comprehensive guide on how to hire top product designers",
+      "content": {
+        "heading": "How to hire top product designers",
+        "intro": "Companies rely on skilled product designers to develop new ideas and improve existing products that meet shifting market demands to stay competitive. A great designer digs into research, prototyping, testing, and continuous refinement to create products that align with business goals. But hiring the wrong designer can mean missed opportunities and poor product-market fit, hindering growth and weakening your competitive edge. This guide will walk you through the process, from defining your project needs and identifying key skills to navigating freelance rates and timelines.",
+        "subsections": [
+          {
+            "id": "7.1",
+            "title": "What does a product designer do and why do you need one?",
+            "content": "A product designer helps create and develop both digital and physical products. They ensure the product is functional, easy to use, and visually appealing while meeting the needs of its users. Product designers focus on making the design user-friendly and attractive for products like websites, apps, or software..."
+          },
+          {
+            "id": "7.2",
+            "title": "Types of product designers",
+            "intro": "Product design involves various specialized roles, each contributing to product development. Understanding these roles can help you find the right designer for your project. Here are the key types of digital product designers.",
+            "types": [
+              {
+                "name": "UX designers",
+                "description": "UX designers focus on how users interact with a product, ensuring a smooth and enjoyable experience. They conduct user research, create wireframes, and test prototypes to understand user needs and behaviors."
+              },
+              {
+                "name": "UI designers",
+                "description": "UI designers specialize in the visual aspects of a product, designing interfaces that are appealing and easy to navigate. They focus on buttons, icons, typography, and color schemes to create a cohesive look and feel."
+              },
+              {
+                "name": "Interaction designers",
+                "description": "Interaction designers work on how users engage with digital products on a detailed level. They design the interactive elements, such as animations, transitions, and responses to user input."
+              },
+              {
+                "name": "Visual designers",
+                "description": "Visual designers focus on the overall look and brand identity of digital products. They ensure that the design aligns with the company's visual identity while being functional."
+              }
+            ]
+          },
+          {
+            "id": "7.3",
+            "title": "Step-by-step process for hiring a product designer",
+            "steps": [
+              {
+                "step": 1,
+                "title": "Define your project needs",
+                "description": "Start by clearly understanding what your project requires. Determine if you need a product designer for UX and UI design or a physical product designer for CAD and manufacturing."
+              },
+              {
+                "step": 2,
+                "title": "Identify the required skills",
+                "description": "Based on your project, identify the specific skills your product designer needs. For digital products, look for UX/UI design, wireframing, prototyping, user research, and possibly some coding skills."
+              },
+              {
+                "step": 3,
+                "title": "Find product designers",
+                "description": "There are several ways to hire product designers, but the best options are using freelance platforms, job boards, and referrals."
+              },
+              {
+                "step": 4,
+                "title": "Create a compelling job post",
+                "description": "A clear, detailed job post attracts the right candidates. Include project specifics, deliverables, timelines, and the skills you're seeking."
+              },
+              {
+                "step": 5,
+                "title": "Assess candidates and make the hire",
+                "description": "Review portfolios and past work from applicants. You can also give design challenges to evaluate problem-solving skills."
+              }
+            ]
+          },
+          {
+            "id": "7.4",
+            "title": "Key skills to look for in product designers",
+            "technicalSkills": [
+              {
+                "skill": "UX/UI design",
+                "description": "Product designers need to create user-friendly and visually appealing interfaces."
+              },
+              {
+                "skill": "Wireframing and prototyping",
+                "description": "Product designers must be skilled in tools like Figma, Adobe XD, or InVision to build wireframes and interactive prototypes."
+              },
+              {
+                "skill": "Basic coding",
+                "description": "While not full developers, product designers should know basic HTML, CSS, and JavaScript."
+              },
+              {
+                "skill": "User research",
+                "description": "Experienced product designers research users' needs and pain points. They use interviews, surveys, and usability testing."
+              }
+            ],
+            "softSkills": [
+              {
+                "skill": "Communication",
+                "description": "Designers need to present their ideas, work with teams, and explain their designs to others."
+              },
+              {
+                "skill": "Problem-solving",
+                "description": "Design is about solving problems. Product designers should identify issues and create solutions."
+              },
+              {
+                "skill": "Adaptability",
+                "description": "Projects change, and designers must be flexible. They need to accept feedback and adapt designs."
+              },
+              {
+                "skill": "Attention to detail",
+                "description": "Designers must ensure every visual and interactive element works together."
+              },
+              {
+                "skill": "Time management",
+                "description": "Designers often face tight deadlines. Good time management allows them to prioritize tasks."
+              }
+            ],
+            "expertQuote": {
+              "quote": "The hardest thing about hiring product designers is finding someone who combines creativity with strong user research. I don't just look at their portfolio—I always ask how they've used user feedback to improve their designs and solve real problems.",
+              "author": "Joyce Lee",
+              "position": "Chief of Staff at Arc"
+            }
+          },
+          {
+            "id": "7.5",
+            "title": "How to write an effective product designer job description",
+            "guidelines": [
+              "Use a clear job title",
+              "Provide a brief overview",
+              "List key responsibilities",
+              "Mention required skills and qualifications",
+              "Highlight soft skills",
+              "State education and experience requirements",
+              "Describe company culture and benefits",
+              "Provide application instructions"
+            ],
+            "exampleJobPost": {
+              "title": "Product Designer (UX/UI) - [Company Name]",
+              "overview": "We're seeking a creative Product Designer (UX/UI) to improve the user experience of our software products.",
+              "responsibilities": [
+                "Conduct user research and usability tests",
+                "Design wireframes, prototypes, and high-quality mockups",
+                "Implement design changes based on feedback",
+                "Collaborate with developers",
+                "Stay up-to-date with design trends"
+              ],
+              "requirements": [
+                "Bachelor's degree in design, HCI, or related field",
+                "3-5 years of product design experience",
+                "Proficiency with Figma, Sketch, Adobe Creative Suite",
+                "Familiarity with HTML, CSS, JavaScript is a plus",
+                "Strong problem-solving skills",
+                "Excellent communication and teamwork",
+                "Attention to detail"
+              ]
+            }
+          },
+          {
+            "id": "7.6",
+            "title": "Key questions to ask before hiring a product designer",
+            "questions": [
+              {
+                "question": "Can you explain your design process for a recent project? How did you use user feedback and testing?",
+                "whatToLookFor": "A strong product designer should describe a clear process that includes user research, brainstorming, prototyping, and refining based on feedback."
+              },
+              {
+                "question": "How do you balance looks, ease of use, and functionality? Can you share a time when you had to choose between them?",
+                "whatToLookFor": "Good design finds the right balance between aesthetics, usability, and functionality."
+              },
+              {
+                "question": "How do you collaborate with developers and other team members to ensure your design is implemented as planned?",
+                "whatToLookFor": "Product design is a team effort. Designers should explain how they communicate their ideas."
+              },
+              {
+                "question": "What challenges have you faced designing for different platforms? How did you keep the user experience consistent?",
+                "whatToLookFor": "A good designer ensures a seamless experience across platforms."
+              },
+              {
+                "question": "How do you stay updated on design trends, tools, and technologies? How do you decide when to use them?",
+                "whatToLookFor": "Designers need to stay updated with the latest design trends and technologies."
+              }
+            ]
+          },
+          {
+            "id": "7.7",
+            "title": "How much does it cost to hire product designers?",
+            "freelanceRates": {
+              "range": "$25 - $200 per hour",
+              "simpleWork": "$25 - $80 per hour (wireframing, basic UI)",
+              "complexWork": "$150 - $200 per hour (3D modeling, CAD, market research)"
+            },
+            "factorsAffectingRates": [
+              {
+                "factor": "Experience level",
+                "description": "Senior designers (5+ years): $100-$200/hr, Junior designers (1-3 years): $25-$50/hr"
+              },
+              {
+                "factor": "Location",
+                "description": "Designers from Eastern Europe or Asia may charge less than those in San Francisco or New York"
+              },
+              {
+                "factor": "Project complexity",
+                "description": "More complex projects demand higher rates"
+              }
+            ],
+            "inHouseVsFreelance": "Hiring an in-house designer can save money for long-term projects. For short-term or one-time projects, a freelance designer may be more cost-effective."
+          },
+          {
+            "id": "7.8",
+            "title": "How long does it take to hire and complete a product design project?",
+            "projectTimelines": [
+              {
+                "task": "Concept development",
+                "duration": "15-30 days"
+              },
+              {
+                "task": "UI/UX design",
+                "duration": "10-25 days"
+              },
+              {
+                "task": "3D modeling",
+                "duration": "10-20 days"
+              },
+              {
+                "task": "Packaging design",
+                "duration": "7-14 days"
+              }
+            ],
+            "tipsForSpeedingUp": [
+              "Prepare a detailed project brief",
+              "Use talent-matching services",
+              "Offer competitive pay",
+              "Respond quickly to applicants",
+              "Consider hiring a team"
+            ]
+          },
+          {
+            "id": "7.9",
+            "title": "Common mistakes to avoid when hiring product designers",
+            "mistakes": [
+              {
+                "mistake": "Not defining your project needs clearly",
+                "explanation": "Starting without clear goals leads to mismatched expectations"
+              },
+              {
+                "mistake": "Focusing too much on aesthetics",
+                "explanation": "Don't overlook functionality and user experience"
+              },
+              {
+                "mistake": "Ignoring relevant experience",
+                "explanation": "Look for designers who have experience with projects similar to yours"
+              },
+              {
+                "mistake": "Overlooking communication skills",
+                "explanation": "Strong communication is essential for smooth collaboration"
+              },
+              {
+                "mistake": "Focusing only on short-term costs",
+                "explanation": "Balance cost with quality and the designer's ability to deliver results"
+              }
+            ],
+            "expertQuote": {
+              "quote": "A big mistake I've made when hiring product designers is being too impressed by a flashy portfolio. I've learned to dig deeper and ask about their process—how they've used user feedback or collaborated with developers. Those insights say much more about how they'll perform on the job.",
+              "author": "Joyce Lee",
+              "position": "Chief of Staff at Arc"
+            }
+          },
+          {
+            "id": "7.10",
+            "title": "Final thoughts on hiring the best product designers",
+            "content": "The key to a successful hire is having a clear plan. Be specific about your requirements and carefully assess candidates by reviewing their portfolios, product design processes, and problem-solving abilities. Consider the long-term impact of your decision. The right designer should have the necessary technical skills and share your commitment to delivering excellent user experiences."
+          }
+        ],
+        "tableOfContents": [
+          "What does a product designer do and why do you need one?",
+          "Types of product designers",
+          "Step-by-step process for hiring a product designer",
+          "Key skills to look for in product designers",
+          "How to write an effective product designer job description",
+          "Key questions to ask before hiring a product designer",
+          "How much does it cost to hire product designers?",
+          "How long does it take to hire and complete a product design project?",
+          "Common mistakes to avoid when hiring product designers",
+          "Final thoughts on hiring the best product designers"
+        ]
+      },
+      "design": {
+        "background": "White",
+        "layout": "Long-form article with sections",
+        "typography": "Clear hierarchy with H2, H3, H4 headings",
+        "sidebarTOC": "Table of contents sidebar (sticky)"
+      }
+    },
+    {
+      "id": 8,
+      "name": "FAQs",
+      "description": "Frequently asked questions section",
+      "content": {
+        "heading": "FAQs",
+        "intro": "For more frequently asked questions on hiring product designers, check out our FAQs page.",
+        "questions": [
+          {
+            "question": "What is a product designer?",
+            "answer": "A product designer creates and develops digital or physical products, focusing on functionality, usability, and visual appeal."
+          },
+          {
+            "question": "What are key qualities to look for in a product designer?",
+            "answer": "Look for UX/UI skills, wireframing/prototyping abilities, user research experience, communication skills, and problem-solving capabilities."
+          },
+          {
+            "question": "Are both freelance and remote full-time designers available on Arc?",
+            "answer": "Yes, Arc offers both freelance contractors and full-time remote designers."
+          },
+          {
+            "question": "How much does it cost to hire a product designer?",
+            "answer": "Rates typically range from $25 to $200 per hour depending on experience and project complexity."
+          },
+          {
+            "question": "How long does it take to find a product designer on Arc?",
+            "answer": "You can find and hire a product designer in as little as 72 hours."
+          },
+          {
+            "question": "Can I hire designers for both short-term and long-term projects?",
+            "answer": "Yes, Arc supports both short-term freelance projects and long-term full-time engagements."
+          },
+          {
+            "question": "How do I assess the skills and expertise of a designer before hiring them?",
+            "answer": "Review their portfolio, conduct interviews, give design challenges, and check references."
+          }
+        ]
+      },
+      "design": {
+        "background": "Light gray",
+        "layout": "Accordion/expandable sections",
+        "interaction": "Click to expand/collapse"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Final CTA",
+      "description": "Bottom call-to-action section",
+      "content": {
+        "heading": "Your future product designer is just around the corner!",
+        "subtext": "Risk-free to get started.",
+        "cta": "Hire talent"
+      },
+      "design": {
+        "background": "Gradient or accent color",
+        "layout": "Centered text with prominent CTA button",
+        "style": "Eye-catching, final conversion section"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Footer",
+      "description": "Site-wide footer with links",
+      "content": {
+        "brands": [
+          {
+            "name": "Arc",
+            "description": "Helping employers find talent for remote jobs"
+          },
+          {
+            "name": "Codementor",
+            "description": "Find a mentor to help you in real time"
+          }
+        ],
+        "topTalent": {
+          "developers": [
+            "Software Developers",
+            "Web Developers",
+            "Mobile App Developers",
+            "Front-End Developers",
+            "Back-End Developers",
+            "Full-Stack Developers",
+            "DevOps Developers",
+            "iOS Developers",
+            "AI Developers",
+            "PHP Developers",
+            "Python Developers",
+            "React Developers",
+            "Angular Developers",
+            "Node.js Developers"
+          ],
+          "designers": [
+            "Product Designers",
+            "Web Designers",
+            "UI Designers",
+            "UX Designers",
+            "Mobile App Designers",
+            "Graphic Designers",
+            "Brand Designers"
+          ],
+          "marketers": [
+            "Digital Marketers",
+            "SEO Experts",
+            "Content Writers",
+            "Growth Marketers",
+            "Fractional CMOs"
+          ],
+          "others": [
+            "Product Managers",
+            "Project Managers",
+            "Program Managers",
+            "Virtual Assistants"
+          ]
+        },
+        "links": [
+          "Remote Jobs",
+          "Remote Developer Jobs",
+          "Remote Design Jobs",
+          "Remote Marketing Jobs",
+          "Job Description Templates",
+          "Development Services",
+          "Employer Blog",
+          "Talent Blog",
+          "Freelance Developer Rates",
+          "Remote Developer Salaries",
+          "About Us",
+          "Pricing",
+          "FAQ",
+          "Arc Newsletter",
+          "Partner with Arc"
+        ],
+        "legal": [
+          "Cookie Policy",
+          "Privacy Policy",
+          "Terms of Service"
+        ],
+        "social": [
+          "LinkedIn",
+          "X (Twitter)",
+          "YouTube",
+          "Facebook"
+        ],
+        "copyright": "© Copyright 2026 Arc"
+      },
+      "design": {
+        "background": "Dark (black/dark gray)",
+        "textColor": "White/light gray",
+        "layout": "Multi-column layout with grouped links"
+      }
+    }
+  ],
+  "designSystem": {
+    "colors": {
+      "primary": "Purple/Blue gradient",
+      "background": "Black, White, Light gray",
+      "text": "White on dark, Dark on light",
+      "accent": "Green for CTAs"
+    },
+    "typography": {
+      "headings": "Bold, large font",
+      "body": "Clean, readable sans-serif",
+      "hierarchy": "Clear H1 > H2 > H3 > H4"
+    },
+    "components": {
+      "buttons": {
+        "primary": "Green background, white text, rounded",
+        "secondary": "Outlined or ghost style"
+      },
+      "cards": {
+        "style": "White background, subtle shadow, rounded corners",
+        "hover": "Slight elevation on hover"
+      },
+      "badges": {
+        "style": "Rounded pills with colored backgrounds"
+      }
+    },
+    "spacing": {
+      "sections": "Large padding between sections",
+      "content": "Consistent margins and padding"
+    },
+    "responsive": {
+      "mobile": "Stack elements vertically",
+      "tablet": "2-column grid where appropriate",
+      "desktop": "Full multi-column layouts"
+    }
+  },
+  "assets": {
+    "images": [
+      "finger-up.png",
+      "Moishe_Groger.png",
+      "Chris_Bakke.png",
+      "Kristen_Hadjis.png",
+      "pinterest.jpg",
+      "salesforce.jpg",
+      "epic-games.jpg",
+      "trustpilot-full-star.png",
+      "trustpilot-half-star.png"
+    ],
+    "logos": [
+      "automattic.svg",
+      "hims.svg",
+      "hopper.svg",
+      "splice.svg",
+      "spotify.svg",
+      "udacity.svg"
+    ],
+    "icons": [
+      "vetted-badge.png",
+      "various section icons"
+    ]
+  },
+  "notes": {
+    "reusableComponents": [
+      "WhyChooseArc component from home page can be reused",
+      "Header and Footer are site-wide components",
+      "HowItWorksSteps is similar across all hire pages",
+      "CompaniesTestimonials structure is consistent"
+    ],
+    "keyDifferences": [
+      "Role-specific: 'designers' instead of 'developers'",
+      "Different talent profiles showcased",
+      "Design-specific skills and terminology",
+      "Hiring guide content is tailored to designers",
+      "FAQ questions are designer-focused"
+    ]
+  }
+}
+

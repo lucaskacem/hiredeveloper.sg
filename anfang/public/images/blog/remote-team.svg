@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <!-- Background -->
+  <rect width="400" height="300" rx="12" fill="#f0f9ff"/>
+
+  <!-- Laptop -->
+  <rect x="140" y="100" width="120" height="80" rx="6" fill="#ffffff" stroke="#009fff" stroke-width="2"/>
+  <rect x="148" y="108" width="104" height="60" rx="2" fill="#e0f2fe"/>
+  <!-- Screen content lines -->
+  <rect x="158" y="120" width="40" height="4" rx="2" fill="#009fff" opacity="0.5"/>
+  <rect x="158" y="130" width="60" height="4" rx="2" fill="#009fff" opacity="0.3"/>
+  <rect x="158" y="140" width="50" height="4" rx="2" fill="#009fff" opacity="0.5"/>
+  <rect x="158" y="150" width="70" height="4" rx="2" fill="#009fff" opacity="0.3"/>
+  <!-- Laptop base -->
+  <path d="M125 180 L275 180 L285 195 L115 195 Z" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Person top-left -->
+  <circle cx="80" cy="70" r="18" fill="#009fff" opacity="0.15"/>
+  <circle cx="80" cy="62" r="8" fill="#009fff"/>
+  <path d="M66 82 Q80 92 94 82" stroke="#009fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Person top-right -->
+  <circle cx="320" cy="70" r="18" fill="#009fff" opacity="0.15"/>
+  <circle cx="320" cy="62" r="8" fill="#009fff"/>
+  <path d="M306 82 Q320 92 334 82" stroke="#009fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Person bottom-left -->
+  <circle cx="60" cy="210" r="18" fill="#009fff" opacity="0.15"/>
+  <circle cx="60" cy="202" r="8" fill="#009fff"/>
+  <path d="M46 222 Q60 232 74 222" stroke="#009fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Person bottom-right -->
+  <circle cx="340" cy="210" r="18" fill="#009fff" opacity="0.15"/>
+  <circle cx="340" cy="202" r="8" fill="#009fff"/>
+  <path d="M326 222 Q340 232 354 222" stroke="#009fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Connection lines from people to laptop -->
+  <line x1="95" y1="75" x2="145" y2="120" stroke="#009fff" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+  <line x1="305" y1="75" x2="255" y2="120" stroke="#009fff" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+  <line x1="75" y1="195" x2="145" y2="165" stroke="#009fff" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+  <line x1="325" y1="195" x2="255" y2="165" stroke="#009fff" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+
+  <!-- WiFi symbol on laptop screen -->
+  <path d="M192 118 Q200 110 208 118" stroke="#009fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M186 112 Q200 100 214 112" stroke="#009fff" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="200" cy="122" r="2" fill="#009fff"/>
+
+  <!-- Small dots decorative -->
+  <circle cx="30" cy="140" r="3" fill="#009fff" opacity="0.2"/>
+  <circle cx="370" cy="140" r="3" fill="#009fff" opacity="0.2"/>
+  <circle cx="200" cy="250" r="3" fill="#009fff" opacity="0.2"/>
+  <circle cx="200" cy="40" r="3" fill="#009fff" opacity="0.2"/>
+</svg>

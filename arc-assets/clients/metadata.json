@@ -1,0 +1,424 @@
+{
+  "pageUrl": "https://arc.dev/clients",
+  "images": {
+    "total": 81,
+    "successful": 81,
+    "failed": 0,
+    "skipped": 0,
+    "list": [
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-pathrise-2x.jpg",
+        "file": "cover-pathrise-2x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-pathrise-1x.jpg",
+        "file": "cover-pathrise-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-pathrise-2x.png",
+        "file": "logo-pathrise-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-pathrise-1x.png",
+        "file": "logo-pathrise-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-trueml-2x.jpg",
+        "file": "cover-trueml-2x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-trueml-1x.jpg",
+        "file": "cover-trueml-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-trueml-2x.png",
+        "file": "logo-trueml-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-trueml-1x.png",
+        "file": "logo-trueml-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-chamberlin-2x.jpg",
+        "file": "cover-chamberlin-2x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-chamberlin-1x.jpg",
+        "file": "cover-chamberlin-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-chamberlin-2x.png",
+        "file": "logo-chamberlin-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-chamberlin-1x.png",
+        "file": "logo-chamberlin-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-prodapt-2x.jpg",
+        "file": "cover-prodapt-2x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-prodapt-1x.jpg",
+        "file": "cover-prodapt-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-prodapt-2x.png",
+        "file": "logo-prodapt-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-prodapt-1x.png",
+        "file": "logo-prodapt-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-civitas-learning-2x.jpg",
+        "file": "cover-civitas-learning-2x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-civitas-learning-1x.jpg",
+        "file": "cover-civitas-learning-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-civitas-learning-2x.png",
+        "file": "logo-civitas-learning-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-civitas-learning-1x.png",
+        "file": "logo-civitas-learning-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-baxus-2x.jpg",
+        "file": "cover-baxus-2x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-baxus-1x.jpg",
+        "file": "cover-baxus-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-baxus-2x.png",
+        "file": "logo-baxus-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-baxus-1x.png",
+        "file": "logo-baxus-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-stem-2x.jpg",
+        "file": "cover-stem-2x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-stem-1x.jpg",
+        "file": "cover-stem-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-stem-2x.png",
+        "file": "logo-stem-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-stem-1x.png",
+        "file": "logo-stem-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-labelbox-2x.jpg",
+        "file": "cover-labelbox-2x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-labelbox-1x.jpg",
+        "file": "cover-labelbox-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-labelbox-2x.png",
+        "file": "logo-labelbox-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-labelbox-1x.png",
+        "file": "logo-labelbox-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-equipboard-2x.jpg",
+        "file": "cover-equipboard-2x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-equipboard-1x.jpg",
+        "file": "cover-equipboard-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-equipboard-2x.png",
+        "file": "logo-equipboard-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-equipboard-1x.png",
+        "file": "logo-equipboard-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-bridge-2x.jpg",
+        "file": "cover-bridge-2x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-bridge-1x.jpg",
+        "file": "cover-bridge-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-bridge-2x.png",
+        "file": "logo-bridge-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-bridge-1x.png",
+        "file": "logo-bridge-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-factmata-2x.jpg",
+        "file": "cover-factmata-2x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/cover-factmata-1x.jpg",
+        "file": "cover-factmata-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-factmata-2x.png",
+        "file": "logo-factmata-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/success-stories/logo-factmata-1x.png",
+        "file": "logo-factmata-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/stem.svg",
+        "file": "stem.svg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/videos/logo-chegg-2x.png",
+        "file": "logo-chegg-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/videos/logo-chegg-1x.png",
+        "file": "logo-chegg-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/play-video.svg",
+        "file": "play-video.svg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/videos/logo-boldleads-2x.png",
+        "file": "logo-boldleads-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/videos/logo-boldleads-1x.png",
+        "file": "logo-boldleads-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/videos/logo-milo-2x.png",
+        "file": "logo-milo-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/videos/logo-milo-1x.png",
+        "file": "logo-milo-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/applovin-2x.png",
+        "file": "applovin-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/applovin-1x.png",
+        "file": "applovin-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/civitas-learning-2x.png",
+        "file": "civitas-learning-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/civitas-learning-1x.png",
+        "file": "civitas-learning-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/chomp-2x.png",
+        "file": "chomp-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/chomp-1x.png",
+        "file": "chomp-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/fivestars-2x.png",
+        "file": "fivestars-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/fivestars-1x.png",
+        "file": "fivestars-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/stanleyblack-2x.png",
+        "file": "stanleyblack-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/stanleyblack-1x.png",
+        "file": "stanleyblack-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/envoy-2x.png",
+        "file": "envoy-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/envoy-1x.png",
+        "file": "envoy-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/billion-to-one-2x.png",
+        "file": "billion-to-one-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/billion-to-one-1x.png",
+        "file": "billion-to-one-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/identv-2x.png",
+        "file": "identv-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/identv-1x.png",
+        "file": "identv-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/proven-2x.png",
+        "file": "proven-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/proven-1x.png",
+        "file": "proven-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/verishop-2x.png",
+        "file": "verishop-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/verishop-1x.png",
+        "file": "verishop-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/splice-2x.png",
+        "file": "splice-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/splice-1x.png",
+        "file": "splice-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/floyd-2x.png",
+        "file": "floyd-2x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/companies/floyd-1x.png",
+        "file": "floyd-1x.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/icon/arc-white.svg",
+        "file": "arc-white.svg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/seo-page/chegg-video.png",
+        "file": "chegg-video.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/videos/bg-chegg-1x.jpg",
+        "file": "bg-chegg-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/videos/bg-boldleads-1x.jpg",
+        "file": "bg-boldleads-1x.jpg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/clients-page/videos/bg-milo-1x.jpg",
+        "file": "bg-milo-1x.jpg",
+        "success": true
+      }
+    ]
+  },
+  "videos": {
+    "total": 0,
+    "successful": 0,
+    "failed": 0,
+    "skipped": 0,
+    "list": []
+  },
+  "timestamp": "2026-02-06T04:48:19.788Z"
+}

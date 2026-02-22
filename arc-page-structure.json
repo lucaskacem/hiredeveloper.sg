@@ -1,0 +1,417 @@
+{
+  "pageName": "Arc.dev Landing Page",
+  "url": "https://arc.dev/",
+  "sections": [
+    {
+      "id": 1,
+      "name": "Header",
+      "component": "Header.tsx",
+      "status": "completed",
+      "description": "Sticky navigation with logo, dropdowns for companies/talent, and CTA buttons",
+      "elements": [
+        "Logo: arc()",
+        "Dropdown: For companies",
+        "Dropdown: For talent",
+        "Buttons: Log In, Find jobs, Hire talent",
+        "Secondary nav: Developers, Designers, Marketers, Product Managers, Project Managers, Assistants, Countries"
+      ],
+      "styling": {
+        "background": "black",
+        "height": "107px",
+        "position": "sticky top-0",
+        "zIndex": "1000"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Hero Section",
+      "component": "HeroSection.tsx",
+      "status": "completed",
+      "description": "Main hero with heading, subheading, CTA button, and video",
+      "elements": [
+        "Heading: 'Hire the world's top remote talent without the search'",
+        "Subheading with service description",
+        "CTA button: 'Hire talent' (green)",
+        "Badge: '$0 until you hire' with fire emoji",
+        "Video card with hero.webm"
+      ],
+      "layout": "45% / 55% grid",
+      "styling": {
+        "background": "black",
+        "height": "476px"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Trust Badges",
+      "component": "TrustBadges.tsx",
+      "status": "completed",
+      "description": "Company logos bar showing trusted companies",
+      "elements": [
+        "Product Hunt badge",
+        "Text: 'Trusted by'",
+        "Logos: Spotify, Splice, Automattic, hims, hopper, Udacity"
+      ],
+      "styling": {
+        "background": "black",
+        "height": "60px"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Why Choose Arc",
+      "component": "WhyChooseArc.tsx",
+      "status": "completed",
+      "description": "4 benefits in 2x2 grid layout",
+      "elements": [
+        "Heading: 'Why choose Arc'",
+        {
+          "card1": {
+            "icon": "access_vetted_talent.webp",
+            "title": "Access vetted talent",
+            "description": "Meet ready to interview candidates who are fully vetted for domain expertise and English fluency."
+          }
+        },
+        {
+          "card2": {
+            "icon": "view_matches_in_second.webp",
+            "title": "View matches in seconds",
+            "description": "Stop reviewing 100s of resumes. View candidates instantly with HireAI."
+          }
+        },
+        {
+          "card3": {
+            "icon": "save_with_global_hires.webp",
+            "title": "Save with global hires",
+            "description": "Get access to 450,000 talent in 190 countries, saving up to 58% vs traditional hiring."
+          }
+        },
+        {
+          "card4": {
+            "icon": "get_real_human_support.webp",
+            "title": "Get real human support",
+            "description": "Feel confident hiring remote talent with hands-on help from our team of expert global recruiters."
+          }
+        }
+      ],
+      "layout": "2x2 grid",
+      "styling": {
+        "background": "gray-50",
+        "padding": "py-20"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Best Fit Section",
+      "component": "BestFitSection.tsx",
+      "status": "completed",
+      "description": "3 service offerings cards",
+      "elements": [
+        "Heading: 'Find the best fit for any remote role'",
+        {
+          "card1": {
+            "title": "Freelance contracts",
+            "icon": "freelance-icon.svg",
+            "features": [
+              "Top 2% of talent, fully vetted",
+              "Hire in 72 hours",
+              "Pay hourly"
+            ]
+          }
+        },
+        {
+          "card2": {
+            "title": "Full-time hires",
+            "icon": "fulltime-icon.svg",
+            "features": [
+              "Vetted and ready to interview",
+              "Hire in 14 days",
+              "Pay per hire"
+            ]
+          }
+        },
+        {
+          "card3": {
+            "title": "Global teams",
+            "icon": "global-icon.svg",
+            "features": [
+              "Scale globally with confidence",
+              "Dedicated recruiters for support",
+              "LATAM and APAC market entry"
+            ]
+          }
+        }
+      ],
+      "layout": "3 columns",
+      "styling": {
+        "background": "white",
+        "height": "526px"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Why Arc is Different",
+      "component": "WhyArcIsDifferent.tsx",
+      "status": "missing",
+      "description": "Testimonials carousel with stats and Trustpilot rating",
+      "elements": [
+        "Heading: 'Why Arc is different'",
+        "Trustpilot: 'Excellent' with 4.5 stars",
+        {
+          "stats": [
+            {
+              "value": "75%",
+              "label": "faster to hire"
+            },
+            {
+              "value": "58%",
+              "label": "cost savings"
+            },
+            {
+              "value": "800+",
+              "label": "hires made"
+            }
+          ]
+        },
+        {
+          "testimonials": [
+            {
+              "quote": "Scale your team while saving time, money, and brainpower",
+              "author": "Todd Wiesel",
+              "position": "Founder @ BAXUS Blockchain protocol",
+              "logo": "baxus-logo.webp",
+              "link": "https://arc.dev/employer-blog/baxus-arc-case-study/"
+            },
+            {
+              "quote": "Highly skilled and diverse pool of talent at an affordable cost!",
+              "author": "Kristen (KJ) O'Sullivan",
+              "position": "Lead Recruiter @ Stem",
+              "logo": "stem-logo.webp",
+              "link": "https://arc.dev/employer-blog/stem-hiring-global-talent-with-arc/"
+            },
+            {
+              "quote": "Quickly delivered candidates that met our very high bar",
+              "author": "Derrick Mar",
+              "position": "Co-founder and CPO @ YC-backed Pathrise",
+              "logo": "pathrise-logo.webp",
+              "link": "https://arc.dev/employer-blog/pathrise-case-study/"
+            },
+            {
+              "quote": "Some of the best hires we've ever made!",
+              "author": "Hunter McKinley",
+              "position": "Co-Founder & CEO @ Backtrack",
+              "logo": "backtrack-logo.webp",
+              "link": "https://arc.dev/employer-blog/category/case-studies/"
+            }
+          ]
+        }
+      ],
+      "layout": "Stats row + scrolling testimonials carousel (infinite loop)",
+      "styling": {
+        "background": "white",
+        "padding": "py-20"
+      }
+    },
+    {
+      "id": 7,
+      "name": "How to Use Arc",
+      "component": "HowToUseArc.tsx",
+      "status": "missing",
+      "description": "3-step process explaining how to use Arc",
+      "elements": [
+        "Heading: 'How to use Arc'",
+        {
+          "step1": {
+            "number": "1",
+            "title": "Tell us your needs",
+            "description": "Share with us your goals, budget, job details, and location preferences."
+          }
+        },
+        {
+          "step2": {
+            "number": "2",
+            "title": "Meet top candidates",
+            "description": "Connect directly with your best matches, fully vetted and highly responsive."
+          }
+        },
+        {
+          "step3": {
+            "number": "3",
+            "title": "Interview and hire",
+            "icon": "star-highlight-icon.webp",
+            "description": "Decide who to hire, and we'll take care of the rest. Enjoy peace of mind with secure freelancer payments and compliant global hires via trusted EOR partners."
+          }
+        }
+      ],
+      "layout": "3 columns",
+      "styling": {
+        "background": "gray-50",
+        "padding": "py-20"
+      }
+    },
+    {
+      "id": 8,
+      "name": "For Talent Section",
+      "component": "ForTalentSection.tsx",
+      "status": "missing",
+      "description": "CTA section for talent/job seekers",
+      "elements": [
+        "Label: 'For talent'",
+        "Heading: 'Work the way you want anywhere in the world'",
+        "Description: Arc is the best place to find...",
+        "Button: 'Learn more'",
+        "Image: hero-photo.webp"
+      ],
+      "layout": "50/50 split - text left, image right",
+      "styling": {
+        "background": "black",
+        "padding": "py-20"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Footer CTA",
+      "component": "FooterCTA.tsx",
+      "status": "missing",
+      "description": "Final CTA section before footer",
+      "elements": [
+        "Heading: 'Your shortcut to the best remote talent'",
+        "Buttons: 'Hire talent', 'Find jobs'",
+        "Text: 'No cost until you hire'"
+      ],
+      "styling": {
+        "background": "white",
+        "padding": "py-16"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Footer",
+      "component": "Footer.tsx",
+      "status": "missing",
+      "description": "Main footer with links and information",
+      "columns": [
+        {
+          "name": "BRANDS",
+          "links": [
+            {
+              "title": "Arc",
+              "subtitle": "Helping employers find talent for remote jobs",
+              "url": "https://arc.dev/"
+            },
+            {
+              "title": "Codementor",
+              "subtitle": "Find a mentor to help you in real time",
+              "url": "https://www.codementor.io/"
+            }
+          ]
+        },
+        {
+          "name": "TOP TALENT",
+          "links": [
+            "Software Developers",
+            "Web Developers",
+            "Mobile App Developers",
+            "Front-End Developers",
+            "Back-End Developers",
+            "Full-Stack Developers",
+            "DevOps Developers",
+            "iOS Developers",
+            "AI Developers",
+            "PHP Developers",
+            "Python Developers",
+            "React Developers",
+            "Angular Developers",
+            "Node.js Developers",
+            "Product Designers",
+            "Web Designers",
+            "UI Designers",
+            "UX Designers",
+            "Mobile App Designers",
+            "Graphic Designers",
+            "Brand Designers",
+            "Digital Marketers",
+            "SEO Experts",
+            "Content Writers",
+            "Growth Marketers",
+            "Fractional CMOs",
+            "Product Managers",
+            "Project Managers",
+            "Program Managers",
+            "Virtual Assistants"
+          ]
+        },
+        {
+          "name": "LINKS",
+          "links": [
+            "Remote Jobs",
+            "Remote Developer Jobs",
+            "Remote Design Jobs",
+            "Remote Marketing Jobs",
+            "Job Description Templates",
+            "Development Services",
+            "Employer Blog",
+            "Talent Blog",
+            "Freelance Developer Rates",
+            "Remote Developer Salaries",
+            "About Us",
+            "Pricing",
+            "FAQ",
+            "Arc Newsletter",
+            "Partner with Arc"
+          ]
+        }
+      ],
+      "bottom": {
+        "copyright": "© Copyright 2026 Arc",
+        "links": [
+          "Cookie Policy",
+          "Privacy Policy",
+          "Terms of Service"
+        ],
+        "social": [
+          "LinkedIn",
+          "X (Twitter)",
+          "YouTube",
+          "Facebook"
+        ]
+      },
+      "styling": {
+        "background": "black",
+        "textColor": "white/gray"
+      }
+    }
+  ],
+  "colorScheme": {
+    "primary": "#000000 (black)",
+    "secondary": "#009FFF (blue)",
+    "accent": "#17A245 (green)",
+    "background": {
+      "dark": "#000000",
+      "light": "#F9FAFB (gray-50)",
+      "white": "#FFFFFF"
+    },
+    "text": {
+      "primary": "#FFFFFF (on dark)",
+      "secondary": "#111827 (gray-900 on light)",
+      "muted": "#6B7280 (gray-600)"
+    }
+  },
+  "typography": {
+    "headings": {
+      "h1": "36px, bold, line-height 1.1",
+      "h2": "48px, bold",
+      "h3": "28px, bold",
+      "h4": "20-24px, semibold"
+    },
+    "body": {
+      "base": "16px",
+      "large": "18px"
+    }
+  },
+  "layout": {
+    "maxWidth": "1280px",
+    "horizontalPadding": "48px (px-12)"
+  }
+}
+

@@ -1,0 +1,131 @@
+{
+  "designers": {
+    "category": "designers",
+    "count": 12453,
+    "description": "Arc has 12,453 vetted remote designers ready to interview and hire. Browse profiles of world-class product designers, UI/UX designers, web designers, graphic designers, and more. Hire freelance designers or build full-time design teams.",
+    "categoryName": "Remote Designers",
+    "profiles": [
+      {
+        "name": "Sarah M.",
+        "location": "United States (UTC-5)",
+        "badge": "Vetted designer",
+        "bio": "Award-winning product designer with 12+ years creating user-centered digital experiences. Specialized in UI/UX design, design systems, and brand identity. Led design teams at Fortune 500 companies.",
+        "skills": ["Figma", "UI/UX", "Product Design", "Design Systems", "Prototyping", "Branding", "+12"],
+        "availability": "Full-time & Freelance",
+        "previousCompany": {"name": "Apple", "logo": "Apple.jpg"},
+        "avatar": ""
+      }
+    ],
+    "categoryItems": [
+      {"name": "UI Designers", "icon": "ui-plain.svg", "url": "/hire-designers/ui-designers"},
+      {"name": "UX Designers", "icon": "ux-plain.svg", "url": "/hire-designers/ux-designers"},
+      {"name": "Product Designers", "icon": "product-plain.svg", "url": "/hire-designers"},
+      {"name": "Web Designers", "icon": "web-plain.svg", "url": "/hire-designers/web-designers"},
+      {"name": "Graphic Designers", "icon": "graphic-plain.svg", "url": "/hire-designers/graphic-designers"},
+      {"name": "Brand Designers", "icon": "brand-plain.svg", "url": "/hire-designers/brand-designers"},
+      {"name": "Mobile App Designers", "icon": "mobile-plain.svg", "url": "/hire-designers/mobile-app-designers"},
+      {"name": "Figma Designers", "icon": "figma-plain.svg", "url": "/hire-designers/figma-designers"}
+    ]
+  },
+  "marketers": {
+    "category": "marketers",
+    "count": 8234,
+    "description": "Arc has 8,234 vetted remote marketers ready to interview and hire. Find digital marketers, content marketers, SEO experts, growth marketers, social media specialists, and more. Hire freelance marketers or build full-time marketing teams.",
+    "categoryName": "Remote Marketers",
+    "profiles": [
+      {
+        "name": "Michael T.",
+        "location": "United Kingdom (UTC+0)",
+        "badge": "Vetted marketer",
+        "bio": "Data-driven digital marketing strategist with 10+ years experience in B2B and B2C growth. Expert in SEO, content marketing, paid acquisition, and marketing automation. Scaled startups from $0 to $10M ARR.",
+        "skills": ["SEO", "Content Marketing", "Google Ads", "Analytics", "Growth Marketing", "Email Marketing", "+8"],
+        "availability": "Full-time & Freelance",
+        "previousCompany": {"name": "HubSpot", "logo": "HubSpot.jpg"},
+        "avatar": ""
+      }
+    ],
+    "categoryItems": [
+      {"name": "Digital Marketers", "icon": "marketing-plain.svg", "url": "/hire-marketers"},
+      {"name": "SEO Experts", "icon": "seo-plain.svg", "url": "/hire-marketers/seo-experts"},
+      {"name": "Content Writers", "icon": "content-plain.svg", "url": "/hire-marketers/content-writers"},
+      {"name": "Growth Marketers", "icon": "growth-plain.svg", "url": "/hire-marketers/growth-marketers"},
+      {"name": "Social Media Marketers", "icon": "social-plain.svg", "url": "/hire-marketers/social-media-marketers"},
+      {"name": "Email Marketers", "icon": "email-plain.svg", "url": "/hire-marketers/email-marketers"},
+      {"name": "PPC Specialists", "icon": "ppc-plain.svg", "url": "/hire-marketers/ppc-specialists"},
+      {"name": "Fractional CMOs", "icon": "cmo-plain.svg", "url": "/hire-marketers/fractional-cmos"}
+    ]
+  },
+  "product-managers": {
+    "category": "product-managers",
+    "count": 5678,
+    "description": "Arc has 5,678 vetted remote product managers ready to interview and hire. Find experienced product managers, product owners, technical PMs, and more to drive your product strategy and roadmap.",
+    "categoryName": "Product Managers",
+    "profiles": [
+      {
+        "name": "Jennifer L.",
+        "location": "Canada (UTC-4)",
+        "badge": "Vetted product manager",
+        "bio": "Strategic product manager with 8+ years leading cross-functional teams. Expert in product strategy, roadmap planning, and agile methodologies. Successfully launched 15+ products from 0 to 1.",
+        "skills": ["Product Strategy", "Agile", "Scrum", "Data Analysis", "User Research", "Roadmapping", "+10"],
+        "availability": "Full-time & Freelance",
+        "previousCompany": {"name": "Spotify", "logo": "Spotify.jpg"},
+        "avatar": ""
+      }
+    ],
+    "categoryItems": [
+      {"name": "Product Managers", "icon": "pm-plain.svg", "url": "/hire-product-managers"},
+      {"name": "Technical Product Managers", "icon": "technical-pm-plain.svg", "url": "/hire-product-managers/technical"},
+      {"name": "Product Owners", "icon": "po-plain.svg", "url": "/hire-product-managers/product-owners"},
+      {"name": "AI Product Managers", "icon": "ai-pm-plain.svg", "url": "/hire-product-managers/ai"},
+      {"name": "Data Product Managers", "icon": "data-pm-plain.svg", "url": "/hire-product-managers/data"}
+    ]
+  },
+  "project-managers": {
+    "category": "project-managers",
+    "count": 6789,
+    "description": "Arc has 6,789 vetted remote project managers ready to interview and hire. Find experienced project managers, scrum masters, program managers, and more to lead your projects to success.",
+    "categoryName": "Project Managers",
+    "profiles": [
+      {
+        "name": "David K.",
+        "location": "Australia (UTC+10)",
+        "badge": "Vetted project manager",
+        "bio": "Certified PMP with 12+ years managing complex technical projects. Expert in agile and waterfall methodologies, risk management, and stakeholder communication. Delivered 50+ projects on time and budget.",
+        "skills": ["PMP", "Agile", "Scrum", "Jira", "Risk Management", "Stakeholder Management", "+9"],
+        "availability": "Full-time & Freelance",
+        "previousCompany": {"name": "Microsoft", "logo": "Microsoft.jpg"},
+        "avatar": ""
+      }
+    ],
+    "categoryItems": [
+      {"name": "Project Managers", "icon": "pm-plain.svg", "url": "/hire-project-managers"},
+      {"name": "Scrum Masters", "icon": "scrum-plain.svg", "url": "/hire-project-managers/scrum-masters"},
+      {"name": "Program Managers", "icon": "program-plain.svg", "url": "/hire-project-managers/program-managers"},
+      {"name": "Agile Coaches", "icon": "agile-plain.svg", "url": "/hire-project-managers/agile-coaches"}
+    ]
+  },
+  "assistants": {
+    "category": "assistants",
+    "count": 4532,
+    "description": "Arc has 4,532 vetted remote assistants ready to interview and hire. Find virtual assistants, executive assistants, administrative assistants, and more to support your business operations.",
+    "categoryName": "Remote Assistants",
+    "profiles": [
+      {
+        "name": "Maria R.",
+        "location": "Philippines (UTC+8)",
+        "badge": "Vetted assistant",
+        "bio": "Highly organized executive assistant with 7+ years supporting C-level executives. Expert in calendar management, travel coordination, email management, and project coordination. Excellent communication skills.",
+        "skills": ["Executive Support", "Calendar Management", "Travel Planning", "Email Management", "Data Entry", "Research", "+6"],
+        "availability": "Full-time & Freelance",
+        "previousCompany": {"name": "Salesforce", "logo": "Salesforce.jpg"},
+        "avatar": ""
+      }
+    ],
+    "categoryItems": [
+      {"name": "Virtual Assistants", "icon": "va-plain.svg", "url": "/hire-assistants/virtual-assistants"},
+      {"name": "Executive Assistants", "icon": "ea-plain.svg", "url": "/hire-assistants/executive-assistants"},
+      {"name": "Administrative Assistants", "icon": "admin-plain.svg", "url": "/hire-assistants/administrative-assistants"}
+    ]
+  }
+}
+

@@ -1,0 +1,208 @@
+{
+  "pageUrl": "https://arc.dev/",
+  "images": {
+    "total": 34,
+    "successful": 34,
+    "failed": 0,
+    "skipped": 6,
+    "list": [
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fshorter-hero%2Ffinger-up.png&w=48&q=75",
+        "file": "image_8253699f.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fshorter-hero%2Ffinger-up.png&w=32&q=75",
+        "file": "image_23483827.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Faccess_vetted_talent.png&w=256&q=75",
+        "file": "image_ae8fc29e.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Faccess_vetted_talent.png&w=128&q=75",
+        "file": "image_86ec8c83.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fview_matches_in_second.png&w=256&q=75",
+        "file": "image_d24ccb80.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fview_matches_in_second.png&w=128&q=75",
+        "file": "image_bf7ccecf.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fsave_with_global_hires.png&w=256&q=75",
+        "file": "image_63847339.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fsave_with_global_hires.png&w=128&q=75",
+        "file": "image_cbe25d66.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fget_real_human_support.png&w=256&q=75",
+        "file": "image_581b27bc.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fget_real_human_support.png&w=128&q=75",
+        "file": "image_4b4ede69.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fhire-designers%2Ftrustpilot-full-star.png&w=48&q=75",
+        "file": "image_708fb479.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fhire-designers%2Ftrustpilot-full-star.png&w=32&q=75",
+        "file": "image_a0917876.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fhire-designers%2Ftrustpilot-half-star.png&w=48&q=75",
+        "file": "image_0280ad92.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fhire-designers%2Ftrustpilot-half-star.png&w=32&q=75",
+        "file": "image_f148ee4f.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fbaxus-logo.png&w=256&q=75",
+        "file": "image_0a519650.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fbaxus-logo.png&w=128&q=75",
+        "file": "image_1b3133a9.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fstem-logo.png&w=256&q=75",
+        "file": "image_51ebce1e.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fstem-logo.png&w=96&q=75",
+        "file": "image_fe288b4e.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fpathrise-logo.png&w=256&q=75",
+        "file": "image_bd9adb5a.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fpathrise-logo.png&w=128&q=75",
+        "file": "image_b8ac72c1.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fbacktrack-logo.png&w=640&q=75",
+        "file": "image_1dd97a2f.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fclient%2Fbacktrack-logo.png&w=256&q=75",
+        "file": "image_d9a7f457.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Ftalent-landing%2Fstar-highlight-icon.png&w=48&q=75",
+        "file": "image_81bfb0d4.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Ftalent-landing%2Fstar-highlight-icon.png&w=32&q=75",
+        "file": "image_d32d207e.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Ftalent-landing%2Fanywhere.png&w=640&q=75",
+        "file": "image_09d57417.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Ftalent-landing%2Fanywhere.png&w=384&q=75",
+        "file": "image_eea828de.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Ftalent-landing%2Fhero-photo.png&w=1920&q=75",
+        "file": "image_8f2a6173.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Ftalent-landing%2Fhero-photo.png&w=750&q=75",
+        "file": "image_e491c3b2.jpg",
+        "success": true
+      },
+      {
+        "url": "https://assets.arc.dev/icons/apple-touch-icon.png",
+        "file": "apple-touch-icon.png",
+        "success": true,
+        "skipped": true
+      },
+      {
+        "url": "https://assets.arc.dev/icons/favicon.ico",
+        "file": "favicon.ico",
+        "success": true,
+        "skipped": true
+      },
+      {
+        "url": "https://assets.arc.dev/icons/favicon-16x16.png",
+        "file": "favicon-16x16.png",
+        "success": true,
+        "skipped": true
+      },
+      {
+        "url": "https://assets.arc.dev/icons/favicon-32x32.png",
+        "file": "favicon-32x32.png",
+        "success": true,
+        "skipped": true
+      },
+      {
+        "url": "https://assets.arc.dev/icons/favicon-96x96.png",
+        "file": "favicon-96x96.png",
+        "success": true,
+        "skipped": true
+      },
+      {
+        "url": "https://assets.arc.dev/icons/favicon-192x192.png",
+        "file": "favicon-192x192.png",
+        "success": true,
+        "skipped": true
+      }
+    ]
+  },
+  "videos": {
+    "total": 2,
+    "successful": 2,
+    "failed": 0,
+    "skipped": 2,
+    "list": [
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/client/video-hero/hero.webm",
+        "file": "hero.webm",
+        "success": true,
+        "skipped": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/client/video-hero/hero.mp4",
+        "file": "hero.mp4",
+        "success": true,
+        "skipped": true
+      }
+    ]
+  },
+  "timestamp": "2026-02-06T04:33:46.506Z"
+}

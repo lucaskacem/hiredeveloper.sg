@@ -1,0 +1,693 @@
+{
+  "pageName": "Hire Developers - Arc.dev",
+  "url": "https://arc.dev/hire-developers",
+  "pageHeight": "11915px",
+  "totalSections": 15,
+  "sections": [
+    {
+      "id": 1,
+      "name": "Hero Section",
+      "component": "HireHero",
+      "layout": "Full width, black background",
+      "content": {
+        "heading": {
+          "line1": "Hire the",
+          "line2_link": {
+            "text": "Top 2%",
+            "url": "https://arc.dev/how-arc-works",
+            "style": "text-[rgb(0,159,255)] hover:underline"
+          },
+          "line3": "of",
+          "line4": "Remote Developers"
+        },
+        "description": "Arc has 90921 full-time and freelance developers, engineers, programmers, coders, contractors, and tech experts ready to interview and available to hire right now. Our global network of developers can help with temporary staffing or scaling your engineering team. Simply tell us what you need and we'll help you hire the developers who are the best fit.",
+        "badges": [
+          {
+            "text": "Freelance contractors",
+            "style": "px-4 py-2 bg-white/10 rounded-full"
+          },
+          {
+            "text": "Full-time roles",
+            "style": "px-4 py-2 bg-white/10 rounded-full"
+          },
+          {
+            "text": "Global teams",
+            "style": "px-4 py-2 bg-white/10 rounded-full"
+          }
+        ],
+        "cta": {
+          "button": {
+            "text": "Hire talent",
+            "style": "bg-[rgb(23,162,69)] hover:bg-[rgb(20,145,60)]"
+          },
+          "badge": {
+            "icon": "🔥",
+            "text": "$0 until you hire"
+          }
+        },
+        "trustSection": {
+          "label": "Trusted by",
+          "companies": [
+            {"name": "Spotify", "logo": "/images/logos/spotify.svg", "height": 32},
+            {"name": "Automattic", "logo": "/images/logos/automattic.svg", "height": 24},
+            {"name": "Splice", "logo": "/images/logos/splice.svg", "height": 28},
+            {"name": "hims", "logo": "/images/logos/hims.svg", "height": 24},
+            {"name": "hopper", "logo": "/images/logos/hopper.svg", "height": 28},
+            {"name": "Udacity", "logo": "/images/logos/udacity.svg", "height": 32}
+          ]
+        }
+      },
+      "styling": {
+        "background": "#000000",
+        "padding": "py-16",
+        "maxWidth": "1280px",
+        "textColor": "white"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Breadcrumb Navigation",
+      "component": "Breadcrumb",
+      "layout": "Inline, top of talent section",
+      "content": {
+        "items": [
+          {"text": "Home", "url": "/", "isLink": true},
+          {"text": "/", "separator": true},
+          {"text": "Developers", "isActive": true}
+        ]
+      },
+      "styling": {
+        "textSize": "text-sm",
+        "color": "text-gray-600",
+        "activeColor": "text-gray-900"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Talent Showcase",
+      "component": "TalentShowcase",
+      "layout": "Full width, white background",
+      "content": {
+        "heading": "90,921 Remote developers and experts available to hire:",
+        "profiles": [
+          {
+            "avatar": "https://ucarecdn.com/a6226194-43c1-41a1-a032-8893ba4b6112/-/scale_crop/60x60/smart/",
+            "name": "Aksel .",
+            "location": "United States (UTC-4)",
+            "badge": "Vetted developer",
+            "vettedBadgeIcon": "/images/icon/vetted-badge.png",
+            "bio": "With over 15 years of all-rounded expertise in staff software engineering and architecture, I boast a proven track record in designing highly scalable compute-intensive workflows. My focus industries span fintech, e-commerce/retail, and private/public cloud data processing and management. I command a broad range of computer science skills, from design and implementation to RESTful services and distributed systems. A certified Scrum Master, I lead feature tracks roadmaps with Agile methodologies, employing Test Driven Development. Lastly, I bring a fresh cosmopolitan drive, dynamic, and assertive presence to the teams I work with.",
+            "skills": [
+              {"name": "AWS", "url": "/hire-developers/aws"},
+              {"name": "Python", "url": "/hire-developers/python"},
+              {"name": "Java", "url": "/hire-developers/java"},
+              {"name": "Cloud", "url": "/hire-developers/cloud"},
+              {"name": "Google Cloud Platform", "url": "/hire-developers/google-cloud-platform"},
+              {"name": "SQL", "url": "/hire-developers/sql"},
+              {"name": "NoSQL", "url": "/hire-developers/nosql"},
+              {"name": "+17", "isCount": true}
+            ],
+            "availability": "Full-time & Freelance",
+            "previousCompany": {
+              "name": "Amazon",
+              "logo": "https://assets.arc.dev/logos/Amazon.jpg"
+            },
+            "cta": "Hire now"
+          },
+          {
+            "avatar": "https://cdn.filestackcontent.com/resize=height:60/cache=expiry:31536000/3poRMegwTA6n7blvsTbw",
+            "name": "Nathaniel H.",
+            "location": "United States (UTC-5)",
+            "badge": "Vetted developer",
+            "vettedBadgeIcon": "/images/icon/vetted-badge.png",
+            "bio": "AI and software engineer with over 14 years of experience, specialized in building scalable, AI-driven applications. Proficient in Node.js, Python, MySQL/MSSQL, JavaScript frameworks, Linux, AWS, and Azure cloud. Skilled in MVC/Microservice architecture, Docker CI/CD, Agile methodologies, and test-driven development. Strong experience in team leadership, mentoring, and driving innovation.",
+            "skills": [
+              {"name": "Python", "url": "/hire-developers/python"},
+              {"name": "AWS", "url": "/hire-developers/aws"},
+              {"name": "SQL", "url": "/hire-developers/sql"},
+              {"name": "JavaScript", "url": "/hire-developers/javascript"},
+              {"name": "Ruby on Rails", "url": "/hire-developers/ruby-on-rails"},
+              {"name": "Node.js", "url": "/hire-developers/nodejs"},
+              {"name": "ETL", "url": "/hire-developers/etl"},
+              {"name": "+10", "isCount": true}
+            ],
+            "availability": "Full-time & Freelance",
+            "previousCompany": {
+              "name": "Facebook",
+              "logo": "https://assets.arc.dev/logos/Facebook.jpg"
+            },
+            "cta": "Hire now"
+          }
+        ],
+        "footer": {
+          "text": "Discover more remote developers today",
+          "cta": "Start hiring"
+        }
+      },
+      "styling": {
+        "background": "#FFFFFF",
+        "padding": "py-20",
+        "cardBackground": "#F9FAFB",
+        "cardHover": "hover:shadow-lg"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Stats & Testimonials",
+      "component": "StatsTestimonials",
+      "layout": "Full width, gray background",
+      "content": {
+        "title": "Remote hiring made easy",
+        "stats": [
+          {
+            "prefix": "Up to",
+            "value": "75%",
+            "label": "faster to hire",
+            "size": "text-[48px]"
+          },
+          {
+            "prefix": "Up to",
+            "value": "58%",
+            "label": "cost savings",
+            "size": "text-[48px]"
+          },
+          {
+            "value": "800+",
+            "label": "hires made",
+            "size": "text-[48px]"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "We've tried hiring from traditional platforms before, but the quality of developers at Arc is far more superior.",
+            "author": "Moishe Groger",
+            "title": "CEO",
+            "company": "Tentaroo",
+            "avatar": "https://cdn.arc.dev/arc-next-landing/images/client-onboarding/right-column/Moishe_Groger.png"
+          },
+          {
+            "quote": "I've sourced former founders, senior engineers, and even CMOs in less than 72 hours.",
+            "author": "Chris Bakke",
+            "title": "Founder & CEO",
+            "company": "Laskie",
+            "avatar": "https://cdn.arc.dev/arc-next-landing/images/client-onboarding/right-column/Chris_Bakke.png"
+          },
+          {
+            "quote": "Highly skilled and diverse pool of talent at an affordable cost!",
+            "author": "Kristen Hadjis",
+            "title": "Lead Recruiter",
+            "company": "Stem",
+            "avatar": "https://cdn.arc.dev/arc-next-landing/images/client-onboarding/right-column/Kristen_Hadjis.png"
+          }
+        ],
+        "cta": {
+          "button": "Hire now",
+          "style": "bg-[rgb(23,162,69)]"
+        },
+        "trustpilot": {
+          "rating": "Excellent",
+          "stars": 4.5,
+          "link": "https://www.trustpilot.com/review/arc.dev"
+        }
+      },
+      "styling": {
+        "background": "#F9FAFB",
+        "padding": "py-20"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Top Remote Developers Categories",
+      "component": "CategoriesGrid",
+      "layout": "Full width, white background",
+      "content": {
+        "heading": "Top remote developers are just a few clicks away",
+        "subheading": "Arc offers pre-vetted full-time and freelance developers skilled in every programming language, framework, and technology. Look through our popular remote engineer specializations below.",
+        "sections": [
+          {
+            "id": "roles",
+            "title": "Find and hire remote developers by roles",
+            "gridColumns": "grid-cols-5",
+            "items": [
+              {"name": "AI Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/ai-plain.svg", "url": "/hire-developers/ai"},
+              {"name": "Data Scientists", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/data-science-plain.svg", "url": "/hire-developers/data-science"},
+              {"name": "Machine Learning Experts", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/machine-learning-plain.svg", "url": "/hire-developers/machine-learning"},
+              {"name": "Data Engineers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/data-science-plain.svg", "url": "/hire-developers/data-engineering"},
+              {"name": "Data Analysts", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/data-science-plain.svg", "url": "/hire-developers/data-analytics"},
+              {"name": "Software Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/software-plain.svg", "url": "/hire-developers/software-development"},
+              {"name": "Front-end Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/frontend-plain.svg", "url": "/hire-developers/front-end"},
+              {"name": "Back-End Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/backend-plain.svg", "url": "/hire-developers/back-end"},
+              {"name": "Full-Stack Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/full-stack-plain.svg", "url": "/hire-developers/full-stack"},
+              {"name": "DevOps Engineers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/devops-plain.svg", "url": "/hire-developers/devops"},
+              {"name": "QA Engineers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/software-plain.svg", "url": "/hire-developers/qa"},
+              {"name": "Fractional CTOs", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/software-plain.svg", "url": "/hire-developers/fractional-ctos"},
+              {"name": "Engineering Managers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/software-plain.svg", "url": "/hire-developers/engineering-managers"},
+              {"name": "Tech Leads", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/software-plain.svg", "url": "/hire-developers/tech-leads"},
+              {"name": "Game Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/game-plain.svg", "url": "/hire-developers/game"},
+              {"name": "Web Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/web-plain.svg", "url": "/hire-developers/web-development"},
+              {"name": "Mobile App Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/mobile-development-plain.svg", "url": "/hire-developers/mobile-app-development"},
+              {"name": "Blockchain Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/blockchain-plain.svg", "url": "/hire-developers/blockchain"},
+              {"name": "CMS Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/cms-plain.svg", "url": "/hire-developers/cms"},
+              {"name": "E-commerce Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/e-commerce-plain.svg", "url": "/hire-developers/e-commerce"}
+            ]
+          },
+          {
+            "id": "skills",
+            "title": "Find and hire remote engineers by skills",
+            "gridColumns": "grid-cols-5",
+            "items": [
+              {"name": "WordPress Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/wordpress-plain.svg", "url": "/hire-developers/wordpress"},
+              {"name": "Squarespace Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/software-plain.svg", "url": "/hire-developers/squarespace"},
+              {"name": "WooCommerce Experts", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/default-plain.svg", "url": "/hire-developers/woocommerce"},
+              {"name": "Shopify Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/shopify-plain.svg", "url": "/hire-developers/shopify"},
+              {"name": "Magento Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/magento-plain.svg", "url": "/hire-developers/magento"},
+              {"name": "BigCommerce Experts", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/full-stack-plain.svg", "url": "/hire-developers/bigcommerce"},
+              {"name": "JavaScript Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/javascript-plain.svg", "url": "/hire-developers/javascript"},
+              {"name": "TypeScript Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/typescript-plain.svg", "url": "/hire-developers/typescript"},
+              {"name": "React Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/reactjs-plain.svg", "url": "/hire-developers/reactjs"},
+              {"name": "React Native Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/reactjs-plain.svg", "url": "/hire-developers/react-native"},
+              {"name": "Next.js Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/frontend-plain.svg", "url": "/hire-developers/nextjs"},
+              {"name": "Angular Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/angular-plain.svg", "url": "/hire-developers/angular"},
+              {"name": "Drupal Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/drupal-plain.svg", "url": "/hire-developers/drupal"},
+              {"name": "Database Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/database-plain.svg", "url": "/hire-developers/database"},
+              {"name": "Vue Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/vue-plain.svg", "url": "/hire-developers/vue"},
+              {"name": "C# Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/c-sharp-plain.svg", "url": "/hire-developers/c_sharp"},
+              {"name": "Django Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/django-plain.svg", "url": "/hire-developers/django"},
+              {"name": "Ruby on Rails Developer", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/ruby-on-rails-plain.svg", "url": "/hire-developers/ruby-on-rails"},
+              {"name": "Ruby Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/ruby-plain.svg", "url": "/hire-developers/ruby"},
+              {"name": "iOS Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/ios-plain.svg", "url": "/hire-developers/ios"},
+              {"name": "Android Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/android-plain.svg", "url": "/hire-developers/android"},
+              {"name": "Swift Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/swift-plain.svg", "url": "/hire-developers/swift"},
+              {"name": "Java Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/java-plain.svg", "url": "/hire-developers/java"},
+              {"name": "Express Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/express-plain.svg", "url": "/hire-developers/expressjs"},
+              {"name": ".NET Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/dotnet-plain.svg", "url": "/hire-developers/dot_net"},
+              {"name": "ASP.NET Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/aspdot-net-plain.svg", "url": "/hire-developers/aspdot_net"},
+              {"name": "Node.js Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/nodejs-plain.svg", "url": "/hire-developers/nodejs"},
+              {"name": "Rust Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/rust-plain.svg", "url": "/hire-developers/rust"},
+              {"name": "MongoDB Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/mongodb-plain.svg", "url": "/hire-developers/mongodb"},
+              {"name": "PHP Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/php-plain.svg", "url": "/hire-developers/php"},
+              {"name": "Python Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/python-plain.svg", "url": "/hire-developers/python"},
+              {"name": "LARAVEL Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/laravel-plain.svg", "url": "/hire-developers/laravel"},
+              {"name": "Flutter Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/flutter-plain.svg", "url": "/hire-developers/flutter"},
+              {"name": "MEAN Stack Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/full-stack-plain.svg", "url": "/hire-developers/mean-stack"},
+              {"name": "Spring Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/spring-plain.svg", "url": "/hire-developers/spring"},
+              {"name": "R Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/r-plain.svg", "url": "/hire-developers/r"},
+              {"name": "C++ Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/c-plus-plus-plain.svg", "url": "/hire-developers/c_plus_plus"},
+              {"name": "Selenium Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/selenium-plain.svg", "url": "/hire-developers/selenium"},
+              {"name": "AWS Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/aws-plain.svg", "url": "/hire-developers/aws"},
+              {"name": "GCP Engineers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/gcp-plain.svg", "url": "/hire-developers/google-cloud-platform"},
+              {"name": "Azure Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/cloud-plain.svg", "url": "/hire-developers/azure"},
+              {"name": "Kotlin Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/kotlin-plain.svg", "url": "/hire-developers/kotlin"},
+              {"name": "Golang Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/default-plain.svg", "url": "/hire-developers/golang"},
+              {"name": "HubSpot Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/default-plain.svg", "url": "/hire-developers/hubspot"},
+              {"name": "Salesforce Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/salesforce-plain.svg", "url": "/hire-developers/salesforce"},
+              {"name": "Wix Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/default-plain.svg", "url": "/hire-developers/wix"},
+              {"name": "Unity Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/unity-plain.svg", "url": "/hire-developers/unity"},
+              {"name": "AR Developers", "icon": "https://da2f8uix4p8om.cloudfront.net/20231208igj0jiqhzes/categories/default-plain.svg", "url": "/hire-developers/ar"}
+            ]
+          }
+        ],
+        "cta": {
+          "buttons": [
+            {"text": "Hire a developer", "style": "primary", "bg": "bg-[rgb(23,162,69)]"},
+            {"text": "View all developers", "style": "secondary", "url": "/hire-developers"}
+          ]
+        }
+      },
+      "styling": {
+        "background": "#FFFFFF",
+        "padding": "py-20",
+        "cardStyle": "flex flex-col items-center gap-3 p-6 bg-gray-50 rounded-lg hover:bg-gray-100"
+      }
+    },
+    {
+      "id": 6,
+      "name": "How It Works",
+      "component": "HowItWorksSteps",
+      "layout": "Full width, white background",
+      "content": {
+        "heading": "It's easy to hire full-time & freelance developers with Arc",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Request",
+            "description": "Describe the ideal full-time & freelance developer you're looking for.",
+            "subtext": "Tell us about the role, technical needs, and hiring budget.",
+            "image": "https://cdn.arc.dev/arc-next-landing/images/clients-page/flow-intro/request.png",
+            "imageWidth": 384
+          },
+          {
+            "number": "02",
+            "title": "Interview",
+            "description": "Receive vetted candidate profiles that match your engineering needs.",
+            "subtext": "Select the full-time & freelance engineer you want to interview.",
+            "image": "https://cdn.arc.dev/arc-next-landing/images/clients-page/flow-intro/interview.png",
+            "imageWidth": 384
+          },
+          {
+            "number": "03",
+            "title": "Hire",
+            "description": "When ready, hire the full-time & freelance developer you prefer.",
+            "subtext": "Sign an NDA with your new full-time & freelance engineer, and we'll handle all the other paperwork.",
+            "image": "https://cdn.arc.dev/arc-next-landing/images/clients-page/flow-intro/hire.png",
+            "imageWidth": 384
+          }
+        ],
+        "cta": {
+          "buttons": [
+            {"text": "Hire a developer", "style": "primary"},
+            {"text": "Learn more about pricing", "style": "secondary", "url": "/pricing"}
+          ]
+        }
+      },
+      "styling": {
+        "background": "#FFFFFF",
+        "padding": "py-20",
+        "layout": "grid grid-cols-3 gap-12"
+      }
+    },
+    {
+      "id": 7,
+      "name": "What Companies Are Saying",
+      "component": "CompaniesTestimonials",
+      "layout": "Full width, gray background",
+      "content": {
+        "heading": "What companies are saying",
+        "testimonials": [
+          {
+            "quote": "We've tried hiring from traditional platforms before, but the quality of developers at Arc is far more superior.",
+            "author": "Moishe Groger",
+            "title": "CEO",
+            "company": "Tentaroo",
+            "avatar": "Moishe_Groger.png"
+          },
+          {
+            "quote": "I've sourced former founders, senior engineers, and even CMOs in less than 72 hours.",
+            "author": "Chris Bakke",
+            "title": "Founder & CEO",
+            "company": "Laskie",
+            "avatar": "Chris_Bakke.png"
+          }
+        ]
+      },
+      "styling": {
+        "background": "#F9FAFB",
+        "padding": "py-20"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Build Your Dedicated Team",
+      "component": "DedicatedTeamSection",
+      "layout": "Full width, white background",
+      "content": {
+        "heading": "Build your dedicated team of remote developers",
+        "description": "Arc helps you build your team with our global network of software developers, available for freelance contracts or full-time remote positions.",
+        "features": [
+          {
+            "title": "Pre-vetted developers",
+            "description": "Every developer is tested on technical skills and communication."
+          },
+          {
+            "title": "Fast matching",
+            "description": "Get matched with qualified developers in 72 hours or less."
+          },
+          {
+            "title": "Quality guarantee",
+            "description": "Risk-free trial period. Only pay if you're 100% satisfied."
+          }
+        ]
+      },
+      "styling": {
+        "background": "#FFFFFF",
+        "padding": "py-20"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Why Arc",
+      "component": "WhyArcSection",
+      "layout": "Full width, gray background",
+      "content": {
+        "heading": "Why Arc to find a remote engineer for hire",
+        "features": [
+          {
+            "icon": "/images/icons/vetted.svg",
+            "title": "Access vetted remote engineers",
+            "description": "Meet ready to interview candidates who are fully vetted for domain expertise and English fluency."
+          },
+          {
+            "icon": "/images/icons/fast.svg",
+            "title": "View matches in seconds",
+            "description": "Stop reviewing 100s of resumes. View candidates instantly with HireAI."
+          },
+          {
+            "icon": "/images/icons/global.svg",
+            "title": "Save with global hires",
+            "description": "Get access to 450,000 talent in 190 countries, saving up to 58% vs traditional hiring."
+          },
+          {
+            "icon": "/images/icons/support.svg",
+            "title": "Get real human support",
+            "description": "Feel confident hiring remote talent with hands-on help from our team of expert global recruiters."
+          }
+        ]
+      },
+      "styling": {
+        "background": "#F9FAFB",
+        "padding": "py-20",
+        "layout": "grid grid-cols-2 gap-8"
+      }
+    },
+    {
+      "id": 10,
+      "name": "How To Hire Guide",
+      "component": "HiringGuide",
+      "layout": "Full width, white background",
+      "content": {
+        "heading": "How to hire top freelance developers",
+        "sections": [
+          {
+            "title": "Why Should You Hire a Freelance Developer?",
+            "subsections": [
+              {
+                "subtitle": "Affordability",
+                "content": "Hiring freelance developers can be more cost-effective than full-time employees, as you only pay for the work done without additional overhead costs like benefits, office space, and equipment."
+              },
+              {
+                "subtitle": "Global market & access to talent",
+                "content": "The freelance market gives you access to a global pool of talented developers with diverse skill sets and experiences."
+              },
+              {
+                "subtitle": "Specialization",
+                "content": "Freelancers often specialize in specific technologies or domains, allowing you to find experts for your particular needs."
+              },
+              {
+                "subtitle": "Flexibility",
+                "content": "Scale your team up or down based on project requirements without long-term commitments."
+              }
+            ]
+          },
+          {
+            "title": "When Should You Hire a Freelance Developer?",
+            "subsections": [
+              {
+                "subtitle": "When you're short on time",
+                "content": "Freelancers can start working on your project immediately, helping you meet tight deadlines."
+              },
+              {
+                "subtitle": "When you have limited skillsets",
+                "content": "If your team lacks specific technical expertise, freelancers can fill those gaps quickly."
+              },
+              {
+                "subtitle": "When you're on a tight budget",
+                "content": "Freelance developers can provide quality work at competitive rates without the overhead of full-time employees."
+              }
+            ]
+          },
+          {
+            "title": "How to Find a Top Freelance Developer",
+            "subsections": [
+              {
+                "subtitle": "Think about your software developer job description",
+                "content": "Clearly define the skills, experience level, and project requirements before starting your search.",
+                "questions": [
+                  "What is your project about? What are some of the required skills?",
+                  "Do you have a geographical preference?",
+                  "What is your budget range?",
+                  "Do you need someone for a short-term or long-term project?"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "styling": {
+        "background": "#FFFFFF",
+        "padding": "py-20",
+        "prose": "prose prose-lg max-w-none"
+      }
+    },
+    {
+      "id": 11,
+      "name": "FAQs",
+      "component": "FAQSection",
+      "layout": "Full width, gray background",
+      "content": {
+        "heading": "FAQs",
+        "description": "For more frequently asked questions on hiring developers,",
+        "link": {
+          "text": "check out our FAQs page",
+          "url": "/faq"
+        }
+      },
+      "styling": {
+        "background": "#F9FAFB",
+        "padding": "py-20"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Resources",
+      "component": "ResourcesSection",
+      "layout": "Full width, white background",
+      "content": {
+        "heading": "Resources for hiring engineering experts",
+        "subheading": "Learn more about how to hire remote developers, important interview questions to ask freelance developers, and much more!",
+        "articles": [
+          {
+            "title": "Is Your Developer Ready for Remote Work?",
+            "image": "https://cdn.arc.dev/arc-next-landing/images/hire-developers/resources/1.png",
+            "url": "/employer-blog/remote-ready-interview-questions/",
+            "imageWidth": 640
+          },
+          {
+            "title": "Remote Developer Interview Questions to Ask Potential Freelancers",
+            "image": "https://cdn.arc.dev/arc-next-landing/images/hire-developers/resources/2.png",
+            "url": "/employer-blog/software-engineer-interview-questions/",
+            "imageWidth": 640
+          },
+          {
+            "title": "Finding Freelance Developers: 21+ Expert Tips & Strategies",
+            "image": "https://cdn.arc.dev/arc-next-landing/images/hire-developers/resources/3.png",
+            "url": "/employer-blog/how-to-find-developers/",
+            "imageWidth": 640
+          },
+          {
+            "title": "How to Conduct a Remote Technical Interview Successfully",
+            "image": "https://cdn.arc.dev/arc-next-landing/images/hire-developers/resources/4.png",
+            "url": "/employer-blog/how-to-conduct-a-remote-technical-interview/",
+            "imageWidth": 640
+          },
+          {
+            "title": "How to Build & Maintain a Remote Engineering Team",
+            "image": "https://cdn.arc.dev/arc-next-landing/images/hire-developers/resources/5.png",
+            "url": "/employer-blog/distributed-software-engineering-team/",
+            "imageWidth": 640
+          },
+          {
+            "title": "How to Manage Remote Development Teams",
+            "image": "https://cdn.arc.dev/arc-next-landing/images/hire-developers/resources/6.png",
+            "url": "/employer-blog/how-to-manage-developers-remote-team/",
+            "imageWidth": 640
+          }
+        ],
+        "cta": {
+          "text": "View more hiring guides",
+          "url": "/employer-blog/"
+        }
+      },
+      "styling": {
+        "background": "#FFFFFF",
+        "padding": "py-20",
+        "layout": "grid grid-cols-3 gap-8"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Final CTA",
+      "component": "FinalCTA",
+      "layout": "Full width, gradient background",
+      "content": {
+        "heading": "Your future remote developer is just around the corner!",
+        "subheading": "Risk-free to get started.",
+        "cta": {
+          "text": "Hire talent",
+          "style": "bg-[rgb(23,162,69)] text-lg px-12 py-4"
+        }
+      },
+      "styling": {
+        "background": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        "padding": "py-24",
+        "textColor": "white",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Footer",
+      "component": "Footer",
+      "layout": "Full width, black background",
+      "content": "Same as main page footer",
+      "styling": {
+        "background": "#000000",
+        "padding": "py-16"
+      }
+    }
+  ],
+  "designSystem": {
+    "colors": {
+      "primary": "#000000",
+      "secondary": "#009FFF",
+      "accent": "#17A245",
+      "background": {
+        "dark": "#000000",
+        "light": "#FFFFFF",
+        "gray": "#F9FAFB"
+      },
+      "text": {
+        "primary": "#111827",
+        "secondary": "#6B7280",
+        "white": "#FFFFFF"
+      }
+    },
+    "typography": {
+      "fontFamily": "Inter, system-ui, sans-serif",
+      "headings": {
+        "h1": "text-[56px] font-bold leading-tight",
+        "h2": "text-[40-48px] font-bold",
+        "h3": "text-[24-32px] font-bold",
+        "h4": "text-[20px] font-semibold"
+      },
+      "body": {
+        "large": "text-lg (18px)",
+        "base": "text-base (16px)",
+        "small": "text-sm (14px)"
+      }
+    },
+    "spacing": {
+      "section": "py-20 (80px)",
+      "container": "max-w-[1280px] mx-auto px-12",
+      "cardGap": "gap-8"
+    },
+    "borderRadius": {
+      "small": "rounded-md (6px)",
+      "medium": "rounded-lg (8px)",
+      "large": "rounded-xl (12px)",
+      "full": "rounded-full"
+    },
+    "shadows": {
+      "card": "shadow-lg",
+      "hover": "hover:shadow-xl"
+    }
+  },
+  "interactions": {
+    "buttons": {
+      "primary": "hover:bg-[rgb(20,145,60)] hover:-translate-y-0.5 transition-all",
+      "secondary": "hover:bg-gray-50 transition-colors"
+    },
+    "cards": "hover:shadow-lg transition-shadow",
+    "links": "hover:text-[rgb(0,159,255)] transition-colors"
+  }
+}
+

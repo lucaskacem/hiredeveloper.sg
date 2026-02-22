@@ -1,0 +1,54 @@
+{
+  "pageUrl": "https://arc.dev/about-us",
+  "images": {
+    "total": 7,
+    "successful": 7,
+    "failed": 0,
+    "skipped": 0,
+    "list": [
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/about-us/weiting-signature.png",
+        "file": "weiting-signature.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/about-us/our-value-1.png",
+        "file": "our-value-1.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/about-us/our-value-2.png",
+        "file": "our-value-2.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/about-us/our-value-3.png",
+        "file": "our-value-3.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/icon/arc-white.svg",
+        "file": "arc-white.svg",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/about-us/banner.png",
+        "file": "banner.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/about-us/team-photo.png",
+        "file": "team-photo.png",
+        "success": true
+      }
+    ]
+  },
+  "videos": {
+    "total": 0,
+    "successful": 0,
+    "failed": 0,
+    "skipped": 0,
+    "list": []
+  },
+  "timestamp": "2026-02-06T04:30:44.034Z"
+}

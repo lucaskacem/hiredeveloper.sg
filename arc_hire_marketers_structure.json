@@ -1,0 +1,332 @@
+{
+    "page": {
+        "title": "Hire Top Freelance Marketing Experts | Arc",
+        "url": "https://arc.dev/hire-marketers",
+        "meta": {
+            "description": "Hire the top 2% of freelance marketing experts. Arc makes it easy to find vetted remote marketers for your team."
+        },
+        "theme": {
+            "primaryColor": "#22a447",
+            "secondaryColor": "#253041",
+            "backgroundColor": "#ffffff",
+            "fontFamily": "Inter, sans-serif"
+        }
+    },
+    "structure": [
+        {
+            "id": "header",
+            "type": "header",
+            "content": {
+                "logo": {
+                    "alt": "Arc Logo",
+                    "src": "/assets/arc-logo.svg"
+                },
+                "navigation": [
+                    {
+                        "label": "For companies",
+                        "type": "dropdown"
+                    },
+                    {
+                        "label": "For talent",
+                        "type": "dropdown"
+                    }
+                ],
+                "authMatches": [
+                    {
+                        "label": "Log In",
+                        "type": "link"
+                    },
+                    {
+                        "label": "Find jobs",
+                        "type": "button",
+                        "variant": "outline-white"
+                    },
+                    {
+                        "label": "Hire talent",
+                        "type": "button",
+                        "variant": "solid-white"
+                    }
+                ],
+                "subNav": {
+                    "items": [
+                        "Developers",
+                        "Designers",
+                        {
+                            "label": "Marketers",
+                            "active": true
+                        },
+                        "Product Managers",
+                        "Project Managers",
+                        "Assistants",
+                        "Countries"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "hero",
+            "type": "hero-section",
+            "style": {
+                "backgroundColor": "#0b152b",
+                "textColor": "#ffffff"
+            },
+            "content": {
+                "headline": "Hire the <highlight>Top 2%</highlight> of <colored>Freelance Marketing Experts</colored>",
+                "subheadline": "Arc is the easiest way to find and hire vetted remote marketers.",
+                "checklist": [
+                    "Freelance contractors",
+                    "Full-time roles",
+                    "Global teams"
+                ],
+                "cta": {
+                    "label": "Hire talent",
+                    "subtext": "👉 $0 until you hire",
+                    "action": "/hire"
+                },
+                "trustBar": {
+                    "label": "Trusted by",
+                    "logos": [
+                        "Spotify",
+                        "Splice",
+                        "Automattic",
+                        "Udacity"
+                    ]
+                },
+                "rightCard": {
+                    "title": "Remote hiring made easy",
+                    "stats": [
+                        {
+                            "value": "Up to 75%",
+                            "label": "faster to hire"
+                        },
+                        {
+                            "value": "Up to 58%",
+                            "label": "cost savings"
+                        },
+                        {
+                            "value": "800+",
+                            "label": "hires made"
+                        }
+                    ],
+                    "testimonial": {
+                        "quote": "Arc found us a superstar who fit into our culture perfectly.",
+                        "author": "Moishe Groger",
+                        "role": "CEO at Tentaroo",
+                        "rating": 5
+                    }
+                }
+            }
+        },
+        {
+            "id": "talent-preview",
+            "type": "list-section",
+            "content": {
+                "title": "1,684 Remote digital marketers and experts available to hire:",
+                "items": [
+                    {
+                        "name": "Shane K.",
+                        "role": "Digital Marketer",
+                        "location": "United States",
+                        "badge": "Vetted",
+                        "bio": "Experienced digital marketer specializing in SEO and PPC campaigns...",
+                        "cta": "View Profile"
+                    },
+                    {
+                        "name": "Sarah J.",
+                        "role": "Content Strategist",
+                        "location": "Canada",
+                        "badge": "Vetted",
+                        "bio": "Content strategist with a background in tech and SaaS...",
+                        "cta": "View Profile"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "specializations",
+            "type": "grid-links",
+            "content": {
+                "title": "Top remote marketers are just a few clicks away",
+                "description": "Arc offers pre-vetted remote marketers ready to excel in their field. Choose the role you need to get started.",
+                "links": [
+                    "Affiliate marketers",
+                    "Brand strategists",
+                    "Community managers",
+                    "Content marketers",
+                    "Copywriters",
+                    "Digital marketers",
+                    "Email marketers",
+                    "Growth hackers",
+                    "Inbound marketers",
+                    "Influencer marketers",
+                    "Marketing analysts",
+                    "Marketing consultants",
+                    "Marketing managers",
+                    "Performance marketers",
+                    "PPC specialists",
+                    "PR specialists",
+                    "Product marketers",
+                    "SEM specialists",
+                    "SEO specialists",
+                    "Social media marketers"
+                ]
+            }
+        },
+        {
+            "id": "why-choose-arc",
+            "type": "features-grid",
+            "content": {
+                "title": "Why choose Arc to hire digital marketers",
+                "features": [
+                    {
+                        "title": "Pre-vetted talent",
+                        "description": "Our rigorous vetting process ensures you only see top-tier candidates.",
+                        "icon": "vetted-shield"
+                    },
+                    {
+                        "title": "Trusted global talent pool",
+                        "description": "Access hidden gems from around the world.",
+                        "icon": "global-globe"
+                    },
+                    {
+                        "title": "Hire 4x faster",
+                        "description": "Most companies hire in less than 72 hours.",
+                        "icon": "fast-clock"
+                    },
+                    {
+                        "title": "Zero language barrier",
+                        "description": "All candidates are fluent in English and communication-ready.",
+                        "icon": "chat-bubble"
+                    },
+                    {
+                        "title": "No hidden costs",
+                        "description": "Transparent hourly rates suitable for any budget.",
+                        "icon": "money-transparent"
+                    },
+                    {
+                        "title": "We handle everything",
+                        "description": "We manage invoices, payments, and paperwork for you.",
+                        "icon": "document-check"
+                    }
+                ],
+                "cta": {
+                    "label": "Hire a marketer",
+                    "subtext": "Risk-free trial for any hire"
+                }
+            }
+        },
+        {
+            "id": "how-it-works",
+            "type": "steps-section",
+            "content": {
+                "title": "It’s easy to hire with Arc",
+                "steps": [
+                    {
+                        "step": 1,
+                        "title": "Share your requirements",
+                        "description": "Tell us about the role you need to fill and your ideal candidate."
+                    },
+                    {
+                        "step": 2,
+                        "title": "Start interviewing",
+                        "description": "Meet pre-vetted candidates hand-picked for your needs."
+                    },
+                    {
+                        "step": 3,
+                        "title": "Make a hire",
+                        "description": "Onboard your new team member and start working together."
+                    }
+                ]
+            }
+        },
+        {
+            "id": "testimonials",
+            "type": "carousel-section",
+            "content": {
+                "title": "Why clients hire digital marketers with Arc",
+                "items": [
+                    {
+                        "quote": "The quality of talent on Arc is unmatched. We found a <highlight>superstar</highlight> in days.",
+                        "author": "Tech CEO",
+                        "company": "Startup Inc."
+                    }
+                ]
+            }
+        },
+        {
+            "id": "seo-content",
+            "type": "guide-section",
+            "content": {
+                "title": "How to hire top digital marketers",
+                "sections": [
+                    {
+                        "heading": "Common digital marketing roles",
+                        "body": "Digital marketing encompasses a wide range of roles including SEO specialists, content marketers..."
+                    },
+                    {
+                        "heading": "Key skills and qualifications",
+                        "body": "Look for candidates with proven experience in your specific niche..."
+                    },
+                    {
+                        "heading": "Interview questions",
+                        "body": "Ask about past campaigns, tools they use, and how they measure success..."
+                    },
+                    {
+                        "heading": "Cost to hire",
+                        "body": "Rates vary by location and experience level..."
+                    }
+                ]
+            }
+        },
+        {
+            "id": "faq",
+            "type": "accordion-section",
+            "content": {
+                "title": "Frequently Asked Questions",
+                "items": [
+                    {
+                        "question": "What services do digital marketers provide?",
+                        "answer": "They handle everything from SEO and content creation to paid advertising and social media management."
+                    },
+                    {
+                        "question": "Can I hire for short-term projects?",
+                        "answer": "Yes, Arc supports both freelance/contract and full-time hiring."
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cta-banner",
+            "type": "banner",
+            "content": {
+                "text": "Your future digital marketer is just around the corner!",
+                "cta": "Hire talent"
+            }
+        },
+        {
+            "id": "footer",
+            "type": "footer",
+            "content": {
+                "sections": [
+                    {
+                        "title": "Hire",
+                        "links": [
+                            "Developers",
+                            "Designers",
+                            "Marketers",
+                            "Product Managers"
+                        ]
+                    },
+                    {
+                        "title": "Resources",
+                        "links": [
+                            "Blog",
+                            "Pricing",
+                            "About Us"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

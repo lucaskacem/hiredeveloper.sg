@@ -1,0 +1,123 @@
+{
+  "pageUrl": "https://arc.dev/employer-blog/",
+  "images": {
+    "total": 13,
+    "successful": 13,
+    "failed": 0,
+    "skipped": 13,
+    "list": [
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2022/02/Arc-main-logo-160x35-1.png",
+        "file": "Arc-main-logo-160x35-1.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-main-logo-160x35-1.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2022/02/Arc-logo-mobile-119x26-1.png",
+        "file": "Arc-logo-mobile-119x26-1.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-logo-mobile-119x26-1.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2025/03/Arc-Blog-Banner-Mayple-alternatives-1128x635.png",
+        "file": "Arc-Blog-Banner-Mayple-alternatives-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-Blog-Banner-Mayple-alternatives-1128x635.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2025/03/Arc-Blog-Banner-GrowthAssistant-alternatives-1128x635.png",
+        "file": "Arc-Blog-Banner-GrowthAssistant-alternatives-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-Blog-Banner-GrowthAssistant-alternatives-1128x635.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2025/03/Arc-Blog-Banner-Tech-hiring-in-2025-1128x635.png",
+        "file": "Arc-Blog-Banner-Tech-hiring-in-2025-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-Blog-Banner-Tech-hiring-in-2025-1128x635.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2025/03/Arc-Blog-Banner-Marketerhire-alternatives-1128x635.png",
+        "file": "Arc-Blog-Banner-Marketerhire-alternatives-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-Blog-Banner-Marketerhire-alternatives-1128x635.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2025/02/Arc-Blog-Banner-Virtual-assistant-companies-1128x635.png",
+        "file": "Arc-Blog-Banner-Virtual-assistant-companies-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-Blog-Banner-Virtual-assistant-companies-1128x635.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2025/02/Arc-Blog-Banner-Staff-augmentation-1128x635.png",
+        "file": "Arc-Blog-Banner-Staff-augmentation-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-Blog-Banner-Staff-augmentation-1128x635.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2025/02/Arc-Blog-Banner-Outsource-backlink-building-1128x635.png",
+        "file": "Arc-Blog-Banner-Outsource-backlink-building-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-Blog-Banner-Outsource-backlink-building-1128x635.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2024/12/Arc-Blog-Banner-Social-media-marketing-agency-1128x635.png",
+        "file": "Arc-Blog-Banner-Social-media-marketing-agency-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-Blog-Banner-Social-media-marketing-agency-1128x635.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2024/12/Arc-Blog-Banner-SEO-consulting-1128x635.png",
+        "file": "Arc-Blog-Banner-SEO-consulting-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-Blog-Banner-SEO-consulting-1128x635.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2024/12/Arc-Blog-Banner-Best-IT-staffing-agencies-1128x635.png",
+        "file": "Arc-Blog-Banner-Best-IT-staffing-agencies-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-Blog-Banner-Best-IT-staffing-agencies-1128x635.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2024/12/Arc-Blog-Banner-Nearshore-software-development-companies-1128x635.png",
+        "file": "Arc-Blog-Banner-Nearshore-software-development-companies-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/images/Arc-Blog-Banner-Nearshore-software-development-companies-1128x635.png"
+      }
+    ]
+  },
+  "videos": {
+    "total": 0,
+    "successful": 0,
+    "failed": 0,
+    "skipped": 0,
+    "list": []
+  },
+  "timestamp": "2026-02-06T04:50:10.453Z"
+}

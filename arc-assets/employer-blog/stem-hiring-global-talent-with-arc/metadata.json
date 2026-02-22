@@ -1,0 +1,61 @@
+{
+  "pageUrl": "https://arc.dev/employer-blog/stem-hiring-global-talent-with-arc/",
+  "images": {
+    "total": 6,
+    "successful": 6,
+    "failed": 0,
+    "skipped": 4,
+    "list": [
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2022/02/Arc-main-logo-160x35-1.png",
+        "file": "Arc-main-logo-160x35-1.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/pathrise-case-study/images/Arc-main-logo-160x35-1.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2022/02/Arc-logo-mobile-119x26-1.png",
+        "file": "Arc-logo-mobile-119x26-1.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/pathrise-case-study/images/Arc-logo-mobile-119x26-1.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2023/06/Stem-Blog-Banner-1128x635.png",
+        "file": "Stem-Blog-Banner-1128x635.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/category/case-studies/images/Stem-Blog-Banner-1128x635.png"
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2024/04/Stem-Quote-Card-01.png",
+        "file": "Stem-Quote-Card-01.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2024/04/Stem-Quote-Card-02.png",
+        "file": "Stem-Quote-Card-02.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn-employer-wp.arc.dev/wp-content/uploads/2024/08/Remarketing-Trust-09.png",
+        "file": "Remarketing-Trust-09.png",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/employer-blog/pathrise-case-study/images/Remarketing-Trust-09.png"
+      }
+    ]
+  },
+  "videos": {
+    "total": 0,
+    "successful": 0,
+    "failed": 0,
+    "skipped": 0,
+    "list": []
+  },
+  "timestamp": "2026-02-06T04:53:29.717Z"
+}

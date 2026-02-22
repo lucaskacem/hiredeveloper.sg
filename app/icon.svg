@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ADFF"/>
+      <stop offset="100%" stop-color="#0080DD"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <!-- H letter -->
+  <path d="M4.5 7h3v7.5h4.5V7h3v18h-3v-7.5H7.5V25h-3V7z" fill="white"/>
+  <!-- D letter - single clean path with proper bowl curve -->
+  <path d="M17.5 7h4c4.5 0 7.5 3.5 7.5 9s-3 9-7.5 9h-4V7zm3 3v12h1c3 0 4.5-2.5 4.5-6s-1.5-6-4.5-6h-1z" fill="white" fill-rule="evenodd"/>
+</svg>

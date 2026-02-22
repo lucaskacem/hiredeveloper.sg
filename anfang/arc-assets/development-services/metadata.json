@@ -1,0 +1,81 @@
+{
+  "pageUrl": "https://arc.dev/development-services",
+  "images": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0,
+    "skipped": 4,
+    "list": [
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fdevelopment-services%2Fhero.png&w=1200&q=75",
+        "file": "image_02aacd36.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/development-services/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fdevelopment-services%2Fhero.png&w=640&q=75",
+        "file": "image_38162dd5.jpg",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/development-services/images/image_02aacd36.jpg"
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fdevelopment-services%2Freason-1.png&w=256&q=75",
+        "file": "image_324afc7f.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/development-services/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fdevelopment-services%2Freason-1.png&w=96&q=75",
+        "file": "image_69ba5b4e.jpg",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/development-services/images/image_324afc7f.jpg"
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fdevelopment-services%2Freason-2.png&w=256&q=75",
+        "file": "image_7feff273.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/development-services/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fdevelopment-services%2Freason-2.png&w=96&q=75",
+        "file": "image_ad298275.jpg",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/development-services/images/image_7feff273.jpg"
+      },
+      {
+        "url": "https://arc.dev/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fdevelopment-services%2Freason-3.png&w=256&q=75",
+        "file": "image_82660ca3.jpg",
+        "success": true
+      },
+      {
+        "url": "https://arc.dev/development-services/arc-next-landing/_next/image?url=https%3A%2F%2Fcdn.arc.dev%2Farc-next-landing%2Fimages%2Fdevelopment-services%2Freason-3.png&w=96&q=75",
+        "file": "image_61983e07.jpg",
+        "success": true,
+        "skipped": true,
+        "duplicate": true,
+        "source": "/Users/quocle/Desktop/templates/mission/arc-assets/development-services/images/image_82660ca3.jpg"
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/development-services/stats-globe-bg.png",
+        "file": "stats-globe-bg.png",
+        "success": true
+      },
+      {
+        "url": "https://cdn.arc.dev/arc-next-landing/images/development-services/build-team-bg-left.png",
+        "file": "build-team-bg-left.png",
+        "success": true
+      }
+    ]
+  },
+  "videos": {
+    "total": 0,
+    "successful": 0,
+    "failed": 0,
+    "skipped": 0,
+    "list": []
+  },
+  "timestamp": "2026-02-06T04:49:20.950Z"
+}
