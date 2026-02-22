@@ -24,9 +24,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const data = getSubcategoryBySlug(slug);
   if (!data) return {};
+  const year = new Date().getFullYear();
+  let h = 0;
+  for (let i = 0; i < slug.length; i++) h = ((h << 5) - h + slug.charCodeAt(i)) | 0;
+  const showYear = Math.abs(h) % 100 < 30;
   return {
-    title: `Hire ${data.name} in UAE | HireDeveloper.ae`,
-    description: data.metaDescription,
+    title: showYear ? `Hire ${data.name} in UAE - ${year} | HireDeveloper.ae` : `Hire ${data.name} in UAE | HireDeveloper.ae`,
+    description: showYear ? `${data.metaDescription} Updated for ${year}.` : data.metaDescription,
     robots: { index: true, follow: true },
     alternates: {
       canonical: `https://hiredeveloper.ae/hire-developers/${slug}`,
@@ -42,6 +46,20 @@ export default async function DeveloperSubcategoryPage({ params }: Props) {
   const profiles = generateProfiles(data.name, data.skills);
   const guideSections = generateGuideSections(data.name);
   const related = getRelatedSubcategories(slug, 8);
+
+  // Shuffle profile order monthly using seeded random (year + month + slug)
+  const now = new Date();
+  const shuffleSeed = `${now.getFullYear()}-${now.getMonth()}-${slug}`;
+  let seedHash = 0;
+  for (let i = 0; i < shuffleSeed.length; i++) {
+    seedHash = ((seedHash << 5) - seedHash + shuffleSeed.charCodeAt(i)) | 0;
+  }
+  seedHash = Math.abs(seedHash);
+  const shuffledProfiles = [...profiles].sort((a, b) => {
+    const ha = Math.abs(((seedHash << 5) - seedHash + a.name.charCodeAt(0)) | 0);
+    const hb = Math.abs(((seedHash << 5) - seedHash + b.name.charCodeAt(0)) | 0);
+    return ha - hb;
+  });
 
   // Arabic name derived from metaTitleAr
   const dataNameAr = data.metaTitleAr
@@ -294,7 +312,7 @@ export default async function DeveloperSubcategoryPage({ params }: Props) {
         heroDescription={data.heroDescription}
         heroDescriptionAr={heroDescriptionAr}
         slug={slug}
-        profiles={profiles}
+        profiles={shuffledProfiles}
         guideSections={guideSections}
         stats={stats}
         testimonials={testimonials}

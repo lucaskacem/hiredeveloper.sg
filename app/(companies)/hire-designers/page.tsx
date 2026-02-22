@@ -14,9 +14,10 @@ import ResourcesSection from '../components/ResourcesSection';
 import FinalCTA from '../components/FinalCTA';
 import LeadForm from '../components/LeadForm';
 
+const year = new Date().getFullYear();
 export const metadata: Metadata = {
-  title: 'Hire Designers | HireDeveloper.ae',
-  description: 'Hire the best freelance and full-time product designers in Dubai and Abu Dhabi. Vetted UX/UI designers ready for interviews. Save time with pre-screened remote designers.',
+  title: `Hire Designers - ${year} | HireDeveloper.ae`,
+  description: `Hire the best freelance and full-time product designers in Dubai and Abu Dhabi. Vetted UX/UI designers ready for interviews. Updated for ${year}.`,
 };
 
 export default function HireDesignersPage() {

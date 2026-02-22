@@ -10,9 +10,10 @@ import FAQSection from '../components/FAQSection';
 import ResourcesSection from '../components/ResourcesSection';
 import FinalCTA from '../components/FinalCTA';
 
+const year = new Date().getFullYear();
 export const metadata: Metadata = {
-  title: 'Hire Project Managers | HireDeveloper.ae',
-  description: 'Hire experienced remote project managers, Scrum Masters, and program managers in Dubai and Abu Dhabi. Over 6,700 vetted experts with proven track records. Start risk-free today.',
+  title: `Hire Project Managers - ${year} | HireDeveloper.ae`,
+  description: `Hire experienced remote project managers, Scrum Masters, and program managers in Dubai and Abu Dhabi. Over 6,700 vetted experts with proven track records. Updated for ${year}.`,
 };
 
 export default function HireProjectManagersPage() {

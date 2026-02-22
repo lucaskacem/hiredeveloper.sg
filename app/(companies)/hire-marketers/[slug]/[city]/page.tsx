@@ -120,8 +120,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const country = cityCtx.country.name;
   const sk = sub.skills;
   const h = metaHash(slug + citySlug);
+  const year = new Date().getFullYear();
+  const showYear = h % 100 < 30;
 
-  const titles = [
+  const titles = showYear ? [
+    `Hire ${spec} in ${city} - ${year} | HireDeveloper.ae`,
+    `${spec} in ${city} — Top 2% Vetted ${year} | HireDeveloper.ae`,
+    `Hire Freelance ${spec} in ${city} - ${year} | HireDeveloper.ae`,
+    `Best ${spec} in ${city}, ${country} - ${year} | HireDeveloper.ae`,
+    `Find ${spec} in ${city} — Matched in 48h | HireDeveloper.ae`,
+    `${city} ${spec} for Hire - ${year} | HireDeveloper.ae`,
+    `Hire Remote ${spec} in ${city} - ${year} | HireDeveloper.ae`,
+  ] : [
     `Hire ${spec} in ${city} | HireDeveloper.ae`,
     `${spec} in ${city} — Top 2% Vetted | HireDeveloper.ae`,
     `Hire Freelance ${spec} in ${city} | HireDeveloper.ae`,

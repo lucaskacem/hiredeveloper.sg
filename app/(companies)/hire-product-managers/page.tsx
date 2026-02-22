@@ -10,9 +10,10 @@ import FAQSection from '../components/FAQSection';
 import ResourcesSection from '../components/ResourcesSection';
 import FinalCTA from '../components/FinalCTA';
 
+const year = new Date().getFullYear();
 export const metadata: Metadata = {
-  title: 'Hire Product Managers | HireDeveloper.ae',
-  description: 'Hire experienced remote product managers, product owners, and technical PMs in Dubai and Abu Dhabi. Over 5,600 vetted experts ready for interviews. Start risk-free today.',
+  title: `Hire Product Managers - ${year} | HireDeveloper.ae`,
+  description: `Hire experienced remote product managers, product owners, and technical PMs in Dubai and Abu Dhabi. Over 5,600 vetted experts ready for interviews. Updated for ${year}.`,
 };
 
 export default function HireProductManagersPage() {

@@ -15,9 +15,10 @@ import HiringGuideSection from '../components/HiringGuideSection';
 import Breadcrumb from '../components/Breadcrumb';
 import RelatedLinks from '../components/RelatedLinks';
 
+const year = new Date().getFullYear();
 export const metadata = {
-    title: 'Hire Marketers | HireDeveloper.ae',
-    description: 'Hire the best remote marketers, growth experts, and content strategists in Dubai and Abu Dhabi. Over 3,400 vetted freelance and full-time marketing professionals ready for interviews.',
+    title: `Hire Marketers - ${year} | HireDeveloper.ae`,
+    description: `Hire the best remote marketers, growth experts, and content strategists in Dubai and Abu Dhabi. Over 3,400 vetted freelance and full-time marketing professionals ready for interviews. Updated for ${year}.`,
     alternates: {
       canonical: 'https://hiredeveloper.ae/hire-marketers',
     },

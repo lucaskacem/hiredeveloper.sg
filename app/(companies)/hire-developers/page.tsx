@@ -18,9 +18,10 @@ import Breadcrumb from '../components/Breadcrumb';
 import LeadForm from '../components/LeadForm';
 import InlineCTABanner from '../components/InlineCTABanner';
 
+const year = new Date().getFullYear();
 export const metadata: Metadata = {
-  title: 'Hire Top Remote Developers | HireDeveloper.ae',
-  description: 'Hire the best remote developers, engineers, and programmers. Over 90,000 vetted freelance and full-time experts ready for interviews. Start risk-free today.',
+  title: `Hire Top Remote Developers - ${year} | HireDeveloper.ae`,
+  description: `Hire the best remote developers, engineers, and programmers. Over 90,000 vetted freelance and full-time experts ready for interviews. Updated for ${year}.`,
   alternates: {
     canonical: 'https://hiredeveloper.ae/hire-developers',
   },

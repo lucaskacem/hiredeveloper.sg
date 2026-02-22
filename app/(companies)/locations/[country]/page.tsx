@@ -25,9 +25,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { country } = await params;
   const data = getCountryBySlug(country);
   if (!data) return {};
+  const year = new Date().getFullYear();
+  let h = 0;
+  for (let i = 0; i < country.length; i++) h = ((h << 5) - h + country.charCodeAt(i)) | 0;
+  const showYear = Math.abs(h) % 100 < 30;
   return {
-    title: `Hire Remote Developers in ${data.name} | HireDeveloper.ae`,
-    description: data.metaDescription,
+    title: showYear ? `Hire Remote Developers in ${data.name} - ${year} | HireDeveloper.ae` : `Hire Remote Developers in ${data.name} | HireDeveloper.ae`,
+    description: showYear ? `${data.metaDescription} Top-rated in ${year}.` : data.metaDescription,
     robots: { index: true, follow: true },
     alternates: {
       canonical: `https://hiredeveloper.ae/locations/${country}`,
@@ -47,6 +51,20 @@ export default async function CountryPage({ params }: Props) {
       r.cities.some((c) => c.slug === city.slug),
     );
     return { ...city, regionSlug: region?.slug ?? '' };
+  });
+
+  // Shuffle city display order monthly using seeded random
+  const now = new Date();
+  const shuffleSeed = `${now.getFullYear()}-${now.getMonth()}-${country}`;
+  let seedHash = 0;
+  for (let i = 0; i < shuffleSeed.length; i++) {
+    seedHash = ((seedHash << 5) - seedHash + shuffleSeed.charCodeAt(i)) | 0;
+  }
+  seedHash = Math.abs(seedHash);
+  const shuffledCities = [...topCitiesWithRegion].sort((a, b) => {
+    const ha = Math.abs(((seedHash << 5) - seedHash + a.name.charCodeAt(0)) | 0);
+    const hb = Math.abs(((seedHash << 5) - seedHash + b.name.charCodeAt(0)) | 0);
+    return ha - hb;
   });
 
   const otherCountries = countries.filter((c) => c.slug !== country);
@@ -273,7 +291,7 @@ export default async function CountryPage({ params }: Props) {
             Top Cities in {data.name}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {topCitiesWithRegion.map((city) => (
+            {shuffledCities.map((city) => (
               <Link
                 key={city.slug}
                 href={`/locations/${country}/${city.regionSlug}/${city.slug}`}

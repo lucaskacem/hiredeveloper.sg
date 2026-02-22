@@ -10,9 +10,10 @@ import FAQSection from '../components/FAQSection';
 import ResourcesSection from '../components/ResourcesSection';
 import FinalCTA from '../components/FinalCTA';
 
+const year = new Date().getFullYear();
 export const metadata: Metadata = {
-  title: 'Hire Assistants | HireDeveloper.ae',
-  description: 'Hire vetted virtual assistants, executive assistants, and administrative assistants in Dubai and Abu Dhabi. Over 4,500 remote experts ready for interviews. Start risk-free today.',
+  title: `Hire Assistants - ${year} | HireDeveloper.ae`,
+  description: `Hire vetted virtual assistants, executive assistants, and administrative assistants in Dubai and Abu Dhabi. Over 4,500 remote experts ready for interviews. Updated for ${year}.`,
 };
 
 export default function HireAssistantsPage() {

@@ -26,9 +26,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data = getCityByPath(country, region, city);
   if (!data) return {};
 
+  const year = new Date().getFullYear();
+  const hashStr = `${country}-${region}-${city}`;
+  let h = 0;
+  for (let i = 0; i < hashStr.length; i++) h = ((h << 5) - h + hashStr.charCodeAt(i)) | 0;
+  const showYear = Math.abs(h) % 100 < 30;
   return {
-    title: `Hire Remote Developers in ${data.city.name} | HireDeveloper.ae`,
-    description: `Find and hire the best remote developers in ${data.city.name}, ${data.region.name}. Access vetted programmers with local expertise from a city of ${data.city.population.toLocaleString('en-US')} residents.`,
+    title: showYear ? `Hire Remote Developers in ${data.city.name} - ${year} | HireDeveloper.ae` : `Hire Remote Developers in ${data.city.name} | HireDeveloper.ae`,
+    description: showYear ? `Find and hire the best remote developers in ${data.city.name}, ${data.region.name}. Access vetted programmers with local expertise. Top-rated in ${year}.` : `Find and hire the best remote developers in ${data.city.name}, ${data.region.name}. Access vetted programmers with local expertise.`,
     robots: { index: true, follow: true },
     alternates: {
       canonical: `https://hiredeveloper.ae/locations/${country}/${region}/${city}`,
