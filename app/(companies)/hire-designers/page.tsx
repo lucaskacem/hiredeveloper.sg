@@ -69,21 +69,21 @@ export default function HireDesignersPage() {
       author: "M.G.",
       title: "CEO",
       company: "SaaS Company",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/22.jpg"
     },
     {
       quote: "I found former founders, senior engineers, and even CMOs in less than 48 hours.",
       author: "C.B.",
       title: "Founder & CEO",
       company: "Tech Startup",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/35.jpg"
     },
     {
       quote: "Highly qualified and diverse talent pool at affordable rates!",
       author: "K.H.",
       title: "Lead Recruiter",
       company: "E-Commerce Company",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/41.jpg"
     }
   ];
 
@@ -96,14 +96,14 @@ export default function HireDesignersPage() {
       company: "SaaS Company"
     },
     {
-      avatar: "",
+      avatar: "https://randomuser.me/api/portraits/men/48.jpg",
       quote: "Finding top designers has never been easier. HireDeveloper.ae's vetting process ensures we only interview the best.",
       author: "M.C.",
       title: "Product Director",
       company: "FinTech Startup"
     },
     {
-      avatar: "",
+      avatar: "https://randomuser.me/api/portraits/men/53.jpg",
       quote: "We built our entire design team through HireDeveloper.ae. The quality and speed of hiring was a game-changer for us.",
       author: "J.M.",
       title: "VP of Product",

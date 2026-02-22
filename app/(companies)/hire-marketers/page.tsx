@@ -70,14 +70,14 @@ export default function HireMarketersPage() {
             author: "S.J.",
             title: "CMO",
             company: "Dubai Tech Startup",
-            avatar: ""
+            avatar: "https://randomuser.me/api/portraits/women/28.jpg"
         },
         {
             quote: "The quality of pre-vetted marketers saved us countless hours in the recruiting process.",
             author: "M.R.",
             title: "Founder",
             company: "Abu Dhabi SaaS Company",
-            avatar: ""
+            avatar: "https://randomuser.me/api/portraits/men/36.jpg"
         }
     ];
 
@@ -87,14 +87,14 @@ export default function HireMarketersPage() {
             author: "L.K.",
             title: "VP Marketing",
             company: "E-Commerce Company",
-            avatar: ""
+            avatar: "https://randomuser.me/api/portraits/women/33.jpg"
         },
         {
             quote: "We hired an SEO expert and a content strategist — both have been outstanding additions to our team.",
             author: "T.W.",
             title: "CEO",
             company: "FinTech Startup",
-            avatar: ""
+            avatar: "https://randomuser.me/api/portraits/men/45.jpg"
         }
     ];
 

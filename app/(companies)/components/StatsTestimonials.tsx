@@ -87,9 +87,13 @@ export default function StatsTestimonials({ stats, testimonials }: StatsTestimon
 
               {/* Author Info */}
               <div className="flex items-center gap-3">
-                <div className={`w-12 h-12 rounded-full ${avatarGradients[index % avatarGradients.length]} flex items-center justify-center flex-shrink-0 shadow-md`}>
-                  <span className="text-white text-sm font-bold">{getInitials(testimonial.author)}</span>
-                </div>
+                {testimonial.avatar && testimonial.avatar.startsWith('http') ? (
+                  <img src={testimonial.avatar} alt={testimonial.author} className="w-12 h-12 rounded-full object-cover flex-shrink-0 shadow-md" />
+                ) : (
+                  <div className={`w-12 h-12 rounded-full ${avatarGradients[index % avatarGradients.length]} flex items-center justify-center flex-shrink-0 shadow-md`}>
+                    <span className="text-white text-sm font-bold">{getInitials(testimonial.author)}</span>
+                  </div>
+                )}
                 <div>
                   <div className="font-semibold text-gray-900">{testimonial.author}</div>
                   <div className="text-sm text-gray-600">

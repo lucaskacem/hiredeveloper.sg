@@ -70,21 +70,21 @@ export default function HireDevelopersPage() {
       author: "M.G.",
       title: "CEO",
       company: "SaaS Company",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/22.jpg"
     },
     {
       quote: "I found former founders, senior engineers, and even CMOs in less than 48 hours.",
       author: "C.B.",
       title: "Founder & CEO",
       company: "Tech Startup",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/35.jpg"
     },
     {
       quote: "Highly qualified and diverse talent pool at affordable rates!",
       author: "K.H.",
       title: "Lead Recruiter",
       company: "E-Commerce Firm",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/41.jpg"
     }
   ];
 
@@ -186,14 +186,14 @@ export default function HireDevelopersPage() {
       author: "M.G.",
       title: "CEO",
       company: "SaaS Company",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/22.jpg"
     },
     {
       quote: "I found former founders, senior engineers, and even CMOs in less than 48 hours.",
       author: "C.B.",
       title: "Founder & CEO",
       company: "Tech Startup",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/35.jpg"
     },
   ];
 

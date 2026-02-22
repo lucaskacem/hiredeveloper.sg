@@ -42,21 +42,21 @@ export default function HireAssistantsPage() {
       author: "Robert Johnson",
       title: "CEO",
       company: "StartupCo",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/71.jpg"
     },
     {
       quote: "Found an exceptional executive assistant who handles everything flawlessly.",
       author: "Amanda Smith",
       title: "Founder",
       company: "GrowthVentures",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/women/56.jpg"
     },
     {
       quote: "The assistant we hired is professional, efficient, and incredibly organized.",
       author: "Chris Lee",
       title: "COO",
       company: "BusinessInc",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/74.jpg"
     }
   ];
 

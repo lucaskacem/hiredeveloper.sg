@@ -8,7 +8,8 @@ export default function TalentPreview() {
             time: 'UTC-5',
             bio: 'Experienced digital marketer specializing in SEO and PPC campaigns, with a proven track record of driving growth for SaaS startups.',
             tags: ['SEO', 'PPC', 'Content Marketing'],
-            gradient: 'bg-gradient-to-br from-blue-500 to-blue-600'
+            gradient: 'bg-gradient-to-br from-blue-500 to-blue-600',
+            imageUrl: 'https://randomuser.me/api/portraits/men/32.jpg'
         },
         {
             initials: 'SJ',
@@ -18,7 +19,8 @@ export default function TalentPreview() {
             time: 'UTC-5',
             bio: 'Content strategist with a background in tech and SaaS. Expert at creating engaging content that drives conversions and brand awareness.',
             tags: ['Content Strategy', 'Copywriting', 'Social Media'],
-            gradient: 'bg-gradient-to-br from-emerald-500 to-emerald-600'
+            gradient: 'bg-gradient-to-br from-emerald-500 to-emerald-600',
+            imageUrl: 'https://randomuser.me/api/portraits/women/44.jpg'
         },
         {
             initials: 'MD',
@@ -28,7 +30,8 @@ export default function TalentPreview() {
             time: 'UTC+0',
             bio: 'Data-driven growth marketer with over 7 years of experience. I help businesses scale through paid acquisition and conversion optimization.',
             tags: ['Growth Marketing', 'Facebook Ads', 'Google Ads'],
-            gradient: 'bg-gradient-to-br from-purple-500 to-purple-600'
+            gradient: 'bg-gradient-to-br from-purple-500 to-purple-600',
+            imageUrl: 'https://randomuser.me/api/portraits/men/67.jpg'
         }
     ];
 
@@ -44,9 +47,13 @@ export default function TalentPreview() {
                         <div key={index} className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 flex flex-col md:flex-row gap-8 items-start hover:shadow-md transition-shadow">
                             {/* Avatar Area */}
                             <div className="shrink-0 flex flex-col items-center gap-3 md:w-48">
-                                <div className={`w-24 h-24 rounded-full ${talent.gradient} flex items-center justify-center text-white text-2xl font-bold border-4 border-white shadow-md`}>
-                                    {talent.initials}
-                                </div>
+                                {talent.imageUrl ? (
+                                    <img src={talent.imageUrl} alt={talent.name} className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md" />
+                                ) : (
+                                    <div className={`w-24 h-24 rounded-full ${talent.gradient} flex items-center justify-center text-white text-2xl font-bold border-4 border-white shadow-md`}>
+                                        {talent.initials}
+                                    </div>
+                                )}
                                 <div className="text-center">
                                     <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#d8f0df] text-[#1c6e33] text-xs font-bold uppercase tracking-wider rounded-full">
                                         <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">

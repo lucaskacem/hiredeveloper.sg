@@ -42,21 +42,21 @@ export default function HireProjectManagersPage() {
       author: "Susan Miller",
       title: "Director of Operations",
       company: "EnterpriseInc",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/women/51.jpg"
     },
     {
       quote: "We found a certified PMP who understood our project requirements immediately.",
       author: "John Davis",
       title: "VP of Engineering",
       company: "TechCorp",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/61.jpg"
     },
     {
       quote: "The Scrum Master we hired transformed our agile processes.",
       author: "Maria Garcia",
       title: "CTO",
       company: "AgileTeam",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/women/63.jpg"
     }
   ];
 

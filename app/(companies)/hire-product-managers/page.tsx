@@ -42,21 +42,21 @@ export default function HireProductManagersPage() {
       author: "David Park",
       title: "CEO",
       company: "ProductCo",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/29.jpg"
     },
     {
       quote: "We found an incredible technical PM who bridges the gap between engineering and business.",
       author: "Rachel Green",
       title: "CTO",
       company: "TechVenture",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/women/39.jpg"
     },
     {
       quote: "The PM we hired helped us prioritize our roadmap and deliver faster.",
       author: "Mark Wilson",
       title: "VP of Engineering",
       company: "FastShip",
-      avatar: ""
+      avatar: "https://randomuser.me/api/portraits/men/52.jpg"
     }
   ];
 

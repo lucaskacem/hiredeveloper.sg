@@ -39,9 +39,13 @@ export default function CompaniesTestimonials({ testimonials }: CompaniesTestimo
               </p>
 
               <div className="flex items-center gap-4">
-                <div className={`w-12 h-12 rounded-full ${avatarGradients[index % avatarGradients.length]} flex items-center justify-center flex-shrink-0 shadow-md`}>
-                  <span className="text-white font-bold text-sm">{getInitials(testimonial.author)}</span>
-                </div>
+                {testimonial.avatar && testimonial.avatar.startsWith('http') ? (
+                  <img src={testimonial.avatar} alt={testimonial.author} className="w-12 h-12 rounded-full object-cover flex-shrink-0 shadow-md" />
+                ) : (
+                  <div className={`w-12 h-12 rounded-full ${avatarGradients[index % avatarGradients.length]} flex items-center justify-center flex-shrink-0 shadow-md`}>
+                    <span className="text-white font-bold text-sm">{getInitials(testimonial.author)}</span>
+                  </div>
+                )}
                 <div>
                   <div className="font-semibold text-gray-900">{testimonial.author}</div>
                   <div className="text-sm text-gray-600">

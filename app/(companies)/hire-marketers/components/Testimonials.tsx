@@ -20,9 +20,7 @@ export default function Testimonials() {
                         </blockquote>
 
                         <div className="flex flex-col items-center">
-                            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-md mb-4">
-                                <span className="text-white font-bold text-lg">AC</span>
-                            </div>
+                            <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Alex Chen" className="w-14 h-14 rounded-full object-cover shadow-md mb-4" />
                             <div className="font-bold text-[#0b152b] text-lg">Alex Chen</div>
                             <div className="text-gray-500">CMO at GrowthTech</div>
                         </div>
