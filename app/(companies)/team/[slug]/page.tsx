@@ -11,18 +11,19 @@ export function generateStaticParams() {
   return getAllTeamMembers().map((member) => ({ slug: member.slug }));
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
-}): Metadata {
-  const member = getTeamMemberBySlug(params.slug);
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const member = getTeamMemberBySlug(slug);
   if (!member) {
-    return { title: 'Team Member Not Found | HireDeveloper.ae' };
+    return { title: 'Team Member Not Found | HireDeveloper.sg' };
   }
   return {
-    title: `Hire ${member.nameEn} - ${member.roleEn} | HireDeveloper.ae`,
-    description: `${member.nameEn} is a ${member.roleEn} based in ${member.location} with ${member.yearsExperience} years of experience. Hire vetted remote talent on HireDeveloper.ae.`,
+    title: `Hire ${member.nameEn} - ${member.roleEn} | HireDeveloper.sg`,
+    description: `${member.nameEn} is a ${member.roleEn} based in ${member.location} with ${member.yearsExperience} years of experience. Hire vetted remote talent on HireDeveloper.sg.`,
   };
 }
 
@@ -48,12 +49,13 @@ const avatarGradients = [
 
 /* ---------- Page ---------- */
 
-export default function TeamMemberPage({
+export default async function TeamMemberPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const member = getTeamMemberBySlug(params.slug);
+  const { slug } = await params;
+  const member = getTeamMemberBySlug(slug);
   if (!member) notFound();
 
   const gradient = avatarGradients[member.id % avatarGradients.length];
@@ -137,26 +139,12 @@ export default function TeamMemberPage({
 
             {/* Info */}
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl font-bold mb-1">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
                 {member.nameEn}
               </h1>
-              <p
-                className="text-lg text-white/50 font-medium mb-4"
-                dir="rtl"
-                lang="ar"
-              >
-                {member.nameAr}
-              </p>
 
-              <p className="text-xl text-[rgb(0,159,255)] font-semibold mb-1">
+              <p className="text-xl text-[rgb(0,159,255)] font-semibold mb-6">
                 {member.roleEn}
-              </p>
-              <p
-                className="text-base text-white/40 font-medium mb-6"
-                dir="rtl"
-                lang="ar"
-              >
-                {member.roleAr}
               </p>
 
               {/* Meta row */}
@@ -225,15 +213,6 @@ export default function TeamMemberPage({
           <p className="text-white/80 leading-relaxed text-lg max-w-3xl">
             {member.bioEn}
           </p>
-          <div
-            dir="rtl"
-            lang="ar"
-            className="mt-6 p-6 rounded-lg bg-white/[0.03] border border-white/5 max-w-3xl"
-          >
-            <p className="text-white/60 leading-relaxed text-base font-[var(--font-noto-sans-arabic)]">
-              {member.bioAr}
-            </p>
-          </div>
         </section>
 
         {/* --- Specialty --- */}
@@ -248,13 +227,6 @@ export default function TeamMemberPage({
             </h3>
             <p className="text-white/70 leading-relaxed">
               {member.skillLabelEn}
-            </p>
-            <p
-              dir="rtl"
-              lang="ar"
-              className="text-white/40 leading-relaxed mt-3 text-sm"
-            >
-              {member.skillLabelAr}
             </p>
           </div>
         </section>

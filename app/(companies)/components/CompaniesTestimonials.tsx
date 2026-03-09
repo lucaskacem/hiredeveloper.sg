@@ -25,15 +25,15 @@ function getInitials(name: string): string {
 
 export default function CompaniesTestimonials({ testimonials }: CompaniesTestimonialsProps) {
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 w-full">
-        <h2 className="text-[40px] font-bold text-gray-900 text-center mb-12">
+    <section className="bg-gray-50 py-10 md:py-16 lg:py-20 overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+        <h2 className="text-[22px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-bold text-gray-900 text-center mb-8 md:mb-12">
           What Companies Say
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-lg p-8 shadow-sm">
+            <div key={index} className="bg-white rounded-lg p-5 md:p-8 shadow-sm">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 "{testimonial.quote}"
               </p>

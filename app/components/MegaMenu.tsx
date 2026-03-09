@@ -188,7 +188,7 @@ export default function MegaMenu() {
         <a
           key={cat.key}
           href={cat.href}
-          className={`text-[14px] whitespace-nowrap transition-colors py-3 block ${
+          className={`text-[13px] md:text-[14px] whitespace-nowrap transition-colors py-3 block shrink-0 ${
             activeCategory === cat.key
               ? 'text-white'
               : 'text-gray-300 hover:text-white'

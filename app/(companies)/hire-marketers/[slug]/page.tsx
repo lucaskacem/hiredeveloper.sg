@@ -29,11 +29,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   for (let i = 0; i < slug.length; i++) h = ((h << 5) - h + slug.charCodeAt(i)) | 0;
   const showYear = Math.abs(h) % 100 < 30;
   return {
-    title: showYear ? `Hire ${data.name} - ${year} | HireDeveloper.ae` : `Hire ${data.name} | HireDeveloper.ae`,
+    title: showYear ? `Hire ${data.name} - ${year} | HireDeveloper.sg` : `Hire ${data.name} | HireDeveloper.sg`,
     description: showYear ? `${data.metaDescription} Updated for ${year}.` : data.metaDescription,
     robots: { index: true, follow: true },
     alternates: {
-      canonical: `https://hiredeveloper.ae/hire-marketers/${slug}`,
+      canonical: `https://hiredeveloper.sg/hire-marketers/${slug}`,
     },
   };
 }
@@ -61,36 +61,24 @@ export default async function MarketerSubcategoryPage({ params }: Props) {
     return ha - hb;
   });
 
-  // Arabic name derived from metaTitleAr
-  const dataNameAr = data.metaTitleAr
-    ? data.metaTitleAr.replace(' | HireDeveloper.ae', '').replace('توظيف ', '')
-    : data.name;
-
-  // Arabic hero description fallback
-  const heroDescriptionAr = data.metaDescriptionAr || data.heroDescription;
-
   const stats = [
-    { prefix: 'Up to', prefixAr: 'حتى', value: '75%', label: 'faster hiring', labelAr: 'توظيف أسرع' },
-    { prefix: 'Up to', prefixAr: 'حتى', value: '58%', label: 'cost savings', labelAr: 'توفير في التكاليف' },
-    { value: `${data.heroCount.toLocaleString('en-US')}+`, label: `${data.name} available`, labelAr: `${dataNameAr} متاحون` },
+    { prefix: 'Up to', value: '75%', label: 'faster hiring' },
+    { prefix: 'Up to', value: '58%', label: 'cost savings' },
+    { value: `${data.heroCount.toLocaleString('en-US')}+`, label: `${data.name} available` },
   ];
 
   const testimonials = [
     {
-      quote: `The quality of ${data.name} at HireDeveloper.ae is outstanding. We found the perfect candidate in less than a week.`,
-      quoteAr: `جودة ${dataNameAr} في HireDeveloper.ae ممتازة. وجدنا المرشح المثالي في أقل من أسبوع.`,
+      quote: `The quality of ${data.name} at HireDeveloper.sg is outstanding. We found the perfect candidate in less than a week.`,
       author: 'M.G.',
       title: 'CEO',
-      titleAr: 'الرئيس التنفيذي',
       company: 'SaaS Company',
       avatar: 'https://randomuser.me/api/portraits/men/22.jpg',
     },
     {
       quote: 'I found former founders, senior engineers, and even CMOs in less than 48 hours.',
-      quoteAr: 'وجدت مؤسسين سابقين ومهندسين كبار وحتى مدراء تسويق في أقل من 48 ساعة.',
       author: 'C.B.',
       title: 'Founder & CEO',
-      titleAr: 'المؤسس والرئيس التنفيذي',
       company: 'Tech Startup',
       avatar: 'https://randomuser.me/api/portraits/men/35.jpg',
     },
@@ -100,120 +88,55 @@ export default async function MarketerSubcategoryPage({ params }: Props) {
     {
       number: '01',
       title: 'Request',
-      titleAr: 'الطلب',
       description: `Describe the ideal ${data.name} you are looking for.`,
-      descriptionAr: `صِف ${dataNameAr} المثاليين الذين تبحث عنهم.`,
       subtext: 'Tell us about the role, technical requirements, and budget.',
-      subtextAr: 'أخبرنا عن الدور والمتطلبات والميزانية.',
       image: 'request.png',
     },
     {
       number: '02',
       title: 'Interview',
-      titleAr: 'المقابلة',
       description: `Receive vetted ${data.name} profiles that match your requirements.`,
-      descriptionAr: `احصل على ملفات ${dataNameAr} المعتمدين التي تطابق متطلباتك.`,
       subtext: `Select the ${data.name} you would like to interview.`,
-      subtextAr: `اختر ${dataNameAr} الذين ترغب في مقابلتهم.`,
       image: 'interview.png',
     },
     {
       number: '03',
       title: 'Hire',
-      titleAr: 'التوظيف',
       description: `When you are ready, hire the preferred ${data.name}.`,
-      descriptionAr: `عندما تكون جاهزاً، وظّف ${dataNameAr} المفضلين.`,
       subtext: 'Sign an NDA, and we handle the paperwork.',
-      subtextAr: 'وقّع اتفاقية عدم إفشاء ونحن نتولى الأوراق.',
       image: 'hire.png',
     },
   ];
 
-  const relatedLinks = related.map((r) => {
-    const rNameAr = r.metaTitleAr
-      ? r.metaTitleAr.replace(' | HireDeveloper.ae', '').replace('توظيف ', '')
-      : r.name;
-    return {
-      label: r.name,
-      labelAr: rNameAr,
-      href: `/hire-marketers/${r.slug}`,
-    };
-  });
+  const relatedLinks = related.map((r) => ({
+    label: r.name,
+    href: `/hire-marketers/${r.slug}`,
+  }));
 
   const locationNames: Record<string, string> = {
-    uae: 'UAE',
-    'saudi-arabia': 'Saudi Arabia',
-    qatar: 'Qatar',
-    bahrain: 'Bahrain',
-    kuwait: 'Kuwait',
-    oman: 'Oman',
-    dubai: 'Dubai',
-    'abu-dhabi': 'Abu Dhabi',
-    sharjah: 'Sharjah',
-    ajman: 'Ajman',
-    'ras-al-khaimah': 'Ras Al Khaimah',
-    fujairah: 'Fujairah',
-    'umm-al-quwain': 'Umm Al Quwain',
-    riyadh: 'Riyadh',
-    jeddah: 'Jeddah',
-    dammam: 'Dammam',
-    doha: 'Doha',
-    manama: 'Manama',
-    muscat: 'Muscat',
-    'kuwait-city': 'Kuwait City',
-  };
-
-  const locationNamesAr: Record<string, string> = {
-    uae: 'الإمارات',
-    'saudi-arabia': 'السعودية',
-    qatar: 'قطر',
-    bahrain: 'البحرين',
-    kuwait: 'الكويت',
-    oman: 'عُمان',
-    dubai: 'دبي',
-    'abu-dhabi': 'أبوظبي',
-    sharjah: 'الشارقة',
-    ajman: 'عجمان',
-    'ras-al-khaimah': 'رأس الخيمة',
-    fujairah: 'الفجيرة',
-    'umm-al-quwain': 'أم القيوين',
-    riyadh: 'الرياض',
-    jeddah: 'جدة',
-    dammam: 'الدمام',
-    doha: 'الدوحة',
-    manama: 'المنامة',
-    muscat: 'مسقط',
-    'kuwait-city': 'مدينة الكويت',
+    singapore: 'Singapore',
+    'marina-bay': 'Marina Bay',
+    'jurong-east': 'Jurong East',
+    tampines: 'Tampines',
+    punggol: 'Punggol',
+    woodlands: 'Woodlands',
+    sengkang: 'Sengkang',
   };
 
   // Map city/country slugs to correct location URLs
   const locationHrefs: Record<string, string> = {
-    uae: '/locations/uae',
-    'saudi-arabia': '/locations/saudi-arabia',
-    qatar: '/locations/qatar',
-    bahrain: '/locations/bahrain',
-    kuwait: '/locations/kuwait',
-    oman: '/locations/oman',
-    dubai: '/locations/uae/dubai/dubai',
-    'abu-dhabi': '/locations/uae/abu-dhabi/abu-dhabi',
-    sharjah: '/locations/uae/sharjah/sharjah',
-    ajman: '/locations/uae/ajman/ajman',
-    'ras-al-khaimah': '/locations/uae/ras-al-khaimah/ras-al-khaimah',
-    fujairah: '/locations/uae/fujairah/fujairah',
-    'umm-al-quwain': '/locations/uae/umm-al-quwain/umm-al-quwain',
-    riyadh: '/locations/saudi-arabia/riyadh-region/riyadh',
-    jeddah: '/locations/saudi-arabia/makkah-region/jeddah',
-    dammam: '/locations/saudi-arabia/eastern-province/dammam',
-    doha: '/locations/qatar/qatar/doha',
-    manama: '/locations/bahrain/bahrain/manama',
-    muscat: '/locations/oman/oman/muscat',
-    'kuwait-city': '/locations/kuwait/kuwait/kuwait-city',
+    singapore: '/locations/singapore',
+    'marina-bay': '/locations/singapore/central-region/marina-bay',
+    'jurong-east': '/locations/singapore/west-region/jurong-east',
+    tampines: '/locations/singapore/east-region/tampines',
+    punggol: '/locations/singapore/north-east-region/punggol',
+    woodlands: '/locations/singapore/north-region/woodlands',
+    sengkang: '/locations/singapore/north-east-region/sengkang',
   };
 
-  const countrySlugs = new Set(['uae', 'saudi-arabia', 'qatar', 'bahrain', 'kuwait', 'oman']);
+  const countrySlugs = new Set(['singapore']);
   const locationLinks = data.relatedLocations.map((loc) => ({
     label: `${data.name} in ${locationNames[loc] || loc}`,
-    labelAr: `${dataNameAr} في ${locationNamesAr[loc] || loc}`,
     href: countrySlugs.has(loc)
       ? (locationHrefs[loc] || `/locations/${loc}`)
       : `/hire-marketers/${slug}/${loc}`,
@@ -225,7 +148,6 @@ export default async function MarketerSubcategoryPage({ params }: Props) {
       c.regions.flatMap((r) =>
         r.cities.map((city) => ({
           name: city.name,
-          nameAr: city.nameAr,
           slug: city.slug,
           population: city.population,
         }))
@@ -236,29 +158,28 @@ export default async function MarketerSubcategoryPage({ params }: Props) {
 
   const cityLinks = topCities.map((c) => ({
     label: `${data.name} in ${c.name}`,
-    labelAr: `${dataNameAr} في ${c.nameAr}`,
     href: `/hire-marketers/${slug}/${c.slug}`,
   }));
 
   const breadcrumbItems = [
-    { label: 'Home', labelAr: 'الرئيسية', href: '/' },
-    { label: 'Hire Marketers', labelAr: 'وظّف مسوّقين', href: '/hire-marketers' },
-    { label: data.name, labelAr: dataNameAr, href: `/hire-marketers/${slug}` },
+    { label: 'Home', href: '/' },
+    { label: 'Hire Marketers', href: '/hire-marketers' },
+    { label: data.name, href: `/hire-marketers/${slug}` },
   ];
 
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: `Hire ${data.name} - HireDeveloper.ae`,
+    name: `Hire ${data.name} - HireDeveloper.sg`,
     description: data.metaDescription,
-    url: `https://hiredeveloper.ae/hire-marketers/${slug}`,
+    url: `https://hiredeveloper.sg/hire-marketers/${slug}`,
     provider: {
       '@type': 'Organization',
-      name: 'HireDeveloper.ae',
-      url: 'https://hiredeveloper.ae',
+      name: 'HireDeveloper.sg',
+      url: 'https://hiredeveloper.sg',
     },
     serviceType: `${data.name} Recruitment`,
-    areaServed: ['United Arab Emirates', 'Saudi Arabia', 'Qatar', 'Bahrain', 'Kuwait', 'Oman'],
+    areaServed: ['Singapore'],
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -271,9 +192,9 @@ export default async function MarketerSubcategoryPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://hiredeveloper.ae' },
-      { '@type': 'ListItem', position: 2, name: 'Hire Marketers', item: 'https://hiredeveloper.ae/hire-marketers' },
-      { '@type': 'ListItem', position: 3, name: data.name, item: `https://hiredeveloper.ae/hire-marketers/${slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://hiredeveloper.sg' },
+      { '@type': 'ListItem', position: 2, name: 'Hire Marketers', item: 'https://hiredeveloper.sg/hire-marketers' },
+      { '@type': 'ListItem', position: 3, name: data.name, item: `https://hiredeveloper.sg/hire-marketers/${slug}` },
     ],
   };
 
@@ -291,10 +212,8 @@ export default async function MarketerSubcategoryPage({ params }: Props) {
 
       <MarketerSubcategoryPageContent
         dataName={data.name}
-        dataNameAr={dataNameAr}
         heroCount={data.heroCount}
         heroDescription={data.heroDescription}
-        heroDescriptionAr={heroDescriptionAr}
         slug={slug}
         profiles={shuffledProfiles}
         guideSections={guideSections}

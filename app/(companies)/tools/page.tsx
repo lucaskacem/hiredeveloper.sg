@@ -6,7 +6,7 @@ import RelatedLinks from '../components/RelatedLinks';
 import FinalCTA from '../components/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Free Tools for Companies | HireDeveloper.ae',
+  title: 'Free Tools for Companies | HireDeveloper.sg',
   description: 'Free tools for companies: Salary Calculator, Team Cost Calculator, Technology Comparison, Interview Questions Generator, and more.',
   robots: { index: true, follow: true },
 };
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const tools = [
   {
     title: 'Salary Calculator',
-    description: 'Calculate salaries and hourly rates for developers by technology, experience, and location across Dubai and Abu Dhabi.',
+    description: 'Calculate salaries and hourly rates for developers by technology, experience, and location across Singapore.',
     href: '/tools/salary-calculator',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -80,10 +80,10 @@ export default function ToolsPage() {
     '@type': 'CollectionPage',
     name: 'Free Tools for Companies',
     description: 'Free tools for planning and calculating software development projects.',
-    url: 'https://hiredeveloper.ae/tools',
+    url: 'https://hiredeveloper.sg/tools',
     publisher: {
       '@type': 'Organization',
-      name: 'HireDeveloper.ae',
+      name: 'HireDeveloper.sg',
     },
   };
 
@@ -104,11 +104,11 @@ export default function ToolsPage() {
       />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12">
+      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <h1 className="text-[48px] font-bold mb-6">
+              <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold mb-6">
                 Free Tools for Companies
               </h1>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0">
@@ -126,8 +126,8 @@ export default function ToolsPage() {
       </section>
 
       {/* Tools Grid */}
-      <section className="py-20">
-        <div className="max-w-[1280px] mx-auto px-12">
+      <section className="py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {tools.map((tool) => (
               <a
@@ -158,12 +158,12 @@ export default function ToolsPage() {
 
       {/* Cross-links */}
       <section className="bg-gray-50 py-16">
-        <div className="max-w-[1280px] mx-auto px-12 text-center">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Ready to Build Your Team?
           </h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Plan first, then execute. Find the best remote developers at HireDeveloper.ae.
+            Plan first, then execute. Find the best remote developers at HireDeveloper.sg.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="/hire-developers" className="px-6 py-3 bg-[rgb(23,162,69)] text-white font-semibold rounded-lg hover:bg-[rgb(20,145,60)] transition-colors">
@@ -193,9 +193,9 @@ export default function ToolsPage() {
       <RelatedLinks
         title="Developers by Location"
         links={[
-          { label: 'Developers in Dubai', href: '/locations/uae/dubai/dubai' },
-          { label: 'Developers in Abu Dhabi', href: '/locations/uae/abu-dhabi/abu-dhabi' },
-          { label: 'Developers in Saudi Arabia', href: '/locations/saudi-arabia' },
+          { label: 'Developers in Singapore', href: '/locations/singapore' },
+          { label: 'Developers in Marina Bay', href: '/locations/singapore/central-region/marina-bay' },
+          { label: 'Developers in Raffles Place', href: '/locations/singapore/central-region/raffles-place' },
           { label: 'All Locations', href: '/locations' },
         ]}
       />

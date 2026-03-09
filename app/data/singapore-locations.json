@@ -1,0 +1,1086 @@
+{
+  "country": {
+    "name": "Singapore",
+    "code": "SG",
+    "currency": "SGD",
+    "language": "English",
+    "timezone": "Asia/Singapore",
+    "callingCode": "+65"
+  },
+  "regions": [
+    {
+      "name": "Central Region",
+      "slug": "central",
+      "description": "Singapore's business and financial core, home to the CBD, Marina Bay, and major commercial districts",
+      "districts": [
+        {
+          "name": "Downtown Core",
+          "slug": "downtown-core",
+          "areas": [
+            {
+              "name": "Marina Bay",
+              "slug": "marina-bay",
+              "subzones": ["Marina Centre", "Marina South", "Bayfront"],
+              "streets": ["Marina Boulevard", "Bayfront Avenue", "Raffles Avenue", "Central Boulevard"],
+              "coordinates": {"lat": 1.2816, "lng": 103.8636},
+              "keywords": ["hire developers marina bay", "software development marina bay", "tech jobs marina bay"],
+              "businessHubs": ["Marina Bay Financial Centre", "Asia Square", "One Raffles Quay", "The Sail", "Marina One"],
+              "nearbyMRT": ["Bayfront", "Marina Bay", "Downtown"]
+            },
+            {
+              "name": "Raffles Place",
+              "slug": "raffles-place",
+              "subzones": ["Cecil", "Raffles Place"],
+              "streets": ["Robinson Road", "Shenton Way", "Cecil Street", "Church Street", "Collyer Quay"],
+              "coordinates": {"lat": 1.2840, "lng": 103.8517},
+              "keywords": ["hire developers raffles place", "software development CBD singapore", "tech companies raffles place"],
+              "businessHubs": ["One Raffles Place", "Republic Plaza", "UOB Plaza", "OCBC Centre", "Capital Tower"],
+              "nearbyMRT": ["Raffles Place", "Tanjong Pagar"]
+            },
+            {
+              "name": "City Hall",
+              "slug": "city-hall",
+              "subzones": ["City Hall", "Fort Canning"],
+              "streets": ["North Bridge Road", "Victoria Street", "Stamford Road", "Hill Street"],
+              "coordinates": {"lat": 1.2931, "lng": 103.8520},
+              "keywords": ["hire developers city hall", "tech companies city hall singapore"],
+              "businessHubs": ["Raffles City Tower", "South Beach Tower", "The Gateway"],
+              "nearbyMRT": ["City Hall", "Bras Basah"]
+            },
+            {
+              "name": "Tanjong Pagar",
+              "slug": "tanjong-pagar",
+              "subzones": ["Tanjong Pagar", "Anson"],
+              "streets": ["Tanjong Pagar Road", "Anson Road", "Wallich Street", "Peck Seah Street"],
+              "coordinates": {"lat": 1.2764, "lng": 103.8438},
+              "keywords": ["hire developers tanjong pagar", "tech startups tanjong pagar"],
+              "businessHubs": ["Guoco Tower", "Tanjong Pagar Centre", "International Plaza", "AXA Tower"],
+              "nearbyMRT": ["Tanjong Pagar"]
+            },
+            {
+              "name": "Telok Ayer",
+              "slug": "telok-ayer",
+              "subzones": ["Telok Ayer"],
+              "streets": ["Telok Ayer Street", "Cross Street", "McCallum Street"],
+              "coordinates": {"lat": 1.2812, "lng": 103.8480},
+              "keywords": ["hire developers telok ayer", "tech startups telok ayer"],
+              "businessHubs": ["CapitaGreen", "SBF Center", "18 Cross Street"],
+              "nearbyMRT": ["Telok Ayer"]
+            },
+            {
+              "name": "Boat Quay",
+              "slug": "boat-quay",
+              "subzones": ["Boat Quay"],
+              "streets": ["Boat Quay", "Circular Road", "South Canal Road"],
+              "coordinates": {"lat": 1.2870, "lng": 103.8498},
+              "keywords": ["hire developers boat quay", "tech companies boat quay"],
+              "businessHubs": ["The Riverwalk", "Boat Quay offices"],
+              "nearbyMRT": ["Raffles Place", "Clarke Quay"]
+            }
+          ]
+        },
+        {
+          "name": "Orchard",
+          "slug": "orchard",
+          "areas": [
+            {
+              "name": "Orchard Road",
+              "slug": "orchard-road",
+              "subzones": ["Orchard", "Tanglin", "River Valley"],
+              "streets": ["Orchard Road", "Scotts Road", "Tanglin Road", "Paterson Road"],
+              "coordinates": {"lat": 1.3048, "lng": 103.8318},
+              "keywords": ["hire developers orchard", "tech startups orchard singapore"],
+              "businessHubs": ["Ngee Ann City Tower", "Palais Renaissance", "Shaw Centre", "The Heeren"],
+              "nearbyMRT": ["Orchard", "Somerset"]
+            },
+            {
+              "name": "Somerset",
+              "slug": "somerset",
+              "subzones": ["Somerset"],
+              "streets": ["Somerset Road", "Devonshire Road", "Killiney Road"],
+              "coordinates": {"lat": 1.3006, "lng": 103.8388},
+              "keywords": ["hire developers somerset", "tech companies somerset singapore"],
+              "businessHubs": ["The Cathay", "UE Square", "TripleOne Somerset"],
+              "nearbyMRT": ["Somerset"]
+            }
+          ]
+        },
+        {
+          "name": "Queenstown",
+          "slug": "queenstown",
+          "areas": [
+            {
+              "name": "One North",
+              "slug": "one-north",
+              "subzones": ["one-north", "Kent Ridge"],
+              "streets": ["Fusionopolis Way", "Biopolis Street", "Ayer Rajah Crescent", "Nepal Park"],
+              "coordinates": {"lat": 1.2996, "lng": 103.7875},
+              "keywords": ["hire developers one north", "tech startups one north singapore", "software development one north"],
+              "businessHubs": ["Fusionopolis", "Biopolis", "LaunchPad @ one-north", "Block71", "JTC one-north", "Mediapolis"],
+              "nearbyMRT": ["one-north", "Buona Vista"]
+            },
+            {
+              "name": "Buona Vista",
+              "slug": "buona-vista",
+              "subzones": ["Buona Vista", "Holland Drive"],
+              "streets": ["Buona Vista Road", "Commonwealth Avenue West", "Holland Avenue"],
+              "coordinates": {"lat": 1.3073, "lng": 103.7905},
+              "keywords": ["hire developers buona vista", "tech companies buona vista"],
+              "businessHubs": ["The Star Vista", "Buona Vista offices"],
+              "nearbyMRT": ["Buona Vista"]
+            },
+            {
+              "name": "Queenstown",
+              "slug": "queenstown-area",
+              "subzones": ["Queenstown", "Commonwealth", "Tanglin Halt"],
+              "streets": ["Queensway", "Commonwealth Avenue", "Tanglin Halt Road"],
+              "coordinates": {"lat": 1.2942, "lng": 103.8013},
+              "keywords": ["hire developers queenstown", "tech jobs queenstown singapore"],
+              "businessHubs": ["Queensway Shopping Centre offices", "Anchorpoint offices"],
+              "nearbyMRT": ["Queenstown", "Commonwealth"]
+            }
+          ]
+        },
+        {
+          "name": "Bukit Merah",
+          "slug": "bukit-merah",
+          "areas": [
+            {
+              "name": "HarbourFront",
+              "slug": "harbourfront",
+              "subzones": ["HarbourFront", "Telok Blangah"],
+              "streets": ["HarbourFront Avenue", "Telok Blangah Road", "Keppel Road"],
+              "coordinates": {"lat": 1.2654, "lng": 103.8206},
+              "keywords": ["hire developers harbourfront", "tech companies harbourfront singapore"],
+              "businessHubs": ["HarbourFront Tower", "Mapletree Business City", "Keppel Bay Tower"],
+              "nearbyMRT": ["HarbourFront"]
+            },
+            {
+              "name": "Mapletree Business City",
+              "slug": "mapletree-business-city",
+              "subzones": ["Alexandra", "Depot Road"],
+              "streets": ["Pasir Panjang Road", "Alexandra Road"],
+              "coordinates": {"lat": 1.2735, "lng": 103.8032},
+              "keywords": ["hire developers mapletree", "tech companies mapletree business city"],
+              "businessHubs": ["Mapletree Business City", "PSA Building", "Alexandra Technopark"],
+              "nearbyMRT": ["Labrador Park", "Pasir Panjang"]
+            },
+            {
+              "name": "Tiong Bahru",
+              "slug": "tiong-bahru",
+              "subzones": ["Tiong Bahru"],
+              "streets": ["Tiong Bahru Road", "Kim Tian Road", "Seng Poh Road"],
+              "coordinates": {"lat": 1.2849, "lng": 103.8275},
+              "keywords": ["hire developers tiong bahru", "tech startups tiong bahru"],
+              "businessHubs": ["Central Plaza", "Tiong Bahru Plaza offices"],
+              "nearbyMRT": ["Tiong Bahru"]
+            }
+          ]
+        },
+        {
+          "name": "Outram",
+          "slug": "outram",
+          "areas": [
+            {
+              "name": "Chinatown",
+              "slug": "chinatown",
+              "subzones": ["Chinatown", "Pearls Hill"],
+              "streets": ["New Bridge Road", "Upper Cross Street", "South Bridge Road"],
+              "coordinates": {"lat": 1.2844, "lng": 103.8434},
+              "keywords": ["hire developers chinatown singapore", "tech startups chinatown"],
+              "businessHubs": ["People's Park Centre", "Chinatown Point offices"],
+              "nearbyMRT": ["Chinatown"]
+            },
+            {
+              "name": "Clarke Quay",
+              "slug": "clarke-quay",
+              "subzones": ["Clarke Quay", "Robertson Quay"],
+              "streets": ["River Valley Road", "Magazine Road", "Robertson Quay"],
+              "coordinates": {"lat": 1.2907, "lng": 103.8465},
+              "keywords": ["hire developers clarke quay", "tech companies clarke quay"],
+              "businessHubs": ["The Riverwalk", "UE Square", "Robertson Walk offices"],
+              "nearbyMRT": ["Clarke Quay", "Fort Canning"]
+            }
+          ]
+        },
+        {
+          "name": "Novena",
+          "slug": "novena",
+          "areas": [
+            {
+              "name": "Novena",
+              "slug": "novena-area",
+              "subzones": ["Novena", "Newton", "Moulmein"],
+              "streets": ["Thomson Road", "Novena Rise", "Irrawaddy Road"],
+              "coordinates": {"lat": 1.3204, "lng": 103.8438},
+              "keywords": ["hire developers novena", "tech companies novena singapore"],
+              "businessHubs": ["Novena Square", "United Square", "Velocity @ Novena Square"],
+              "nearbyMRT": ["Novena", "Newton"]
+            }
+          ]
+        },
+        {
+          "name": "Toa Payoh",
+          "slug": "toa-payoh",
+          "areas": [
+            {
+              "name": "Toa Payoh",
+              "slug": "toa-payoh-area",
+              "subzones": ["Toa Payoh Central", "Toa Payoh East", "Toa Payoh West"],
+              "streets": ["Toa Payoh Lorong", "Toa Payoh Central"],
+              "coordinates": {"lat": 1.3343, "lng": 103.8501},
+              "keywords": ["hire developers toa payoh", "tech jobs toa payoh"],
+              "businessHubs": ["HDB Hub", "Toa Payoh Industrial Park"],
+              "nearbyMRT": ["Toa Payoh", "Braddell"]
+            }
+          ]
+        },
+        {
+          "name": "Bishan",
+          "slug": "bishan",
+          "areas": [
+            {
+              "name": "Bishan",
+              "slug": "bishan-area",
+              "subzones": ["Bishan East", "Bishan North"],
+              "streets": ["Bishan Street", "Bishan Place"],
+              "coordinates": {"lat": 1.3508, "lng": 103.8486},
+              "keywords": ["hire developers bishan", "tech companies bishan singapore"],
+              "businessHubs": ["Bishan Junction 8 offices", "Bishan Community Club"],
+              "nearbyMRT": ["Bishan"]
+            }
+          ]
+        },
+        {
+          "name": "Bukit Timah",
+          "slug": "bukit-timah",
+          "areas": [
+            {
+              "name": "Bukit Timah",
+              "slug": "bukit-timah-area",
+              "subzones": ["Bukit Timah", "Coronation", "Sixth Avenue"],
+              "streets": ["Bukit Timah Road", "Dunearn Road", "Sixth Avenue"],
+              "coordinates": {"lat": 1.3294, "lng": 103.8020},
+              "keywords": ["hire developers bukit timah", "tech companies bukit timah"],
+              "businessHubs": ["Beauty World Centre offices", "Bukit Timah Plaza offices"],
+              "nearbyMRT": ["Beauty World", "Sixth Avenue", "King Albert Park"]
+            },
+            {
+              "name": "Holland Village",
+              "slug": "holland-village",
+              "subzones": ["Holland Road", "Holland Village"],
+              "streets": ["Holland Road", "Holland Avenue", "Lorong Liput"],
+              "coordinates": {"lat": 1.3103, "lng": 103.7957},
+              "keywords": ["hire developers holland village", "tech startups holland village"],
+              "businessHubs": ["Holland Road Shopping Centre offices", "Chip Bee Gardens offices"],
+              "nearbyMRT": ["Holland Village"]
+            }
+          ]
+        },
+        {
+          "name": "Kallang",
+          "slug": "kallang",
+          "areas": [
+            {
+              "name": "Kallang",
+              "slug": "kallang-area",
+              "subzones": ["Kallang", "Lavender", "Bendemeer"],
+              "streets": ["Kallang Avenue", "Lavender Street", "Bendemeer Road"],
+              "coordinates": {"lat": 1.3114, "lng": 103.8626},
+              "keywords": ["hire developers kallang", "tech companies kallang singapore"],
+              "businessHubs": ["Kallang Bahru offices", "Aperia offices", "Kallang Junction"],
+              "nearbyMRT": ["Kallang", "Lavender", "Bendemeer"]
+            },
+            {
+              "name": "Geylang",
+              "slug": "geylang",
+              "subzones": ["Geylang East", "Geylang West", "Aljunied"],
+              "streets": ["Geylang Road", "Sims Avenue", "Aljunied Road"],
+              "coordinates": {"lat": 1.3161, "lng": 103.8826},
+              "keywords": ["hire developers geylang", "tech companies aljunied"],
+              "businessHubs": ["Aljunied offices", "Merpati industrial area offices"],
+              "nearbyMRT": ["Aljunied", "Dakota"]
+            }
+          ]
+        },
+        {
+          "name": "Marine Parade",
+          "slug": "marine-parade",
+          "areas": [
+            {
+              "name": "Marine Parade",
+              "slug": "marine-parade-area",
+              "subzones": ["Marine Parade", "Katong"],
+              "streets": ["Marine Parade Road", "East Coast Road", "Tanjong Katong Road"],
+              "coordinates": {"lat": 1.3016, "lng": 103.9054},
+              "keywords": ["hire developers marine parade", "tech companies katong"],
+              "businessHubs": ["Parkway Parade offices", "Katong offices"],
+              "nearbyMRT": ["Marine Parade", "Marine Terrace"]
+            }
+          ]
+        },
+        {
+          "name": "Tanglin",
+          "slug": "tanglin",
+          "areas": [
+            {
+              "name": "Tanglin",
+              "slug": "tanglin-area",
+              "subzones": ["Tanglin", "Dempsey", "Chatsworth"],
+              "streets": ["Tanglin Road", "Napier Road", "Cluny Road"],
+              "coordinates": {"lat": 1.3048, "lng": 103.8195},
+              "keywords": ["hire developers tanglin", "tech companies tanglin singapore"],
+              "businessHubs": ["Tanglin Place", "Tudor Court offices"],
+              "nearbyMRT": ["Orchard"]
+            }
+          ]
+        },
+        {
+          "name": "Singapore River",
+          "slug": "singapore-river",
+          "areas": [
+            {
+              "name": "Singapore River",
+              "slug": "singapore-river-area",
+              "subzones": ["Robertson Quay", "Kim Seng", "Havelock"],
+              "streets": ["Havelock Road", "Kim Seng Road", "Zion Road"],
+              "coordinates": {"lat": 1.2900, "lng": 103.8383},
+              "keywords": ["hire developers singapore river", "tech companies robertson quay"],
+              "businessHubs": ["Great World City offices", "Valley Point offices"],
+              "nearbyMRT": ["Great World"]
+            }
+          ]
+        },
+        {
+          "name": "Rochor",
+          "slug": "rochor",
+          "areas": [
+            {
+              "name": "Bugis",
+              "slug": "bugis",
+              "subzones": ["Bugis", "Rochor"],
+              "streets": ["North Bridge Road", "Beach Road", "Rochor Road", "Ophir Road"],
+              "coordinates": {"lat": 1.3009, "lng": 103.8557},
+              "keywords": ["hire developers bugis", "tech companies bugis singapore"],
+              "businessHubs": ["Bugis Junction offices", "Duo Tower", "Shaw Tower", "Parkview Square"],
+              "nearbyMRT": ["Bugis"]
+            },
+            {
+              "name": "Beach Road",
+              "slug": "beach-road",
+              "subzones": ["Beach Road"],
+              "streets": ["Beach Road", "Middle Road", "Nicoll Highway"],
+              "coordinates": {"lat": 1.2993, "lng": 103.8610},
+              "keywords": ["hire developers beach road", "tech companies beach road"],
+              "businessHubs": ["The Concourse", "Suntec City offices", "Millenia Tower", "Shaw Tower"],
+              "nearbyMRT": ["Nicoll Highway", "Promenade"]
+            }
+          ]
+        },
+        {
+          "name": "Museum",
+          "slug": "museum",
+          "areas": [
+            {
+              "name": "Bras Basah",
+              "slug": "bras-basah",
+              "subzones": ["Bras Basah", "Dhoby Ghaut"],
+              "streets": ["Bras Basah Road", "Bencoolen Street", "Prinsep Street"],
+              "coordinates": {"lat": 1.2967, "lng": 103.8505},
+              "keywords": ["hire developers bras basah", "tech companies dhoby ghaut"],
+              "businessHubs": ["Cathay Building offices", "The Adelphi offices", "Peninsula Plaza offices"],
+              "nearbyMRT": ["Bras Basah", "Dhoby Ghaut", "Bencoolen"]
+            }
+          ]
+        },
+        {
+          "name": "River Valley",
+          "slug": "river-valley",
+          "areas": [
+            {
+              "name": "River Valley",
+              "slug": "river-valley-area",
+              "subzones": ["River Valley", "Oxley", "Leonie Hill"],
+              "streets": ["River Valley Road", "Oxley Road", "Grange Road"],
+              "coordinates": {"lat": 1.2954, "lng": 103.8355},
+              "keywords": ["hire developers river valley", "tech companies river valley singapore"],
+              "businessHubs": ["Valley Point offices", "Furama RiverFront offices"],
+              "nearbyMRT": ["Fort Canning"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "East Region",
+      "slug": "east",
+      "description": "Business parks, airport logistics, and residential technology hubs",
+      "districts": [
+        {
+          "name": "Changi",
+          "slug": "changi",
+          "areas": [
+            {
+              "name": "Changi Business Park",
+              "slug": "changi-business-park",
+              "subzones": ["Changi Business Park"],
+              "streets": ["Changi Business Park Avenue 1", "Changi Business Park Central 1", "Changi Business Park Crescent"],
+              "coordinates": {"lat": 1.3341, "lng": 103.9648},
+              "keywords": ["hire developers changi", "tech companies changi business park", "IT outsourcing changi"],
+              "businessHubs": ["Changi Business Park", "UE BizHub EAST", "Hazel Park", "DBS Asia Hub"],
+              "nearbyMRT": ["Expo", "Changi Business Park", "Upper Changi"]
+            },
+            {
+              "name": "Changi",
+              "slug": "changi-area",
+              "subzones": ["Changi Point", "Changi West"],
+              "streets": ["Changi Village Road", "Netheravon Road"],
+              "coordinates": {"lat": 1.3890, "lng": 103.9915},
+              "keywords": ["hire developers changi village", "tech companies changi"],
+              "businessHubs": ["Changi Airport Group offices"],
+              "nearbyMRT": ["Changi Airport"]
+            }
+          ]
+        },
+        {
+          "name": "Tampines",
+          "slug": "tampines",
+          "areas": [
+            {
+              "name": "Tampines",
+              "slug": "tampines-area",
+              "subzones": ["Tampines North", "Tampines East", "Tampines West", "Tampines Central"],
+              "streets": ["Tampines Avenue", "Tampines Central", "Tampines Street", "Tampines Concourse"],
+              "coordinates": {"lat": 1.3496, "lng": 103.9568},
+              "keywords": ["hire developers tampines", "tech jobs tampines", "software development east singapore"],
+              "businessHubs": ["Tampines Regional Centre", "Our Tampines Hub", "Tampines Concourse offices", "Century Square offices"],
+              "nearbyMRT": ["Tampines", "Tampines East", "Tampines West"]
+            }
+          ]
+        },
+        {
+          "name": "Paya Lebar",
+          "slug": "paya-lebar",
+          "areas": [
+            {
+              "name": "Paya Lebar",
+              "slug": "paya-lebar-area",
+              "subzones": ["Paya Lebar", "Eunos"],
+              "streets": ["Paya Lebar Road", "Sims Avenue", "Eunos Road"],
+              "coordinates": {"lat": 1.3180, "lng": 103.8926},
+              "keywords": ["hire developers paya lebar", "tech startups paya lebar quarter"],
+              "businessHubs": ["Paya Lebar Quarter", "SingPost Centre", "Paya Lebar Square", "KINEX offices"],
+              "nearbyMRT": ["Paya Lebar"]
+            }
+          ]
+        },
+        {
+          "name": "Bedok",
+          "slug": "bedok",
+          "areas": [
+            {
+              "name": "Bedok",
+              "slug": "bedok-area",
+              "subzones": ["Bedok North", "Bedok South", "Bedok Reservoir"],
+              "streets": ["Bedok North Road", "New Upper Changi Road", "Bedok Reservoir Road"],
+              "coordinates": {"lat": 1.3236, "lng": 103.9273},
+              "keywords": ["hire developers bedok", "tech companies bedok singapore"],
+              "businessHubs": ["Bedok Mall offices", "Bedok industrial area offices"],
+              "nearbyMRT": ["Bedok", "Bedok North", "Bedok Reservoir"]
+            }
+          ]
+        },
+        {
+          "name": "Pasir Ris",
+          "slug": "pasir-ris",
+          "areas": [
+            {
+              "name": "Pasir Ris",
+              "slug": "pasir-ris-area",
+              "subzones": ["Pasir Ris Central", "Pasir Ris Drive", "Pasir Ris West"],
+              "streets": ["Pasir Ris Drive", "Pasir Ris Central", "Elias Road"],
+              "coordinates": {"lat": 1.3728, "lng": 103.9493},
+              "keywords": ["hire developers pasir ris", "tech companies pasir ris"],
+              "businessHubs": ["White Sands offices", "Pasir Ris offices"],
+              "nearbyMRT": ["Pasir Ris"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "North Region",
+      "slug": "north",
+      "description": "Emerging tech corridors and cross-border commerce hubs",
+      "districts": [
+        {
+          "name": "Woodlands",
+          "slug": "woodlands",
+          "areas": [
+            {
+              "name": "Woodlands",
+              "slug": "woodlands-area",
+              "subzones": ["Woodlands Central", "Woodlands East", "Woodlands West", "Woodlands South"],
+              "streets": ["Woodlands Avenue", "Woodlands Central", "Woodlands Square"],
+              "coordinates": {"lat": 1.4382, "lng": 103.7891},
+              "keywords": ["hire developers woodlands", "tech jobs north singapore"],
+              "businessHubs": ["Woodlands Regional Centre", "Causeway Point offices", "Woods Square", "Woodlands Spectrum"],
+              "nearbyMRT": ["Woodlands", "Woodlands North", "Woodlands South", "Marsiling"]
+            }
+          ]
+        },
+        {
+          "name": "Yishun",
+          "slug": "yishun",
+          "areas": [
+            {
+              "name": "Yishun",
+              "slug": "yishun-area",
+              "subzones": ["Yishun Central", "Yishun East", "Yishun West", "Yishun South"],
+              "streets": ["Yishun Avenue", "Yishun Central", "Yishun Ring Road"],
+              "coordinates": {"lat": 1.4304, "lng": 103.8354},
+              "keywords": ["hire developers yishun", "tech companies yishun"],
+              "businessHubs": ["Northpoint City offices", "Yishun Industrial Park"],
+              "nearbyMRT": ["Yishun", "Khatib"]
+            }
+          ]
+        },
+        {
+          "name": "Sembawang",
+          "slug": "sembawang",
+          "areas": [
+            {
+              "name": "Sembawang",
+              "slug": "sembawang-area",
+              "subzones": ["Sembawang", "Admiralty"],
+              "streets": ["Sembawang Road", "Admiralty Road", "Canberra Road"],
+              "coordinates": {"lat": 1.4491, "lng": 103.8185},
+              "keywords": ["hire developers sembawang", "tech companies sembawang"],
+              "businessHubs": ["Sembawang Shopping Centre offices", "Sun Plaza offices"],
+              "nearbyMRT": ["Sembawang", "Canberra", "Admiralty"]
+            }
+          ]
+        },
+        {
+          "name": "Mandai",
+          "slug": "mandai",
+          "areas": [
+            {
+              "name": "Mandai",
+              "slug": "mandai-area",
+              "subzones": ["Mandai East", "Mandai West"],
+              "streets": ["Mandai Road", "Mandai Avenue"],
+              "coordinates": {"lat": 1.4019, "lng": 103.8088},
+              "keywords": ["hire developers mandai", "tech companies mandai"],
+              "businessHubs": ["Mandai industrial area offices"],
+              "nearbyMRT": ["Springleaf"]
+            }
+          ]
+        },
+        {
+          "name": "Simpang",
+          "slug": "simpang",
+          "areas": [
+            {
+              "name": "Simpang",
+              "slug": "simpang-area",
+              "subzones": ["Simpang North", "Simpang South"],
+              "streets": ["Simpang Road"],
+              "coordinates": {"lat": 1.4292, "lng": 103.8570},
+              "keywords": ["hire developers simpang"],
+              "businessHubs": [],
+              "nearbyMRT": ["Springleaf"]
+            }
+          ]
+        },
+        {
+          "name": "Sungei Kadut",
+          "slug": "sungei-kadut",
+          "areas": [
+            {
+              "name": "Sungei Kadut",
+              "slug": "sungei-kadut-area",
+              "subzones": ["Sungei Kadut"],
+              "streets": ["Sungei Kadut Avenue", "Sungei Kadut Street"],
+              "coordinates": {"lat": 1.4173, "lng": 103.7542},
+              "keywords": ["hire developers sungei kadut"],
+              "businessHubs": ["Sungei Kadut Industrial Estate"],
+              "nearbyMRT": ["Kranji"]
+            }
+          ]
+        },
+        {
+          "name": "Lim Chu Kang",
+          "slug": "lim-chu-kang",
+          "areas": [
+            {
+              "name": "Lim Chu Kang",
+              "slug": "lim-chu-kang-area",
+              "subzones": ["Lim Chu Kang"],
+              "streets": ["Lim Chu Kang Road", "Neo Tiew Road"],
+              "coordinates": {"lat": 1.4263, "lng": 103.7168},
+              "keywords": ["hire developers lim chu kang"],
+              "businessHubs": [],
+              "nearbyMRT": ["Kranji"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "North-East Region",
+      "slug": "north-east",
+      "description": "Digital innovation district and growing residential tech hubs",
+      "districts": [
+        {
+          "name": "Punggol",
+          "slug": "punggol",
+          "areas": [
+            {
+              "name": "Punggol Digital District",
+              "slug": "punggol-digital-district",
+              "subzones": ["Punggol Town Centre", "Punggol North", "Punggol Way", "Punggol Field"],
+              "streets": ["Punggol Central", "Punggol Way", "Punggol Field"],
+              "coordinates": {"lat": 1.4053, "lng": 103.9022},
+              "keywords": ["hire developers punggol", "punggol digital district tech", "software development punggol"],
+              "businessHubs": ["Punggol Digital District", "Singapore Institute of Technology", "JTC Business Park @ Punggol"],
+              "nearbyMRT": ["Punggol"]
+            }
+          ]
+        },
+        {
+          "name": "Sengkang",
+          "slug": "sengkang",
+          "areas": [
+            {
+              "name": "Sengkang",
+              "slug": "sengkang-area",
+              "subzones": ["Sengkang Town Centre", "Sengkang East", "Sengkang West", "Rivervale", "Compassvale"],
+              "streets": ["Sengkang Central", "Sengkang East Way", "Compassvale Road"],
+              "coordinates": {"lat": 1.3915, "lng": 103.8954},
+              "keywords": ["hire developers sengkang", "tech companies sengkang"],
+              "businessHubs": ["Compass One offices", "Sengkang Grand Mall offices"],
+              "nearbyMRT": ["Sengkang", "Buangkok"]
+            }
+          ]
+        },
+        {
+          "name": "Serangoon",
+          "slug": "serangoon",
+          "areas": [
+            {
+              "name": "Serangoon",
+              "slug": "serangoon-area",
+              "subzones": ["Serangoon Central", "Serangoon North", "Serangoon Garden"],
+              "streets": ["Serangoon Central", "Upper Serangoon Road", "Serangoon North Avenue"],
+              "coordinates": {"lat": 1.3500, "lng": 103.8718},
+              "keywords": ["hire developers serangoon", "tech companies serangoon"],
+              "businessHubs": ["NEX offices", "Heartland Mall offices"],
+              "nearbyMRT": ["Serangoon", "Lorong Chuan"]
+            }
+          ]
+        },
+        {
+          "name": "Ang Mo Kio",
+          "slug": "ang-mo-kio",
+          "areas": [
+            {
+              "name": "Ang Mo Kio",
+              "slug": "ang-mo-kio-area",
+              "subzones": ["Ang Mo Kio Town Centre", "Ang Mo Kio Industrial Park"],
+              "streets": ["Ang Mo Kio Avenue", "Ang Mo Kio Central", "Ang Mo Kio Industrial Park"],
+              "coordinates": {"lat": 1.3691, "lng": 103.8454},
+              "keywords": ["hire developers ang mo kio", "tech companies ang mo kio"],
+              "businessHubs": ["AMK Hub offices", "Ang Mo Kio Industrial Park"],
+              "nearbyMRT": ["Ang Mo Kio", "Yio Chu Kang"]
+            }
+          ]
+        },
+        {
+          "name": "Hougang",
+          "slug": "hougang",
+          "areas": [
+            {
+              "name": "Hougang",
+              "slug": "hougang-area",
+              "subzones": ["Hougang Central", "Hougang East", "Hougang West", "Kovan"],
+              "streets": ["Hougang Avenue", "Hougang Central", "Upper Serangoon Road"],
+              "coordinates": {"lat": 1.3612, "lng": 103.8863},
+              "keywords": ["hire developers hougang", "tech companies hougang"],
+              "businessHubs": ["Hougang Mall offices", "Kovan Heartland offices"],
+              "nearbyMRT": ["Hougang", "Kovan"]
+            }
+          ]
+        },
+        {
+          "name": "Seletar",
+          "slug": "seletar",
+          "areas": [
+            {
+              "name": "Seletar Aerospace Park",
+              "slug": "seletar-aerospace-park",
+              "subzones": ["Seletar", "Seletar Hills"],
+              "streets": ["Seletar Aerospace Drive", "Seletar Aerospace View"],
+              "coordinates": {"lat": 1.4166, "lng": 103.8678},
+              "keywords": ["hire developers seletar", "tech companies seletar aerospace"],
+              "businessHubs": ["Seletar Aerospace Park", "JTC aerospace offices"],
+              "nearbyMRT": ["Seletar"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "West Region",
+      "slug": "west",
+      "description": "Innovation hub, industrial corridors, and emerging business districts",
+      "districts": [
+        {
+          "name": "Jurong East",
+          "slug": "jurong-east",
+          "areas": [
+            {
+              "name": "Jurong Lake District",
+              "slug": "jurong-lake-district",
+              "subzones": ["Jurong East", "Jurong Gateway", "Lakeside"],
+              "streets": ["Jurong Gateway Road", "Boon Lay Way", "Jurong Town Hall Road"],
+              "coordinates": {"lat": 1.3329, "lng": 103.7436},
+              "keywords": ["hire developers jurong", "tech companies jurong east", "software development west singapore"],
+              "businessHubs": ["JTC Summit", "Westgate Tower", "International Business Park", "Jem offices", "Vision Exchange"],
+              "nearbyMRT": ["Jurong East", "Chinese Garden", "Lakeside"]
+            }
+          ]
+        },
+        {
+          "name": "International Business Park",
+          "slug": "international-business-park",
+          "areas": [
+            {
+              "name": "International Business Park",
+              "slug": "ibp",
+              "subzones": ["International Business Park"],
+              "streets": ["International Business Park Road", "International Business Park Drive"],
+              "coordinates": {"lat": 1.3247, "lng": 103.7503},
+              "keywords": ["hire developers international business park", "tech companies IBP singapore"],
+              "businessHubs": ["Solaris", "Nordic European Centre", "Synergy", "Creative Resource"],
+              "nearbyMRT": ["Jurong East"]
+            }
+          ]
+        },
+        {
+          "name": "Jurong West",
+          "slug": "jurong-west",
+          "areas": [
+            {
+              "name": "Jurong West",
+              "slug": "jurong-west-area",
+              "subzones": ["Jurong West Central", "Boon Lay", "Pioneer"],
+              "streets": ["Jurong West Avenue", "Jurong West Central", "Pioneer Road"],
+              "coordinates": {"lat": 1.3404, "lng": 103.7090},
+              "keywords": ["hire developers jurong west", "tech companies boon lay"],
+              "businessHubs": ["Jurong Point offices", "Pioneer industrial area"],
+              "nearbyMRT": ["Boon Lay", "Pioneer", "Joo Koon"]
+            }
+          ]
+        },
+        {
+          "name": "Bukit Batok",
+          "slug": "bukit-batok",
+          "areas": [
+            {
+              "name": "Bukit Batok",
+              "slug": "bukit-batok-area",
+              "subzones": ["Bukit Batok Central", "Bukit Batok East", "Bukit Batok West"],
+              "streets": ["Bukit Batok Central", "Bukit Batok East Avenue", "Bukit Batok West Avenue"],
+              "coordinates": {"lat": 1.3590, "lng": 103.7637},
+              "keywords": ["hire developers bukit batok", "tech companies bukit batok"],
+              "businessHubs": ["West Mall offices", "Bukit Batok Connection offices"],
+              "nearbyMRT": ["Bukit Batok"]
+            }
+          ]
+        },
+        {
+          "name": "Bukit Panjang",
+          "slug": "bukit-panjang",
+          "areas": [
+            {
+              "name": "Bukit Panjang",
+              "slug": "bukit-panjang-area",
+              "subzones": ["Bukit Panjang", "Senja"],
+              "streets": ["Bukit Panjang Ring Road", "Petir Road", "Senja Road"],
+              "coordinates": {"lat": 1.3774, "lng": 103.7719},
+              "keywords": ["hire developers bukit panjang", "tech companies bukit panjang"],
+              "businessHubs": ["Hillion Mall offices"],
+              "nearbyMRT": ["Bukit Panjang"]
+            }
+          ]
+        },
+        {
+          "name": "Choa Chu Kang",
+          "slug": "choa-chu-kang",
+          "areas": [
+            {
+              "name": "Choa Chu Kang",
+              "slug": "choa-chu-kang-area",
+              "subzones": ["Choa Chu Kang Central", "Choa Chu Kang North"],
+              "streets": ["Choa Chu Kang Avenue", "Choa Chu Kang Central"],
+              "coordinates": {"lat": 1.3840, "lng": 103.7446},
+              "keywords": ["hire developers choa chu kang", "tech companies choa chu kang"],
+              "businessHubs": ["Lot One offices"],
+              "nearbyMRT": ["Choa Chu Kang", "Yew Tee"]
+            }
+          ]
+        },
+        {
+          "name": "Clementi",
+          "slug": "clementi",
+          "areas": [
+            {
+              "name": "Clementi",
+              "slug": "clementi-area",
+              "subzones": ["Clementi Central", "Clementi North", "Clementi West", "West Coast"],
+              "streets": ["Clementi Avenue", "Clementi Road", "West Coast Road"],
+              "coordinates": {"lat": 1.3162, "lng": 103.7649},
+              "keywords": ["hire developers clementi", "tech companies clementi"],
+              "businessHubs": ["Clementi Mall offices", "NUS University Town offices"],
+              "nearbyMRT": ["Clementi"]
+            }
+          ]
+        },
+        {
+          "name": "Tuas",
+          "slug": "tuas",
+          "areas": [
+            {
+              "name": "Tuas",
+              "slug": "tuas-area",
+              "subzones": ["Tuas", "Tuas South", "Tuas View"],
+              "streets": ["Tuas Avenue", "Tuas West Drive", "Tuas South Avenue"],
+              "coordinates": {"lat": 1.3220, "lng": 103.6377},
+              "keywords": ["hire developers tuas", "tech companies tuas industrial"],
+              "businessHubs": ["Tuas Industrial Estate", "Tuas Biomedical Park"],
+              "nearbyMRT": ["Tuas Link", "Tuas West Road", "Tuas Crescent"]
+            }
+          ]
+        },
+        {
+          "name": "Tengah",
+          "slug": "tengah",
+          "areas": [
+            {
+              "name": "Tengah",
+              "slug": "tengah-area",
+              "subzones": ["Tengah Garden", "Tengah Park", "Tengah Plantation"],
+              "streets": ["Tengah Garden Walk", "Tengah Boulevard"],
+              "coordinates": {"lat": 1.3665, "lng": 103.7382},
+              "keywords": ["hire developers tengah", "tech companies tengah new town"],
+              "businessHubs": ["Tengah Town Centre (upcoming)"],
+              "nearbyMRT": ["Tengah (upcoming)"]
+            }
+          ]
+        },
+        {
+          "name": "Pioneer",
+          "slug": "pioneer",
+          "areas": [
+            {
+              "name": "Pioneer",
+              "slug": "pioneer-area",
+              "subzones": ["Pioneer", "Pioneer North"],
+              "streets": ["Pioneer Road", "Pioneer Sector"],
+              "coordinates": {"lat": 1.3376, "lng": 103.6974},
+              "keywords": ["hire developers pioneer", "tech companies pioneer"],
+              "businessHubs": ["Pioneer industrial area offices"],
+              "nearbyMRT": ["Pioneer"]
+            }
+          ]
+        },
+        {
+          "name": "Western Water Catchment",
+          "slug": "western-water-catchment",
+          "areas": [
+            {
+              "name": "Western Water Catchment",
+              "slug": "western-water-catchment-area",
+              "subzones": ["Western Water Catchment"],
+              "streets": ["Murai Farmway"],
+              "coordinates": {"lat": 1.4050, "lng": 103.6960},
+              "keywords": [],
+              "businessHubs": [],
+              "nearbyMRT": ["Kranji"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "techEcosystem": {
+    "totalTechProfessionals": 200000,
+    "techStartups": 4000,
+    "unicorns": ["Grab", "Sea Group", "Trax", "Nium", "PatSnap", "Ninja Van"],
+    "governmentInitiatives": ["Smart Nation", "IMDA", "Enterprise Singapore", "Startup SG"],
+    "techEvents": ["Singapore FinTech Festival", "Tech in Asia Conference", "SWITCH", "EmTech Asia"],
+    "coworkingSpaces": ["WeWork", "JustCo", "The Great Room", "Found8", "Distrii", "The Working Capitol"],
+    "majorTechCompanies": ["Google Asia Pacific", "Meta", "Shopee", "Grab", "ByteDance", "Stripe", "Zoom", "Salesforce", "Amazon Web Services", "Microsoft", "Apple", "Dyson"],
+    "techHubs": {
+      "oneNorth": {
+        "description": "Singapore's science and tech corridor with Fusionopolis and Biopolis",
+        "focus": ["Deep Tech", "Biotech", "AI", "Media"],
+        "keyBuildings": ["Fusionopolis One", "Fusionopolis Two", "Biopolis Matrix", "LaunchPad @ one-north", "Block71"]
+      },
+      "marinaBay": {
+        "description": "Financial district with major tech and fintech companies",
+        "focus": ["FinTech", "Enterprise Tech", "Banking Tech"],
+        "keyBuildings": ["Marina Bay Financial Centre", "Asia Square", "Marina One"]
+      },
+      "changiBP": {
+        "description": "Major business park hub for tech companies in the east",
+        "focus": ["Enterprise Software", "IT Services", "Banking Operations"],
+        "keyBuildings": ["UE BizHub EAST", "DBS Asia Hub"]
+      },
+      "IBP": {
+        "description": "International Business Park in Jurong for tech and engineering firms",
+        "focus": ["Engineering", "R&D", "Enterprise Tech"],
+        "keyBuildings": ["Solaris", "Nordic European Centre", "Synergy"]
+      },
+      "payaLebarQuarter": {
+        "description": "Modern mixed-use development attracting tech companies",
+        "focus": ["Tech Startups", "Media", "Creative Tech"],
+        "keyBuildings": ["Paya Lebar Quarter Tower 1", "PLQ Tower 2", "PLQ Tower 3"]
+      },
+      "punggolDigitalDistrict": {
+        "description": "Upcoming smart district integrating tech and education",
+        "focus": ["Digital Economy", "Cybersecurity", "AI"],
+        "keyBuildings": ["Singapore Institute of Technology campus", "JTC Business Park"]
+      }
+    },
+    "averageSalaries": {
+      "juniorDeveloper": {"min": 48000, "max": 72000, "currency": "SGD"},
+      "midDeveloper": {"min": 72000, "max": 120000, "currency": "SGD"},
+      "seniorDeveloper": {"min": 120000, "max": 180000, "currency": "SGD"},
+      "techLead": {"min": 150000, "max": 240000, "currency": "SGD"},
+      "engineeringManager": {"min": 180000, "max": 300000, "currency": "SGD"},
+      "vpEngineering": {"min": 250000, "max": 450000, "currency": "SGD"}
+    },
+    "universities": [
+      "National University of Singapore (NUS)",
+      "Nanyang Technological University (NTU)",
+      "Singapore Management University (SMU)",
+      "Singapore University of Technology and Design (SUTD)",
+      "Singapore Institute of Technology (SIT)"
+    ]
+  },
+  "seoKeywords": {
+    "primary": [
+      "hire developers singapore",
+      "software development singapore",
+      "hire react developers singapore",
+      "hire nodejs developers singapore",
+      "hire python developers singapore",
+      "mobile app developers singapore",
+      "hire offshore developers singapore",
+      "dedicated development team singapore",
+      "hire full stack developers singapore",
+      "hire frontend developers singapore",
+      "hire backend developers singapore",
+      "hire AI developers singapore"
+    ],
+    "locationBased": [
+      "hire developers marina bay",
+      "hire developers orchard",
+      "tech companies one north",
+      "software development changi",
+      "hire developers jurong",
+      "hire developers tampines",
+      "hire developers paya lebar",
+      "hire developers punggol",
+      "hire developers woodlands",
+      "hire developers buona vista",
+      "hire developers tanjong pagar",
+      "hire developers raffles place",
+      "hire developers bugis",
+      "hire developers harbourfront",
+      "hire developers bishan",
+      "hire developers ang mo kio"
+    ],
+    "industryBased": [
+      "fintech development singapore",
+      "saas development singapore",
+      "ecommerce development singapore",
+      "healthtech development singapore",
+      "edtech development singapore",
+      "proptech development singapore",
+      "logistics tech singapore",
+      "insurtech development singapore",
+      "govtech development singapore",
+      "greentech development singapore"
+    ],
+    "serviceBased": [
+      "outsource development singapore",
+      "nearshore development singapore",
+      "staff augmentation singapore",
+      "dedicated team singapore",
+      "contract developers singapore",
+      "freelance developers singapore",
+      "remote developers singapore",
+      "development agency singapore"
+    ]
+  },
+  "allPlanningAreas": [
+    "Ang Mo Kio",
+    "Bedok",
+    "Bishan",
+    "Boon Lay",
+    "Bukit Batok",
+    "Bukit Merah",
+    "Bukit Panjang",
+    "Bukit Timah",
+    "Central Water Catchment",
+    "Changi",
+    "Changi Bay",
+    "Choa Chu Kang",
+    "Clementi",
+    "Downtown Core",
+    "Geylang",
+    "Hougang",
+    "Jurong East",
+    "Jurong West",
+    "Kallang",
+    "Lim Chu Kang",
+    "Mandai",
+    "Marine Parade",
+    "Marina East",
+    "Marina South",
+    "Museum",
+    "Newton",
+    "North-Eastern Islands",
+    "Novena",
+    "Orchard",
+    "Outram",
+    "Pasir Ris",
+    "Paya Lebar",
+    "Pioneer",
+    "Punggol",
+    "Queenstown",
+    "River Valley",
+    "Rochor",
+    "Seletar",
+    "Sembawang",
+    "Sengkang",
+    "Serangoon",
+    "Simpang",
+    "Singapore River",
+    "Southern Islands",
+    "Straits View",
+    "Sungei Kadut",
+    "Tampines",
+    "Tanglin",
+    "Tengah",
+    "Toa Payoh",
+    "Tuas",
+    "Western Islands",
+    "Western Water Catchment",
+    "Woodlands",
+    "Yishun"
+  ]
+}

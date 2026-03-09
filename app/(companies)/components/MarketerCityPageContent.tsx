@@ -1,62 +1,49 @@
 'use client';
 
-import { useLanguage } from '@/app/i18n/LanguageContext';
 import Breadcrumb from './Breadcrumb';
 import RelatedLinks from './RelatedLinks';
 import FinalCTA from './FinalCTA';
 
 // ---------------------------------------------------------------------------
-// Types for bilingual data passed from the server component
+// Types
 // ---------------------------------------------------------------------------
 
 interface WhyCard {
   title: string;
-  titleAr: string;
   text: string;
-  textAr: string;
 }
 
 interface FaqItem {
   q: string;
-  qAr: string;
   a: string;
-  aAr: string;
 }
 
 interface SpecLink {
   label: string;
-  labelAr: string;
   slug: string;
   citySlug: string;
 }
 
 interface CrossLink {
   label: string;
-  labelAr: string;
   href: string;
 }
 
 interface BreadcrumbItem {
   label: string;
-  labelAr: string;
   href: string;
 }
 
 export interface MarketerCityPageContentProps {
   subName: string;
-  subNameAr: string;
   cityName: string;
-  cityNameAr: string;
   regionName: string;
-  regionNameAr: string;
   countryName: string;
-  countryNameAr: string;
   slug: string;
   citySlug: string;
   skills: string[];
 
   heroSubtitle: string;
-  heroSubtitleAr: string;
 
   whyCards: WhyCard[];
   specLinks: SpecLink[];
@@ -68,23 +55,17 @@ export interface MarketerCityPageContentProps {
   breadcrumbItems: BreadcrumbItem[];
 
   skillsDescription: string;
-  skillsDescriptionAr: string;
   specsIntro: string;
-  specsIntroAr: string;
 }
 
 export default function MarketerCityPageContent({
   subName,
-  subNameAr,
   cityName,
-  cityNameAr,
   regionName,
-  regionNameAr,
   slug,
   citySlug,
   skills,
   heroSubtitle,
-  heroSubtitleAr,
   whyCards,
   specLinks,
   faqItems,
@@ -92,22 +73,13 @@ export default function MarketerCityPageContent({
   otherSpecsSameCity,
   breadcrumbItems,
   skillsDescription,
-  skillsDescriptionAr,
   specsIntro,
-  specsIntroAr,
 }: MarketerCityPageContentProps) {
-  const { language } = useLanguage();
-  const isAr = language === 'ar';
-
-  const name = isAr ? subNameAr : subName;
-  const city = isAr ? cityNameAr : cityName;
-  const region = isAr ? regionNameAr : regionName;
-
   return (
     <>
       <Breadcrumb
         items={breadcrumbItems.map((item) => ({
-          label: isAr ? item.labelAr : item.label,
+          label: item.label,
           href: item.href,
         }))}
       />
@@ -119,16 +91,16 @@ export default function MarketerCityPageContent({
             {skills.slice(0, 3).join(' \u00b7 ')}
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            {isAr ? `توظيف ${name} في ${city}` : `Hire ${subName} in ${cityName}`}
+            {`Hire ${subName} in ${cityName}`}
           </h1>
           <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
-            {isAr ? heroSubtitleAr : heroSubtitle}
+            {heroSubtitle}
           </p>
           <a
             href="#specializations"
             className="inline-block px-8 py-3 text-lg font-semibold text-white bg-[rgb(23,162,69)] rounded-lg hover:bg-[rgb(20,145,60)] hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(23,162,69,0.4)] transition-all duration-200"
           >
-            {isAr ? `وظّف ${name}` : `Hire ${subName}`}
+            {`Hire ${subName}`}
           </a>
         </div>
       </section>
@@ -137,18 +109,16 @@ export default function MarketerCityPageContent({
       <section className="bg-white py-16">
         <div className="max-w-[1280px] mx-auto px-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
-            {isAr
-              ? `لماذا توظف ${name} في ${city}؟`
-              : `Why Hire ${subName} in ${cityName}?`}
+            {`Why Hire ${subName} in ${cityName}?`}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {whyCards.map((card, i) => (
               <div key={i} className="bg-gray-50 rounded-lg p-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {isAr ? card.titleAr : card.title}
+                  {card.title}
                 </h3>
                 <p className="text-gray-600">
-                  {isAr ? card.textAr : card.text}
+                  {card.text}
                 </p>
               </div>
             ))}
@@ -160,12 +130,10 @@ export default function MarketerCityPageContent({
       <section id="specializations" className="bg-gray-50 py-12">
         <div className="max-w-[1280px] mx-auto px-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
-            {isAr
-              ? `تخصصات المسوّقين المتاحة في ${city}`
-              : `Available Marketer Specializations in ${cityName}`}
+            {`Available Marketer Specializations in ${cityName}`}
           </h2>
           <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
-            {isAr ? specsIntroAr : specsIntro}
+            {specsIntro}
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {specLinks.map((spec) => (
@@ -174,7 +142,7 @@ export default function MarketerCityPageContent({
                 href={`/hire-marketers/${spec.slug}/${citySlug}`}
                 className="flex items-center justify-center px-4 py-3 bg-white rounded-lg text-sm font-medium text-gray-700 hover:text-[rgb(0,159,255)] hover:shadow-md transition-all border border-gray-200"
               >
-                {isAr ? spec.labelAr : spec.label}
+                {spec.label}
               </a>
             ))}
           </div>
@@ -185,9 +153,7 @@ export default function MarketerCityPageContent({
       <section className="bg-white py-16">
         <div className="max-w-[1280px] mx-auto px-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            {isAr
-              ? `المهارات الأساسية لدى ${name} في ${city}`
-              : `Core Skills of Our ${subName} in ${cityName}`}
+            {`Core Skills of Our ${subName} in ${cityName}`}
           </h2>
           <div className="max-w-3xl mx-auto">
             <div className="flex flex-wrap gap-3 justify-center">
@@ -201,7 +167,7 @@ export default function MarketerCityPageContent({
               ))}
             </div>
             <p className="text-gray-600 text-center mt-6">
-              {isAr ? skillsDescriptionAr : skillsDescription}
+              {skillsDescription}
             </p>
           </div>
         </div>
@@ -211,9 +177,7 @@ export default function MarketerCityPageContent({
       <section className="bg-gray-50 py-16">
         <div className="max-w-[1280px] mx-auto px-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            {isAr
-              ? `الأسئلة الشائعة: ${name} في ${city}`
-              : `Frequently Asked Questions: ${subName} in ${cityName}`}
+            {`Frequently Asked Questions: ${subName} in ${cityName}`}
           </h2>
           <div className="max-w-3xl mx-auto space-y-6">
             {faqItems.map((faq, i) => (
@@ -222,10 +186,10 @@ export default function MarketerCityPageContent({
                 className="bg-white rounded-lg p-6 border border-gray-200"
               >
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {isAr ? faq.qAr : faq.q}
+                  {faq.q}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  {isAr ? faq.aAr : faq.a}
+                  {faq.a}
                 </p>
               </div>
             ))}
@@ -235,42 +199,26 @@ export default function MarketerCityPageContent({
 
       {/* Cross-links: other specializations in same city */}
       <RelatedLinks
-        title={
-          isAr
-            ? `المزيد من المسوّقين في ${city}`
-            : `More Marketers in ${cityName}`
-        }
+        title={`More Marketers in ${cityName}`}
         links={otherSpecsSameCity.map((l) => ({
-          label: isAr ? l.labelAr : l.label,
+          label: l.label,
           href: l.href,
         }))}
       />
 
       {/* Cross-links: same specialization in other cities */}
       <RelatedLinks
-        title={
-          isAr
-            ? `${name} في مدن أخرى`
-            : `${subName} in Other Cities`
-        }
+        title={`${subName} in Other Cities`}
         links={sameSpecOtherCities.map((l) => ({
-          label: isAr ? l.labelAr : l.label,
+          label: l.label,
           href: l.href,
         }))}
       />
 
       <FinalCTA
-        heading={
-          isAr
-            ? `اعثر على أفضل ${name} في ${city}!`
-            : `Find Top ${subName} in ${cityName}!`
-        }
-        subheading={
-          isAr
-            ? `ابدأ الآن ووظّف أفضل ${name} من ${city}، ${region}.`
-            : `Get started now and hire the best freelance ${subName} from ${cityName}, ${regionName}.`
-        }
-        ctaText={isAr ? 'وظّف موهبة' : 'Hire Talent'}
+        heading={`Find Top ${subName} in ${cityName}!`}
+        subheading={`Get started now and hire the best freelance ${subName} from ${cityName}, ${regionName}.`}
+        ctaText="Hire Talent"
       />
     </>
   );

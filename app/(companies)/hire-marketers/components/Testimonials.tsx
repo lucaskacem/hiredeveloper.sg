@@ -1,9 +1,9 @@
 export default function Testimonials() {
     return (
         <section className="bg-white py-24 border-t border-gray-100">
-            <div className="max-w-[1280px] mx-auto px-12">
+            <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
                 <h2 className="text-[36px] font-bold text-[#0b152b] mb-16 text-center">
-                    Why clients hire digital marketers with HireDeveloper.ae
+                    Why clients hire digital marketers with HireDeveloper.sg
                 </h2>
 
                 <div className="max-w-4xl mx-auto relative">
@@ -16,7 +16,7 @@ export default function Testimonials() {
 
                     <div className="bg-[#f7f9fc] rounded-2xl p-12 text-center relative z-10">
                         <blockquote className="text-2xl md:text-3xl font-medium text-[#0b152b] leading-normal mb-8">
-                            "The quality of talent on HireDeveloper.ae is unmatched. We found a <span className="text-[#009fff] font-bold">superstar</span> in days who completely transformed our paid acquisition strategy."
+                            "The quality of talent on HireDeveloper.sg is unmatched. We found a <span className="text-[#009fff] font-bold">superstar</span> in days who completely transformed our paid acquisition strategy."
                         </blockquote>
 
                         <div className="flex flex-col items-center">

@@ -114,7 +114,7 @@ function buildEmailHtml(data: LeadData): string {
         </div>
         <div style="padding: 16px 32px; background-color: #f9fafb; border-top: 1px solid #e5e7eb;">
           <p style="margin: 0; font-size: 12px; color: #6b7280; text-align: center;">
-            This inquiry was submitted via the contact form on hiredeveloper.ae
+            This inquiry was submitted via the contact form on hiredeveloper.sg
           </p>
         </div>
       </div>

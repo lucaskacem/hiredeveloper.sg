@@ -58,10 +58,10 @@ export default function WhyChooseArc() {
 
     return (
         <section className="bg-[#f7f9fc] py-24">
-            <div className="max-w-[1280px] mx-auto px-12">
+            <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
                 <div className="text-center mb-16">
                     <h2 className="text-[36px] font-bold text-[#0b152b] mb-4">
-                        Why choose HireDeveloper.ae for marketing experts
+                        Why choose HireDeveloper.sg for marketing experts
                     </h2>
                 </div>
 

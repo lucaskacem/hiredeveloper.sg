@@ -162,7 +162,7 @@ export default function SkillAssessmentPage() {
     '@type': 'WebApplication',
     name: 'Skill Assessment',
     description: 'Test your knowledge on various technologies with an interactive quiz.',
-    url: 'https://hiredeveloper.ae/tools/skill-assessment',
+    url: 'https://hiredeveloper.sg/tools/skill-assessment',
     applicationCategory: 'EducationalApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -187,7 +187,7 @@ export default function SkillAssessmentPage() {
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h1 className="text-[42px] font-bold mb-4">Skill Assessment</h1>
           <p className="text-xl text-gray-300 max-w-3xl">
             How well do you know your stuff? Pick a technology and answer 10 questions.
@@ -197,7 +197,7 @@ export default function SkillAssessmentPage() {
 
       {/* Quiz */}
       <section className="py-16">
-        <div className="max-w-[800px] mx-auto px-12">
+        <div className="max-w-[800px] mx-auto px-4 md:px-6 lg:px-12">
           {!started && !showResult && (
             <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Select a Technology</h2>
@@ -383,7 +383,7 @@ export default function SkillAssessmentPage() {
 
       <FinalCTA
         heading="Find Vetted Top Developers"
-        subheading="Every developer at HireDeveloper.ae is tested for technical skills."
+        subheading="Every developer at HireDeveloper.sg is tested for technical skills."
       />
 
       <Footer />

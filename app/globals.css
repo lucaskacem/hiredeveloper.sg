@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
-[dir="rtl"] {
-  direction: rtl;
-  text-align: right;
+/* Hide scrollbar for horizontal scroll elements */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

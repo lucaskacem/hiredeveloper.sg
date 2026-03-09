@@ -30,15 +30,15 @@ export default function HowToUseArc() {
   ];
 
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 w-full">
+    <section className="bg-gray-50 py-10 md:py-16 lg:py-20 overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
         {/* Section Heading */}
         <h2 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 text-center mb-8 md:mb-12">
           {t('howItWorks.title')}
         </h2>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
           {steps.map((step) => (
             <div key={step.id} className="text-center">
               {/* Step Number with optional icon */}
@@ -48,7 +48,7 @@ export default function HowToUseArc() {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 )}
-                <h3 className="text-[32px] font-bold text-gray-900">
+                <h3 className="text-[22px] sm:text-[26px] md:text-[32px] font-bold text-gray-900">
                   {step.number}. {step.title}
                 </h3>
               </div>

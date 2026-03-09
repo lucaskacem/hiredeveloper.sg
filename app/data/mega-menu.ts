@@ -330,53 +330,16 @@ export const assistantItems: MegaMenuItem[] = [
 
 export const locationsData: LocationCountry[] = [
   {
-    name: 'UAE',
-    slug: 'uae',
+    name: 'Singapore',
+    slug: 'singapore',
     cities: [
-      { label: 'Dubai', slug: 'dubai', regionSlug: 'dubai' },
-      { label: 'Abu Dhabi', slug: 'abu-dhabi', regionSlug: 'abu-dhabi' },
-      { label: 'Sharjah', slug: 'sharjah', regionSlug: 'sharjah' },
-      { label: 'Ajman', slug: 'ajman', regionSlug: 'ajman' },
-      { label: 'Ras Al Khaimah', slug: 'ras-al-khaimah', regionSlug: 'ras-al-khaimah' },
-      { label: 'Fujairah', slug: 'fujairah', regionSlug: 'fujairah' },
-      { label: 'Umm Al Quwain', slug: 'umm-al-quwain', regionSlug: 'umm-al-quwain' },
-    ],
-  },
-  {
-    name: 'Saudi Arabia',
-    slug: 'saudi-arabia',
-    cities: [
-      { label: 'Riyadh', slug: 'riyadh', regionSlug: 'riyadh-region' },
-      { label: 'Jeddah', slug: 'jeddah', regionSlug: 'makkah-region' },
-      { label: 'Dammam', slug: 'dammam', regionSlug: 'eastern-province' },
-    ],
-  },
-  {
-    name: 'Qatar',
-    slug: 'qatar',
-    cities: [
-      { label: 'Doha', slug: 'doha', regionSlug: 'qatar' },
-    ],
-  },
-  {
-    name: 'Bahrain',
-    slug: 'bahrain',
-    cities: [
-      { label: 'Manama', slug: 'manama', regionSlug: 'bahrain' },
-    ],
-  },
-  {
-    name: 'Oman',
-    slug: 'oman',
-    cities: [
-      { label: 'Muscat', slug: 'muscat', regionSlug: 'oman' },
-    ],
-  },
-  {
-    name: 'Kuwait',
-    slug: 'kuwait',
-    cities: [
-      { label: 'Kuwait City', slug: 'kuwait-city', regionSlug: 'kuwait' },
+      { label: 'Singapore', slug: 'singapore', regionSlug: 'singapore' },
+      { label: 'Marina Bay', slug: 'marina-bay', regionSlug: 'marina-bay' },
+      { label: 'Jurong East', slug: 'jurong-east', regionSlug: 'jurong-east' },
+      { label: 'Tampines', slug: 'tampines', regionSlug: 'tampines' },
+      { label: 'Punggol', slug: 'punggol', regionSlug: 'punggol' },
+      { label: 'Woodlands', slug: 'woodlands', regionSlug: 'woodlands' },
+      { label: 'Sengkang', slug: 'sengkang', regionSlug: 'sengkang' },
     ],
   },
 ];

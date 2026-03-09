@@ -3,13 +3,14 @@ import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import FinalCTA from '../components/FinalCTA';
+import HiringProcessFlowchart from '../components/HiringProcessFlowchart';
 import RelatedLinks from '../components/RelatedLinks';
 import OpenModalButton from '../components/OpenModalButton';
 
 export const metadata: Metadata = {
-  title: 'Remote Companies | Work for UAE-Based Firms | HireDeveloper.ae',
+  title: 'Remote Companies | Work for Singapore-Based Firms | HireDeveloper.sg',
   description:
-    'Discover remote-friendly companies in Dubai, Abu Dhabi, and across the UAE that hire through HireDeveloper.ae. Startups, SMEs, and enterprises across the Middle East.',
+    'Discover remote-friendly companies in Singapore, and across Singapore that hire through HireDeveloper.sg. Startups, SMEs, and enterprises across the Asia Pacific.',
   robots: { index: true, follow: true },
 };
 
@@ -17,8 +18,8 @@ function PageJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'Remote Companies - HireDeveloper.ae',
-    description: 'Companies in the UAE that hire remote talent through HireDeveloper.ae.',
+    name: 'Remote Companies - HireDeveloper.sg',
+    description: 'Companies in Singapore that hire remote talent through HireDeveloper.sg.',
   };
 
   return (
@@ -40,14 +41,14 @@ const companyTypes: CompanyType[] = [
   {
     type: 'Tech Startups',
     description:
-      'Fast-growing startups developing new products and scaling quickly. From pre-seed to Series C: work at the forefront of innovation in the UAE ecosystem.',
+      'Fast-growing startups developing new products and scaling quickly. From pre-seed to Series C: work at the forefront of innovation in Singapore ecosystem.',
     examples: ['FinTech', 'HealthTech', 'EdTech', 'PropTech', 'FoodTech'],
     roles: ['Full-Stack Developer', 'Mobile Developer', 'Product Designer', 'Growth Marketer'],
   },
   {
     type: 'SMEs & Mid-Market',
     description:
-      'Established companies driving their digital transformation. UAE SMEs offer stable projects, long-term perspectives, and challenging work across diverse industries.',
+      'Established companies driving their digital transformation. Singapore SMEs offer stable projects, long-term perspectives, and challenging work across diverse industries.',
     examples: ['Industry 4.0', 'E-Commerce', 'Logistics', 'Manufacturing', 'Retail'],
     roles: ['Backend Developer', 'DevOps Engineer', 'UX Designer', 'Project Manager'],
   },
@@ -100,15 +101,15 @@ export default function RemoteCompaniesPage() {
 
       {/* Hero */}
       <section className="bg-white py-20 border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-[rgb(0,159,255)] font-semibold text-lg mb-4">For Talent</p>
             <h1 className="text-[48px] font-bold text-gray-900 mb-6">
               Remote Companies
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              Which companies hire through HireDeveloper.ae?
-              From startups to enterprises, all based in the UAE and Middle East. Here is an overview.
+              Which companies hire through HireDeveloper.sg?
+              From startups to enterprises, all based in Singapore and Asia Pacific. Here is an overview.
             </p>
             <OpenModalButton className="px-8 py-4 text-lg font-semibold text-white bg-[rgb(23,162,69)] rounded-lg hover:bg-[rgb(20,145,60)] transition-all">
               Apply Now
@@ -119,7 +120,7 @@ export default function RemoteCompaniesPage() {
 
       {/* Stats */}
       <section className="bg-gray-50 py-12 border-b border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-[rgb(0,159,255)]">500+</div>
@@ -127,7 +128,7 @@ export default function RemoteCompaniesPage() {
             </div>
             <div>
               <div className="text-3xl font-bold text-[rgb(0,159,255)]">7</div>
-              <p className="text-sm text-gray-600 mt-1">Emirates covered</p>
+              <p className="text-sm text-gray-600 mt-1">districts covered</p>
             </div>
             <div>
               <div className="text-3xl font-bold text-[rgb(0,159,255)]">15+</div>
@@ -143,12 +144,12 @@ export default function RemoteCompaniesPage() {
 
       {/* Company Types */}
       <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
             Which Companies Hire Through Us?
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
-            Companies across the UAE and Middle East rely on HireDeveloper.ae for their remote hiring needs.
+            Companies across Singapore and Asia Pacific rely on HireDeveloper.sg for their remote hiring needs.
           </p>
 
           <div className="space-y-8">
@@ -187,7 +188,7 @@ export default function RemoteCompaniesPage() {
 
       {/* What companies offer */}
       <section className="bg-gray-50 py-20 border-t border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
             What These Companies Offer
           </h2>
@@ -244,27 +245,27 @@ export default function RemoteCompaniesPage() {
 
       {/* Locations */}
       <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
             Where Our Companies Are Based
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
-            Our companies are headquartered in the major cities and free zones of the UAE.
+            Our companies are headquartered across Singapore&apos;s major business districts and tech hubs.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {[
-              { city: 'Dubai', href: '/locations/uae/dubai/dubai' },
-              { city: 'Abu Dhabi', href: '/locations/uae/abu-dhabi/abu-dhabi' },
-              { city: 'Sharjah', href: '/locations/uae/sharjah/sharjah' },
-              { city: 'DIFC', href: '/locations/uae/dubai/dubai' },
-              { city: 'Dubai Silicon Oasis', href: '/locations/uae/dubai/dubai' },
-              { city: 'Dubai Internet City', href: '/locations/uae/dubai/dubai-internet-city' },
-              { city: 'Abu Dhabi Global Market', href: '/locations/uae/abu-dhabi/abu-dhabi' },
-              { city: 'Ras Al Khaimah', href: '/locations/uae/ras-al-khaimah/ras-al-khaimah' },
-              { city: 'Ajman', href: '/locations/uae/ajman/ajman' },
-              { city: 'Fujairah', href: '/locations/uae/fujairah/fujairah' },
-              { city: 'Riyadh', href: '/locations/saudi-arabia/riyadh-region/riyadh' },
+              { city: 'Singapore', href: '/locations/singapore' },
+              { city: 'Marina Bay', href: '/locations/singapore/central-region/marina-bay' },
+              { city: 'Jurong East', href: '/locations/singapore/west-region/jurong-east' },
+              { city: 'CBD (Raffles Place)', href: '/locations/singapore/central-region/raffles-place' },
+              { city: 'one-north', href: '/locations/singapore/central-region/one-north' },
+              { city: 'Changi Business Park', href: '/locations/singapore/east-region/changi-business-park' },
+              { city: 'Mapletree Business City', href: '/locations/singapore/central-region/tanjong-pagar' },
+              { city: 'Punggol', href: '/locations/singapore/north-east-region/punggol' },
+              { city: 'Tampines', href: '/locations/singapore/east-region/tampines' },
+              { city: 'Woodlands', href: '/locations/singapore/north-region/woodlands' },
+              { city: 'Buona Vista', href: '/locations/singapore/central-region/buona-vista' },
               { city: 'All Locations', href: '/locations' },
             ].map((loc) => (
               <a
@@ -279,10 +280,42 @@ export default function RemoteCompaniesPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="bg-white py-16">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-10 text-center">
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-4">
+              {[
+                { q: 'What types of companies hire remote developers through HireDeveloper.sg?', a: 'We serve startups, SMEs, and enterprises across Singapore. From pre-seed startups needing their first engineer to established companies scaling their tech teams, our platform matches you with pre-vetted developers regardless of company size.' },
+                { q: 'Can remote companies in Singapore hire developers from other countries?', a: 'Yes, Singapore companies can hire remote developers globally. For developers working outside Singapore, no Employment Pass is required. HireDeveloper.sg handles the matching — you handle the contract directly or use an EOR service for compliance.' },
+                { q: 'How do remote-first companies in Singapore manage timezone differences?', a: 'Singapore (GMT+8) overlaps well with developers in APAC, India, and parts of Europe. Most remote teams adopt async-first communication with 2-4 hours of live overlap. Tools like Slack, Notion, and Loom make collaboration seamless across timezones.' },
+                { q: 'What is the typical engagement model for remote developers?', a: 'We offer freelance (hourly/project-based), part-time (20hrs/week), and full-time remote positions. Most clients start with a freelance contract and transition to full-time after a successful trial period. There are no upfront fees or long-term commitments required.' },
+                { q: 'How do you vet remote developers for Singapore companies?', a: 'Every developer passes a multi-stage process: technical assessment, code review, communication evaluation, and reference checks. Only the top 2% are accepted. We also verify timezone compatibility and English proficiency for Singapore-based teams.' },
+              ].map((faq, i) => (
+                <details key={i} className="group border border-gray-200 rounded-lg overflow-hidden bg-white">
+                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer hover:bg-gray-50 transition-colors">
+                    <span className="text-base font-semibold text-gray-900 pr-4">{faq.q}</span>
+                    <span className="flex-shrink-0 text-gray-400 group-open:rotate-45 transition-transform text-xl">+</span>
+                  </summary>
+                  <div className="px-6 pb-5">
+                    <p className="text-gray-600 leading-relaxed text-sm">{faq.a}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <RelatedLinks title="More Pages" links={relatedLinks} />
 
+      <HiringProcessFlowchart industry="your remote team" />
+
       <FinalCTA
-        heading="Work for Leading UAE Companies"
+        heading="Work for Leading Singapore Companies"
         subheading="Apply now and gain access to exclusive remote positions."
         ctaText="Apply Now"
       />

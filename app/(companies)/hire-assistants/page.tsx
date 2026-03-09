@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
+import WhyChooseArc from '@/app/components/WhyChooseArc';
 import HireHero from '../components/HireHero';
 import TalentShowcase from '../components/TalentShowcase';
 import StatsTestimonials from '../components/StatsTestimonials';
@@ -9,18 +10,22 @@ import HowItWorksSteps from '../components/HowItWorksSteps';
 import FAQSection from '../components/FAQSection';
 import ResourcesSection from '../components/ResourcesSection';
 import FinalCTA from '../components/FinalCTA';
+import Breadcrumb from '../components/Breadcrumb';
+import RelatedLinks from '../components/RelatedLinks';
+import HiringProcessFlowchart from '../components/HiringProcessFlowchart';
+import HiringGuideSection from '../components/HiringGuideSection';
 
 const year = new Date().getFullYear();
 export const metadata: Metadata = {
-  title: `Hire Assistants - ${year} | HireDeveloper.ae`,
-  description: `Hire vetted virtual assistants, executive assistants, and administrative assistants in Dubai and Abu Dhabi. Over 4,500 remote experts ready for interviews. Updated for ${year}.`,
+  title: `Hire Assistants - ${year} | HireDeveloper.sg`,
+  description: `Hire vetted virtual assistants, executive assistants, and administrative assistants in Singapore. Over 4,500 remote experts ready for interviews. Updated for ${year}.`,
 };
 
 export default function HireAssistantsPage() {
   const profiles = [
     {
       name: "Maria R.",
-      location: "Dubai, UAE (UTC+4)",
+      location: "Singapore, Singapore (UTC+8)",
       badge: "Vetted Assistant",
       bio: "Highly organized executive assistant with 7+ years of experience supporting C-level executives. Expert in calendar management, travel planning, email management, and project coordination. Excellent communication skills and attention to detail.",
       skills: ["Executive Support", "Calendar Management", "Travel Planning", "Email Management", "Data Entry", "Research", "+6"],
@@ -38,7 +43,7 @@ export default function HireAssistantsPage() {
 
   const testimonials = [
     {
-      quote: "Our virtual assistant from HireDeveloper.ae was a game-changer for our productivity.",
+      quote: "Our virtual assistant from HireDeveloper.sg was a game-changer for our productivity.",
       author: "Robert Johnson",
       title: "CEO",
       company: "StartupCo",
@@ -97,32 +102,105 @@ export default function HireAssistantsPage() {
   ];
 
   const articles = [
-    { title: "Finding Freelance Experts: 21+ Expert Tips & Strategies", image: "/images/blog/people-search.svg", url: "/employer-blog/how-to-find-developers" },
+    { title: "Finding Remote Assistants: 21+ Tips & Strategies", image: "/images/blog/people-search.svg", url: "/employer-blog/how-to-find-developers" },
     { title: "Is Your Candidate Ready for Remote Work?", image: "/images/blog/remote-team.svg", url: "/employer-blog/remote-ready-interview-questions" },
-    { title: "Interview Questions for Remote Experts", image: "/images/blog/online-test.svg", url: "/employer-blog/software-engineer-interview-questions" },
-    { title: "How to Conduct a Remote Technical Interview", image: "/images/blog/code-review.svg", url: "/employer-blog/how-to-conduct-a-remote-technical-interview" },
-    { title: "Building & Maintaining a Remote Team", image: "/images/blog/team-collaboration.svg", url: "/employer-blog/distributed-software-engineering-team" },
-    { title: "Managing Remote Teams", image: "/images/blog/project-completed.svg", url: "/employer-blog/how-to-manage-developers-remote-team" }
+    { title: "Interview Questions for Remote Assistants", image: "/images/blog/online-test.svg", url: "/employer-blog/software-engineer-interview-questions" },
+    { title: "How to Conduct a Remote Assistant Interview", image: "/images/blog/code-review.svg", url: "/employer-blog/how-to-conduct-a-remote-technical-interview" },
+    { title: "Building a Remote Operations Team", image: "/images/blog/team-collaboration.svg", url: "/employer-blog/distributed-software-engineering-team" },
+    { title: "Managing Remote Assistants Effectively", image: "/images/blog/project-completed.svg", url: "/employer-blog/how-to-manage-developers-remote-team" }
+  ];
+
+  const guideSections = [
+    {
+      title: "Why hire remote assistants in Singapore?",
+      subsections: [
+        {
+          subtitle: "Free Up Your Time to Focus on Growth",
+          content: "Singapore founders and executives juggle an extraordinary workload — from investor meetings in Marina Bay to conferences at Suntec City. Remote assistants handle email management, scheduling, research, and administrative tasks so you can focus on strategic decisions that grow your business. HireDeveloper.sg pre-vets every assistant for English proficiency, professionalism, and reliability."
+        },
+        {
+          subtitle: "Cost Savings Without Compromising Quality",
+          content: "Full-time administrative staff in Singapore cost SGD 36,000–72,000 annually plus CPF contributions and office space. Remote assistants through HireDeveloper.sg offer the same quality of support at 50-70% lower cost, with the flexibility to hire part-time (20 hrs/week) or full-time based on your current needs."
+        }
+      ]
+    },
+    {
+      title: "Types of remote assistants available in Singapore",
+      subsections: [
+        {
+          subtitle: "Virtual Assistants (VAs)",
+          content: "General-purpose remote professionals who handle email management, data entry, research, social media scheduling, customer support, and more. Ideal for startups and SMEs across Singapore who need flexible, multi-skilled support without hiring full-time staff."
+        },
+        {
+          subtitle: "Executive Assistants (EAs)",
+          content: "Experienced professionals who support C-suite executives with complex calendar management, board meeting preparation, confidential correspondence, travel planning, and stakeholder communication. Perfect for busy founders and directors across Singapore's CBD and tech hubs."
+        },
+        {
+          subtitle: "Administrative Assistants",
+          content: "Organized professionals who manage office administration, document processing, filing systems, inventory management, and meeting coordination. Essential for Singapore companies scaling operations across multiple offices or coworking spaces."
+        }
+      ]
+    }
   ];
 
   return (
     <div className="min-h-screen bg-white">
       <Header />
+
+      <Breadcrumb
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Hire Assistants', href: '/hire-assistants' },
+        ]}
+      />
+
       <HireHero
         category="assistants"
         count={4532}
-        description="HireDeveloper.ae has 4,532 vetted remote assistants ready for interviews. Find virtual assistants, executive assistants, administrative assistants, and more to support your business operations in Dubai and Abu Dhabi."
-        descriptionAr="يضم HireDeveloper.ae أكثر من 4,532 مساعدًا معتمدًا عن بعد جاهزين للمقابلات. اعثر على مساعدين افتراضيين وتنفيذيين وإداريين لدعم عمليات أعمالك في دبي وأبوظبي."
+        description="HireDeveloper.sg has 4,532 vetted remote assistants ready for interviews. Find virtual assistants, executive assistants, and administrative assistants to support your business operations in Singapore."
       />
       <TalentShowcase heading="4,532 remote assistants available:" profiles={profiles} category="assistants" />
       <StatsTestimonials stats={stats} testimonials={testimonials} />
-      <CategoriesGrid heading="Top remote assistants are just a few clicks away" subheading="HireDeveloper.ae offers pre-vetted assistants ready to support your business needs." sections={categorySections} />
+      <CategoriesGrid heading="Hire Remote Assistants in Singapore by Specialization" subheading="HireDeveloper.sg offers pre-vetted assistants ready to support your business needs." sections={categorySections} />
       <HowItWorksSteps steps={steps} category="assistants" />
+
+      <WhyChooseArc />
+
+      <HiringGuideSection
+        heading="How to Hire Top Remote Assistants in Singapore"
+        sections={guideSections}
+      />
+
       <FAQSection category="assistants" />
+
+      <HiringProcessFlowchart industry="your remote support team" />
+
       <ResourcesSection heading="Resources for hiring remote assistants" subheading="Learn more about how to hire remote assistants and maximize productivity!" articles={articles} />
+
+      <RelatedLinks
+        title="Also Hire"
+        links={[
+          { label: 'Software Developers', href: '/hire-developers' },
+          { label: 'Product Managers', href: '/hire-product-managers' },
+          { label: 'Project Managers', href: '/hire-project-managers' },
+          { label: 'Marketing Experts', href: '/hire-marketers' },
+          { label: 'UX/UI Designers', href: '/hire-designers' },
+        ]}
+      />
+
+      <RelatedLinks
+        title="Hiring Tools"
+        links={[
+          { label: 'Salary Calculator', href: '/tools/salary-calculator' },
+          { label: 'Team Cost Calculator', href: '/tools/team-cost-calculator' },
+          { label: 'Interview Questions Generator', href: '/tools/interview-questions' },
+          { label: 'All Tools', href: '/tools' },
+        ]}
+      />
+
       <FinalCTA
-        heading="Your new assistant is just a click away!"
-        subheading="Start risk-free."
+        heading="Hire Remote Assistants in Singapore — Start Risk-Free"
+        subheading="3 specializations. Pre-vetted candidates in 48 hours. $0 until you hire."
         ctaText="Hire Talent"
       />
       <Footer />

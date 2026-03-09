@@ -6,9 +6,9 @@ import FinalCTA from '../components/FinalCTA';
 import RelatedLinks from '../components/RelatedLinks';
 
 export const metadata: Metadata = {
-  title: 'Case Studies | Client Success Stories | HireDeveloper.ae',
+  title: 'Case Studies | Client Success Stories | HireDeveloper.sg',
   description:
-    'See how companies in Dubai, Abu Dhabi, and across the UAE built their remote teams with HireDeveloper.ae, saved costs, and delivered projects successfully.',
+    'See how companies in Singapore, and across Singapore built their remote teams with HireDeveloper.sg, saved costs, and delivered projects successfully.',
   robots: { index: true, follow: true },
 };
 
@@ -16,9 +16,9 @@ function PageJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Case Studies - HireDeveloper.ae',
+    name: 'Case Studies - HireDeveloper.sg',
     description:
-      'Success stories from companies that hired remote talent through HireDeveloper.ae.',
+      'Success stories from companies that hired remote talent through HireDeveloper.sg.',
   };
 
   return (
@@ -48,18 +48,18 @@ const caseStudies: CaseStudy[] = [
   {
     company: 'PayFlow Technologies',
     industry: 'FinTech',
-    location: 'DIFC, Dubai',
+    location: 'CBD, Singapore',
     challenge:
-      'PayFlow Technologies, a fast-growing FinTech startup based in DIFC, needed to build a complete backend development team within 6 weeks to launch a new payment platform for the Middle East market. Local developers were scarce and salaries in the Dubai market were extremely high.',
+      'PayFlow Technologies, a fast-growing FinTech startup based in the CBD, needed to build a complete backend development team within 6 weeks to launch a new payment platform for the Asia Pacific market. Local developers were scarce and salaries in the Singapore market were extremely high.',
     solution:
-      'Through HireDeveloper.ae, PayFlow hired three senior backend developers (Node.js, Python) and a DevOps engineer in just 10 days. All four had FinTech experience and were familiar with UAE regulatory requirements.',
+      'Through HireDeveloper.sg, PayFlow hired three senior backend developers (Node.js, Python) and a DevOps engineer in just 10 days. All four had FinTech experience and were familiar with Singapore regulatory requirements.',
     results: [
       'Payment platform launched 3 weeks ahead of deadline',
       '52% cost savings compared to local hires',
       'All 4 talents converted to full-time after trial period',
       'Zero downtime since launch (99.99% uptime)',
     ],
-    quote: 'HireDeveloper.ae helped us build a strong team in record time. The quality of the candidates exceeded our expectations.',
+    quote: 'HireDeveloper.sg helped us build a strong team in record time. The quality of the candidates exceeded our expectations.',
     quoteAuthor: 'M. Al-Rashid',
     quoteTitle: 'CTO, PayFlow Technologies',
     teamSize: '4 talents',
@@ -69,18 +69,18 @@ const caseStudies: CaseStudy[] = [
   {
     company: 'MediBridge Health',
     industry: 'HealthTech',
-    location: 'Abu Dhabi',
+    location: 'Marina Bay',
     challenge:
-      'MediBridge Health develops a telemedicine platform and urgently needed specialized React and React Native developers to build the mobile app and doctor dashboard in parallel. In Abu Dhabi, the cost for such specialists was prohibitive.',
+      'MediBridge Health develops a telemedicine platform and urgently needed specialized React and React Native developers to build the mobile app and doctor dashboard in parallel. In Marina Bay, the cost for such specialists was prohibitive.',
     solution:
-      'HireDeveloper.ae provided two senior React developers and a React Native specialist within 2 weeks. Additionally, a UX designer was brought on to redesign the mobile user experience.',
+      'HireDeveloper.sg provided two senior React developers and a React Native specialist within 2 weeks. Additionally, a UX designer was brought on to redesign the mobile user experience.',
     results: [
       'Mobile app completed in 4 months (instead of planned 8)',
-      '58% cost savings compared to Abu Dhabi salaries',
+      '58% cost savings compared to Marina Bay salaries',
       'App Store rating of 4.8 stars after launch',
       'Patient satisfaction increased by 35%',
     ],
-    quote: 'The developers from HireDeveloper.ae integrated seamlessly into our team. You can hardly tell they work remotely.',
+    quote: 'The developers from HireDeveloper.sg integrated seamlessly into our team. You can hardly tell they work remotely.',
     quoteAuthor: 'Dr. S. Hassan',
     quoteTitle: 'CEO, MediBridge Health',
     teamSize: '4 talents',
@@ -88,22 +88,22 @@ const caseStudies: CaseStudy[] = [
     costSaving: '58%',
   },
   {
-    company: 'ShopGulf LLC',
+    company: 'ShopAsia LLC',
     industry: 'E-Commerce',
-    location: 'Dubai Internet City',
+    location: 'one-north, Singapore',
     challenge:
-      'ShopGulf, a mid-sized e-commerce company, wanted to completely rebuild its online shop and simultaneously create a data team for personalized product recommendations. The existing team was fully loaded and internal recruiting attempts had been unsuccessful for months.',
+      'ShopAsia, a mid-sized e-commerce company, wanted to completely rebuild its online shop and simultaneously create a data team for personalized product recommendations. The existing team was fully loaded and internal recruiting attempts had been unsuccessful for months.',
     solution:
-      'HireDeveloper.ae filled 6 positions progressively: two full-stack developers, a Shopify expert, a data scientist, a UX designer, and a growth marketer. The first candidates were available within 48 hours.',
+      'HireDeveloper.sg filled 6 positions progressively: two full-stack developers, a Shopify expert, a data scientist, a UX designer, and a growth marketer. The first candidates were available within 48 hours.',
     results: [
       'Online shop relaunched in 5 months instead of planned 9',
       'Revenue increased by 40% within 6 months of launch',
       'Conversion rate improved from 2.1% to 3.8%',
       '55% total savings on staffing costs',
     ],
-    quote: 'From the first inquiry to a productive team, everything ran smoothly. HireDeveloper.ae is now our go-to partner for all hiring.',
+    quote: 'From the first inquiry to a productive team, everything ran smoothly. HireDeveloper.sg is now our go-to partner for all hiring.',
     quoteAuthor: 'L. Ahmed',
-    quoteTitle: 'Managing Director, ShopGulf LLC',
+    quoteTitle: 'Managing Director, ShopAsia LLC',
     teamSize: '6 talents',
     timeToHire: '3 weeks',
     costSaving: '55%',
@@ -111,18 +111,18 @@ const caseStudies: CaseStudy[] = [
   {
     company: 'GreenRoute Logistics',
     industry: 'Logistics & Sustainability',
-    location: 'Abu Dhabi',
+    location: 'Marina Bay',
     challenge:
-      'GreenRoute develops AI-powered route optimization software for sustainable logistics. The company needed AI specialists with experience in machine learning and optimization algorithms. In Abu Dhabi: virtually impossible to find locally.',
+      'GreenRoute develops AI-powered route optimization software for sustainable logistics. The company needed AI specialists with experience in machine learning and optimization algorithms. In Marina Bay: virtually impossible to find locally.',
     solution:
-      'HireDeveloper.ae found two experienced machine learning engineers and an AI architect specializing in optimization within 8 days. All three had relevant industry experience in logistics or supply chain.',
+      'HireDeveloper.sg found two experienced machine learning engineers and an AI architect specializing in optimization within 8 days. All three had relevant industry experience in logistics or supply chain.',
     results: [
       'AI model achieved 94% accuracy in route predictions',
       'Customer CO2 emissions reduced by an average of 23%',
       'Development time shortened by 4 months',
-      '48% cost savings compared to Abu Dhabi salaries',
+      '48% cost savings compared to Marina Bay salaries',
     ],
-    quote: 'We could never have found this AI expertise locally. HireDeveloper.ae delivered world-class talent who understood our vision.',
+    quote: 'We could never have found this AI expertise locally. HireDeveloper.sg delivered world-class talent who understood our vision.',
     quoteAuthor: 'T. Kapoor',
     quoteTitle: 'Head of AI, GreenRoute Logistics',
     teamSize: '3 talents',
@@ -132,18 +132,18 @@ const caseStudies: CaseStudy[] = [
   {
     company: 'LearnStar Education',
     industry: 'EdTech',
-    location: 'Dubai Silicon Oasis',
+    location: 'Changi Business Park, Singapore',
     challenge:
-      'LearnStar develops an interactive learning platform for schools across the UAE and GCC. After a funding round, the team needed to quickly grow from 5 to 15 developers to execute an ambitious product roadmap -- in Dubai, one of the most expensive tech markets in the region.',
+      'LearnStar develops an interactive learning platform for schools across Singapore and APAC. After a funding round, the team needed to quickly grow from 5 to 15 developers to execute an ambitious product roadmap -- in Singapore, one of the most expensive tech markets in the region.',
     solution:
-      'In 4 weeks, HireDeveloper.ae built a complete remote team: 5 frontend developers (React/TypeScript), 3 backend developers (Python/Django), a mobile developer (Flutter), and a project manager. A dedicated account manager coordinated the entire process.',
+      'In 4 weeks, HireDeveloper.sg built a complete remote team: 5 frontend developers (React/TypeScript), 3 backend developers (Python/Django), a mobile developer (Flutter), and a project manager. A dedicated account manager coordinated the entire process.',
     results: [
       '10 new team members hired in under 4 weeks',
       'MVP completed 6 weeks ahead of schedule',
-      '60% cost savings compared to Dubai salaries',
-      'Platform used by over 200 schools across the UAE and GCC',
+      '60% cost savings compared to Singapore salaries',
+      'Platform used by over 200 schools across Singapore and APAC',
     ],
-    quote: 'Without HireDeveloper.ae we could never have built our team this fast. The quality of talent is impressive, and the process was straightforward.',
+    quote: 'Without HireDeveloper.sg we could never have built our team this fast. The quality of talent is impressive, and the process was straightforward.',
     quoteAuthor: 'A. Mahmoud',
     quoteTitle: 'Co-Founder & CEO, LearnStar Education',
     teamSize: '10 talents',
@@ -176,15 +176,15 @@ export default function CaseStudiesPage() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero */}
-      <section className="bg-white py-20 border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-white py-10 md:py-16 lg:py-20 border-b border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-[48px] font-bold text-gray-900 mb-6">
+            <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 mb-6">
               Case Studies
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              How do companies in Dubai and Abu Dhabi build their
-              remote teams with HireDeveloper.ae? Here are real examples with concrete numbers.
+              How do companies in Singapore build their
+              remote teams with HireDeveloper.sg? Here are real examples with concrete numbers.
             </p>
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function CaseStudiesPage() {
 
       {/* Stats overview */}
       <section className="bg-gray-50 py-12 border-b border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-[rgb(0,159,255)]">800+</div>
@@ -215,8 +215,8 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Case Studies */}
-      <section className="py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="space-y-20">
             {caseStudies.map((study, index) => (
               <article key={study.company} className="bg-white rounded-xl border border-gray-200 overflow-hidden">

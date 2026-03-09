@@ -9,12 +9,12 @@ import InlineCTABanner from '../components/InlineCTABanner';
 import { countries, getTopCitiesForCountry } from '@/app/data/locations';
 
 export const metadata: Metadata = {
-  title: 'Hire Remote Developers by Location | HireDeveloper.ae',
+  title: 'Hire Remote Developers by Location | HireDeveloper.sg',
   description:
-    'Find and hire the best remote developers across the UAE, Saudi Arabia, Qatar, Bahrain, Oman, and Kuwait. Access top-tier programmers in every major GCC city.',
+    'Find and hire the best remote developers across Singapore. Access top-tier programmers in Marina Bay, CBD, one-north, Changi Business Park, and every major tech district.',
   robots: { index: true, follow: true },
   alternates: {
-    canonical: 'https://hiredeveloper.ae/locations',
+    canonical: 'https://hiredeveloper.sg/locations',
   },
 };
 
@@ -32,16 +32,16 @@ export default function LocationsPage() {
 
       {/* Hero */}
       <section className="bg-black py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Hire Remote Developers by Location
               </h1>
               <p className="text-lg text-gray-300 max-w-3xl mx-auto lg:mx-0">
-                Find pre-vetted remote developers across the UAE, Saudi Arabia,
-                Qatar, Bahrain, Oman, and Kuwait. Browse our locations and discover
-                top programmers in your region.
+                Find and hire the best remote developers across Singapore. Access
+                top-tier programmers in Marina Bay, CBD, one-north, Changi Business
+                Park, and every major tech district.
               </p>
             </div>
             <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden shadow-[0_20px_60px_rgba(255,255,255,0.05)] border border-white/10 hidden lg:block">
@@ -56,7 +56,7 @@ export default function LocationsPage() {
 
       {/* Country cards grid */}
       <section className="py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">
             Browse All Locations
           </h2>

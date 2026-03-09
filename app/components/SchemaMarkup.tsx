@@ -20,30 +20,25 @@ export default function SchemaMarkup({ schemas }: SchemaMarkupProps) {
 // Pre-built schema generators for each page type
 // ---------------------------------------------------------------------------
 
-const BASE_URL = 'https://hiredeveloper.ae';
+const BASE_URL = 'https://hiredeveloper.sg';
 
 export function organizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'HireDeveloper.ae',
+    name: 'HireDeveloper.sg',
     url: BASE_URL,
     logo: `${BASE_URL}/images/logo.png`,
     description:
-      'Premium talent marketplace connecting UAE/GCC companies with the top 2% of vetted remote developers, designers, marketers, and more.',
+      'Premium talent marketplace connecting Singapore/APAC companies with the top 2% of vetted remote developers, designers, marketers, and more.',
     foundingDate: '2024',
     areaServed: [
-      { '@type': 'Country', name: 'United Arab Emirates' },
-      { '@type': 'Country', name: 'Saudi Arabia' },
-      { '@type': 'Country', name: 'Qatar' },
-      { '@type': 'Country', name: 'Bahrain' },
-      { '@type': 'Country', name: 'Kuwait' },
-      { '@type': 'Country', name: 'Oman' },
+      { '@type': 'Country', name: 'Singapore' },
     ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer service',
-      availableLanguage: ['English', 'Arabic'],
+      availableLanguage: ['English', 'Chinese', 'Malay'],
     },
     sameAs: [],
   };
@@ -53,7 +48,7 @@ export function webSiteSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'HireDeveloper.ae',
+    name: 'HireDeveloper.sg',
     url: BASE_URL,
     potentialAction: {
       '@type': 'SearchAction',
@@ -80,17 +75,12 @@ export function serviceSchema(opts: {
     url: opts.url,
     provider: {
       '@type': 'Organization',
-      name: 'HireDeveloper.ae',
+      name: 'HireDeveloper.sg',
       url: BASE_URL,
     },
     serviceType: opts.serviceType,
     areaServed: [
-      'United Arab Emirates',
-      'Saudi Arabia',
-      'Qatar',
-      'Bahrain',
-      'Kuwait',
-      'Oman',
+      'Singapore',
     ],
     offers: {
       '@type': 'Offer',
@@ -163,7 +153,7 @@ export function localBusinessSchema(opts: {
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: `HireDeveloper.ae - ${opts.city}`,
+    name: `HireDeveloper.sg - ${opts.city}`,
     description: `Hire top remote developers, designers, and marketers in ${opts.city}, ${opts.country}. Pre-vetted talent available within 48 hours.`,
     url: opts.url,
     address: {
@@ -200,12 +190,12 @@ export function articleSchema(opts: {
     image: opts.image || `${BASE_URL}/images/og-default.png`,
     author: {
       '@type': 'Organization',
-      name: 'HireDeveloper.ae',
+      name: 'HireDeveloper.sg',
       url: BASE_URL,
     },
     publisher: {
       '@type': 'Organization',
-      name: 'HireDeveloper.ae',
+      name: 'HireDeveloper.sg',
       url: BASE_URL,
       logo: {
         '@type': 'ImageObject',

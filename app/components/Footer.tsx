@@ -48,17 +48,13 @@ export default function Footer() {
   const locations = {
     title: t('footer.locations'),
     links: [
-      { name: 'Dubai', url: '/locations/uae/dubai/dubai' },
-      { name: 'Abu Dhabi', url: '/locations/uae/abu-dhabi/abu-dhabi' },
-      { name: 'Sharjah', url: '/locations/uae/sharjah/sharjah' },
-      { name: 'Ajman', url: '/locations/uae/ajman/ajman' },
-      { name: 'Ras Al Khaimah', url: '/locations/uae/ras-al-khaimah/ras-al-khaimah' },
-      { name: 'Riyadh', url: '/locations/saudi-arabia/riyadh-region/riyadh' },
-      { name: 'Jeddah', url: '/locations/saudi-arabia/makkah-region/jeddah' },
-      { name: 'Doha', url: '/locations/qatar/qatar/doha' },
-      { name: 'Manama', url: '/locations/bahrain/bahrain/manama' },
-      { name: 'Muscat', url: '/locations/oman/oman/muscat' },
-      { name: 'Kuwait City', url: '/locations/kuwait/kuwait/kuwait-city' }
+      { name: 'Singapore', url: '/locations/singapore' },
+      { name: 'Marina Bay', url: '/locations/singapore/central-region/marina-bay' },
+      { name: 'Raffles Place', url: '/locations/singapore/central-region/raffles-place' },
+      { name: 'Orchard', url: '/locations/singapore/central-region/orchard' },
+      { name: 'one-north', url: '/locations/singapore/central-region/one-north' },
+      { name: 'Changi Business Park', url: '/locations/singapore/east-region/changi-business-park' },
+      { name: 'Jurong', url: '/locations/singapore/west-region/jurong-east' }
     ]
   };
 
@@ -113,76 +109,57 @@ export default function Footer() {
   );
 
   return (
-    <footer className="bg-black text-white py-16">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 w-full">
+    <footer className="bg-black text-white py-10 md:py-16">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-6 lg:px-12 w-full">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mb-10 md:mb-12">
           {renderColumn(topTalent)}
           {renderColumn(marketingSkills)}
           {renderColumn(locations)}
           {renderColumn(toolsColumn)}
           {renderColumn(linksColumn)}
-
-          {/* Arabic Quick Links */}
-          <div>
-            <h3 className="text-xs font-bold text-white/60 mb-6 uppercase tracking-wider">
-              عربي
-            </h3>
-            <div className="space-y-3 text-right" dir="rtl">
-              <a href="/hire-developers" className="block text-sm text-white/80 hover:text-[rgb(0,159,255)] transition-colors">وظّف مطورين</a>
-              <a href="/hire-designers" className="block text-sm text-white/80 hover:text-[rgb(0,159,255)] transition-colors">وظّف مصممين</a>
-              <a href="/hire-marketers" className="block text-sm text-white/80 hover:text-[rgb(0,159,255)] transition-colors">وظّف مسوّقين</a>
-              <a href="/hire-product-managers" className="block text-sm text-white/80 hover:text-[rgb(0,159,255)] transition-colors">وظّف مدراء منتجات</a>
-              <a href="/how-it-works" className="block text-sm text-white/80 hover:text-[rgb(0,159,255)] transition-colors">كيف يعمل</a>
-              <a href="/pricing" className="block text-sm text-white/80 hover:text-[rgb(0,159,255)] transition-colors">الأسعار</a>
-              <a href="/faq" className="block text-sm text-white/80 hover:text-[rgb(0,159,255)] transition-colors">الأسئلة الشائعة</a>
-              <a href="/for-talent" className="block text-sm text-white/80 hover:text-[rgb(0,159,255)] transition-colors">للمواهب</a>
-              <a href="/locations/uae/dubai/dubai" className="block text-sm text-white/80 hover:text-[rgb(0,159,255)] transition-colors">دبي</a>
-              <a href="/locations/uae/abu-dhabi/abu-dhabi" className="block text-sm text-white/80 hover:text-[rgb(0,159,255)] transition-colors">أبوظبي</a>
-            </div>
-          </div>
         </div>
 
-        {/* UAE Trust Signals */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8 pt-8 border-t border-white/10">
-          <div className="flex items-center gap-6 flex-wrap">
-            <span className="text-sm text-white/70 font-medium">🇦🇪 {t('footer.serving')}</span>
+        {/* Singapore Trust Signals */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-4 mb-6 md:mb-8 pt-6 md:pt-8 border-t border-white/10">
+          <div className="flex items-center gap-3 md:gap-6 flex-wrap">
+            <span className="text-xs md:text-sm text-white/70 font-medium">🇸🇬 {t('footer.serving')}</span>
             <span className="text-xs text-white/40">|</span>
-            <span className="text-sm text-white/50">🇦🇪 {t('footer.dubaiUae')}</span>
+            <span className="text-xs md:text-sm text-white/50">🇸🇬 {t('footer.singapore')}</span>
           </div>
-          <div className="flex items-center gap-4 flex-wrap">
-            <span className="text-xs text-white/40 px-3 py-1 border border-white/10 rounded-full">{t('footer.zeroIncomeTax')}</span>
-            <span className="text-xs text-white/40 px-3 py-1 border border-white/10 rounded-full">{t('footer.gmt4')}</span>
-            <span className="text-xs text-white/40 px-3 py-1 border border-white/10 rounded-full">{t('footer.workWeek')}</span>
-            <span className="text-xs text-white/40 px-3 py-1 border border-white/10 rounded-full">{t('footer.goldenVisa')}</span>
+          <div className="flex items-center gap-2 md:gap-4 flex-wrap">
+            <span className="text-[10px] md:text-xs text-white/40 px-2 md:px-3 py-1 border border-white/10 rounded-full">{t('footer.zeroIncomeTax')}</span>
+            <span className="text-[10px] md:text-xs text-white/40 px-2 md:px-3 py-1 border border-white/10 rounded-full">{t('footer.gmt4')}</span>
+            <span className="text-[10px] md:text-xs text-white/40 px-2 md:px-3 py-1 border border-white/10 rounded-full">{t('footer.workWeek')}</span>
+            <span className="text-[10px] md:text-xs text-white/40 px-2 md:px-3 py-1 border border-white/10 rounded-full">{t('footer.goldenVisa')}</span>
           </div>
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-white/10 mb-8"></div>
+        <div className="h-px bg-white/10 mb-6 md:mb-8"></div>
 
         {/* Bottom Footer */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-6">
           {/* Copyright and Legal Links */}
-          <div className="flex items-center gap-6">
-            <span className="text-sm text-white/60">
-              {t('footer.copyright')} {new Date().getFullYear()} HireDeveloper.ae
+          <div className="flex items-center gap-4 md:gap-6 flex-wrap">
+            <span className="text-xs md:text-sm text-white/60">
+              {t('footer.copyright')} {new Date().getFullYear()} HireDeveloper.sg
             </span>
             <a
               href="/privacy"
-              className="text-sm text-white/60 hover:text-white transition-colors"
+              className="text-xs md:text-sm text-white/60 hover:text-white transition-colors"
             >
               {t('footer.cookiePolicy')}
             </a>
             <a
               href="/privacy"
-              className="text-sm text-white/60 hover:text-white transition-colors"
+              className="text-xs md:text-sm text-white/60 hover:text-white transition-colors"
             >
               {t('footer.privacy')}
             </a>
             <a
               href="/terms"
-              className="text-sm text-white/60 hover:text-white transition-colors"
+              className="text-xs md:text-sm text-white/60 hover:text-white transition-colors"
             >
               {t('footer.termsOfUse')}
             </a>

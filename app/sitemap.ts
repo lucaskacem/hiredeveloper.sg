@@ -4,7 +4,7 @@ import { getAllMarketingSubcategorySlugs } from '@/app/data/marketer-subcategori
 import { countries } from '@/app/data/locations';
 import { competitors } from '@/app/data/competitors';
 
-const BASE_URL = 'https://hiredeveloper.ae';
+const BASE_URL = 'https://hiredeveloper.sg';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();

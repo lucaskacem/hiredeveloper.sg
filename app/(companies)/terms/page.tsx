@@ -3,8 +3,8 @@ import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Terms of Use | HireDeveloper.ae',
-  description: 'Terms of Use for HireDeveloper.ae. Information about usage rights, obligations, and liability under UAE jurisdiction.',
+  title: 'Terms of Use | HireDeveloper.sg',
+  description: 'Terms of Use for HireDeveloper.sg. Information about usage rights, obligations, and liability under Singapore jurisdiction.',
   robots: {
     index: false,
     follow: false,
@@ -30,7 +30,7 @@ export default function TermsPage() {
               1. Scope
             </h2>
             <p className="text-base text-gray-700 leading-relaxed mb-4">
-              These Terms of Use apply to the use of the website and services of HireDeveloper.ae (hereinafter &ldquo;Provider&rdquo;). By using our website and services, you agree to these Terms of Use.
+              These Terms of Use apply to the use of the website and services of HireDeveloper.sg (hereinafter &ldquo;Provider&rdquo;). By using our website and services, you agree to these Terms of Use.
             </p>
             <p className="text-base text-gray-700 leading-relaxed">
               Deviating terms of the user will not be recognized unless the Provider expressly agrees to their validity in writing.
@@ -43,7 +43,7 @@ export default function TermsPage() {
               2. Service Description
             </h2>
             <p className="text-base text-gray-700 leading-relaxed mb-4">
-              HireDeveloper.ae operates an online platform for connecting businesses with remote professionals in software development, design, marketing, and project management. Our services include:
+              HireDeveloper.sg operates an online platform for connecting businesses with remote professionals in software development, design, marketing, and project management. Our services include:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-base text-gray-700 leading-relaxed mb-4">
               <li>Placement of vetted freelance and full-time remote professionals</li>
@@ -148,13 +148,13 @@ export default function TermsPage() {
               9. Final Provisions
             </h2>
             <p className="text-base text-gray-700 leading-relaxed mb-4">
-              These Terms of Use shall be governed by and construed in accordance with the laws of the United Arab Emirates. The courts of Dubai, UAE shall have exclusive jurisdiction over any disputes arising out of or in connection with these Terms of Use, to the extent permitted by law.
+              These Terms of Use shall be governed by and construed in accordance with the laws of Singapore. The courts of Singapore, Singapore shall have exclusive jurisdiction over any disputes arising out of or in connection with these Terms of Use, to the extent permitted by law.
             </p>
             <p className="text-base text-gray-700 leading-relaxed mb-4">
               Should any provision of these Terms of Use be or become invalid, the validity of the remaining provisions shall remain unaffected. In place of the invalid provision, a valid provision shall apply that most closely reflects the economic purpose of the invalid provision.
             </p>
             <p className="text-base text-gray-700 leading-relaxed">
-              Any disputes arising from or in connection with these Terms of Use shall be resolved in accordance with UAE federal law and the applicable regulations of the Emirate of Dubai.
+              Any disputes arising from or in connection with these Terms of Use shall be resolved in accordance with Singapore federal law and the applicable regulations of the Emirate of Singapore.
             </p>
           </section>
         </div>

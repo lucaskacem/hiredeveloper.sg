@@ -30,11 +30,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   for (let i = 0; i < hashStr.length; i++) h = ((h << 5) - h + hashStr.charCodeAt(i)) | 0;
   const showYear = Math.abs(h) % 100 < 30;
   return {
-    title: showYear ? `Hire Remote Developers in ${data.region.name}, ${data.country.name} - ${year} | HireDeveloper.ae` : `Hire Remote Developers in ${data.region.name}, ${data.country.name} | HireDeveloper.ae`,
+    title: showYear ? `Hire Remote Developers in ${data.region.name}, ${data.country.name} - ${year} | HireDeveloper.sg` : `Hire Remote Developers in ${data.region.name}, ${data.country.name} | HireDeveloper.sg`,
     description: showYear ? `Find and hire experienced remote developers in ${data.region.name}, ${data.country.name}. Access pre-vetted programmers across ${data.region.cities.length} cities. Top-rated in ${year}.` : `Find and hire experienced remote developers in ${data.region.name}, ${data.country.name}. Access pre-vetted programmers across ${data.region.cities.length} cities.`,
     robots: { index: true, follow: true },
     alternates: {
-      canonical: `https://hiredeveloper.ae/locations/${country}/${region}`,
+      canonical: `https://hiredeveloper.sg/locations/${country}/${region}`,
     },
   };
 }
@@ -80,7 +80,7 @@ export default async function RegionPage({ params }: Props) {
     '@type': 'WebPage',
     name: `Hire Remote Developers in ${data.region.name}, ${data.country.name}`,
     description: `Find and hire experienced remote developers in ${data.region.name}, ${data.country.name}. ${data.region.cities.length} cities available.`,
-    url: `https://hiredeveloper.ae/locations/${country}/${region}`,
+    url: `https://hiredeveloper.sg/locations/${country}/${region}`,
     about: {
       '@type': 'AdministrativeArea',
       name: data.region.name,
@@ -88,16 +88,16 @@ export default async function RegionPage({ params }: Props) {
     },
     provider: {
       '@type': 'Organization',
-      name: 'HireDeveloper.ae',
-      url: 'https://hiredeveloper.ae',
+      name: 'HireDeveloper.sg',
+      url: 'https://hiredeveloper.sg',
     },
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://hiredeveloper.ae/' },
-        { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://hiredeveloper.ae/locations' },
-        { '@type': 'ListItem', position: 3, name: data.country.name, item: `https://hiredeveloper.ae/locations/${country}` },
-        { '@type': 'ListItem', position: 4, name: data.region.name, item: `https://hiredeveloper.ae/locations/${country}/${region}` },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://hiredeveloper.sg/' },
+        { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://hiredeveloper.sg/locations' },
+        { '@type': 'ListItem', position: 3, name: data.country.name, item: `https://hiredeveloper.sg/locations/${country}` },
+        { '@type': 'ListItem', position: 4, name: data.region.name, item: `https://hiredeveloper.sg/locations/${country}/${region}` },
       ],
     },
   };
@@ -121,7 +121,7 @@ export default async function RegionPage({ params }: Props) {
 
       {/* Hero */}
       <section className="bg-black py-12">
-        <div className="max-w-[1280px] mx-auto px-12 text-center">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 text-center">
           <p className="text-sm uppercase tracking-wider text-gray-400 mb-3">
             {data.country.name}
           </p>
@@ -141,7 +141,7 @@ export default async function RegionPage({ params }: Props) {
 
       {/* Region description */}
       <section className="py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Tech Talent in {data.region.name}
@@ -153,10 +153,10 @@ export default async function RegionPage({ params }: Props) {
               {largestCity.name} with {largestCity.population.toLocaleString('en-US')}{' '}
               residents as the largest city. Developers from {data.region.name}{' '}
               bring familiarity with local business processes and industries
-              and work in a timezone convenient for GCC collaboration.
+              and work in a timezone convenient for APAC collaboration.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Through HireDeveloper.ae, gain access to pre-vetted programmers
+              Through HireDeveloper.sg, gain access to pre-vetted programmers
               in {data.region.name} who have experience with modern technologies,
               agile methodologies, and remote collaboration. Our screening process
               ensures only the most qualified candidates reach you.
@@ -167,7 +167,7 @@ export default async function RegionPage({ params }: Props) {
 
       {/* Cities grid */}
       <section className="bg-gray-50 py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">
             Cities in {data.region.name}
           </h2>

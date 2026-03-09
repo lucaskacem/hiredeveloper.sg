@@ -7,8 +7,8 @@ export default function HeroSection() {
     const trustMetrics = ['10,000+ placements', '4.8/5 rating', '97% satisfaction', '48h matching'];
 
     return (
-        <section className="bg-[#0b152b] py-20 overflow-hidden relative">
-            <div className="max-w-[1280px] mx-auto px-12 relative z-10">
+        <section className="bg-[#0b152b] py-10 md:py-16 lg:py-20 overflow-hidden relative">
+            <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                     {/* Left Column */}
@@ -24,7 +24,7 @@ export default function HeroSection() {
                         </h1>
 
                         <p className="text-lg text-white/80 leading-relaxed max-w-[540px] mb-8">
-                            HireDeveloper.ae is the easiest way to find and hire vetted remote marketers for your team in Dubai and Abu Dhabi.
+                            HireDeveloper.sg is the easiest way to find and hire vetted remote marketers for your team in Singapore.
                         </p>
 
                         <ul className="flex flex-wrap gap-x-8 gap-y-3 mb-10">
@@ -97,7 +97,7 @@ export default function HeroSection() {
                                 </div>
 
                                 <p className="text-gray-700 italic font-medium mb-4 leading-relaxed pt-2">
-                                    &ldquo;HireDeveloper.ae found us a superstar who was a perfect culture fit.&rdquo;
+                                    &ldquo;HireDeveloper.sg found us a superstar who was a perfect culture fit.&rdquo;
                                 </p>
 
                                 <div className="flex items-center justify-between">

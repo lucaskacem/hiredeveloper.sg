@@ -27,7 +27,7 @@ const roleTypes = [
 
 const experienceOptions = ['Junior', 'Mid-Level', 'Senior', 'Lead'];
 
-// Monthly cost in USD (UAE/Gulf market rate)
+// Monthly cost in USD (Singapore/Southeast Asian market rate)
 const costData: Record<string, Record<string, number>> = {
   'Frontend Developer':    { Junior: 4800, 'Mid-Level': 7200, Senior: 10400, Lead: 13600 },
   'Backend Developer':     { Junior: 5000, 'Mid-Level': 7500, Senior: 11000, Lead: 14000 },
@@ -40,7 +40,7 @@ const costData: Record<string, Record<string, number>> = {
   'Mobile Developer':      { Junior: 5000, 'Mid-Level': 7500, Senior: 11000, Lead: 14000 },
 };
 
-const aedRate = 3.67;
+const sgdRate = 1.34;
 
 let nextId = 1;
 
@@ -63,19 +63,19 @@ export default function TeamCostCalculatorPage() {
 
   const getRoleCost = (role: Role) => costData[role.type]?.[role.experience] || 0;
   const totalCost = roles.reduce((sum, r) => sum + getRoleCost(r), 0);
-  const totalCostAED = Math.round(totalCost * aedRate);
+  const totalCostSGD = Math.round(totalCost * sgdRate);
   const savingsRate = 0.58;
   const hireDeveloperCost = Math.round(totalCost * (1 - savingsRate));
-  const hireDeveloperCostAED = Math.round(hireDeveloperCost * aedRate);
+  const hireDeveloperCostSGD = Math.round(hireDeveloperCost * sgdRate);
   const savings = totalCost - hireDeveloperCost;
-  const savingsAED = Math.round(savings * aedRate);
+  const savingsSGD = Math.round(savings * sgdRate);
 
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Team Cost Calculator',
-    description: 'Calculate the monthly cost of your development team in USD and AED.',
-    url: 'https://hiredeveloper.ae/tools/team-cost-calculator',
+    description: 'Calculate the monthly cost of your development team in USD and SGD.',
+    url: 'https://hiredeveloper.sg/tools/team-cost-calculator',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -100,17 +100,17 @@ export default function TeamCostCalculatorPage() {
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h1 className="text-[42px] font-bold mb-4">Team Cost Calculator</h1>
           <p className="text-xl text-gray-300 max-w-3xl">
-            Build your ideal team and see the monthly costs. Plus: how much you save with HireDeveloper.ae.
+            Build your ideal team and see the monthly costs. Plus: how much you save with HireDeveloper.sg.
           </p>
         </div>
       </section>
 
       {/* Calculator */}
       <section className="py-16">
-        <div className="max-w-[1000px] mx-auto px-12">
+        <div className="max-w-[1000px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-gray-900">Build Your Team</h2>
@@ -187,15 +187,15 @@ export default function TeamCostCalculatorPage() {
                 </tbody>
                 <tfoot>
                   <tr className="border-t-2 border-gray-300">
-                    <td colSpan={2} className="py-4 font-bold text-gray-900">Total (UAE Market Rate)</td>
+                    <td colSpan={2} className="py-4 font-bold text-gray-900">Total (Singapore Market Rate)</td>
                     <td className="py-4 font-bold text-gray-900 text-right text-lg">
                       ${totalCost.toLocaleString('en-US')}/mo
                     </td>
                   </tr>
                   <tr>
-                    <td colSpan={2} className="pb-4 text-sm text-gray-500">Equivalent in AED</td>
+                    <td colSpan={2} className="pb-4 text-sm text-gray-500">Equivalent in SGD</td>
                     <td className="pb-4 text-sm text-gray-500 text-right">
-                      {totalCostAED.toLocaleString('en-US')} AED/mo
+                      {totalCostSGD.toLocaleString('en-US')} SGD/mo
                     </td>
                   </tr>
                 </tfoot>
@@ -204,15 +204,15 @@ export default function TeamCostCalculatorPage() {
               {/* Savings comparison */}
               <div className="bg-[rgb(23,162,69)]/5 rounded-xl p-8 border border-[rgb(23,162,69)]/20">
                 <h4 className="text-lg font-bold text-gray-900 mb-4">
-                  Save Up to 58% with HireDeveloper.ae
+                  Save Up to 58% with HireDeveloper.sg
                 </h4>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center">
-                    <p className="text-sm text-gray-600 mb-1">UAE Market Rate</p>
+                    <p className="text-sm text-gray-600 mb-1">Singapore Market Rate</p>
                     <p className="text-2xl font-bold text-gray-400 line-through">${totalCost.toLocaleString('en-US')}</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-sm text-gray-600 mb-1">With HireDeveloper.ae</p>
+                    <p className="text-sm text-gray-600 mb-1">With HireDeveloper.sg</p>
                     <p className="text-2xl font-bold text-[rgb(23,162,69)]">${hireDeveloperCost.toLocaleString('en-US')}</p>
                   </div>
                   <div className="text-center">
@@ -221,7 +221,7 @@ export default function TeamCostCalculatorPage() {
                   </div>
                 </div>
                 <p className="text-center text-sm text-gray-500 mt-4">
-                  That&apos;s {savingsAED.toLocaleString('en-US')} AED saved every month
+                  That&apos;s {savingsSGD.toLocaleString('en-US')} SGD saved every month
                 </p>
                 <div className="mt-6 text-center">
                   <a

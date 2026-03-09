@@ -16,15 +16,15 @@ import LeadForm from '../components/LeadForm';
 
 const year = new Date().getFullYear();
 export const metadata: Metadata = {
-  title: `Hire Designers - ${year} | HireDeveloper.ae`,
-  description: `Hire the best freelance and full-time product designers in Dubai and Abu Dhabi. Vetted UX/UI designers ready for interviews. Updated for ${year}.`,
+  title: `Hire Designers - ${year} | HireDeveloper.sg`,
+  description: `Hire the best freelance and full-time product designers in Singapore. Vetted UX/UI designers ready for interviews. Updated for ${year}.`,
 };
 
 export default function HireDesignersPage() {
   const profiles = [
     {
       name: "Soheil O.",
-      location: "Dubai, UAE (UTC+4)",
+      location: "Singapore, Singapore (UTC+8)",
       badge: "Vetted",
       bio: "Experienced Product Design Leader with over 20 years of experience crafting user-centric solutions that drive significant results. Successfully led groundbreaking GenAI projects at leading tech companies, consistently delivering scalable products that increased user engagement by up to 15% and improved conversion rates by 8%. Expertise in data-driven design, user research, and A/B testing, paired with a proven track record of building design teams from a few members to over 50.",
       primarySkill: { name: "Product Design", experience: "10 years" },
@@ -35,7 +35,7 @@ export default function HireDesignersPage() {
     },
     {
       name: "Audrey W.",
-      location: "Abu Dhabi, UAE (UTC+4)",
+      location: "Marina Bay, Singapore (UTC+8)",
       badge: "Vetted",
       bio: "I am a product designer with a background in cognitive science and human-centered design, fascinated by how we think and interact with the world around us. I enjoy breaking down complex problems and collaborating on design solutions. With 7+ years of experience, I have led products in both large enterprises and early-stage teams, and am currently open to part-time freelance work.",
       primarySkill: { name: "Product Design", experience: "6 years" },
@@ -46,7 +46,7 @@ export default function HireDesignersPage() {
     },
     {
       name: "Vincent B.",
-      location: "Sharjah, UAE (UTC+4)",
+      location: "Jurong East, Singapore (UTC+8)",
       badge: "Vetted",
       bio: "Vincent Boutaud is an experienced agile Product Owner, project manager, and technology specialist with 17+ years of experience driving innovation at the intersection of 3D visualization, Building Information Modeling, and software development. Brings leadership-level expertise in product strategy, quality operations, and cross-functional leadership.",
       primarySkill: { name: "Product Management", experience: "17+ years" },
@@ -65,7 +65,7 @@ export default function HireDesignersPage() {
 
   const testimonials = [
     {
-      quote: "We previously tried hiring through traditional platforms, but the quality of developers at HireDeveloper.ae is far superior.",
+      quote: "We previously tried hiring through traditional platforms, but the quality of developers at HireDeveloper.sg is far superior.",
       author: "M.G.",
       title: "CEO",
       company: "SaaS Company",
@@ -90,21 +90,21 @@ export default function HireDesignersPage() {
   const companiesTestimonials = [
     {
       avatar: "/images/testimonials/sarah-thompson.png",
-      quote: "HireDeveloper.ae's designers brought our product vision to life. Their expertise in UX and attention to detail exceeded our expectations.",
+      quote: "HireDeveloper.sg's designers brought our product vision to life. Their expertise in UX and attention to detail exceeded our expectations.",
       author: "S.T.",
       title: "Head of Design",
       company: "SaaS Company"
     },
     {
       avatar: "https://randomuser.me/api/portraits/men/48.jpg",
-      quote: "Finding top designers has never been easier. HireDeveloper.ae's vetting process ensures we only interview the best.",
+      quote: "Finding top designers has never been easier. HireDeveloper.sg's vetting process ensures we only interview the best.",
       author: "M.C.",
       title: "Product Director",
       company: "FinTech Startup"
     },
     {
       avatar: "https://randomuser.me/api/portraits/men/53.jpg",
-      quote: "We built our entire design team through HireDeveloper.ae. The quality and speed of hiring was a game-changer for us.",
+      quote: "We built our entire design team through HireDeveloper.sg. The quality and speed of hiring was a game-changer for us.",
       author: "J.M.",
       title: "VP of Product",
       company: "E-Commerce Company"
@@ -113,11 +113,11 @@ export default function HireDesignersPage() {
 
   const hiringGuideSections = [
     {
-      title: "What does a product designer do and why do UAE businesses need one?",
+      title: "What does a product designer do and why do Singapore businesses need one?",
       subsections: [
         {
           subtitle: "Overview",
-          content: "A product designer helps create and develop both digital and physical products, ensuring they are functional, easy to use, and visually appealing. For businesses in Dubai and Abu Dhabi, where the digital economy is growing rapidly, product designers are essential for building the apps, platforms, and software that power everything from fintech solutions in DIFC to e-government services. They use UX and UI skills to create layouts, menus, and interactive features that feel intuitive to diverse, multilingual audiences across the UAE."
+          content: "A product designer helps create and develop both digital and physical products, ensuring they are functional, easy to use, and visually appealing. For businesses in Singapore, where the digital economy is growing rapidly, product designers are essential for building the apps, platforms, and software that power everything from fintech solutions in the CBD to Smart Nation e-government services. They use UX and UI skills to create layouts, menus, and interactive features that feel intuitive to diverse, multilingual audiences across Singapore."
         }
       ]
     },
@@ -126,19 +126,19 @@ export default function HireDesignersPage() {
       subsections: [
         {
           subtitle: "UX Designers",
-          content: "UX designers focus on how users interact with a product, ensuring a smooth and enjoyable experience. In the UAE market, this often includes designing for bilingual (Arabic/English) interfaces, right-to-left layouts, and the cultural expectations of a diverse user base spanning Emirati nationals, expat communities, and international visitors."
+          content: "UX designers focus on how users interact with a product, ensuring a smooth and enjoyable experience. In Singapore's market, this often includes designing for bilingual (English/Chinese) interfaces, multilingual layouts, and the cultural expectations of a diverse user base spanning Singaporean nationals, expat communities, and international visitors."
         },
         {
           subtitle: "UI Designers",
-          content: "UI designers specialize in the visual aspects of a product, designing interfaces that are appealing and easy to navigate. For Dubai and Abu Dhabi businesses, UI designers often work on premium brand experiences that reflect the region's high standards, from luxury e-commerce platforms to sophisticated fintech dashboards."
+          content: "UI designers specialize in the visual aspects of a product, designing interfaces that are appealing and easy to navigate. For Singapore businesses, UI designers often work on premium brand experiences that reflect the region's high standards, from luxury e-commerce platforms to sophisticated fintech dashboards."
         },
         {
           subtitle: "Interaction Designers",
-          content: "Interaction designers work on how users interact with digital products at a detailed level. They design interactive elements such as animations, transitions, and responses to user input, which are especially important for mobile-first markets like the UAE, where smartphone penetration exceeds 90%."
+          content: "Interaction designers work on how users interact with digital products at a detailed level. They design interactive elements such as animations, transitions, and responses to user input, which are especially important for mobile-first markets like the Singapore, where smartphone penetration exceeds 90%."
         },
         {
           subtitle: "Visual Designers",
-          content: "Visual designers focus on the overall look and brand identity of digital products. In the UAE's competitive business landscape, they help companies stand out by creating designs that align with brand identity while respecting the aesthetic preferences and cultural sensitivities of the region."
+          content: "Visual designers focus on the overall look and brand identity of digital products. In Singapore's competitive business landscape, they help companies stand out by creating designs that align with brand identity while respecting the aesthetic preferences and cultural sensitivities of the region."
         }
       ]
     },
@@ -147,24 +147,24 @@ export default function HireDesignersPage() {
       subsections: [
         {
           subtitle: "Technical Skills",
-          content: "UX/UI Design: Product designers must create user-friendly and visually appealing interfaces, including RTL support for Arabic-speaking users. Wireframing and Prototyping: Must be proficient in tools like Figma, Adobe XD, or InVision. Basic Coding: Knowledge of HTML, CSS, and JavaScript helps with developer collaboration. User Research: Experience in interviews, surveys, and usability testing, ideally with exposure to MENA user behavior patterns."
+          content: "UX/UI Design: Product designers must create user-friendly and visually appealing interfaces, including multilingual support for English and Chinese users. Wireframing and Prototyping: Must be proficient in tools like Figma, Adobe XD, or InVision. Basic Coding: Knowledge of HTML, CSS, and JavaScript helps with developer collaboration. User Research: Experience in interviews, surveys, and usability testing, ideally with exposure to APAC user behavior patterns."
         },
         {
           subtitle: "Soft Skills",
-          content: "Communication: Ability to present ideas and collaborate with distributed teams across UAE business hours (GMT+4, Sunday-Thursday). Problem-Solving: Identifying issues and creating solutions that satisfy both users and business goals. Cultural Sensitivity: Understanding the nuances of designing for the UAE's multicultural population. Adaptability: Accepting feedback and adjusting designs in the fast-paced UAE startup environment. Time Management: Delivering work on time, especially when coordinating across the region's time zones."
+          content: "Communication: Ability to present ideas and collaborate with distributed teams across Singapore business hours (GMT+8, Monday-Friday). Problem-Solving: Identifying issues and creating solutions that satisfy both users and business goals. Cultural Sensitivity: Understanding the nuances of designing for Singapore's multicultural population. Adaptability: Accepting feedback and adjusting designs in the fast-paced Singapore startup environment. Time Management: Delivering work on time, especially when coordinating across the region's time zones."
         }
       ]
     },
     {
-      title: "How much does it cost to hire product designers in the UAE?",
+      title: "How much does it cost to hire product designers in Singapore?",
       subsections: [
         {
           subtitle: "Pricing Overview",
-          content: "The cost of hiring a freelance product designer for UAE projects varies. Most freelance product designers charge between $25 and $200 per hour. For simpler tasks like wireframing or basic UI design, rates typically range from $25 to $80 per hour. More complex work such as full product design systems, bilingual (Arabic/English) interface design, or in-depth user research for the GCC market can push rates to $150 to $200 per hour."
+          content: "The cost of hiring a freelance product designer for Singapore projects varies. Most freelance product designers charge between $25 and $200 per hour. For simpler tasks like wireframing or basic UI design, rates typically range from $25 to $80 per hour. More complex work such as full product design systems, bilingual (English/Chinese) interface design, or in-depth user research for the APAC market can push rates to $150 to $200 per hour."
         },
         {
           subtitle: "Factors Affecting Pricing",
-          content: "Experience Level: Senior designers (5+ years) charge $100-200/hr, junior designers (1-3 years) $25-50/hr. Location: Hiring remote designers through HireDeveloper.ae can save UAE companies 40-60% compared to local agency rates in Dubai or Abu Dhabi, while accessing the same caliber of talent. Project Complexity: Bilingual designs, RTL support, and compliance with UAE accessibility standards add complexity and may require higher rates."
+          content: "Experience Level: Senior designers (5+ years) charge $100-200/hr, junior designers (1-3 years) $25-50/hr. Location: Hiring remote designers through HireDeveloper.sg can save Singapore companies 40-60% compared to local agency rates, while accessing the same caliber of talent. Project Complexity: Bilingual designs, multilingual support, and compliance with Singapore accessibility standards add complexity and may require higher rates."
         }
       ]
     },
@@ -173,19 +173,19 @@ export default function HireDesignersPage() {
       subsections: [
         {
           subtitle: "Not clearly defining your project needs",
-          content: "One of the biggest mistakes is starting the hiring process without clearly understanding your project goals. UAE companies should specify upfront whether the product needs Arabic localization, multi-currency support, or compliance with local regulations."
+          content: "One of the biggest mistakes is starting the hiring process without clearly understanding your project goals. Singapore companies should specify upfront whether the product needs multilingual localization, multi-currency support, or compliance with local regulations."
         },
         {
           subtitle: "Focusing too much on aesthetics",
-          content: "While a designer's portfolio may look visually appealing, do not overlook functionality and user experience. In the UAE, where mobile usage is among the highest globally, a beautiful design that performs poorly on mobile devices will fail."
+          content: "While a designer's portfolio may look visually appealing, do not overlook functionality and user experience. In Singapore, where mobile usage is among the highest globally, a beautiful design that performs poorly on mobile devices will fail."
         },
         {
           subtitle: "Ignoring regional experience",
-          content: "It is easy to be impressed by a designer's general skills, but experience with the UAE and GCC market is valuable. Designers who understand Arabic typography, local payment flows, and regional user expectations will deliver stronger results."
+          content: "It is easy to be impressed by a designer's general skills, but experience with the Singapore and APAC market is valuable. Designers who understand multilingual typography, local payment flows, and regional user expectations will deliver stronger results."
         },
         {
           subtitle: "Overlooking communication and timezone fit",
-          content: "Product designers often work closely with developers, product managers, and stakeholders. For UAE teams working Sunday to Thursday on GMT+4, ensure your remote designer can maintain reliable overlap during your business hours for effective collaboration."
+          content: "Product designers often work closely with developers, product managers, and stakeholders. For Singapore teams working Monday to Friday on GMT+8, ensure your remote designer can maintain reliable overlap during your business hours for effective collaboration."
         }
       ]
     }
@@ -223,8 +223,7 @@ export default function HireDesignersPage() {
       <HireHero
         category="designers"
         count={2005}
-        description="Your vision deserves a great product designer to bring it to life. Finding the right fit on your own is challenging, but HireDeveloper.ae makes hiring the best freelance or full-time remote product designers easy. Save time by connecting directly with vetted product designers who are ready for interviews."
-        descriptionAr="رؤيتك تستحق مصمم منتجات متميز لتحقيقها. إيجاد المناسب بنفسك أمر صعب، لكن HireDeveloper.ae يسهّل توظيف أفضل مصممي المنتجات المستقلين أو بدوام كامل عن بعد. وفّر وقتك بالتواصل مباشرة مع مصممين معتمدين جاهزين للمقابلات."
+        description="Your vision deserves a great product designer to bring it to life. Finding the right fit on your own is challenging, but HireDeveloper.sg makes hiring the best freelance or full-time remote product designers easy. Save time by connecting directly with vetted product designers who are ready for interviews."
       />
 
       {/* Hero Video Section */}
@@ -269,7 +268,7 @@ export default function HireDesignersPage() {
       {/* Dedicated Team Section */}
       <DedicatedTeamSection
         heading="Build your dedicated team of product designers"
-        description="Collaborate seamlessly with your team using HireDeveloper.ae's project management tools, time tracking, and more."
+        description="Collaborate seamlessly with your team using HireDeveloper.sg's project management tools, time tracking, and more."
         features={[
           { title: "Time Tracking", description: "Monitor work hours and productivity" },
           { title: "Project Management", description: "Keep your team organized and on track" },

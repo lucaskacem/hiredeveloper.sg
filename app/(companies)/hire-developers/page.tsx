@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import WhyChooseArc from '@/app/components/WhyChooseArc';
@@ -13,6 +14,7 @@ import HiringGuideSection from '../components/HiringGuideSection';
 import FAQSection from '../components/FAQSection';
 import ResourcesSection from '../components/ResourcesSection';
 import FinalCTA from '../components/FinalCTA';
+import HiringProcessFlowchart from '../components/HiringProcessFlowchart';
 import RelatedLinks from '../components/RelatedLinks';
 import Breadcrumb from '../components/Breadcrumb';
 import LeadForm from '../components/LeadForm';
@@ -20,10 +22,10 @@ import InlineCTABanner from '../components/InlineCTABanner';
 
 const year = new Date().getFullYear();
 export const metadata: Metadata = {
-  title: `Hire Top Remote Developers - ${year} | HireDeveloper.ae`,
+  title: `Hire Top Remote Developers - ${year} | HireDeveloper.sg`,
   description: `Hire the best remote developers, engineers, and programmers. Over 90,000 vetted freelance and full-time experts ready for interviews. Updated for ${year}.`,
   alternates: {
-    canonical: 'https://hiredeveloper.ae/hire-developers',
+    canonical: 'https://hiredeveloper.sg/hire-developers',
   },
 };
 
@@ -32,7 +34,7 @@ export default function HireDevelopersPage() {
   const profiles = [
     {
       name: "Aksel .",
-      location: "United Arab Emirates (UTC+4)",
+      location: "Singapore (UTC+8)",
       badge: "Vetted Developer",
       bio: "With over 15 years of extensive experience in Staff Software Engineering and Architecture, I have a proven track record of building highly scalable, compute-intensive workflows. My areas of focus include Fintech, E-Commerce/Retail, and Data Processing & Management across private and public clouds.",
       skills: ["AWS", "Python", "Java", "Cloud", "Google Cloud Platform", "SQL", "NoSQL", "+17"],
@@ -45,7 +47,7 @@ export default function HireDevelopersPage() {
     },
     {
       name: "Nathaniel H.",
-      location: "United Arab Emirates (UTC+4)",
+      location: "Singapore (UTC+8)",
       badge: "Vetted Developer",
       bio: "AI and Software Engineer with over 14 years of experience, specializing in building scalable, AI-driven applications. Proficient in Node.js, Python, MySQL/MSSQL, JavaScript frameworks, Linux, AWS, and Azure Cloud. Skilled in MVC/Microservice architecture, Docker CI/CD, agile methodologies, and test-driven development.",
       skills: ["Python", "AWS", "SQL", "JavaScript", "Ruby on Rails", "Node.js", "ETL", "+10"],
@@ -66,7 +68,7 @@ export default function HireDevelopersPage() {
 
   const testimonials = [
     {
-      quote: "We previously tried hiring through traditional platforms, but the quality of developers at HireDeveloper.ae is far superior.",
+      quote: "We previously tried hiring through traditional platforms, but the quality of developers at HireDeveloper.sg is far superior.",
       author: "M.G.",
       title: "CEO",
       company: "SaaS Company",
@@ -182,7 +184,7 @@ export default function HireDevelopersPage() {
 
   const companiesTestimonials = [
     {
-      quote: "We previously tried hiring through traditional platforms, but the quality of developers at HireDeveloper.ae is far superior.",
+      quote: "We previously tried hiring through traditional platforms, but the quality of developers at HireDeveloper.sg is far superior.",
       author: "M.G.",
       title: "CEO",
       company: "SaaS Company",
@@ -215,23 +217,23 @@ export default function HireDevelopersPage() {
 
   const guideSections = [
     {
-      title: "Why Should You Hire a Freelance Developer in Dubai & Abu Dhabi?",
+      title: "Why Should You Hire a Freelance Developer in Singapore?",
       subsections: [
         {
-          subtitle: "Cost-Effective for UAE Businesses",
-          content: "For companies operating in Dubai's DIFC, DIC, or Abu Dhabi's ADGM and Hub71, hiring freelance developers is significantly more cost-effective than full-time hires. You pay only for the work delivered, without additional overheads such as visa sponsorship, Emirates ID processing, health insurance, or office space in expensive UAE free zones."
+          subtitle: "Cost-Effective for Singapore Businesses",
+          content: "For companies operating in Singapore's CBD, one-north, or Changi Business Park, hiring freelance developers is significantly more cost-effective than full-time hires. You pay only for the work delivered, without additional overheads such as Employment Pass sponsorship, CPF contributions, health insurance, or office space in Singapore's prime business districts."
         },
         {
-          subtitle: "Global Talent, UAE Timezone Compatibility",
-          content: "The freelance market gives you access to a global pool of talented developers, many of whom are already aligned with the UAE's GMT+4 timezone and Sunday-to-Thursday work week. This means seamless real-time collaboration during your business hours, whether your team sits in Dubai Marina or Abu Dhabi's Reem Island."
+          subtitle: "Global Talent, Singapore Timezone Compatibility",
+          content: "The freelance market gives you access to a global pool of talented developers, many of whom are already aligned with Singapore's GMT+8 timezone and Monday-to-Friday work week. This means seamless real-time collaboration during your business hours, whether your team sits in Raffles Place or one-north."
         },
         {
-          subtitle: "Specialization for the UAE Tech Ecosystem",
-          content: "The UAE's booming fintech, e-commerce, proptech, and government digital transformation sectors require niche expertise. Freelancers who specialize in technologies like blockchain, AI, or cloud infrastructure bring exactly the skills that Dubai and Abu Dhabi's startup and enterprise ecosystems demand."
+          subtitle: "Specialization for Singapore Tech Ecosystem",
+          content: "Singapore's booming fintech, e-commerce, proptech, and government digital transformation sectors require niche expertise. Freelancers who specialize in technologies like blockchain, AI, or cloud infrastructure bring exactly the skills that Singapore's startup and enterprise ecosystems demand."
         },
         {
           subtitle: "Flexibility for a Fast-Moving Market",
-          content: "The UAE business landscape moves fast, from Expo-scale initiatives to rapid startup growth in Hub71 and DTEC. Freelance developers let you scale your team up or down based on project requirements without the long-term commitments that UAE labor law requires for full-time employees."
+          content: "The Singapore business landscape moves fast, from Smart Nation initiatives to rapid startup growth in Block71 and one-north. Freelance developers let you scale your team up or down based on project requirements without the long-term commitments that Singapore employment law requires for full-time employees."
         }
       ]
     },
@@ -240,29 +242,29 @@ export default function HireDevelopersPage() {
       subsections: [
         {
           subtitle: "When You Are Short on Time",
-          content: "UAE companies often operate on ambitious timelines. Whether you are launching for Gitex, preparing for a government RFP, or racing to meet investor milestones, freelance developers can start working on your project immediately without the weeks-long visa and onboarding process that in-house hires require."
+          content: "Singapore companies often operate on ambitious timelines. Whether you are launching for Singapore Tech Week, preparing for a government RFP, or racing to meet investor milestones, freelance developers can start working on your project immediately without the weeks-long Employment Pass and onboarding process that in-house hires require."
         },
         {
           subtitle: "When You Are Missing Certain Skills",
-          content: "Dubai and Abu Dhabi's tech talent pool is growing but still competitive for specialized roles. If your in-house team lacks expertise in areas like AI, blockchain, or specific cloud platforms, freelancers can fill those gaps quickly while you continue recruiting locally."
+          content: "Singapore's tech talent pool is growing but still competitive for specialized roles. If your in-house team lacks expertise in areas like AI, blockchain, or specific cloud platforms, freelancers can fill those gaps quickly while you continue recruiting locally."
         },
         {
           subtitle: "When You Want to Optimize Your Budget",
-          content: "With office rents in DIFC and ADGM among the highest in the region, keeping a lean remote team is a smart strategy. Freelance developers deliver high-quality work at competitive rates, letting you reinvest savings into growth while staying compliant with UAE remote work regulations."
+          content: "With office rents in the CBD and one-north among the highest in the region, keeping a lean remote team is a smart strategy. Freelance developers deliver high-quality work at competitive rates, letting you reinvest savings into growth while staying compliant with Singapore remote work regulations."
         }
       ]
     },
     {
-      title: "How to Find a Top Freelance Developer for Your UAE Business",
+      title: "How to Find a Top Freelance Developer for Your Singapore Business",
       subsections: [
         {
-          subtitle: "Define Your Requirements for the UAE Market",
-          content: "Clearly define the skills, experience level, and project requirements before you begin your search. Consider whether your project involves UAE-specific needs like Arabic language support, regional payment gateways, or compliance with UAE data residency regulations.",
+          subtitle: "Define Your Requirements for Singapore Market",
+          content: "Clearly define the skills, experience level, and project requirements before you begin your search. Consider whether your project involves Singapore-specific needs like multilingual support, regional payment gateways, or compliance with PDPA data protection regulations.",
           questions: [
             "What is your project about? What are the required technical skills?",
-            "Do you need timezone overlap with UAE business hours (GMT+4, Sunday-Thursday)?",
-            "Does your project require knowledge of UAE regulations, Arabic localization, or regional payment systems?",
-            "What is your budget range in AED or USD?",
+            "Do you need timezone overlap with Singapore business hours (GMT+8, Monday-Friday)?",
+            "Does your project require knowledge of Singapore regulations, multilingual localization, or regional payment systems?",
+            "What is your budget range in SGD or USD?",
             "Do you need someone for a short-term sprint or a long-term engagement?"
           ]
         }
@@ -284,9 +286,22 @@ export default function HireDevelopersPage() {
       <HireHero
         category="developers"
         count={90921}
-        description="HireDeveloper.ae has 90,921 full-time and freelance developers, engineers, programmers, coders, contractors, and tech experts ready for interviews and available to hire immediately. Our global developer network can help with staff augmentation or scaling your engineering team. Simply tell us what you need, and we will help you find the developers who are the best fit."
-        descriptionAr="يضم HireDeveloper.ae أكثر من 90,921 مطورًا بدوام كامل ومستقل ومهندسين ومبرمجين وخبراء تقنية جاهزين للمقابلات ومتاحين للتوظيف فورًا. يمكن لشبكتنا العالمية من المطورين المساعدة في تعزيز فريقك أو توسيع فريق الهندسة لديك. أخبرنا بما تحتاج وسنساعدك في إيجاد المطورين الأنسب."
+        description="HireDeveloper.sg has 90,921 full-time and freelance developers, engineers, programmers, coders, contractors, and tech experts ready for interviews and available to hire immediately. Our global developer network can help with staff augmentation or scaling your engineering team. Simply tell us what you need, and we will help you find the developers who are the best fit."
       />
+
+      {/* Singapore skyline decorative divider */}
+      <div className="bg-black relative h-16 overflow-hidden">
+        <div className="absolute bottom-0 left-0 right-0 opacity-[0.07] pointer-events-none">
+          <Image
+            src="/images/singapore/skyline.svg"
+            alt=""
+            width={1920}
+            height={120}
+            className="w-full h-auto"
+            aria-hidden="true"
+          />
+        </div>
+      </div>
 
       {/* Hero Video Section */}
       <section className="bg-gray-50 py-12">
@@ -318,7 +333,7 @@ export default function HireDevelopersPage() {
 
       <CategoriesGrid
         heading="Top remote developers are just a few clicks away"
-        subheading="HireDeveloper.ae offers pre-vetted full-time and freelance developers proficient in every programming language, framework, and technology. Browse our popular remote engineer specializations below."
+        subheading="HireDeveloper.sg offers pre-vetted full-time and freelance developers proficient in every programming language, framework, and technology. Browse our popular remote engineer specializations below."
         sections={categorySections}
       />
 
@@ -336,7 +351,7 @@ export default function HireDevelopersPage() {
 
       <DedicatedTeamSection
         heading="Build your dedicated team of remote developers"
-        description="HireDeveloper.ae helps you build your team with our global network of software developers, available for freelance contracts or full-time remote positions."
+        description="HireDeveloper.sg helps you build your team with our global network of software developers, available for freelance contracts or full-time remote positions."
         features={dedicatedTeamFeatures}
       />
 
@@ -376,28 +391,27 @@ export default function HireDevelopersPage() {
       <RelatedLinks
         title="Developers by Location"
         links={[
-          { label: 'Developers in the UAE', href: '/locations/uae' },
-          { label: 'Developers in Saudi Arabia', href: '/locations/saudi-arabia' },
-          { label: 'Developers in Qatar', href: '/locations/qatar' },
-          { label: 'Developers in Dubai', href: '/locations/uae/dubai/dubai' },
-          { label: 'Developers in Abu Dhabi', href: '/locations/uae/abu-dhabi/abu-dhabi' },
-          { label: 'Developers in Sharjah', href: '/locations/uae/sharjah/sharjah' },
-          { label: 'Developers in Riyadh', href: '/locations/saudi-arabia/riyadh-region/riyadh' },
-          { label: 'Developers in Doha', href: '/locations/qatar/qatar/doha' },
+          { label: 'Developers in Singapore', href: '/locations/singapore' },
+          { label: 'Developers in Marina Bay', href: '/locations/singapore/central-region/marina-bay' },
+          { label: 'Developers in one-north', href: '/locations/singapore/central-region/one-north' },
+          { label: 'Developers in Jurong East', href: '/locations/singapore/west-region/jurong-east' },
+          { label: 'Developers in Tampines', href: '/locations/singapore/east-region/tampines' },
+          { label: 'Developers in Woodlands', href: '/locations/singapore/north-region/woodlands' },
+          { label: 'Developers in Punggol', href: '/locations/singapore/north-east-region/punggol' },
         ]}
       />
 
       <RelatedLinks
         title="Compare Providers"
         links={[
-          { label: 'vs Toptal', href: '/compare/toptal' },
-          { label: 'vs Upwork', href: '/compare/upwork' },
-          { label: 'vs Fiverr', href: '/compare/fiverr' },
-          { label: 'vs Turing', href: '/compare/turing' },
-          { label: 'vs Andela', href: '/compare/andela' },
-          { label: 'vs Arc.dev', href: '/compare/arc-dev' },
-          { label: 'vs Hired', href: '/compare/hired' },
-          { label: 'All Comparisons', href: '/compare' },
+          { label: 'vs Toptal', href: '/comparison/toptal' },
+          { label: 'vs Upwork', href: '/comparison/upwork' },
+          { label: 'vs Fiverr', href: '/comparison/fiverr' },
+          { label: 'vs Turing', href: '/comparison/turing' },
+          { label: 'vs Andela', href: '/comparison/andela' },
+          { label: 'vs Arc.dev', href: '/comparison/arc-dev' },
+          { label: 'vs Hired', href: '/comparison/hired' },
+          { label: 'All Comparisons', href: '/comparison' },
         ]}
       />
 
@@ -429,6 +443,8 @@ export default function HireDevelopersPage() {
           <LeadForm />
         </div>
       </section>
+
+      <HiringProcessFlowchart industry="your development project" />
 
       <FinalCTA
         heading="Your future remote developer is just around the corner!"

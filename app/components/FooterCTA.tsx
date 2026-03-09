@@ -8,14 +8,14 @@ export default function FooterCTA() {
   const { t } = useLanguage();
 
   return (
-    <section id="kontakt" className="bg-white py-16">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 w-full">
-        <div className="text-center mb-12">
+    <section id="kontakt" className="bg-white py-10 md:py-16 overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-[28px] md:text-[40px] font-bold text-gray-900 mb-4">
             {t('footerCta.title')}
           </h2>
           <p className="text-sm text-gray-600">
-            {t('footerCta.noCost')} &middot; 🇦🇪 {t('footerCta.uaePlatform')}
+            {t('footerCta.noCost')} &middot; 🇸🇬 {t('footerCta.sgPlatform')}
           </p>
         </div>
         <div className="text-center">

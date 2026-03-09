@@ -38,8 +38,8 @@ function getInitials(name: string): string {
 export default function TalentShowcase({ heading, profiles, category }: TalentShowcaseProps) {
   const { openModal } = useLeadFormModal();
   return (
-    <section className="bg-white py-20">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 w-full">
+    <section className="bg-white py-10 md:py-16 lg:py-20 overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-600 mb-8">
           <a href="/" className="hover:text-[rgb(0,159,255)] transition-colors">Home</a>
@@ -48,7 +48,7 @@ export default function TalentShowcase({ heading, profiles, category }: TalentSh
         </div>
 
         {/* Section Heading */}
-        <h2 className="text-[40px] font-bold text-gray-900 mb-12">
+        <h2 className="text-[22px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-bold text-gray-900 mb-8 md:mb-12">
           {heading}
         </h2>
 
@@ -57,9 +57,9 @@ export default function TalentShowcase({ heading, profiles, category }: TalentSh
           {profiles.map((profile, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow"
+              className="bg-gray-50 rounded-lg p-4 sm:p-6 md:p-8 hover:shadow-lg transition-shadow"
             >
-              <div className="flex items-start gap-6">
+              <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
                 {/* Avatar */}
                 <div className="relative flex-shrink-0">
                   {profile.avatar && profile.avatar.startsWith('http') ? (
@@ -107,8 +107,8 @@ export default function TalentShowcase({ heading, profiles, category }: TalentSh
                   </div>
 
                   {/* Bottom Info */}
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-8">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div className="flex items-center gap-4 sm:gap-8">
                       {/* Availability */}
                       <div>
                         <div className="text-xs text-gray-500 mb-1">Availability</div>
@@ -143,8 +143,8 @@ export default function TalentShowcase({ heading, profiles, category }: TalentSh
         </div>
 
         {/* CTA Section */}
-        <div className="text-center bg-gray-50 rounded-lg p-12">
-          <h3 className="text-[32px] font-bold text-gray-900 mb-6">
+        <div className="text-center bg-gray-50 rounded-lg p-6 sm:p-8 md:p-12">
+          <h3 className="text-[22px] sm:text-[26px] md:text-[32px] font-bold text-gray-900 mb-4 md:mb-6">
             Discover more <span className="text-[rgb(0,159,255)]">remote {category}</span> today
           </h3>
           <button onClick={openModal} className="px-8 py-3 text-base font-semibold text-white bg-[rgb(23,162,69)] rounded-md hover:bg-[rgb(20,145,60)] transition-colors">

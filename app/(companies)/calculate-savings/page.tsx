@@ -7,9 +7,9 @@ import RelatedLinks from '../components/RelatedLinks';
 import OpenModalButton from '../components/OpenModalButton';
 
 export const metadata: Metadata = {
-  title: 'Calculate Savings | Save Up to 60% with Remote Talent | HireDeveloper.ae',
+  title: 'Calculate Savings | Save Up to 60% with Remote Talent | HireDeveloper.sg',
   description:
-    'Calculate your savings when hiring remote talent through HireDeveloper.ae. Up to 60% cost savings compared to local hires in Dubai and Abu Dhabi.',
+    'Calculate your savings when hiring remote talent through HireDeveloper.sg. Up to 60% cost savings compared to local hires in Singapore.',
   robots: { index: true, follow: true },
 };
 
@@ -17,7 +17,7 @@ function PageJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'Calculate Savings - HireDeveloper.ae',
+    name: 'Calculate Savings - HireDeveloper.sg',
     description:
       'Find out how much you can save with remote talent. Detailed cost comparison between local and remote hires.',
   };
@@ -54,15 +54,15 @@ export default function CalculateSavingsPage() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero */}
-      <section className="bg-white py-20 border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-white py-10 md:py-16 lg:py-20 border-b border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-[48px] font-bold text-gray-900 mb-6">
+            <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 mb-6">
               Calculate Your Savings
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              Companies in Dubai and Abu Dhabi save an average of up to 60% on staffing costs
-              when hiring remote talent through HireDeveloper.ae. The quality?
+              Companies in Singapore save an average of up to 60% on staffing costs
+              when hiring remote talent through HireDeveloper.sg. The quality?
               Stays just as high.
             </p>
             <a
@@ -76,21 +76,21 @@ export default function CalculateSavingsPage() {
       </section>
 
       {/* Cost comparison */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Cost Comparison: Local vs. Remote
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
-            See how much you can save on typical roles when hiring through HireDeveloper.ae.
+            See how much you can save on typical roles when hiring through HireDeveloper.sg.
           </p>
 
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
               <div className="grid grid-cols-4 gap-0 bg-gray-900 text-white text-sm font-semibold">
                 <div className="p-4">Role</div>
-                <div className="p-4 text-center">UAE Salary (Annual)</div>
-                <div className="p-4 text-center">Remote via HireDeveloper.ae</div>
+                <div className="p-4 text-center">Singapore Salary (Annual)</div>
+                <div className="p-4 text-center">Remote via HireDeveloper.sg</div>
                 <div className="p-4 text-center">Savings</div>
               </div>
 
@@ -113,20 +113,20 @@ export default function CalculateSavingsPage() {
             </div>
 
             <p className="text-xs text-gray-500 mt-4 text-center">
-              * Average values based on Dubai/Abu Dhabi market data. Actual savings vary depending on experience, location, and project requirements.
+              * Average values based on Singapore/Marina Bay market data. Actual savings vary depending on experience, location, and project requirements.
             </p>
           </div>
         </div>
       </section>
 
       {/* Where savings come from */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Where Do the Savings Come From?
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
-            It is not just about salary. Remote hires through HireDeveloper.ae reduce costs across the board.
+            It is not just about salary. Remote hires through HireDeveloper.sg reduce costs across the board.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -143,7 +143,7 @@ export default function CalculateSavingsPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">No Office Costs</h3>
               <p className="text-gray-600 leading-relaxed">
                 No office, no equipment, no overhead. Remote talent works from their
-                own workspace. In Dubai or Abu Dhabi alone, that saves
+                own workspace. In Singapore or Marina Bay alone, that saves
                 $10,000-$25,000 USD per employee per year.
               </p>
             </div>
@@ -160,7 +160,7 @@ export default function CalculateSavingsPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">Faster Hiring</h3>
               <p className="text-gray-600 leading-relaxed">
                 Up to 75% faster time-to-hire means less lost productivity.
-                While traditional processes take 2-4 months, you hire through HireDeveloper.ae
+                While traditional processes take 2-4 months, you hire through HireDeveloper.sg
                 often in 1-2 weeks.
               </p>
             </div>
@@ -186,10 +186,10 @@ export default function CalculateSavingsPage() {
       </section>
 
       {/* Calculator CTA */}
-      <section className="bg-gray-50 py-20 border-t border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20 border-t border-gray-200">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-[40px] font-bold text-gray-900 mb-6">
+            <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 mb-6">
               Calculate Your Individual Savings
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -212,15 +212,15 @@ export default function CalculateSavingsPage() {
       </section>
 
       {/* Real savings example */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-16">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-16">
             Example: 5-Person Development Team
           </h2>
 
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-gray-50 p-8 rounded-xl border border-gray-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Local Hire (Dubai/Abu Dhabi)</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Local Hire (Singapore/Marina Bay)</h3>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex justify-between">
                   <span>2x Senior Developers</span>
@@ -250,7 +250,7 @@ export default function CalculateSavingsPage() {
             </div>
 
             <div className="bg-[rgb(0,159,255)]/5 p-8 rounded-xl border border-[rgb(0,159,255)]/20">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Remote via HireDeveloper.ae</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Remote via HireDeveloper.sg</h3>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex justify-between">
                   <span>2x Senior Developers</span>

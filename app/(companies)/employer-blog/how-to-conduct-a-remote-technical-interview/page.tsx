@@ -5,11 +5,11 @@ import RelatedLinks from '@/app/(companies)/components/RelatedLinks';
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'How to Conduct a Remote Technical Interview in Dubai & UAE | HireDeveloper.ae',
-    description: 'Complete guide to remote technical interviews for UAE companies. From preparation through live coding to evaluation — hire top developers in Dubai and Abu Dhabi.',
+    title: 'How to Conduct a Remote Technical Interview in Singapore & APAC | HireDeveloper.sg',
+    description: 'Complete guide to remote technical interviews for Singapore companies. From preparation through live coding to evaluation — hire top developers in Singapore.',
     robots: { index: true, follow: true },
     alternates: {
-      canonical: 'https://hiredeveloper.ae/employer-blog/how-to-conduct-a-remote-technical-interview',
+      canonical: 'https://hiredeveloper.sg/employer-blog/how-to-conduct-a-remote-technical-interview',
     },
   };
 }
@@ -32,24 +32,24 @@ export default function HowToConductRemoteTechnicalInterviewPage() {
           <span className="mx-2">&gt;</span>
           <Link href="/employer-blog/how-to-find-developers" className="hover:text-gray-700">Blog</Link>
           <span className="mx-2">&gt;</span>
-          <span className="text-gray-900">Remote Technical Interviews in UAE</span>
+          <span className="text-gray-900">Remote Technical Interviews in Singapore</span>
         </nav>
 
         {/* Title */}
         <h1 className="text-4xl font-bold text-gray-900 mb-4 leading-tight">
-          How to Conduct a Remote Technical Interview in Dubai & UAE
+          How to Conduct a Remote Technical Interview in Singapore & APAC
         </h1>
 
         {/* Author & Date */}
         <div className="text-sm text-gray-500 mb-10 border-b border-gray-200 pb-6">
-          By <span className="text-gray-700 font-medium">HireDeveloper.ae Team</span> &middot; Updated February 3, 2025
+          By <span className="text-gray-700 font-medium">HireDeveloper.sg Team</span> &middot; Updated February 3, 2025
         </div>
 
         {/* Hero Image */}
         <div className="my-8 rounded-xl overflow-hidden bg-blue-50 p-8 flex items-center justify-center">
           <img
             src="/images/blog/code-review.svg"
-            alt="How to conduct a remote technical interview - hiring developers in UAE"
+            alt="How to conduct a remote technical interview - hiring developers in Singapore"
             className="w-full max-w-[500px] h-auto"
           />
         </div>
@@ -57,7 +57,7 @@ export default function HowToConductRemoteTechnicalInterviewPage() {
         {/* Article Body */}
         <article className="prose prose-gray max-w-none">
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Conducting technical interviews remotely has become a core competency for modern companies, particularly for UAE and GCC-based businesses hiring across borders. However, the shift from in-person to virtual formats brings its own challenges: technical issues, limited nonverbal communication, and the difficulty of authentically evaluating a candidate&apos;s coding abilities. This guide shows you how to professionally conduct remote technical interviews and identify the best talent for your Dubai, Abu Dhabi, or Riyadh operations.
+            Conducting technical interviews remotely has become a core competency for modern companies, particularly for Singapore and APAC-based businesses hiring across borders. However, the shift from in-person to virtual formats brings its own challenges: technical issues, limited nonverbal communication, and the difficulty of authentically evaluating a candidate&apos;s coding abilities. This guide shows you how to professionally conduct remote technical interviews and identify the best talent for your Singapore operations.
           </p>
 
           {/* Section 1 */}
@@ -72,7 +72,7 @@ export default function HowToConductRemoteTechnicalInterviewPage() {
             <li><strong>Prepare the Coding Platform:</strong> Set up the chosen platform (CoderPad, HackerRank, CodeSignal, or a shared VS Code via LiveShare) in advance. Create the tasks, test them yourself, and make sure the candidate has access.</li>
             <li><strong>Define the Interview Structure:</strong> Define the time allocation. A typical 60-minute technical interview might look like this: 5 minutes greeting, 10 minutes background discussion, 35 minutes technical task, 10 minutes candidate questions.</li>
             <li><strong>Define Evaluation Criteria:</strong> Create a scorecard with clear criteria before the interview begins. This ensures you evaluate all candidates by the same standards and reduces unconscious bias.</li>
-            <li><strong>Inform the Candidate:</strong> Send the candidate all relevant information at least 48 hours before the interview: platform links, expected format, approximate duration, and required tools. If your company operates on a Sunday-to-Thursday schedule (standard in the UAE and GCC), make sure the candidate is aware of the working week so scheduling goes smoothly.</li>
+            <li><strong>Inform the Candidate:</strong> Send the candidate all relevant information at least 48 hours before the interview: platform links, expected format, approximate duration, and required tools. If your company operates on a Monday-to-Friday schedule (standard in Singapore and APAC), make sure the candidate is aware of the working week so scheduling goes smoothly.</li>
           </ul>
 
           {/* Section 2 */}
@@ -141,7 +141,7 @@ export default function HowToConductRemoteTechnicalInterviewPage() {
             <li><strong>Talking Too Much or Too Little:</strong> As an interviewer, you should aim for about 20-30% of the talking time. Ask clear questions, listen, and avoid giving away the answers yourself.</li>
             <li><strong>Multitasking During the Interview:</strong> Close all irrelevant tabs. The candidate notices when you are not paying attention, and it reflects poorly on your company.</li>
             <li><strong>Not Providing Structured Feedback:</strong> Document your observations during the interview and give the candidate timely feedback, regardless of the outcome.</li>
-            <li><strong>Forgetting the Cultural Aspect:</strong> Technical skills alone are not enough. Use the last few minutes to assess cultural fit and motivation. In the UAE&apos;s diverse workforce, where over 200 nationalities coexist, cultural awareness and adaptability are just as important as technical prowess.</li>
+            <li><strong>Forgetting the Cultural Aspect:</strong> Technical skills alone are not enough. Use the last few minutes to assess cultural fit and motivation. In Singapore&apos;s diverse workforce, where over 200 nationalities coexist, cultural awareness and adaptability are just as important as technical prowess.</li>
           </ol>
 
           {/* Section 6 */}
@@ -162,7 +162,7 @@ export default function HowToConductRemoteTechnicalInterviewPage() {
             If multiple interviewers are involved, hold a debrief meeting where each person gives their evaluation independently before discussing impressions. This prevents groupthink and produces a more objective picture.
           </p>
           <p className="text-gray-600 mb-8 leading-relaxed">
-            Remember: a good technical interview is not a one-way street. The candidate is also evaluating you and your company. A professionally conducted interview strengthens your employer brand and increases the likelihood that top talent will accept your offer. In competitive markets like Dubai and the wider GCC, where tech talent is in high demand, the candidate experience during your interview process can be a decisive differentiator.
+            Remember: a good technical interview is not a one-way street. The candidate is also evaluating you and your company. A professionally conducted interview strengthens your employer brand and increases the likelihood that top talent will accept your offer. In competitive markets like Singapore and the wider APAC, where tech talent is in high demand, the candidate experience during your interview process can be a decisive differentiator.
           </p>
 
           {/* Inline Tool CTA */}
@@ -170,7 +170,7 @@ export default function HowToConductRemoteTechnicalInterviewPage() {
             <h3 className="text-lg font-bold text-gray-900 mb-2">Tools for Your Interview Process</h3>
             <p className="text-gray-600 mb-4">Use these tools for more effective interviews:</p>
             <ul className="space-y-2">
-              <li><Link href="/tools/interview-question-generator" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">Interview Question Generator</Link> - Generate tailored technical questions</li>
+              <li><Link href="/tools/interview-questions" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">Interview Question Generator</Link> - Generate tailored technical questions</li>
               <li><Link href="/tools/technology-comparison" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">Technology Comparison</Link> - Compare technologies and frameworks</li>
             </ul>
           </div>
@@ -179,7 +179,7 @@ export default function HowToConductRemoteTechnicalInterviewPage() {
         {/* CTA */}
         <div className="bg-gray-50 rounded-xl p-8 text-center mt-12 mb-12">
           <h3 className="text-2xl font-bold text-gray-900 mb-3">Let Us Simplify Your Interview Process</h3>
-          <p className="text-gray-600 mb-6">Access pre-vetted developers in Dubai, Abu Dhabi, and across the GCC who have already been technically evaluated.</p>
+          <p className="text-gray-600 mb-6">Access pre-vetted developers in Singapore, and across the APAC who have already been technically evaluated.</p>
           <Link
             href="/hire-developers"
             className="inline-block bg-black text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
@@ -242,21 +242,22 @@ export default function HowToConductRemoteTechnicalInterviewPage() {
       <RelatedLinks
         title="Hire Developers by City"
         links={[
-          { label: 'Frontend Developers in Dubai', href: '/hire-developers/front-end/dubai' },
-          { label: 'Backend Developers in Abu Dhabi', href: '/hire-developers/back-end/abu-dhabi' },
-          { label: 'Full-Stack Developers in Riyadh', href: '/hire-developers/full-stack/riyadh' },
-          { label: 'Software Developers in Doha', href: '/hire-developers/software-development/doha' },
-          { label: 'Web Developers in Manama', href: '/hire-developers/web-development/manama' },
+          { label: 'Frontend Developers in Singapore', href: '/hire-developers/front-end/singapore' },
+          { label: 'Backend Developers in Marina Bay', href: '/hire-developers/back-end/marina-bay' },
+          { label: 'Full-Stack Developers in Raffles Place', href: '/hire-developers/full-stack/raffles-place' },
+          { label: 'Software Developers in one-north', href: '/hire-developers/software-development/one-north' },
+          { label: 'Web Developers in Jurong East', href: '/hire-developers/web-development/jurong-east' },
         ]}
       />
 
       <RelatedLinks
         title="Top Locations"
         links={[
-          { label: 'Developers in the UAE', href: '/locations/uae' },
-          { label: 'Developers in Saudi Arabia', href: '/locations/saudi-arabia' },
-          { label: 'Developers in Qatar', href: '/locations/qatar' },
-          { label: 'Developers in Kuwait', href: '/locations/kuwait' },
+          { label: 'Developers in Marina Bay', href: '/locations/singapore/central-region/marina-bay' },
+          { label: 'Developers in Raffles Place', href: '/locations/singapore/central-region/raffles-place' },
+          { label: 'Developers in one-north', href: '/locations/singapore/central-region/one-north' },
+          { label: 'Developers in Changi', href: '/locations/singapore/east-region/changi-business-park' },
+          { label: 'Developers in Jurong', href: '/locations/singapore/west-region/jurong-east' },
         ]}
       />
 

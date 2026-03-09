@@ -32,11 +32,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   for (let i = 0; i < hashStr.length; i++) h = ((h << 5) - h + hashStr.charCodeAt(i)) | 0;
   const showYear = Math.abs(h) % 100 < 30;
   return {
-    title: showYear ? `Hire Remote Developers in ${data.city.name} - ${year} | HireDeveloper.ae` : `Hire Remote Developers in ${data.city.name} | HireDeveloper.ae`,
+    title: showYear ? `Hire Remote Developers in ${data.city.name} - ${year} | HireDeveloper.sg` : `Hire Remote Developers in ${data.city.name} | HireDeveloper.sg`,
     description: showYear ? `Find and hire the best remote developers in ${data.city.name}, ${data.region.name}. Access vetted programmers with local expertise. Top-rated in ${year}.` : `Find and hire the best remote developers in ${data.city.name}, ${data.region.name}. Access vetted programmers with local expertise.`,
     robots: { index: true, follow: true },
     alternates: {
-      canonical: `https://hiredeveloper.ae/locations/${country}/${region}/${city}`,
+      canonical: `https://hiredeveloper.sg/locations/${country}/${region}/${city}`,
     },
   };
 }
@@ -110,7 +110,7 @@ export default async function CityPage({ params }: Props) {
     ? [
         {
           title: 'Diverse Tech Ecosystem',
-          text: `As a major city, ${data.city.name} is home to numerous tech companies, startups, and free zones. Developers benefit from this environment and bring cross-industry knowledge to your projects.`,
+          text: `As a major city, ${data.city.name} is home to numerous tech companies, startups, and business parks. Developers benefit from this environment and bring cross-industry knowledge to your projects.`,
         },
         {
           title: 'Broad Skill Spectrum',
@@ -147,17 +147,12 @@ export default async function CityPage({ params }: Props) {
         },
         {
           title: 'Same Timezone',
-          text: `${data.city.name} is in the UTC+4 timezone, making real-time collaboration seamless. Developers here are experienced with international teams and English communication.`,
+          text: `${data.city.name} is in the UTC+8 timezone, making real-time collaboration seamless. Developers here are experienced with international teams and English communication.`,
         },
       ];
 
   const countryCodeMap: Record<string, string> = {
-    uae: 'AE',
-    'saudi-arabia': 'SA',
-    qatar: 'QA',
-    bahrain: 'BH',
-    oman: 'OM',
-    kuwait: 'KW',
+    singapore: 'SG',
   };
 
   return (
@@ -168,14 +163,14 @@ export default async function CityPage({ params }: Props) {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'EmploymentAgency',
-            name: `HireDeveloper.ae ${data.city.name}`,
+            name: `HireDeveloper.sg ${data.city.name}`,
             description: `Hire remote developers in ${data.city.name}. ${data.city.description}`,
-            url: `https://hiredeveloper.ae/locations/${data.country.slug}/${data.region.slug}/${data.city.slug}`,
+            url: `https://hiredeveloper.sg/locations/${data.country.slug}/${data.region.slug}/${data.city.slug}`,
             address: {
               '@type': 'PostalAddress',
               addressLocality: data.city.name,
               addressRegion: data.region.name,
-              addressCountry: countryCodeMap[data.country.slug] || 'AE',
+              addressCountry: countryCodeMap[data.country.slug] || 'SG',
             },
             geo: {
               '@type': 'GeoCoordinates',
@@ -203,7 +198,7 @@ export default async function CityPage({ params }: Props) {
                 name: `How do I find remote developers in ${data.city.name}?`,
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: `With HireDeveloper.ae you can access vetted remote developers in ${data.city.name} within minutes. Our platform gives you access to the top 2% of talent.`,
+                  text: `With HireDeveloper.sg you can access vetted remote developers in ${data.city.name} within minutes. Our platform gives you access to the top 2% of talent.`,
                 },
               },
               {
@@ -211,7 +206,7 @@ export default async function CityPage({ params }: Props) {
                 name: `How much does it cost to hire a developer in ${data.city.name}?`,
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: `Freelance developers in ${data.city.name} typically cost between $35-$135 per hour depending on experience and technology. Through HireDeveloper.ae you can save up to 58%.`,
+                  text: `Freelance developers in ${data.city.name} typically cost between $35-$135 per hour depending on experience and technology. Through HireDeveloper.sg you can save up to 58%.`,
                 },
               },
               {
@@ -240,7 +235,7 @@ export default async function CityPage({ params }: Props) {
 
       {/* Hero Section */}
       <section className="bg-black py-16">
-        <div className="max-w-[1280px] mx-auto px-12 text-center">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Hire Remote Developers in {data.city.name}
           </h1>
@@ -257,7 +252,7 @@ export default async function CityPage({ params }: Props) {
 
       {/* City Overview */}
       <section className="bg-gray-50 py-12">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -304,7 +299,7 @@ export default async function CityPage({ params }: Props) {
 
       {/* Why Section */}
       <section className="bg-white py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
             Why Hire Developers in {data.city.name}?
           </h2>
@@ -321,12 +316,12 @@ export default async function CityPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Free Zones (if available) */}
+      {/* Tech Hubs (if available) */}
       {data.city.freeZones && data.city.freeZones.length > 0 && (
         <section className="bg-gray-900 text-white py-16">
-          <div className="max-w-[1280px] mx-auto px-12">
+          <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
             <h2 className="text-2xl font-bold mb-6">
-              Free Zones in {data.city.name}
+              Tech Hubs in {data.city.name}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
               {data.city.freeZones.map((zone) => (
@@ -343,7 +338,7 @@ export default async function CityPage({ params }: Props) {
       {/* Tech Hubs (if available) */}
       {data.city.techHubs && data.city.techHubs.length > 0 && (
         <section className="bg-white py-16">
-          <div className="max-w-[1280px] mx-auto px-12">
+          <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Tech Hubs in {data.city.name}
             </h2>
@@ -362,7 +357,7 @@ export default async function CityPage({ params }: Props) {
       {/* Major Employers (if available) */}
       {data.city.majorEmployers && data.city.majorEmployers.length > 0 && (
         <section className="bg-gray-50 py-12">
-          <div className="max-w-[1280px] mx-auto px-12">
+          <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Major Tech Employers in {data.city.name}
             </h2>
@@ -380,7 +375,7 @@ export default async function CityPage({ params }: Props) {
       {/* Hiring Facts (if available) */}
       {data.city.hiringFacts && data.city.hiringFacts.length > 0 && (
         <section className="bg-white py-12">
-          <div className="max-w-[1280px] mx-auto px-12">
+          <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Hiring in {data.city.name}: Key Facts
             </h2>
@@ -400,7 +395,7 @@ export default async function CityPage({ params }: Props) {
 
       {/* Developer Specializations — cross-links to hiring pages */}
       <section id="talent" className="bg-white py-12">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             Hire Developers by Specialization in {data.city.name}
           </h2>
@@ -479,7 +474,7 @@ export default async function CityPage({ params }: Props) {
 
       {/* City FAQ */}
       <section className="bg-gray-50 py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             FAQ: Hiring Developers in {data.city.name}
           </h2>
@@ -487,11 +482,11 @@ export default async function CityPage({ params }: Props) {
             {[
               {
                 q: `How do I find remote developers in ${data.city.name}?`,
-                a: `With HireDeveloper.ae you can access vetted remote developers in ${data.city.name} within minutes. Our platform gives you access to the top 2% of talent, fully screened for technical skills and communication.`
+                a: `With HireDeveloper.sg you can access vetted remote developers in ${data.city.name} within minutes. Our platform gives you access to the top 2% of talent, fully screened for technical skills and communication.`
               },
               {
                 q: `How much does it cost to hire a developer in ${data.city.name}?`,
-                a: `Costs vary by experience level and technology. Freelance developers in ${data.city.name} typically cost between $35-$135 per hour. Through HireDeveloper.ae you can save up to 58% compared to traditional hiring methods.`
+                a: `Costs vary by experience level and technology. Freelance developers in ${data.city.name} typically cost between $35-$135 per hour. Through HireDeveloper.sg you can save up to 58% compared to traditional hiring methods.`
               },
               {
                 q: `Which programming languages are most in demand in ${data.city.name}?`,
@@ -499,11 +494,11 @@ export default async function CityPage({ params }: Props) {
               },
               {
                 q: `How quickly can I hire a developer in ${data.city.name}?`,
-                a: `With HireDeveloper.ae you can engage a qualified freelance developer from ${data.city.name} within 24-48 hours. For full-time hires, expect approximately 14 days.`
+                a: `With HireDeveloper.sg you can engage a qualified freelance developer from ${data.city.name} within 24-48 hours. For full-time hires, expect approximately 14 days.`
               },
               {
                 q: `Why choose remote developers from ${data.city.name}?`,
-                a: `${data.city.name} in ${data.region.name} offers access to highly qualified developers in the UTC+4 timezone. Developers here often have international project experience and are fluent in English.`
+                a: `${data.city.name} in ${data.region.name} offers access to highly qualified developers in the UTC+8 timezone. Developers here often have international project experience and are fluent in English.`
               },
             ].map((faq, i) => (
               <div key={i} className="bg-white rounded-lg p-6 border border-gray-200">

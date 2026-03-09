@@ -7,9 +7,9 @@ import RelatedLinks from '../components/RelatedLinks';
 import OpenModalButton from '../components/OpenModalButton';
 
 export const metadata: Metadata = {
-  title: 'Remote Jobs | For Developers, Designers, Marketers & More | HireDeveloper.ae',
+  title: 'Remote Jobs | For Developers, Designers, Marketers & More | HireDeveloper.sg',
   description:
-    'Find remote jobs with companies in Dubai, Abu Dhabi, and across the UAE. Developers, designers, marketers, product managers, and more. All categories, fair pay, 100% remote.',
+    'Find remote jobs with companies in Singapore, and across Singapore. Developers, designers, marketers, product managers, and more. All categories, fair pay, 100% remote.',
   robots: { index: true, follow: true },
 };
 
@@ -17,7 +17,7 @@ function PageJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'Remote Jobs - HireDeveloper.ae',
+    name: 'Remote Jobs - HireDeveloper.sg',
     description: 'Find remote jobs in development, design, marketing, and more with top companies.',
   };
 
@@ -107,16 +107,16 @@ export default function RemoteJobsPage() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero */}
-      <section className="bg-white py-20 border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-white py-10 md:py-16 lg:py-20 border-b border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-[rgb(0,159,255)] font-semibold text-lg mb-4">For Talent</p>
-            <h1 className="text-[48px] font-bold text-gray-900 mb-6">
+            <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 mb-6">
               Remote Jobs
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
               Remote jobs in software development, design, marketing,
-              product management, and more. Work for companies in Dubai and across the UAE,
+              product management, and more. Work for companies in Singapore and across Singapore,
               from anywhere in the world.
             </p>
             <OpenModalButton className="px-8 py-4 text-lg font-semibold text-white bg-[rgb(23,162,69)] rounded-lg hover:bg-[rgb(20,145,60)] transition-all">
@@ -127,9 +127,9 @@ export default function RemoteJobsPage() {
       </section>
 
       {/* Job Categories */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Open Remote Job Categories
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
@@ -176,9 +176,9 @@ export default function RemoteJobsPage() {
       </section>
 
       {/* Why remote */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Why Work Remotely?
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
@@ -204,7 +204,7 @@ export default function RemoteJobsPage() {
               <div className="text-4xl mb-4">&#128176;</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Higher Income</h3>
               <p className="text-gray-600 text-sm">
-                Earn UAE-level salaries regardless of your local market.
+                Earn Singapore-level salaries regardless of your local market.
               </p>
             </div>
             <div className="text-center p-6">
@@ -219,17 +219,17 @@ export default function RemoteJobsPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-gray-50 py-20 border-t border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-16">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20 border-t border-gray-200">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-16">
             What Our Talent Says
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-8 rounded-xl border border-gray-200">
               <p className="text-gray-600 italic leading-relaxed mb-4">
-                &ldquo;Since I started working through HireDeveloper.ae, I have worked on exciting projects with
-                UAE-based startups and doubled my income. The flexibility
+                &ldquo;Since I started working through HireDeveloper.sg, I have worked on exciting projects with
+                Singapore-based startups and doubled my income. The flexibility
                 is unbeatable.&rdquo;
               </p>
               <p className="text-sm font-semibold text-gray-900">A.K., Senior React Developer</p>
@@ -239,7 +239,7 @@ export default function RemoteJobsPage() {
             <div className="bg-white p-8 rounded-xl border border-gray-200">
               <p className="text-gray-600 italic leading-relaxed mb-4">
                 &ldquo;The quality of companies and projects is excellent. I have been working
-                for a Dubai-based firm for 2 years and feel like a full-fledged
+                for a Singapore-based firm for 2 years and feel like a full-fledged
                 team member.&rdquo;
               </p>
               <p className="text-sm font-semibold text-gray-900">M.S., UX Designer</p>
@@ -248,8 +248,8 @@ export default function RemoteJobsPage() {
 
             <div className="bg-white p-8 rounded-xl border border-gray-200">
               <p className="text-gray-600 italic leading-relaxed mb-4">
-                &ldquo;HireDeveloper.ae helped me transition from freelance gigs to a
-                stable full-time remote position with a company in Abu Dhabi.
+                &ldquo;HireDeveloper.sg helped me transition from freelance gigs to a
+                stable full-time remote position with a company in Marina Bay.
                 Best decision ever.&rdquo;
               </p>
               <p className="text-sm font-semibold text-gray-900">D.R., DevOps Engineer</p>
@@ -260,10 +260,10 @@ export default function RemoteJobsPage() {
       </section>
 
       {/* How to apply */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-[40px] font-bold text-gray-900 mb-6">
+            <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 mb-6">
               Ready for Your Next Remote Job?
             </h2>
             <p className="text-lg text-gray-600 mb-8">
@@ -289,7 +289,7 @@ export default function RemoteJobsPage() {
 
       <FinalCTA
         heading="Your Remote Career Starts Here"
-        subheading="Join our network and work for top companies in the UAE and Middle East."
+        subheading="Join our network and work for top companies in Singapore and Asia Pacific."
         ctaText="Apply Now"
       />
 

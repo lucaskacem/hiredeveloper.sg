@@ -12,11 +12,11 @@ interface ResourcesSectionProps {
 
 export default function ResourcesSection({ heading, subheading, articles }: ResourcesSectionProps) {
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 w-full">
+    <section className="bg-gray-50 py-10 md:py-16 lg:py-20 overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
         {/* Section Heading */}
-        <div className="text-center mb-12">
-          <h2 className="text-[40px] font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-[22px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-bold text-gray-900 mb-4">
             {heading}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -25,7 +25,7 @@ export default function ResourcesSection({ heading, subheading, articles }: Reso
         </div>
 
         {/* Articles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-8">
           {articles.map((article, index) => (
             <a
               key={index}

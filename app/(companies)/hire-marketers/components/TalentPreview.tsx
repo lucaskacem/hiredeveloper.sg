@@ -36,8 +36,8 @@ export default function TalentPreview() {
     ];
 
     return (
-        <section className="bg-[#f7f9fc] py-20">
-            <div className="max-w-[1280px] mx-auto px-12">
+        <section className="bg-[#f7f9fc] py-10 md:py-16 lg:py-20">
+            <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
                 <h2 className="text-[28px] font-bold text-[#0b152b] mb-8">
                     1,684 remote digital marketers and experts available:
                 </h2>

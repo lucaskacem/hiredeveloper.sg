@@ -5,11 +5,11 @@ import RelatedLinks from '@/app/(companies)/components/RelatedLinks';
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Interview Questions for Hiring Remote Developers in UAE & Dubai | HireDeveloper.ae',
-    description: 'Best interview questions for hiring software engineers and freelance developers in Dubai, Abu Dhabi, and the UAE. Technical and behavioral questions for GCC remote hiring.',
+    title: 'Interview Questions for Hiring Remote Developers in Singapore & APAC | HireDeveloper.sg',
+    description: 'Best interview questions for hiring software engineers and freelance developers in Singapore, and Singapore. Technical and behavioral questions for APAC remote hiring.',
     robots: { index: true, follow: true },
     alternates: {
-      canonical: 'https://hiredeveloper.ae/employer-blog/software-engineer-interview-questions',
+      canonical: 'https://hiredeveloper.sg/employer-blog/software-engineer-interview-questions',
     },
   };
 }
@@ -32,24 +32,24 @@ export default function SoftwareEngineerInterviewQuestionsPage() {
           <span className="mx-2">&gt;</span>
           <Link href="/employer-blog/how-to-find-developers" className="hover:text-gray-700">Blog</Link>
           <span className="mx-2">&gt;</span>
-          <span className="text-gray-900">Interview Questions for UAE Remote Developers</span>
+          <span className="text-gray-900">Interview Questions for Singapore Remote Developers</span>
         </nav>
 
         {/* Title */}
         <h1 className="text-4xl font-bold text-gray-900 mb-4 leading-tight">
-          Interview Questions for Hiring Remote Developers in UAE & Dubai
+          Interview Questions for Hiring Remote Developers in Singapore & APAC
         </h1>
 
         {/* Author & Date */}
         <div className="text-sm text-gray-500 mb-10 border-b border-gray-200 pb-6">
-          By <span className="text-gray-700 font-medium">HireDeveloper.ae Team</span> &middot; Updated January 20, 2025
+          By <span className="text-gray-700 font-medium">HireDeveloper.sg Team</span> &middot; Updated January 20, 2025
         </div>
 
         {/* Hero Image */}
         <div className="my-8 rounded-xl overflow-hidden bg-blue-50 p-8 flex items-center justify-center">
           <img
             src="/images/blog/online-test.svg"
-            alt="Software engineer interview questions - hire developers in Dubai UAE"
+            alt="Software engineer interview questions - hire developers in Singapore"
             className="w-full max-w-[500px] h-auto"
           />
         </div>
@@ -57,7 +57,7 @@ export default function SoftwareEngineerInterviewQuestionsPage() {
         {/* Article Body */}
         <article className="prose prose-gray max-w-none">
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Hiring freelance developers is different from traditional recruitment, whether you are building a team in Dubai, scaling from Abu Dhabi, or running a distributed setup across the GCC. Freelancers bring technical expertise but also need to quickly get up to speed on ongoing projects, deliver independently, and communicate clearly with your team. This guide provides you with a practical question catalog covering both technical and behavioral aspects.
+            Hiring freelance developers is different from traditional recruitment, whether you are building a team in Singapore, scaling from Marina Bay, or running a distributed setup across the APAC. Freelancers bring technical expertise but also need to quickly get up to speed on ongoing projects, deliver independently, and communicate clearly with your team. This guide provides you with a practical question catalog covering both technical and behavioral aspects.
           </p>
 
           {/* Section 1 */}
@@ -97,7 +97,7 @@ export default function SoftwareEngineerInterviewQuestionsPage() {
           </p>
           <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-3">
             <li><strong>How do you estimate the time required for a new project?</strong> Experienced freelancers use methods like Planning Poker, T-shirt sizing, or historical data from past projects. Look for mentions of buffer zones for unforeseen complications.</li>
-            <li><strong>How do you communicate delays or problems to the client?</strong> Proactive, transparent communication is a hallmark of professional freelancers. The candidate should emphasize raising problems early and bringing proposed solutions. In the UAE market, where project timelines are often aggressive and client expectations are high, this quality is non-negotiable.</li>
+            <li><strong>How do you communicate delays or problems to the client?</strong> Proactive, transparent communication is a hallmark of professional freelancers. The candidate should emphasize raising problems early and bringing proposed solutions. In Singapore's market, where project timelines are often aggressive and client expectations are high, this quality is non-negotiable.</li>
             <li><strong>How do you proceed when requirements change mid-project?</strong> Flexibility is important, but the freelancer should also be able to recognize scope creep and handle it constructively.</li>
             <li><strong>Are you currently working on other projects? How do you ensure our project gets the attention it needs?</strong> Transparency about current workload is a good sign of professionalism.</li>
           </ul>
@@ -136,7 +136,7 @@ export default function SoftwareEngineerInterviewQuestionsPage() {
             <li><strong>Tell me about a project that did not go as planned. What did you do?</strong> Look for honesty, accountability, and constructive problem-solving approaches.</li>
             <li><strong>How do you deal with a client who has unrealistic expectations?</strong> Professional freelancers set boundaries, communicate clearly, and offer alternatives without jeopardizing the client relationship.</li>
             <li><strong>Describe a situation where you had to quickly learn a new technology.</strong> Freelancers often need to get up to speed on new technologies quickly. Look for specific learning strategies and a pragmatic approach to knowledge gaps.</li>
-            <li><strong>How do you stay technically up to date?</strong> Conferences (such as GITEX Global in Dubai), blogs, open-source contributions, online courses, and tech communities show a commitment to continuous learning. Developers active in the UAE tech scene often attend local meetups at Dubai Internet City or Hub71 in Abu Dhabi.</li>
+            <li><strong>How do you stay technically up to date?</strong> Conferences (such as Singapore Tech Week), blogs, open-source contributions, online courses, and tech communities show a commitment to continuous learning. Developers active in the Singapore tech scene often attend local meetups at one-north or Block71.</li>
           </ul>
 
           {/* Section 6 */}
@@ -154,7 +154,7 @@ export default function SoftwareEngineerInterviewQuestionsPage() {
             <li><strong>Paid Trial Project:</strong> A short paid project (1-2 weeks) is often the best way to experience the actual work style of a freelancer.</li>
           </ol>
           <p className="text-gray-600 mb-8 leading-relaxed">
-            With this question catalog and the supplementary evaluation methods, you have everything you need to find the right freelance developers for your project, whether based in Dubai, Riyadh, Doha, or anywhere in the world, and hire them successfully.
+            With this question catalog and the supplementary evaluation methods, you have everything you need to find the right freelance developers for your project, whether based in Marina Bay, Jurong, or anywhere in Singapore, and hire them successfully.
           </p>
 
           {/* Inline Tool CTA */}
@@ -162,7 +162,7 @@ export default function SoftwareEngineerInterviewQuestionsPage() {
             <h3 className="text-lg font-bold text-gray-900 mb-2">Useful Tools for Your Interview</h3>
             <p className="text-gray-600 mb-4">Optimize your hiring process with our free tools:</p>
             <ul className="space-y-2">
-              <li><Link href="/tools/interview-question-generator" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">Interview Question Generator</Link> - Automatically create technical interview questions</li>
+              <li><Link href="/tools/interview-questions" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">Interview Question Generator</Link> - Automatically create technical interview questions</li>
               <li><Link href="/tools/skill-assessment" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">Skill Assessment</Link> - Objectively evaluate candidates</li>
               <li><Link href="/tools/salary-calculator" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">Salary Calculator</Link> - Calculate market-rate salaries</li>
             </ul>
@@ -171,8 +171,8 @@ export default function SoftwareEngineerInterviewQuestionsPage() {
 
         {/* CTA */}
         <div className="bg-gray-50 rounded-xl p-8 text-center mt-12 mb-12">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">Find the Perfect Freelance Developer in the UAE</h3>
-          <p className="text-gray-600 mb-6">Access over 90,000 vetted developers across Dubai, Abu Dhabi, Saudi Arabia, and worldwide.</p>
+          <h3 className="text-2xl font-bold text-gray-900 mb-3">Find the Perfect Freelance Developer in Singapore</h3>
+          <p className="text-gray-600 mb-6">Access over 90,000 vetted developers across Singapore, APAC, and worldwide.</p>
           <Link
             href="/hire-developers"
             className="inline-block bg-black text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
@@ -236,22 +236,22 @@ export default function SoftwareEngineerInterviewQuestionsPage() {
       <RelatedLinks
         title="Hire Developers by City"
         links={[
-          { label: 'JavaScript Developers in Dubai', href: '/hire-developers/javascript/dubai' },
-          { label: 'TypeScript Developers in Abu Dhabi', href: '/hire-developers/typescript/abu-dhabi' },
-          { label: 'Java Developers in Riyadh', href: '/hire-developers/java/riyadh' },
-          { label: 'React Developers in Doha', href: '/hire-developers/reactjs/doha' },
-          { label: 'Python Developers in Sharjah', href: '/hire-developers/python/sharjah' },
+          { label: 'JavaScript Developers in Singapore', href: '/hire-developers/javascript/singapore' },
+          { label: 'TypeScript Developers in Marina Bay', href: '/hire-developers/typescript/marina-bay' },
+          { label: 'Java Developers in Raffles Place', href: '/hire-developers/java/raffles-place' },
+          { label: 'React Developers in one-north', href: '/hire-developers/reactjs/one-north' },
+          { label: 'Python Developers in Jurong East', href: '/hire-developers/python/jurong-east' },
         ]}
       />
 
       <RelatedLinks
         title="Top Locations"
         links={[
-          { label: 'Developers in the UAE', href: '/locations/uae' },
-          { label: 'Developers in Saudi Arabia', href: '/locations/saudi-arabia' },
-          { label: 'Developers in Qatar', href: '/locations/qatar' },
-          { label: 'Developers in Bahrain', href: '/locations/bahrain' },
-          { label: 'Developers in Oman', href: '/locations/oman' },
+          { label: 'Developers in Marina Bay', href: '/locations/singapore/central-region/marina-bay' },
+          { label: 'Developers in Raffles Place', href: '/locations/singapore/central-region/raffles-place' },
+          { label: 'Developers in one-north', href: '/locations/singapore/central-region/one-north' },
+          { label: 'Developers in Changi', href: '/locations/singapore/east-region/changi-business-park' },
+          { label: 'Developers in Jurong', href: '/locations/singapore/west-region/jurong-east' },
         ]}
       />
 

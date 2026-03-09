@@ -330,11 +330,11 @@ function RoleIcon({ name }: { name: string }) {
 
 export default function CategoriesGrid({ heading, subheading, sections }: CategoriesGridProps) {
   return (
-    <section className="bg-white py-20">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 w-full">
+    <section className="bg-white py-10 md:py-16 lg:py-20 overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
         {/* Section Heading */}
-        <div className="text-center mb-12">
-          <h2 className="text-[40px] font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-[22px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-bold text-gray-900 mb-4">
             {heading}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -346,12 +346,12 @@ export default function CategoriesGrid({ heading, subheading, sections }: Catego
         {sections.map((section) => (
           <div key={section.id} className="mb-16 last:mb-0">
             {/* Section Title */}
-            <h3 className="text-[24px] font-bold text-gray-900 mb-8">
+            <h3 className="text-[20px] sm:text-[22px] md:text-[24px] font-bold text-gray-900 mb-6 md:mb-8">
               {section.title}
             </h3>
 
             {/* Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
               {section.items.map((item) => {
                 const cdnUrl = techLogoMap[item.name];
 
@@ -359,7 +359,7 @@ export default function CategoriesGrid({ heading, subheading, sections }: Catego
                   <a
                     key={item.name}
                     href={item.url}
-                    className="flex flex-col items-center gap-3 p-6 bg-gray-50 rounded-lg hover:bg-gray-100 hover:shadow-md transition-all group"
+                    className="flex flex-col items-center gap-2 sm:gap-3 p-4 sm:p-6 bg-gray-50 rounded-lg hover:bg-gray-100 hover:shadow-md transition-all group"
                   >
                     {/* Icon */}
                     <div className="w-16 h-16 flex items-center justify-center">
@@ -391,7 +391,7 @@ export default function CategoriesGrid({ heading, subheading, sections }: Catego
         ))}
 
         {/* CTAs */}
-        <div className="flex items-center justify-center gap-4 mt-12">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mt-8 md:mt-12">
           <button className="px-8 py-3 text-base font-semibold text-white bg-[rgb(23,162,69)] rounded-md hover:bg-[rgb(20,145,60)] transition-colors">
             Hire Developers
           </button>

@@ -7,9 +7,9 @@ import RelatedLinks from '../components/RelatedLinks';
 import OpenModalButton from '../components/OpenModalButton';
 
 export const metadata: Metadata = {
-  title: 'How HireDeveloper.ae Works | Hire in 3 Simple Steps',
+  title: 'How HireDeveloper.sg Works | Hire in 3 Simple Steps',
   description:
-    'Learn how to hire vetted remote developers, designers, and other talent through HireDeveloper.ae in just 3 steps. Fast, risk-free, and with no upfront costs.',
+    'Learn how to hire vetted remote developers, designers, and other talent through HireDeveloper.sg in just 3 steps. Fast, risk-free, and with no upfront costs.',
   robots: { index: true, follow: true },
 };
 
@@ -17,7 +17,7 @@ function PageJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How to hire remote talent through HireDeveloper.ae',
+    name: 'How to hire remote talent through HireDeveloper.sg',
     description:
       'In 3 simple steps to the perfect remote team: Tell us your needs, interview candidates, hire.',
     step: [
@@ -74,11 +74,11 @@ export default function HowItWorksPage() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero */}
-      <section className="bg-white py-20 border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-white py-10 md:py-16 lg:py-20 border-b border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-[48px] font-bold text-gray-900 mb-6">
-              How HireDeveloper.ae Works
+            <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 mb-6">
+              How HireDeveloper.sg Works
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
               Three steps. That is how we connect you with the best remote talent in the world.
@@ -92,9 +92,9 @@ export default function HowItWorksPage() {
       </section>
 
       {/* 3-Step Process */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-16">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-16">
             Your Path to the Perfect Team
           </h2>
 
@@ -105,7 +105,7 @@ export default function HowItWorksPage() {
                 <div className="aspect-square w-full max-w-[300px] mx-auto flex items-center justify-center">
                   <img
                     src="/images/steps/request.svg"
-                    alt="Tell us your hiring needs - hire developers in Dubai UAE"
+                    alt="Tell us your hiring needs - hire developers in Singapore"
                     className="w-full h-full object-contain"
                     loading="lazy"
                   />
@@ -129,7 +129,7 @@ export default function HowItWorksPage() {
                 <div className="aspect-square w-full max-w-[300px] mx-auto flex items-center justify-center">
                   <img
                     src="/images/steps/interview.svg"
-                    alt="Interview pre-vetted developer candidates for UAE companies"
+                    alt="Interview pre-vetted developer candidates for Singapore companies"
                     className="w-full h-full object-contain"
                     loading="lazy"
                   />
@@ -153,7 +153,7 @@ export default function HowItWorksPage() {
                 <div className="aspect-square w-full max-w-[300px] mx-auto flex items-center justify-center">
                   <img
                     src="/images/steps/hire.svg"
-                    alt="Hire remote developers and start working - UAE talent platform"
+                    alt="Hire remote developers and start working - Singapore talent platform"
                     className="w-full h-full object-contain"
                     loading="lazy"
                   />
@@ -174,11 +174,11 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      {/* Why HireDeveloper.ae */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
-            Why Companies Choose HireDeveloper.ae
+      {/* Why HireDeveloper.sg */}
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
+            Why Companies Choose HireDeveloper.sg
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
             More than a platform: we are your partner in building strong remote teams.
@@ -210,7 +210,7 @@ export default function HowItWorksPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">Up to 60% Lower Costs</h3>
               <p className="text-gray-600 leading-relaxed">
                 Save up to 60% on staffing costs compared to local hires
-                in Dubai and Abu Dhabi, without compromising on quality. Try our{' '}
+                in Singapore, without compromising on quality. Try our{' '}
                 <a href="/tools/team-cost-calculator" className="text-[rgb(0,159,255)] hover:underline">
                   Team Cost Calculator
                 </a>{' '}
@@ -250,10 +250,10 @@ export default function HowItWorksPage() {
       </section>
 
       {/* Who it's for */}
-      <section className="bg-gray-50 py-20 border-t border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
-            Who Is HireDeveloper.ae For?
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20 border-t border-gray-200">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
+            Who Is HireDeveloper.sg For?
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
             Whether startup or enterprise: we have the right solution for every company size.
@@ -308,7 +308,7 @@ export default function HowItWorksPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Enterprises</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Building entire teams or bridging capacity gaps: large companies
-                rely on HireDeveloper.ae when speed matters.
+                rely on HireDeveloper.sg when speed matters.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
@@ -330,13 +330,13 @@ export default function HowItWorksPage() {
       </section>
 
       {/* Talent categories */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             What Talent Can You Hire?
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
-            HireDeveloper.ae covers all key roles for your digital team.
+            HireDeveloper.sg covers all key roles for your digital team.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

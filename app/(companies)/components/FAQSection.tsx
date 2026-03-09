@@ -15,16 +15,16 @@ const faqData: Record<string, FAQItem[]> = {
       answer: 'Typically, you will receive vetted candidate profiles within 48 hours. After the interview process, you can often hire a developer within one week and start working immediately.',
     },
     {
-      question: 'How are developers vetted at HireDeveloper.ae?',
+      question: 'How are developers vetted at HireDeveloper.sg?',
       answer: 'Every developer goes through a rigorous vetting process that includes technical assessments, code reviews, communication evaluations, and reference checks. Only the top 2% are accepted.',
     },
     {
       question: 'What does it cost to hire a freelance developer?',
-      answer: 'Costs vary depending on experience level and specialization. HireDeveloper.ae charges no upfront fees. You only pay once you have found and hired the right developer.',
+      answer: 'Costs vary depending on experience level and specialization. HireDeveloper.sg charges no upfront fees. You only pay once you have found and hired the right developer.',
     },
     {
       question: 'Can I hire developers as both freelancers and full-time?',
-      answer: 'Yes, HireDeveloper.ae offers both options. You can hire developers as freelancers on a project basis or as full-time remote employees, depending on your requirements.',
+      answer: 'Yes, HireDeveloper.sg offers both options. You can hire developers as freelancers on a project basis or as full-time remote employees, depending on your requirements.',
     },
     {
       question: 'What programming languages and technologies do your developers cover?',
@@ -32,16 +32,16 @@ const faqData: Record<string, FAQItem[]> = {
     },
     {
       question: 'Is there a quality guarantee or trial period?',
-      answer: 'Yes, HireDeveloper.ae offers a risk-free trial period. If you are not satisfied with the hired developer, we will help you find a replacement at no additional cost.',
+      answer: 'Yes, HireDeveloper.sg offers a risk-free trial period. If you are not satisfied with the hired developer, we will help you find a replacement at no additional cost.',
     },
   ],
   'product designers': [
     {
-      question: 'What types of designers can I hire through HireDeveloper.ae?',
+      question: 'What types of designers can I hire through HireDeveloper.sg?',
       answer: 'You can hire UX designers, UI designers, product designers, interaction designers, visual designers, and full-service designers. Our designers are proficient in Figma, Adobe XD, Sketch, and other modern design tools.',
     },
     {
-      question: 'How are designers vetted at HireDeveloper.ae?',
+      question: 'How are designers vetted at HireDeveloper.sg?',
       answer: 'Every designer undergoes a thorough portfolio evaluation, design challenge, communication assessment, and reference check. We evaluate technical skills, creativity, and problem-solving ability equally.',
     },
     {
@@ -50,7 +50,7 @@ const faqData: Record<string, FAQItem[]> = {
     },
     {
       question: 'What does a freelance product designer cost?',
-      answer: 'Freelance product designers cost between $25-200 per hour depending on experience. Senior UX/UI designers typically range from $80-150 per hour. HireDeveloper.ae charges no upfront fees.',
+      answer: 'Freelance product designers cost between $25-200 per hour depending on experience. Senior UX/UI designers typically range from $80-150 per hour. HireDeveloper.sg charges no upfront fees.',
     },
     {
       question: 'Can designers also work on long-term projects?',
@@ -59,11 +59,11 @@ const faqData: Record<string, FAQItem[]> = {
   ],
   marketers: [
     {
-      question: 'What marketing experts can I hire through HireDeveloper.ae?',
+      question: 'What marketing experts can I hire through HireDeveloper.sg?',
       answer: 'We offer digital marketers, SEO experts, content marketers, social media managers, growth hackers, email marketers, performance marketing specialists, and conversion optimizers.',
     },
     {
-      question: 'How are marketers vetted at HireDeveloper.ae?',
+      question: 'How are marketers vetted at HireDeveloper.sg?',
       answer: 'Our marketers undergo a multi-stage vetting process: strategy assessments, case study analyses, proven results, and reference checks. Only the most qualified experts are accepted.',
     },
     {
@@ -85,7 +85,7 @@ const faqData: Record<string, FAQItem[]> = {
       answer: 'You can hire product managers, technical product managers, product owners, AI product managers, and data product managers. Our experts cover various industries and technologies.',
     },
     {
-      question: 'How are product managers vetted at HireDeveloper.ae?',
+      question: 'How are product managers vetted at HireDeveloper.sg?',
       answer: 'Every product manager undergoes assessments in product strategy, stakeholder communication, agile methodologies, and technical understanding. Only experienced experts with proven track records are accepted.',
     },
     {
@@ -107,7 +107,7 @@ const faqData: Record<string, FAQItem[]> = {
       answer: 'You can hire traditional project managers, Scrum Masters, program managers, and Agile Coaches. Our experts are experienced in both agile and traditional methodologies.',
     },
     {
-      question: 'How are project managers vetted at HireDeveloper.ae?',
+      question: 'How are project managers vetted at HireDeveloper.sg?',
       answer: 'Every project manager undergoes assessments in project planning, risk management, stakeholder communication, and methodology expertise. Many are PMP, PSM, or PRINCE2 certified.',
     },
     {
@@ -129,7 +129,7 @@ const faqData: Record<string, FAQItem[]> = {
       answer: 'You can hire virtual assistants, executive assistants, and administrative assistants. Our experts support with calendar management, email management, research, data entry, and more.',
     },
     {
-      question: 'How are assistants vetted at HireDeveloper.ae?',
+      question: 'How are assistants vetted at HireDeveloper.sg?',
       answer: 'Every assistant undergoes a careful evaluation where organizational skills, communication, technical competence, and time management are assessed. Only the most reliable candidates are accepted.',
     },
     {
@@ -188,15 +188,15 @@ function getFAQsForCategory(category: string): FAQItem[] {
   const baseFaqs: FAQItem[] = [
     {
       question: `How long does it take to find a qualified ${category}?`,
-      answer: `At HireDeveloper.ae, you typically receive a selection of pre-vetted ${category} profiles within 48 hours. Since all candidates have already passed our multi-stage screening process, you can significantly shorten the interview process. Most companies hire a ${category} within one to two weeks and start the collaboration immediately afterward.`,
+      answer: `At HireDeveloper.sg, you typically receive a selection of pre-vetted ${category} profiles within 48 hours. Since all candidates have already passed our multi-stage screening process, you can significantly shorten the interview process. Most companies hire a ${category} within one to two weeks and start the collaboration immediately afterward.`,
     },
     {
-      question: `How does HireDeveloper.ae ensure the quality of ${category}?`,
+      question: `How does HireDeveloper.sg ensure the quality of ${category}?`,
       answer: `Our vetting process consists of multiple stages: First, we evaluate professional qualifications based on work samples and technical tests. This is followed by a live coding assessment and a communication check. Only about 2% of all applicants make it into our network. Additionally, we collect feedback after every engagement to continuously ensure quality.`,
     },
     {
       question: `What contract models are available for working with a ${category}?`,
-      answer: `HireDeveloper.ae offers maximum flexibility in contract arrangements. You can engage a ${category} as a freelancer on a project basis, bill on an hourly basis, or fill a long-term full-time remote position. Part-time and fractional models are also available. We are happy to advise you on which model best suits your project and budget.`,
+      answer: `HireDeveloper.sg offers maximum flexibility in contract arrangements. You can engage a ${category} as a freelancer on a project basis, bill on an hourly basis, or fill a long-term full-time remote position. Part-time and fractional models are also available. We are happy to advise you on which model best suits your project and budget.`,
     },
   ];
 
@@ -256,7 +256,7 @@ function getFAQsForCategory(category: string): FAQItem[] {
       },
       {
         question: `Can your ${category} also help with compliance requirements?`,
-        answer: `Yes, many of our ${category} have experience with compliance frameworks such as ISO 27001, SOC 2, GDPR, and PCI-DSS. They implement security controls, set up access management, and create audit trails. GDPR compliance is a particular focus of our experts serving the UAE and international markets.`,
+        answer: `Yes, many of our ${category} have experience with compliance frameworks such as ISO 27001, SOC 2, GDPR, and PCI-DSS. They implement security controls, set up access management, and create audit trails. GDPR compliance is a particular focus of our experts serving the Singapore and international markets.`,
       },
       {
         question: `How do your ${category} ensure the availability and security of my systems?`,
@@ -306,7 +306,7 @@ function getFAQsForCategory(category: string): FAQItem[] {
       },
       {
         question: `Can I flexibly scale the collaboration with a ${category}?`,
-        answer: `Yes, flexibility is a core feature of working with HireDeveloper.ae. You can adjust the scope at any time, from a few hours per week to full-time integration. Switching between project phases with varying workloads is also seamlessly possible.`,
+        answer: `Yes, flexibility is a core feature of working with HireDeveloper.sg. You can adjust the scope at any time, from a few hours per week to full-time integration. Switching between project phases with varying workloads is also seamlessly possible.`,
       },
     ];
   }
@@ -346,11 +346,11 @@ export default function FAQSection({ category }: { category: string }) {
   };
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-10 md:py-16 lg:py-20 overflow-hidden">
       <FAQJsonLd faqs={faqs} category={category} />
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 w-full">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-[40px] font-bold text-gray-900 mb-10 text-center">
+          <h2 className="text-[22px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-bold text-gray-900 mb-6 md:mb-10 text-center">
             {t('faq.title')}
           </h2>
 
@@ -362,9 +362,9 @@ export default function FAQSection({ category }: { category: string }) {
               >
                 <button
                   onClick={() => toggle(index)}
-                  className="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors"
+                  className="w-full flex items-center justify-between px-4 md:px-6 py-4 md:py-5 text-left bg-white hover:bg-gray-50 transition-colors"
                 >
-                  <span className="text-lg font-semibold text-gray-900 pr-4">
+                  <span className="text-base md:text-lg font-semibold text-gray-900 pr-4">
                     {faq.question}
                   </span>
                   <span className="text-2xl text-gray-500 flex-shrink-0">
@@ -372,7 +372,7 @@ export default function FAQSection({ category }: { category: string }) {
                   </span>
                 </button>
                 {openIndex === index && (
-                  <div className="px-6 pb-5">
+                  <div className="px-4 md:px-6 pb-4 md:pb-5">
                     <p className="text-gray-600 leading-relaxed">
                       {faq.answer}
                     </p>

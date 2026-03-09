@@ -15,9 +15,9 @@ const technologies = [
 
 const experienceLevels = ['Junior (0-2 Years)', 'Mid-Level (2-5 Years)', 'Senior (5-8 Years)', 'Lead (8+ Years)'];
 
-const regions = ['Dubai', 'Abu Dhabi', 'Sharjah', 'Riyadh', 'Doha', 'Manama', 'Remote (UAE)', 'Remote (GCC)', 'Remote (Global)'];
+const regions = ['Singapore', 'Marina Bay', 'Jurong East', 'Changi Business Park', 'Tampines', 'Remote (Singapore)', 'Remote (APAC)', 'Remote (Global)'];
 
-// Hourly rates in USD based on tech category and experience (UAE/Gulf market)
+// Hourly rates in USD based on tech category and experience (Singapore/Southeast Asian market)
 const salaryData: Record<string, number[]> = {
   'JavaScript':       [35, 55, 80, 100],
   'TypeScript':       [38, 58, 85, 105],
@@ -43,14 +43,13 @@ const salaryData: Record<string, number[]> = {
 
 // Regional multipliers
 const regionMultipliers: Record<string, number> = {
-  'Dubai': 1.15,
-  'Abu Dhabi': 1.12,
-  'Sharjah': 0.95,
-  'Riyadh': 1.1,
-  'Doha': 1.1,
-  'Manama': 0.95,
-  'Remote (UAE)': 1.0,
-  'Remote (GCC)': 1.0,
+  'Singapore': 1.15,
+  'Marina Bay': 1.12,
+  'Jurong East': 0.95,
+  'Changi Business Park': 1.0,
+  'Tampines': 0.95,
+  'Remote (Singapore)': 1.0,
+  'Remote (APAC)': 1.0,
   'Remote (Global)': 0.9,
 };
 
@@ -69,17 +68,17 @@ export default function SalaryCalculatorPage() {
   const yearlyMin = monthlyMin * 12;
   const yearlyMax = monthlyMax * 12;
 
-  // AED conversion (1 USD ~ 3.67 AED, pegged rate)
-  const aedRate = 3.67;
-  const monthlyMinAED = Math.round(monthlyMin * aedRate);
-  const monthlyMaxAED = Math.round(monthlyMax * aedRate);
-  const yearlyMinAED = Math.round(yearlyMin * aedRate);
-  const yearlyMaxAED = Math.round(yearlyMax * aedRate);
+  // SGD conversion (1 USD ~ 1.34 SGD)
+  const sgdRate = 1.34;
+  const monthlyMinSGD = Math.round(monthlyMin * sgdRate);
+  const monthlyMaxSGD = Math.round(monthlyMax * sgdRate);
+  const yearlyMinSGD = Math.round(yearlyMin * sgdRate);
+  const yearlyMaxSGD = Math.round(yearlyMax * sgdRate);
 
   // Local hiring cost comparison (office, visa, benefits overhead)
   const localHiringOverhead = 1.45; // ~45% overhead for office, visa, insurance, gratuity
-  const localMonthlyMinAED = Math.round(monthlyMinAED * localHiringOverhead);
-  const localMonthlyMaxAED = Math.round(monthlyMaxAED * localHiringOverhead);
+  const localMonthlyMinSGD = Math.round(monthlyMinSGD * localHiringOverhead);
+  const localMonthlyMaxSGD = Math.round(monthlyMaxSGD * localHiringOverhead);
   const savingsPercent = Math.round((1 - 1 / localHiringOverhead) * 100);
 
   const handleCalculate = () => {
@@ -94,8 +93,8 @@ export default function SalaryCalculatorPage() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Developer Salary Calculator',
-    description: 'Calculate salaries and hourly rates for developers by technology, experience, and location in the UAE and Gulf region.',
-    url: 'https://hiredeveloper.ae/tools/salary-calculator',
+    description: 'Calculate salaries and hourly rates for developers by technology, experience, and location in Singapore and Southeast Asia region.',
+    url: 'https://hiredeveloper.sg/tools/salary-calculator',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -120,7 +119,7 @@ export default function SalaryCalculatorPage() {
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h1 className="text-[42px] font-bold mb-4">
             Developer Salary Calculator
           </h1>
@@ -132,7 +131,7 @@ export default function SalaryCalculatorPage() {
 
       {/* Calculator */}
       <section className="py-16">
-        <div className="max-w-[900px] mx-auto px-12">
+        <div className="max-w-[900px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Calculate Salary</h2>
 
@@ -202,33 +201,33 @@ export default function SalaryCalculatorPage() {
                   <div className="bg-[rgb(0,159,255)]/5 rounded-xl p-6 text-center border border-[rgb(0,159,255)]/20">
                     <p className="text-sm text-gray-600 mb-1">Hourly Rate</p>
                     <p className="text-3xl font-bold text-[rgb(0,159,255)]">${hourlyRate}/h</p>
-                    <p className="text-xs text-gray-400 mt-1">{Math.round(hourlyRate * aedRate)} AED/h</p>
+                    <p className="text-xs text-gray-400 mt-1">{Math.round(hourlyRate * sgdRate)} SGD/h</p>
                   </div>
                   <div className="bg-[rgb(23,162,69)]/5 rounded-xl p-6 text-center border border-[rgb(23,162,69)]/20">
                     <p className="text-sm text-gray-600 mb-1">Monthly Salary (USD)</p>
                     <p className="text-3xl font-bold text-[rgb(23,162,69)]">${monthlyMin.toLocaleString('en-US')}&ndash;${monthlyMax.toLocaleString('en-US')}</p>
                   </div>
                   <div className="bg-gray-50 rounded-xl p-6 text-center border border-gray-200">
-                    <p className="text-sm text-gray-600 mb-1">Monthly Salary (AED <span dir="rtl">&#1583;&#1585;&#1607;&#1605;</span>)</p>
-                    <p className="text-3xl font-bold text-gray-900">{monthlyMinAED.toLocaleString('en-US')}&ndash;{monthlyMaxAED.toLocaleString('en-US')}</p>
-                    <p className="text-xs text-gray-400 mt-1">{yearlyMinAED.toLocaleString('en-US')}&ndash;{yearlyMaxAED.toLocaleString('en-US')} AED/year</p>
+                    <p className="text-sm text-gray-600 mb-1">Monthly Salary (SGD)</p>
+                    <p className="text-3xl font-bold text-gray-900">{monthlyMinSGD.toLocaleString('en-US')}&ndash;{monthlyMaxSGD.toLocaleString('en-US')}</p>
+                    <p className="text-xs text-gray-400 mt-1">{yearlyMinSGD.toLocaleString('en-US')}&ndash;{yearlyMaxSGD.toLocaleString('en-US')} SGD/year</p>
                   </div>
                 </div>
 
-                {/* UAE Cost Savings Comparison */}
+                {/* Singapore Cost Savings Comparison */}
                 <div className="bg-amber-50 rounded-xl p-5 border border-amber-200 mb-8">
-                  <h4 className="text-sm font-semibold text-amber-900 mb-2">Save {savingsPercent}% vs Local Hiring in the UAE</h4>
+                  <h4 className="text-sm font-semibold text-amber-900 mb-2">Save {savingsPercent}% vs Local Hiring in Singapore</h4>
                   <div className="flex items-center gap-6 text-sm">
                     <div>
                       <span className="text-gray-600">Remote hire: </span>
-                      <span className="font-semibold text-gray-900">{monthlyMinAED.toLocaleString('en-US')}&ndash;{monthlyMaxAED.toLocaleString('en-US')} AED/mo</span>
+                      <span className="font-semibold text-gray-900">{monthlyMinSGD.toLocaleString('en-US')}&ndash;{monthlyMaxSGD.toLocaleString('en-US')} SGD/mo</span>
                     </div>
                     <div>
                       <span className="text-gray-600">Local hire (incl. visa, office, benefits): </span>
-                      <span className="font-semibold text-gray-900 line-through opacity-60">{localMonthlyMinAED.toLocaleString('en-US')}&ndash;{localMonthlyMaxAED.toLocaleString('en-US')} AED/mo</span>
+                      <span className="font-semibold text-gray-900 line-through opacity-60">{localMonthlyMinSGD.toLocaleString('en-US')}&ndash;{localMonthlyMaxSGD.toLocaleString('en-US')} SGD/mo</span>
                     </div>
                   </div>
-                  <p className="text-xs text-amber-700 mt-2">Local costs include office space, work visa, health insurance, end-of-service gratuity, and other benefits required under UAE labor law. Zero personal income tax applies to both options.</p>
+                  <p className="text-xs text-amber-700 mt-2">Local costs include office space, work pass (Employment Pass/S Pass), CPF contributions, health insurance, and other benefits required under Singapore employment law.</p>
                 </div>
 
                 {/* Comparison bars */}
@@ -261,7 +260,7 @@ export default function SalaryCalculatorPage() {
                     For more accurate estimates, contact us
                   </p>
                   <p className="text-gray-600 mb-4">
-                    We help you find strong {technology} developers at competitive market rates in the UAE.
+                    We help you find strong {technology} developers at competitive market rates in Singapore.
                   </p>
                   <a
                     href="/hire-developers"

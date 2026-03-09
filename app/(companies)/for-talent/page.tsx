@@ -7,9 +7,9 @@ import RelatedLinks from '../components/RelatedLinks';
 import OpenModalButton from '../components/OpenModalButton';
 
 export const metadata: Metadata = {
-  title: 'For Talent | Work Remotely with Top Companies | HireDeveloper.ae',
+  title: 'For Talent | Work Remotely with Top Companies | HireDeveloper.sg',
   description:
-    'Join the HireDeveloper.ae network and work remotely for leading companies in Dubai, Abu Dhabi, and across the UAE. Vetted remote jobs, fair pay, flexible work models.',
+    'Join the HireDeveloper.sg network and work remotely for leading companies in Singapore, and across Singapore. Vetted remote jobs, fair pay, flexible work models.',
   robots: { index: true, follow: true },
 };
 
@@ -17,8 +17,8 @@ function PageJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'For Talent - HireDeveloper.ae',
-    description: 'Launch your remote career: Work for top companies in the UAE and Middle East.',
+    name: 'For Talent - HireDeveloper.sg',
+    description: 'Launch your remote career: Work for top companies in Singapore and Asia Pacific.',
   };
 
   return (
@@ -53,16 +53,16 @@ export default function ForTalentPage() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero */}
-      <section className="bg-white py-20 border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-white py-10 md:py-16 lg:py-20 border-b border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-[rgb(0,159,255)] font-semibold text-lg mb-4">For Talent</p>
-            <h1 className="text-[48px] font-bold text-gray-900 mb-6">
+            <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 mb-6">
               Work Remotely for Top Companies
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              Join the HireDeveloper.ae network and gain access to
-              exclusive remote jobs with leading companies in Dubai, Abu Dhabi, and across the UAE. Fair pay,
+              Join the HireDeveloper.sg network and gain access to
+              exclusive remote jobs with leading companies in Singapore, and across Singapore. Fair pay,
               flexible work models, and exciting projects await you.
             </p>
             <OpenModalButton className="px-8 py-4 text-lg font-semibold text-white bg-[rgb(23,162,69)] rounded-lg hover:bg-[rgb(20,145,60)] transition-all">
@@ -73,10 +73,10 @@ export default function ForTalentPage() {
       </section>
 
       {/* Benefits */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
-            Why HireDeveloper.ae?
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
+            Why HireDeveloper.sg?
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
             We connect you with the best companies and ensure the collaboration runs smoothly.
@@ -86,7 +86,7 @@ export default function ForTalentPage() {
             <div className="p-8 bg-white rounded-xl border border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Exclusive Projects</h3>
               <p className="text-gray-600 leading-relaxed">
-                Access exciting projects with startups, SMEs, and enterprises in the UAE.
+                Access exciting projects with startups, SMEs, and enterprises in Singapore.
                 Many projects are exclusive and not publicly advertised.
               </p>
             </div>
@@ -135,9 +135,9 @@ export default function ForTalentPage() {
       </section>
 
       {/* How to join */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-16">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-16">
             How to Join Our Network
           </h2>
 
@@ -186,9 +186,9 @@ export default function ForTalentPage() {
       </section>
 
       {/* Who we're looking for */}
-      <section className="bg-gray-50 py-20 border-t border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20 border-t border-gray-200">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Who We Are Looking For
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
@@ -238,7 +238,7 @@ export default function ForTalentPage() {
 
       {/* Stats */}
       <section className="bg-white py-16">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-[rgb(0,159,255)]">350K+</div>

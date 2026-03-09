@@ -11,9 +11,9 @@ import ComparisonQuiz from './ComparisonQuiz';
 const currentYear = new Date().getFullYear();
 
 export const metadata: Metadata = {
-  title: `HireDeveloper.ae vs Alternatives | Platform Comparison ${currentYear}`,
+  title: `HireDeveloper.sg vs Alternatives | Platform Comparison ${currentYear}`,
   description:
-    'Compare HireDeveloper.ae with Toptal, Upwork, Fiverr, Turing, and more platforms. Find the best solution for your remote developer hiring needs in Dubai and the UAE.',
+    'Compare HireDeveloper.sg with Toptal, Upwork, Fiverr, Turing, and more platforms. Find the best solution for your remote developer hiring needs in Singapore and Singapore.',
   robots: { index: true, follow: true },
 };
 
@@ -36,18 +36,18 @@ export default function ComparisonPage() {
 
       {/* Hero */}
       <section className="bg-black py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <p className="text-[rgb(23,162,69)] font-semibold mb-4 text-sm uppercase tracking-wider">
                 Platform Comparison {currentYear}
               </p>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                HireDeveloper.ae vs Alternatives
+                HireDeveloper.sg vs Alternatives
               </h1>
               <p className="text-lg text-gray-300 max-w-3xl mx-auto lg:mx-0 mb-6">
                 Which platform is right for your business? We have compared
-                HireDeveloper.ae with the most well-known alternatives so you
+                HireDeveloper.sg with the most well-known alternatives so you
                 can make the right choice faster.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
@@ -74,7 +74,7 @@ export default function ComparisonPage() {
 
       {/* Why compare section */}
       <section className="py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Why Compare Platforms?
           </h2>
@@ -127,7 +127,7 @@ export default function ComparisonPage() {
 
       {/* Featured Comparisons */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="text-center mb-10">
             <span className="inline-block bg-[rgb(23,162,69)]/10 text-[rgb(23,162,69)] text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Popular Comparisons
@@ -136,7 +136,7 @@ export default function ComparisonPage() {
               Top Comparisons: Most Requested
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              The three comparisons that UAE and Gulf-region companies are most interested in. A great starting point.
+              The three comparisons that Singapore and APAC companies are most interested in. A great starting point.
             </p>
           </div>
 
@@ -166,7 +166,7 @@ export default function ComparisonPage() {
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  HireDeveloper.ae vs {competitor.name}
+                  HireDeveloper.sg vs {competitor.name}
                 </h3>
                 <p className="text-sm text-gray-600 mb-4 line-clamp-2">
                   {competitor.description}
@@ -176,7 +176,7 @@ export default function ComparisonPage() {
                     <svg className="w-3.5 h-3.5 text-[rgb(23,162,69)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    {competitor.features.filter((f) => f.us === true).length} HD.ae Advantages
+                    {competitor.features.filter((f) => f.us === true).length} HD.sg Advantages
                   </span>
                   <span className="bg-gray-100 px-2 py-1 rounded">
                     {competitor.focus.split(' ').slice(0, 3).join(' ')}
@@ -188,14 +188,14 @@ export default function ComparisonPage() {
         </div>
       </section>
 
-      {/* Quick comparison table: HD.ae vs top 5 */}
+      {/* Quick comparison table: HD.sg vs top 5 */}
       <section className="py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
-            Quick Comparison: HireDeveloper.ae vs Top Alternatives
+            Quick Comparison: HireDeveloper.sg vs Top Alternatives
           </h2>
           <p className="text-gray-600 mb-8 max-w-3xl">
-            See at a glance how HireDeveloper.ae differs from the most well-known platforms.
+            See at a glance how HireDeveloper.sg differs from the most well-known platforms.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse bg-white rounded-lg border border-gray-200">
@@ -204,14 +204,14 @@ export default function ComparisonPage() {
                   <th className="text-left py-4 px-4 text-sm font-semibold text-gray-500">Platform</th>
                   <th className="text-center py-4 px-4 text-sm font-semibold text-gray-500">Matching Time</th>
                   <th className="text-center py-4 px-4 text-sm font-semibold text-gray-500">Pre-Vetting</th>
-                  <th className="text-center py-4 px-4 text-sm font-semibold text-gray-500">UAE Focus</th>
+                  <th className="text-center py-4 px-4 text-sm font-semibold text-gray-500">Singapore Focus</th>
                   <th className="text-center py-4 px-4 text-sm font-semibold text-gray-500">Trial Period</th>
                   <th className="text-center py-4 px-4 text-sm font-semibold text-gray-500">Transparent Pricing</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-gray-100 bg-[rgb(23,162,69)]/5">
-                  <td className="py-3 px-4 text-sm font-bold text-[rgb(23,162,69)]">HireDeveloper.ae</td>
+                  <td className="py-3 px-4 text-sm font-bold text-[rgb(23,162,69)]">HireDeveloper.sg</td>
                   <td className="py-3 px-4 text-center text-sm text-gray-700 font-medium">48 Hours</td>
                   <td className="py-3 px-4 text-center">
                     <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[rgb(23,162,69)]/10">
@@ -319,12 +319,12 @@ export default function ComparisonPage() {
 
       {/* All competitor cards grid */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             All Comparisons
           </h2>
           <p className="text-gray-600 mb-8">
-            Choose a provider and read our detailed comparison with HireDeveloper.ae.
+            Choose a provider and read our detailed comparison with HireDeveloper.sg.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {competitors.map((competitor) => (
@@ -367,7 +367,7 @@ export default function ComparisonPage() {
 
       {/* Bottom info section */}
       <section className="py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               How We Create Our Comparisons

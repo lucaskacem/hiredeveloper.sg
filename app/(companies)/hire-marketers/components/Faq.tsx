@@ -10,15 +10,15 @@ export default function Faq() {
         },
         {
             question: "Can I hire for short-term projects?",
-            answer: "Yes, HireDeveloper.ae supports hiring for both short-term freelance contracts and long-term full-time roles. You can find marketers for specific campaigns, audits, or ongoing management depending on your business needs."
+            answer: "Yes, HireDeveloper.sg supports hiring for both short-term freelance contracts and long-term full-time roles. You can find marketers for specific campaigns, audits, or ongoing management depending on your business needs."
         },
         {
-            question: "How does HireDeveloper.ae vet its marketers?",
+            question: "How does HireDeveloper.sg vet its marketers?",
             answer: "We have a rigorous vetting process that includes profile review, English proficiency checks, and domain expertise assessments. For specialized roles, we may also review portfolios and past campaign performance to ensure high-quality matches."
         },
         {
             question: "How quickly can I hire?",
-            answer: "With HireDeveloper.ae, you can often view matches within 24-48 hours. Since our talent pool is pre-vetted and actively looking for work, the interview-to-hire process is significantly faster than traditional recruiting methods."
+            answer: "With HireDeveloper.sg, you can often view matches within 24-48 hours. Since our talent pool is pre-vetted and actively looking for work, the interview-to-hire process is significantly faster than traditional recruiting methods."
         }
     ];
 
@@ -29,8 +29,8 @@ export default function Faq() {
     };
 
     return (
-        <section className="bg-white py-20 border-t border-gray-100">
-            <div className="max-w-[800px] mx-auto px-12">
+        <section className="bg-white py-10 md:py-16 lg:py-20 border-t border-gray-100">
+            <div className="max-w-[800px] mx-auto px-4 md:px-6 lg:px-12">
                 <h2 className="text-[32px] font-bold text-[#0b152b] mb-12 text-center">
                     Frequently Asked Questions
                 </h2>

@@ -72,8 +72,7 @@ export default function TeamPage() {
       const matchesSearch =
         searchQuery === '' ||
         member.nameEn.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        member.nameAr.includes(searchQuery) ||
-        member.roleEn.toLowerCase().includes(searchQuery.toLowerCase()) ||
+member.roleEn.toLowerCase().includes(searchQuery.toLowerCase()) ||
         member.skillLabelEn.toLowerCase().includes(searchQuery.toLowerCase()) ||
         member.toolsUsed.some((t) =>
           t.toLowerCase().includes(searchQuery.toLowerCase())
@@ -121,22 +120,8 @@ export default function TeamPage() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight">
             Meet Our Expert Team
           </h1>
-          <p
-            className="text-2xl md:text-3xl font-semibold text-white/40 mb-6"
-            dir="rtl"
-            lang="ar"
-          >
-            تعرف على فريق خبرائنا
-          </p>
-          <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-3">
-            25 specialists. 25 marketing skills. Based in Dubai &amp; Abu Dhabi.
-          </p>
-          <p
-            className="text-base md:text-lg text-white/40 max-w-2xl mx-auto"
-            dir="rtl"
-            lang="ar"
-          >
-            ٢٥ متخصصاً. ٢٥ مهارة تسويقية. مقرهم دبي وأبوظبي.
+          <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
+            25 specialists. 25 marketing skills. Based in Singapore &amp; Marina Bay.
           </p>
         </div>
       </section>
@@ -307,13 +292,6 @@ export default function TeamPage() {
                           <h3 className="text-lg font-bold text-white group-hover:text-[rgb(0,159,255)] transition-colors truncate">
                             {member.nameEn}
                           </h3>
-                          <p
-                            className="text-sm text-white/40 truncate"
-                            dir="rtl"
-                            lang="ar"
-                          >
-                            {member.nameAr}
-                          </p>
                         </div>
 
                         {/* Availability dot */}
@@ -326,15 +304,8 @@ export default function TeamPage() {
                       </div>
 
                       {/* Role */}
-                      <p className="text-sm font-semibold text-[rgb(0,159,255)] mb-1">
+                      <p className="text-sm font-semibold text-[rgb(0,159,255)] mb-4">
                         {member.roleEn}
-                      </p>
-                      <p
-                        className="text-xs text-white/30 mb-4"
-                        dir="rtl"
-                        lang="ar"
-                      >
-                        {member.roleAr}
                       </p>
 
                       {/* Skill badge */}
@@ -458,17 +429,10 @@ export default function TeamPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Each team member is a verified specialist
           </h2>
-          <p className="text-lg text-white/50 max-w-2xl mx-auto mb-4">
+          <p className="text-lg text-white/50 max-w-2xl mx-auto mb-12">
             Every specialist on our team has been rigorously vetted for
             expertise in their specific marketing discipline. Here are the 25
             skills our team covers:
-          </p>
-          <p
-            className="text-base text-white/30 max-w-2xl mx-auto mb-12"
-            dir="rtl"
-            lang="ar"
-          >
-            كل متخصص في فريقنا تم التحقق من خبرته بدقة في تخصصه التسويقي المحدد. إليكم المهارات الـ 25 التي يغطيها فريقنا:
           </p>
 
           {/* Skills pill cloud */}
@@ -499,13 +463,6 @@ export default function TeamPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to hire a marketing specialist?
             </h2>
-            <p
-              className="text-xl text-white/40 mb-2"
-              dir="rtl"
-              lang="ar"
-            >
-              هل أنت مستعد لتوظيف متخصص في التسويق؟
-            </p>
             <p className="text-lg text-white/60 mb-8 max-w-xl mx-auto">
               $0 until you hire. Get matched with a vetted marketing expert
               within 48 hours. Risk-free.

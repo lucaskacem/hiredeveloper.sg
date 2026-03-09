@@ -1,6 +1,5 @@
 'use client';
 
-import { useLanguage } from '@/app/i18n/LanguageContext';
 import WhyChooseArc from '@/app/components/WhyChooseArc';
 import HireHero from './HireHero';
 import TalentShowcase from './TalentShowcase';
@@ -32,65 +31,53 @@ interface GuideSection {
   subsections: { subtitle: string; content: string; questions?: string[] }[];
 }
 
-interface BilingualLink {
+interface Link {
   label: string;
-  labelAr: string;
   href: string;
 }
 
 interface Step {
   number: string;
   title: string;
-  titleAr: string;
   description: string;
-  descriptionAr: string;
   subtext: string;
-  subtextAr: string;
   image: string;
 }
 
 interface Stat {
   prefix?: string;
-  prefixAr?: string;
   value: string;
   label: string;
-  labelAr: string;
 }
 
 interface Testimonial {
   quote: string;
-  quoteAr: string;
   author: string;
   title: string;
-  titleAr: string;
   company: string;
   avatar: string;
 }
 
 export interface DeveloperSubcategoryPageContentProps {
   dataName: string;
-  dataNameAr: string;
   heroCount: number;
   heroDescription: string;
-  heroDescriptionAr: string;
   slug: string;
   profiles: Profile[];
   guideSections: GuideSection[];
   stats: Stat[];
   testimonials: Testimonial[];
   steps: Step[];
-  relatedLinks: BilingualLink[];
-  locationLinks: BilingualLink[];
-  cityLinks: BilingualLink[];
-  breadcrumbItems: { label: string; labelAr: string; href: string }[];
+  relatedLinks: Link[];
+  locationLinks: Link[];
+  cityLinks: Link[];
+  breadcrumbItems: { label: string; href: string }[];
 }
 
 export default function DeveloperSubcategoryPageContent({
   dataName,
-  dataNameAr,
   heroCount,
   heroDescription,
-  heroDescriptionAr,
   slug,
   profiles,
   guideSections,
@@ -102,16 +89,11 @@ export default function DeveloperSubcategoryPageContent({
   cityLinks,
   breadcrumbItems,
 }: DeveloperSubcategoryPageContentProps) {
-  const { language } = useLanguage();
-  const isAr = language === 'ar';
-
-  const name = isAr ? dataNameAr : dataName;
-
   return (
     <>
       <Breadcrumb
         items={breadcrumbItems.map((item) => ({
-          label: isAr ? item.labelAr : item.label,
+          label: item.label,
           href: item.href,
         }))}
       />
@@ -119,29 +101,25 @@ export default function DeveloperSubcategoryPageContent({
       <HireHero
         category="developers"
         count={heroCount}
-        description={isAr ? heroDescriptionAr : heroDescription}
+        description={heroDescription}
       />
 
       <TalentShowcase
-        heading={
-          isAr
-            ? `${heroCount.toLocaleString('ar-SA')}+ ${dataNameAr} متاحون عن بعد:`
-            : `${heroCount.toLocaleString('en-US')} remote ${dataName} available:`
-        }
+        heading={`${heroCount.toLocaleString('en-US')} remote ${dataName} available:`}
         profiles={profiles}
         category="developers"
       />
 
       <StatsTestimonials
         stats={stats.map((s) => ({
-          prefix: isAr ? s.prefixAr : s.prefix,
+          prefix: s.prefix,
           value: s.value,
-          label: isAr ? s.labelAr : s.label,
+          label: s.label,
         }))}
         testimonials={testimonials.map((t) => ({
-          quote: isAr ? t.quoteAr : t.quote,
+          quote: t.quote,
           author: t.author,
-          title: isAr ? t.titleAr : t.title,
+          title: t.title,
           company: t.company,
           avatar: t.avatar,
         }))}
@@ -150,9 +128,9 @@ export default function DeveloperSubcategoryPageContent({
       <HowItWorksSteps
         steps={steps.map((s) => ({
           number: s.number,
-          title: isAr ? s.titleAr : s.title,
-          description: isAr ? s.descriptionAr : s.description,
-          subtext: isAr ? s.subtextAr : s.subtext,
+          title: s.title,
+          description: s.description,
+          subtext: s.subtext,
           image: s.image,
         }))}
         category="developers"
@@ -161,82 +139,51 @@ export default function DeveloperSubcategoryPageContent({
       <WhyChooseArc />
 
       <HiringGuideSection
-        heading={isAr ? `كيف توظف أفضل ${dataNameAr}` : `How to Hire Top ${dataName}`}
+        heading={`How to Hire Top ${dataName}`}
         sections={guideSections}
       />
 
       <FAQSection category={dataName} />
 
       <RelatedLinks
-        title={isAr ? 'تخصصات ذات صلة' : 'Related Specializations'}
-        links={relatedLinks.map((l) => ({
-          label: isAr ? l.labelAr : l.label,
-          href: l.href,
-        }))}
+        title="Related Specializations"
+        links={relatedLinks}
       />
 
       <RelatedLinks
-        title={isAr ? `${name} حسب الموقع` : `${dataName} by Location`}
-        links={locationLinks.map((l) => ({
-          label: isAr ? l.labelAr : l.label,
-          href: l.href,
-        }))}
+        title={`${dataName} by Location`}
+        links={locationLinks}
       />
 
       <RelatedLinks
-        title={isAr ? `${name} في أبرز المدن` : `${dataName} in Top Cities`}
-        links={cityLinks.map((l) => ({
-          label: isAr ? l.labelAr : l.label,
-          href: l.href,
-        }))}
+        title={`${dataName} in Top Cities`}
+        links={cityLinks}
       />
 
       <RelatedLinks
-        title={isAr ? 'وظّف خبراء تسويق أيضاً' : 'Also Hire Marketing Experts'}
-        links={
-          isAr
-            ? [
-                { label: 'متخصص تدقيق SEO', href: '/hire-marketers/seo-audit' },
-                { label: 'استراتيجي محتوى', href: '/hire-marketers/content-strategy' },
-                { label: 'خبير إعلانات مدفوعة', href: '/hire-marketers/paid-ads' },
-                { label: 'جميع تخصصات التسويق', href: '/hire-marketers' },
-              ]
-            : [
-                { label: 'SEO Audit Specialist', href: '/hire-marketers/seo-audit' },
-                { label: 'Content Strategist', href: '/hire-marketers/content-strategy' },
-                { label: 'Paid Ads Expert', href: '/hire-marketers/paid-ads' },
-                { label: 'All Marketing Specializations', href: '/hire-marketers' },
-              ]
-        }
+        title="Also Hire Marketing Experts"
+        links={[
+          { label: 'SEO Audit Specialist', href: '/hire-marketers/seo-audit' },
+          { label: 'Content Strategist', href: '/hire-marketers/content-strategy' },
+          { label: 'Paid Ads Expert', href: '/hire-marketers/paid-ads' },
+          { label: 'All Marketing Specializations', href: '/hire-marketers' },
+        ]}
       />
 
       <RelatedLinks
-        title={isAr ? 'موارد التوظيف' : 'Hiring Resources'}
-        links={
-          isAr
-            ? [
-                { label: 'حاسبة رواتب المطورين', href: '/tools/salary-calculator' },
-                { label: 'مولّد أسئلة المقابلات', href: '/tools/interview-questions' },
-                { label: 'إيجاد مطورين مستقلين: 21+ نصيحة', href: '/employer-blog/how-to-find-developers' },
-                { label: 'دليل المقابلة التقنية عن بعد', href: '/employer-blog/how-to-conduct-a-remote-technical-interview' },
-              ]
-            : [
-                { label: 'Developer Salary Calculator', href: '/tools/salary-calculator' },
-                { label: 'Interview Questions Generator', href: '/tools/interview-questions' },
-                { label: 'Finding Freelance Developers: 21+ Tips', href: '/employer-blog/how-to-find-developers' },
-                { label: 'Remote Technical Interview Guide', href: '/employer-blog/how-to-conduct-a-remote-technical-interview' },
-              ]
-        }
+        title="Hiring Resources"
+        links={[
+          { label: 'Developer Salary Calculator', href: '/tools/salary-calculator' },
+          { label: 'Interview Questions Generator', href: '/tools/interview-questions' },
+          { label: 'Finding Freelance Developers: 21+ Tips', href: '/employer-blog/how-to-find-developers' },
+          { label: 'Remote Technical Interview Guide', href: '/employer-blog/how-to-conduct-a-remote-technical-interview' },
+        ]}
       />
 
       <FinalCTA
-        heading={
-          isAr
-            ? `${dataNameAr} التاليون لديك على بعد خطوة!`
-            : `Your next ${dataName} is just around the corner!`
-        }
-        subheading={isAr ? 'ابدأ بدون مخاطر.' : 'Start risk-free.'}
-        ctaText={isAr ? 'وظّف موهبة' : 'Hire Talent'}
+        heading={`Your next ${dataName} is just around the corner!`}
+        subheading="Start risk-free."
+        ctaText="Hire Talent"
       />
     </>
   );

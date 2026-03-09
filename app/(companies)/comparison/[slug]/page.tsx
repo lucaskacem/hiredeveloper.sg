@@ -20,14 +20,14 @@ export function generateMetadata({
 }): Metadata {
   const competitor = competitors.find((c) => c.slug === params.slug);
   if (!competitor) {
-    return { title: 'Comparison Not Found | HireDeveloper.ae' };
+    return { title: 'Comparison Not Found | HireDeveloper.sg' };
   }
   return {
-    title: `HireDeveloper.ae vs ${competitor.name} | Comparison ${new Date().getFullYear()}`,
-    description: `Detailed comparison between HireDeveloper.ae and ${competitor.name}: features, pricing, pros and cons. Find the best platform for your remote developers.`,
+    title: `HireDeveloper.sg vs ${competitor.name} | Comparison ${new Date().getFullYear()}`,
+    description: `Detailed comparison between HireDeveloper.sg and ${competitor.name}: features, pricing, pros and cons. Find the best platform for your remote developers.`,
     robots: { index: true, follow: true },
     alternates: {
-      canonical: `https://hiredeveloper.ae/comparison/${competitor.slug}`,
+      canonical: `https://hiredeveloper.sg/comparison/${competitor.slug}`,
     },
   };
 }
@@ -74,43 +74,43 @@ function StarRating({ rating }: { rating: number }) {
 function generateFAQs(competitor: Competitor) {
   return [
     {
-      question: `What is the main difference between HireDeveloper.ae and ${competitor.name}?`,
-      answer: `HireDeveloper.ae delivers pre-vetted remote developers with a focus on the UAE and Gulf market, presenting candidates within 48 hours. ${competitor.name} focuses on: ${competitor.focus}. Both connect you with qualified developers, but with HireDeveloper.ae you get more personalized support and clearer pricing.`,
+      question: `What is the main difference between HireDeveloper.sg and ${competitor.name}?`,
+      answer: `HireDeveloper.sg delivers pre-vetted remote developers with a focus on Singapore and Southeast Asia's market, presenting candidates within 48 hours. ${competitor.name} focuses on: ${competitor.focus}. Both connect you with qualified developers, but with HireDeveloper.sg you get more personalized support and clearer pricing.`,
     },
     {
-      question: `Is HireDeveloper.ae more affordable than ${competitor.name}?`,
-      answer: `At ${competitor.name}, the pricing works as follows: ${competitor.pricing} HireDeveloper.ae operates with clear, transparent pricing and no hidden fees. Especially for full-time hires, this can be significantly more cost-effective.`,
+      question: `Is HireDeveloper.sg more affordable than ${competitor.name}?`,
+      answer: `At ${competitor.name}, the pricing works as follows: ${competitor.pricing} HireDeveloper.sg operates with clear, transparent pricing and no hidden fees. Especially for full-time hires, this can be significantly more cost-effective.`,
     },
     {
-      question: `Can I switch from ${competitor.name} to HireDeveloper.ae?`,
+      question: `Can I switch from ${competitor.name} to HireDeveloper.sg?`,
       answer: `Absolutely, switching is possible at any time. Our team will guide you through the transition and help you quickly find suitable developers. Many clients come to us from other platforms and appreciate the personal service.`,
     },
     {
       question: `Which platform is better suited for startups?`,
-      answer: `Both are viable options. What makes HireDeveloper.ae particularly attractive for startups: risk-free trial period, matching within 48 hours, and flexible contracts. When the budget is tight and speed matters, that pays off. Plus, our UAE focus is a great fit for Gulf-region founding teams.`,
+      answer: `Both are viable options. What makes HireDeveloper.sg particularly attractive for startups: risk-free trial period, matching within 48 hours, and flexible contracts. When the budget is tight and speed matters, that pays off. Plus, our Singapore focus is a great fit for APAC founding teams.`,
     },
     {
-      question: `How long does it take to hire a developer through HireDeveloper.ae vs ${competitor.name}?`,
-      answer: `With HireDeveloper.ae, you typically receive matching candidate proposals within 48 hours. With ${competitor.name}, this varies depending on availability and selection process. If you need someone quickly, our matching process saves you significant time.`,
+      question: `How long does it take to hire a developer through HireDeveloper.sg vs ${competitor.name}?`,
+      answer: `With HireDeveloper.sg, you typically receive matching candidate proposals within 48 hours. With ${competitor.name}, this varies depending on availability and selection process. If you need someone quickly, our matching process saves you significant time.`,
     },
     {
-      question: `Does HireDeveloper.ae offer the same technologies as ${competitor.name}?`,
+      question: `Does HireDeveloper.sg offer the same technologies as ${competitor.name}?`,
       answer: `Yes. In our pool, you will find developers for JavaScript, TypeScript, React, Node.js, Python, Java, PHP, Ruby, Go, Swift, Kotlin, and more. Whether Full-Stack, Frontend, Backend, Mobile, or AI: we have the right expert for most projects.`,
     },
     {
-      question: `How does the risk-free trial period work at HireDeveloper.ae?`,
+      question: `How does the risk-free trial period work at HireDeveloper.sg?`,
       answer: `You test every matched developer during a trial period first. If it does not work out, we find a replacement at no extra cost. This removes the risk and ensures the developer truly fits your team in day-to-day work.`,
     },
     {
-      question: `What contract models does HireDeveloper.ae offer compared to ${competitor.name}?`,
-      answer: `With HireDeveloper.ae, you can choose between full-time and freelance contracts. Short-term project or long-term employment, both work. With ${competitor.name}, this depends on their specific offering.`,
+      question: `What contract models does HireDeveloper.sg offer compared to ${competitor.name}?`,
+      answer: `With HireDeveloper.sg, you can choose between full-time and freelance contracts. Short-term project or long-term employment, both work. With ${competitor.name}, this depends on their specific offering.`,
     },
     {
-      question: `Are there hidden costs at HireDeveloper.ae?`,
+      question: `Are there hidden costs at HireDeveloper.sg?`,
       answer: `No. You know from the start what you are paying. No platform fees, no upfront costs, no surprise surcharges. With many other platforms, additional fees only show up on the invoice. We do things differently.`,
     },
     {
-      question: `How does HireDeveloper.ae ensure developer quality?`,
+      question: `How does HireDeveloper.sg ensure developer quality?`,
       answer: `Four stages: technical coding test, professional experience review, communication check, and references. About 5% of applicants make it through. And even after placement, we stay involved and provide you with ongoing feedback and support.`,
     },
   ];
@@ -120,7 +120,7 @@ function generateDetailedComparison(competitor: Competitor) {
   return {
     hiring: {
       title: 'Hiring Process',
-      us: 'Here is how it works at HireDeveloper.ae: You describe who you need. Within 48 hours, you receive pre-vetted candidate proposals. We handle screening and pre-selection. You only conduct the final interviews.',
+      us: 'Here is how it works at HireDeveloper.sg: You describe who you need. Within 48 hours, you receive pre-vetted candidate proposals. We handle screening and pre-selection. You only conduct the final interviews.',
       them: `At ${competitor.name}, the hiring process varies: ${competitor.focus}. Depending on the platform, you may need to actively search for candidates yourself, run your own selection processes, or wait for automated matching. This can take more or less time depending on your requirements.`,
     },
     quality: {
@@ -135,7 +135,7 @@ function generateDetailedComparison(competitor: Competitor) {
     },
     scalability: {
       title: 'Scalability',
-      us: 'One developer or an entire team: HireDeveloper.ae scales with you. You can flexibly switch between full-time and freelance, ramp up or reduce, all without long-term contract commitments.',
+      us: 'One developer or an entire team: HireDeveloper.sg scales with you. You can flexibly switch between full-time and freelance, ramp up or reduce, all without long-term contract commitments.',
       them: `At ${competitor.name}, scalability depends on available plans and models. ${competitor.pricing}`,
     },
   };
@@ -152,7 +152,7 @@ export default function ComparisonDetailPage({
     return (
       <div className="min-h-screen bg-white">
         <Header />
-        <div className="max-w-[1280px] mx-auto px-12 py-24 text-center">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 py-24 text-center">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
             Comparison Not Found
           </h1>
@@ -174,7 +174,7 @@ export default function ComparisonDetailPage({
   const extendedFeatures = [
     ...competitor.features,
     { name: 'Dedicated Account Manager', us: true as boolean | string, them: false as boolean | string },
-    { name: 'Gulf Time Zone Support', us: true as boolean | string, them: 'Partial' as boolean | string },
+    { name: 'Singapore Time Zone Support', us: true as boolean | string, them: 'Partial' as boolean | string },
     { name: 'Full-Time & Freelance', us: true as boolean | string, them: (competitor.features.find(f => f.name === 'Full-time Hires')?.them === true ? true : false) as boolean | string },
     { name: 'No Upfront Fees', us: true as boolean | string, them: false as boolean | string },
     { name: 'Personal Matching', us: true as boolean | string, them: false as boolean | string },
@@ -192,8 +192,8 @@ export default function ComparisonDetailPage({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: `HireDeveloper.ae vs ${competitor.name} | Comparison ${new Date().getFullYear()}`,
-    description: `Detailed comparison between HireDeveloper.ae and ${competitor.name}.`,
+    name: `HireDeveloper.sg vs ${competitor.name} | Comparison ${new Date().getFullYear()}`,
+    description: `Detailed comparison between HireDeveloper.sg and ${competitor.name}.`,
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -201,19 +201,19 @@ export default function ComparisonDetailPage({
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://hiredeveloper.ae/',
+          item: 'https://hiredeveloper.sg/',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Comparison',
-          item: 'https://hiredeveloper.ae/comparison',
+          item: 'https://hiredeveloper.sg/comparison',
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: `vs ${competitor.name}`,
-          item: `https://hiredeveloper.ae/comparison/${competitor.slug}`,
+          item: `https://hiredeveloper.sg/comparison/${competitor.slug}`,
         },
       ],
     },
@@ -249,15 +249,15 @@ export default function ComparisonDetailPage({
 
       {/* Hero */}
       <section className="bg-black py-16">
-        <div className="max-w-[1280px] mx-auto px-12 text-center">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 text-center">
           <p className="text-[rgb(23,162,69)] font-semibold mb-4 text-sm uppercase tracking-wider">
             Platform Comparison {new Date().getFullYear()}
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            HireDeveloper.ae vs {competitor.name}
+            HireDeveloper.sg vs {competitor.name}
           </h1>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
-            Detailed comparison between HireDeveloper.ae and{' '}
+            Detailed comparison between HireDeveloper.sg and{' '}
             {competitor.name}. Find out which platform best fits your
             requirements.
           </p>
@@ -270,7 +270,7 @@ export default function ComparisonDetailPage({
               Risk-Free Trial
             </span>
             <span className="bg-white/10 text-white text-sm px-4 py-2 rounded-full border border-white/20">
-              UAE Focus
+              Singapore Focus
             </span>
             <span className="bg-white/10 text-white text-sm px-4 py-2 rounded-full border border-white/20">
               No Hidden Costs
@@ -281,7 +281,7 @@ export default function ComparisonDetailPage({
 
       {/* TL;DR summary */}
       <section className="py-12 border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="bg-[rgb(23,162,69)]/5 border border-[rgb(23,162,69)]/20 rounded-xl p-8">
             <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
               <svg className="w-5 h-5 text-[rgb(23,162,69)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -290,9 +290,9 @@ export default function ComparisonDetailPage({
               Summary (TL;DR)
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              <strong>HireDeveloper.ae</strong> offers faster matching (48h vs. weeks), more transparent pricing, and a special UAE focus with dedicated support.{' '}
+              <strong>HireDeveloper.sg</strong> offers faster matching (48h vs. weeks), more transparent pricing, and a special Singapore focus with dedicated support.{' '}
               <strong>{competitor.name}</strong> focuses on: {competitor.focus}.{' '}
-              For companies in the UAE and Gulf region looking to quickly hire highly qualified remote developers, HireDeveloper.ae is the better choice.
+              For companies in Singapore and Southeast Asia region looking to quickly hire highly qualified remote developers, HireDeveloper.sg is the better choice.
             </p>
           </div>
         </div>
@@ -300,7 +300,7 @@ export default function ComparisonDetailPage({
 
       {/* Quick overview table */}
       <section className="py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">
             Quick Overview
           </h2>
@@ -312,7 +312,7 @@ export default function ComparisonDetailPage({
                     Criterion
                   </th>
                   <th className="text-left py-4 px-4 text-sm font-semibold text-[rgb(23,162,69)] w-1/3">
-                    HireDeveloper.ae
+                    HireDeveloper.sg
                   </th>
                   <th className="text-left py-4 px-4 text-sm font-semibold text-gray-700 w-1/3">
                     {competitor.name}
@@ -327,12 +327,12 @@ export default function ComparisonDetailPage({
                 </tr>
                 <tr className="border-b border-gray-100 bg-gray-50">
                   <td className="py-3 px-4 text-sm font-medium text-gray-700">Headquarters</td>
-                  <td className="py-3 px-4 text-sm text-gray-600">Dubai, UAE</td>
+                  <td className="py-3 px-4 text-sm text-gray-600">Singapore, Singapore</td>
                   <td className="py-3 px-4 text-sm text-gray-600">{competitor.headquarters}</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-3 px-4 text-sm font-medium text-gray-700">Focus</td>
-                  <td className="py-3 px-4 text-sm text-gray-600">Pre-Vetted Remote Developers (UAE/Gulf)</td>
+                  <td className="py-3 px-4 text-sm text-gray-600">Pre-Vetted Remote Developers (Singapore/APAC)</td>
                   <td className="py-3 px-4 text-sm text-gray-600">{competitor.focus}</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-gray-50">
@@ -347,7 +347,7 @@ export default function ComparisonDetailPage({
                 </tr>
                 <tr className="border-b border-gray-100 bg-gray-50">
                   <td className="py-3 px-4 text-sm font-medium text-gray-700">Target Market</td>
-                  <td className="py-3 px-4 text-sm text-gray-600">UAE & Gulf Region</td>
+                  <td className="py-3 px-4 text-sm text-gray-600">Singapore & APAC Region</td>
                   <td className="py-3 px-4 text-sm text-gray-600">Global / {competitor.headquarters}</td>
                 </tr>
                 <tr className="border-b border-gray-100">
@@ -372,12 +372,12 @@ export default function ComparisonDetailPage({
 
       {/* Detailed comparison sections */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Detailed Comparison
           </h2>
           <p className="text-gray-600 mb-10 max-w-3xl">
-            HireDeveloper.ae and {competitor.name} across four areas that matter most when choosing a platform.
+            HireDeveloper.sg and {competitor.name} across four areas that matter most when choosing a platform.
           </p>
 
           <div className="space-y-8">
@@ -390,7 +390,7 @@ export default function ComparisonDetailPage({
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <span className="bg-[rgb(23,162,69)] text-white text-xs font-bold px-2 py-0.5 rounded">
-                        HireDeveloper.ae
+                        HireDeveloper.sg
                       </span>
                     </div>
                     <p className="text-sm text-gray-700 leading-relaxed">
@@ -416,7 +416,7 @@ export default function ComparisonDetailPage({
 
       {/* Extended feature comparison table */}
       <section className="py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             All Features Compared
           </h2>
@@ -431,7 +431,7 @@ export default function ComparisonDetailPage({
                     Feature
                   </th>
                   <th className="text-center py-4 px-6 text-sm font-semibold text-[rgb(23,162,69)]">
-                    HireDeveloper.ae
+                    HireDeveloper.sg
                   </th>
                   <th className="text-center py-4 px-6 text-sm font-semibold text-gray-700">
                     {competitor.name}
@@ -470,7 +470,7 @@ export default function ComparisonDetailPage({
               <span className="text-3xl font-bold text-[rgb(23,162,69)]">
                 {uniqueFeatures.filter((f) => f.us === true).length}
               </span>
-              <p className="text-sm text-gray-600 mt-1">Features at HireDeveloper.ae</p>
+              <p className="text-sm text-gray-600 mt-1">Features at HireDeveloper.sg</p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center">
               <span className="text-3xl font-bold text-gray-500">
@@ -484,7 +484,7 @@ export default function ComparisonDetailPage({
 
       {/* Pricing comparison */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Pricing Comparison
           </h2>
@@ -499,7 +499,7 @@ export default function ComparisonDetailPage({
                 </span>
               </div>
               <div className="flex items-center gap-2 mb-6 mt-2">
-                <h3 className="text-xl font-bold text-gray-900">HireDeveloper.ae</h3>
+                <h3 className="text-xl font-bold text-gray-900">HireDeveloper.sg</h3>
               </div>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-2">
@@ -563,7 +563,7 @@ export default function ComparisonDetailPage({
 
       {/* Pros & Cons */}
       <section className="py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Pros and Cons in Detail
           </h2>
@@ -571,10 +571,10 @@ export default function ComparisonDetailPage({
             An honest comparison of the strengths and weaknesses of both platforms.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* HireDeveloper.ae */}
+            {/* HireDeveloper.sg */}
             <div className="bg-white rounded-lg p-8 border border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-6">
-                HireDeveloper.ae
+                HireDeveloper.sg
               </h3>
               <div className="mb-6">
                 <h4 className="text-sm font-semibold text-[rgb(23,162,69)] uppercase tracking-wider mb-3">
@@ -584,7 +584,7 @@ export default function ComparisonDetailPage({
                   {[
                     'Pre-vetted developers with technical screening',
                     'Matching within 48 hours',
-                    'UAE focus with dedicated support',
+                    'Singapore focus with dedicated support',
                     'Full-time and freelance options',
                     'Risk-free trial period',
                     'Transparent pricing with no hidden costs',
@@ -611,7 +611,7 @@ export default function ComparisonDetailPage({
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-gray-400 mt-1 shrink-0">-</span>
-                    <span className="text-sm text-gray-500">Focus on UAE/Gulf region (less global)</span>
+                    <span className="text-sm text-gray-500">Focus on Singapore/Southeast Asia region (less global)</span>
                   </li>
                 </ul>
               </div>
@@ -660,14 +660,14 @@ export default function ComparisonDetailPage({
       {/* Decision Flowchart */}
       <DecisionFlowchart competitorName={competitor.name} />
 
-      {/* Why choose HireDeveloper.ae */}
+      {/* Why choose HireDeveloper.sg */}
       <section className="py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
-            Why Choose HireDeveloper.ae?
+            Why Choose HireDeveloper.sg?
           </h2>
           <p className="text-gray-600 mb-8 max-w-3xl">
-            Built for companies in the UAE and Gulf region that need reliable remote developers.
+            Built for companies in Singapore and Southeast Asia region that need reliable remote developers.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-gray-50 rounded-lg p-6">
@@ -698,9 +698,9 @@ export default function ComparisonDetailPage({
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">UAE Expertise</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Singapore Expertise</h3>
               <p className="text-sm text-gray-600">
-                We understand the Dubai and Abu Dhabi market and know what companies in the UAE and Gulf region value. Dedicated English-speaking support is standard.
+                We understand Singapore's market and know what companies in Singapore and Southeast Asia region value. Dedicated English-speaking support is standard.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
@@ -720,13 +720,13 @@ export default function ComparisonDetailPage({
 
       {/* Conclusion */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Conclusion: HireDeveloper.ae vs {competitor.name}
+              Conclusion: HireDeveloper.sg vs {competitor.name}
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Both platforms have their merits. For UAE-based companies, however, HireDeveloper.ae has several strong arguments:{' '}
+              Both platforms have their merits. For Singapore-based companies, however, HireDeveloper.sg has several strong arguments:{' '}
               <strong>faster matching</strong> (48h instead of weeks),{' '}
               <strong>transparent pricing</strong> with no hidden fees,{' '}
               <strong>dedicated support</strong>, and a{' '}
@@ -736,7 +736,7 @@ export default function ComparisonDetailPage({
               {competitor.name} scores with {competitor.pros.slice(0, 2).join(' and ').toLowerCase()}, but has weaknesses in {competitor.cons.slice(0, 2).join(' and ').toLowerCase()}.
             </p>
             <p className="text-gray-700 leading-relaxed mb-8">
-              Looking for someone who knows the UAE market and can quickly deliver strong remote developers? Then HireDeveloper.ae is the right choice.
+              Looking for someone who knows Singapore's market and can quickly deliver strong remote developers? Then HireDeveloper.sg is the right choice.
             </p>
             <div className="bg-white border-2 border-[rgb(23,162,69)] rounded-xl p-6 inline-block">
               <p className="text-[rgb(23,162,69)] font-bold text-lg mb-1">Our Verdict</p>
@@ -757,12 +757,12 @@ export default function ComparisonDetailPage({
 
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Frequently Asked Questions
           </h2>
           <p className="text-gray-600 mb-8">
-            Answers to the most important questions about the comparison between HireDeveloper.ae and {competitor.name}.
+            Answers to the most important questions about the comparison between HireDeveloper.sg and {competitor.name}.
           </p>
           <div className="space-y-4">
             {faqs.map((faq) => (

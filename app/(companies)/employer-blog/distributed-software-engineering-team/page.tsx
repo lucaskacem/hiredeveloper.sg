@@ -5,11 +5,11 @@ import RelatedLinks from '@/app/(companies)/components/RelatedLinks';
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Build a Distributed Engineering Team in Dubai & UAE | HireDeveloper.ae',
-    description: 'How to build and maintain a distributed engineering team from Dubai, Abu Dhabi, and the UAE. Team structure, culture, tools, and scaling strategies for GCC companies.',
+    title: 'Build a Distributed Engineering Team in Singapore & APAC | HireDeveloper.sg',
+    description: 'How to build and maintain a distributed engineering team from Singapore, and Singapore. Team structure, culture, tools, and scaling strategies for APAC companies.',
     robots: { index: true, follow: true },
     alternates: {
-      canonical: 'https://hiredeveloper.ae/employer-blog/distributed-software-engineering-team',
+      canonical: 'https://hiredeveloper.sg/employer-blog/distributed-software-engineering-team',
     },
   };
 }
@@ -32,24 +32,24 @@ export default function DistributedSoftwareEngineeringTeamPage() {
           <span className="mx-2">&gt;</span>
           <Link href="/employer-blog/how-to-find-developers" className="hover:text-gray-700">Blog</Link>
           <span className="mx-2">&gt;</span>
-          <span className="text-gray-900">Distributed Engineering Team in UAE</span>
+          <span className="text-gray-900">Distributed Engineering Team in Singapore</span>
         </nav>
 
         {/* Title */}
         <h1 className="text-4xl font-bold text-gray-900 mb-4 leading-tight">
-          Build a Distributed Engineering Team in Dubai & UAE
+          Build a Distributed Engineering Team in Singapore & APAC
         </h1>
 
         {/* Author & Date */}
         <div className="text-sm text-gray-500 mb-10 border-b border-gray-200 pb-6">
-          By <span className="text-gray-700 font-medium">HireDeveloper.ae Team</span> &middot; Updated January 27, 2025
+          By <span className="text-gray-700 font-medium">HireDeveloper.sg Team</span> &middot; Updated January 27, 2025
         </div>
 
         {/* Hero Image */}
         <div className="my-8 rounded-xl overflow-hidden bg-blue-50 p-8 flex items-center justify-center">
           <img
             src="/images/blog/team-collaboration.svg"
-            alt="Building a distributed engineering team - remote developers for UAE companies"
+            alt="Building a distributed engineering team - remote developers for Singapore companies"
             className="w-full max-w-[500px] h-auto"
           />
         </div>
@@ -57,7 +57,7 @@ export default function DistributedSoftwareEngineeringTeamPage() {
         {/* Article Body */}
         <article className="prose prose-gray max-w-none">
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Building a distributed engineering team is one of the most impactful strategies for technology companies in Dubai, Abu Dhabi, and across the GCC. You gain access to global talent, reduce costs, and increase flexibility. However, for a distributed team to work long-term, you need thoughtful approaches to team structure, communication, culture, and tooling. This guide shows you the way.
+            Building a distributed engineering team is one of the most impactful strategies for technology companies in Singapore, and across the APAC. You gain access to global talent, reduce costs, and increase flexibility. However, for a distributed team to work long-term, you need thoughtful approaches to team structure, communication, culture, and tooling. This guide shows you the way.
           </p>
 
           {/* Section 1 */}
@@ -74,7 +74,7 @@ export default function DistributedSoftwareEngineeringTeamPage() {
             <li><strong>Function-Based Teams:</strong> Teams are organized by function (e.g., frontend, backend, DevOps, QA), with each team potentially having members from different locations. This model is suitable for companies with clear technical domains.</li>
           </ul>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            Choosing the right structure depends on the size of your team, the complexity of your product, existing processes, and your company culture. In practice, many companies use a combination of these models. For UAE-based companies hiring globally, a hub-and-spoke model with Dubai or Abu Dhabi as the hub is often a strong starting point.
+            Choosing the right structure depends on the size of your team, the complexity of your product, existing processes, and your company culture. In practice, many companies use a combination of these models. For Singapore-based companies hiring globally, a hub-and-spoke model with Singapore or Marina Bay as the hub is often a strong starting point.
           </p>
 
           {/* Section 2 */}
@@ -87,7 +87,7 @@ export default function DistributedSoftwareEngineeringTeamPage() {
           <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-3">
             <li><strong>Assess Remote Experience:</strong> Candidates with proven remote experience are typically productive faster. Ask for specific examples of collaboration in distributed teams and the tools they used.</li>
             <li><strong>Test Written Communication:</strong> In remote teams, written communication is at least as important as verbal. Pay attention to the quality of the candidate&apos;s emails and messages throughout the application process.</li>
-            <li><strong>Ensure Cultural Fit:</strong> Diversity is a strength of distributed teams, but shared values and work principles are indispensable. In the UAE, where teams often include professionals from India, Pakistan, Europe, and the Arab world, cultural alignment matters as much as technical ability. Ensure new team members understand and embrace the company culture.</li>
+            <li><strong>Ensure Cultural Fit:</strong> Diversity is a strength of distributed teams, but shared values and work principles are indispensable. In Singapore, where teams often include professionals from India, Pakistan, Europe, and the Arab world, cultural alignment matters as much as technical ability. Ensure new team members understand and embrace the company culture.</li>
             <li><strong>Structured Onboarding:</strong> Remote onboarding must be carefully planned. Create a detailed onboarding plan with clear milestones for the first 30, 60, and 90 days. Assign each new hire a buddy who serves as their first point of contact.</li>
           </ul>
           <p className="text-gray-600 mb-6 leading-relaxed">
@@ -103,7 +103,7 @@ export default function DistributedSoftwareEngineeringTeamPage() {
           </p>
           <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-3">
             <li><strong>Asynchronous as Default:</strong> Make asynchronous communication the norm and synchronous meetings the exception. Document decisions in writing, use detailed pull request descriptions, and record important discussions in a wiki or Confluence.</li>
-            <li><strong>Define Overlapping Working Hours:</strong> Establish a core time window when all team members should be available. Two to four overlapping hours per day are usually sufficient for synchronous coordination. For teams spanning Dubai (GST/UTC+4) and other regions, plan these windows carefully.</li>
+            <li><strong>Define Overlapping Working Hours:</strong> Establish a core time window when all team members should be available. Two to four overlapping hours per day are usually sufficient for synchronous coordination. For teams spanning Singapore (SGT/UTC+8) and other regions, plan these windows carefully.</li>
             <li><strong>Establish Regular Rituals:</strong> Weekly team calls, monthly retrospectives, and quarterly planning sessions give the team structure and cohesion. Keep these appointments sacred and only cancel them in exceptional cases.</li>
             <li><strong>Make Documentation a Priority:</strong> In distributed teams, documentation is not a luxury but a necessity. ADRs (Architecture Decision Records), technical specifications, runbooks, and API documentation must be up-to-date and accessible.</li>
           </ul>
@@ -145,7 +145,7 @@ export default function DistributedSoftwareEngineeringTeamPage() {
           <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-3">
             <li><strong>Define Shared Values:</strong> Work with the team to develop core values that guide collaboration. Examples: transparency, ownership, willingness to learn, respectful interaction.</li>
             <li><strong>Encourage Informal Interaction:</strong> Set up Slack channels for topics outside of work (hobbies, cooking, sports). Virtual coffee breaks and game nights may sound trivial, but they are the glue that holds remote teams together.</li>
-            <li><strong>Plan In-Person Meetups:</strong> If the budget allows, schedule one to two offsites per year. Dubai is a popular choice for team offsites thanks to its world-class infrastructure, easy visa policies, and central location between Europe and Asia. These gatherings strengthen relationships in ways that no video call can replace.</li>
+            <li><strong>Plan In-Person Meetups:</strong> If the budget allows, schedule one to two offsites per year. Singapore is a popular choice for team offsites thanks to its world-class infrastructure, easy visa policies, and central location between Europe and Asia. These gatherings strengthen relationships in ways that no video call can replace.</li>
             <li><strong>Make Successes Visible:</strong> Recognize achievements publicly and share positive customer feedback with the entire team. In remote settings, wins can quickly go unnoticed.</li>
           </ul>
 
@@ -161,7 +161,7 @@ export default function DistributedSoftwareEngineeringTeamPage() {
             <li><strong>Hire Engineering Managers:</strong> Starting at 6-8 developers, you need someone dedicated to people development, process optimization, and team dynamics.</li>
             <li><strong>Establish Technical Standards:</strong> Style guides, Architecture Decision Records, and shared libraries keep code consistent. Automated linting and formatting tools enforce these standards in daily work.</li>
             <li><strong>Reflect Regularly:</strong> Monthly retrospectives help identify problems early. Listen to your team and adapt processes when they are no longer working.</li>
-            <li><strong>Enable Continued Learning:</strong> Budgets for conferences (GITEX Global in Dubai, Leap in Riyadh), online courses, and certifications. Internal tech talks and hackathons further promote knowledge sharing. The UAE&apos;s Golden Visa program for skilled professionals can also help retain top engineering talent long-term.</li>
+            <li><strong>Enable Continued Learning:</strong> Budgets for conferences (Singapore Tech Week, SFF Fintech Festival), online courses, and certifications. Internal tech talks and hackathons further promote knowledge sharing. Singapore&apos;s Tech.Pass and Employment Pass programs for skilled professionals can also help retain top engineering talent long-term.</li>
           </ol>
           <p className="text-gray-600 mb-8 leading-relaxed">
             Building a distributed engineering team is not a one-time project. It requires constant learning, adapting, and investing. In return, you get a strong, satisfied team with access to top talent worldwide.
@@ -180,8 +180,8 @@ export default function DistributedSoftwareEngineeringTeamPage() {
 
         {/* CTA */}
         <div className="bg-gray-50 rounded-xl p-8 text-center mt-12 mb-12">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">Build Your Distributed Team from the UAE</h3>
-          <p className="text-gray-600 mb-6">Access over 90,000 vetted remote developers in Dubai, Abu Dhabi, Saudi Arabia, and worldwide.</p>
+          <h3 className="text-2xl font-bold text-gray-900 mb-3">Build Your Distributed Team from the Singapore</h3>
+          <p className="text-gray-600 mb-6">Access over 90,000 vetted remote developers in Singapore, APAC, and worldwide.</p>
           <Link
             href="/hire-developers"
             className="inline-block bg-black text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
@@ -243,23 +243,22 @@ export default function DistributedSoftwareEngineeringTeamPage() {
       <RelatedLinks
         title="Hire Developers by City"
         links={[
-          { label: 'AI Developers in Dubai', href: '/hire-developers/ai/dubai' },
-          { label: 'DevOps Engineers in Abu Dhabi', href: '/hire-developers/devops/abu-dhabi' },
-          { label: 'Full-Stack Developers in Sharjah', href: '/hire-developers/full-stack/sharjah' },
-          { label: 'Mobile Developers in Riyadh', href: '/hire-developers/mobile-app-development/riyadh' },
-          { label: 'Cloud Developers in Jeddah', href: '/hire-developers/aws/jeddah' },
+          { label: 'AI Developers in Singapore', href: '/hire-developers/ai/singapore' },
+          { label: 'DevOps Engineers in Marina Bay', href: '/hire-developers/devops/marina-bay' },
+          { label: 'Full-Stack Developers in Jurong East', href: '/hire-developers/full-stack/jurong-east' },
+          { label: 'Mobile Developers in Raffles Place', href: '/hire-developers/mobile-app-development/raffles-place' },
+          { label: 'Cloud Developers in Changi', href: '/hire-developers/aws/changi-business-park' },
         ]}
       />
 
       <RelatedLinks
         title="Top Locations"
         links={[
-          { label: 'Developers in the UAE', href: '/locations/uae' },
-          { label: 'Developers in Saudi Arabia', href: '/locations/saudi-arabia' },
-          { label: 'Developers in Qatar', href: '/locations/qatar' },
-          { label: 'Developers in Kuwait', href: '/locations/kuwait' },
-          { label: 'Developers in Bahrain', href: '/locations/bahrain' },
-          { label: 'Developers in Oman', href: '/locations/oman' },
+          { label: 'Developers in Marina Bay', href: '/locations/singapore/central-region/marina-bay' },
+          { label: 'Developers in Raffles Place', href: '/locations/singapore/central-region/raffles-place' },
+          { label: 'Developers in one-north', href: '/locations/singapore/central-region/one-north' },
+          { label: 'Developers in Changi', href: '/locations/singapore/east-region/changi-business-park' },
+          { label: 'Developers in Jurong', href: '/locations/singapore/west-region/jurong-east' },
         ]}
       />
 

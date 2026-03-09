@@ -26,7 +26,7 @@ export default function DecisionFlowchart({ competitorName = 'Alternative' }: De
 
   return (
     <section className="py-16 bg-gray-50">
-      <div className="max-w-[1280px] mx-auto px-12">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
         <div className="text-center mb-10">
           <span className="inline-block bg-[rgb(23,162,69)]/10 text-[rgb(23,162,69)] text-sm font-semibold px-3 py-1 rounded-full mb-4">
             Decision Guide
@@ -35,7 +35,7 @@ export default function DecisionFlowchart({ competitorName = 'Alternative' }: De
             Which platform is right for you?
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Follow the decision tree to find out whether HireDeveloper.ae or {competitorName} is a better fit for your requirements.
+            Follow the decision tree to find out whether HireDeveloper.sg or {competitorName} is a better fit for your requirements.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export default function DecisionFlowchart({ competitorName = 'Alternative' }: De
                 <div className="w-0.5 h-5 bg-gray-300" />
                 <div className="bg-[rgb(23,162,69)]/5 border-2 border-[rgb(23,162,69)] rounded-xl px-5 py-4 shadow-sm text-center w-full">
                   <p className="text-sm font-bold text-[rgb(23,162,69)]">
-                    🇦🇪 HireDeveloper.ae
+                    🇸🇬 HireDeveloper.sg
                   </p>
                   <p className="text-xs text-gray-600 mt-1">
                     Matching in just 48 hours — faster than any alternative
@@ -75,9 +75,9 @@ export default function DecisionFlowchart({ competitorName = 'Alternative' }: De
                 <div className="w-0.5 h-5 bg-gray-300" />
                 <div className="bg-white border-2 border-[rgb(0,159,255)] rounded-xl px-5 py-4 shadow-sm text-center w-full">
                   <p className="text-sm font-bold text-gray-900">
-                    Is UAE / Gulf focus important?
+                    Is Singapore / APAC focus important?
                   </p>
-                  <p className="text-xs text-gray-500 mt-1">Sunday-Thursday, GMT+4 timezone?</p>
+                  <p className="text-xs text-gray-500 mt-1">Mon-Fri, GMT+8 timezone?</p>
                 </div>
               </div>
             </div>
@@ -95,10 +95,10 @@ export default function DecisionFlowchart({ competitorName = 'Alternative' }: De
                   <div className="w-0.5 h-5 bg-gray-300" />
                   <div className="bg-[rgb(23,162,69)]/5 border-2 border-[rgb(23,162,69)] rounded-lg px-3 py-3 shadow-sm text-center">
                     <p className="text-xs font-bold text-[rgb(23,162,69)]">
-                      🇦🇪 HireDeveloper.ae
+                      🇸🇬 HireDeveloper.sg
                     </p>
                     <p className="text-[10px] text-gray-600 mt-1">
-                      Built for UAE businesses
+                      Built for Singapore businesses
                     </p>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ export default function DecisionFlowchart({ competitorName = 'Alternative' }: De
                     <div className="w-0.5 h-5 bg-gray-300" />
                     <div className="bg-[rgb(23,162,69)]/5 border-2 border-[rgb(23,162,69)] rounded-lg px-2 py-2 shadow-sm text-center">
                       <p className="text-[10px] font-bold text-[rgb(23,162,69)]">
-                        HireDeveloper.ae
+                        HireDeveloper.sg
                       </p>
                     </div>
                   </div>
@@ -176,8 +176,8 @@ export default function DecisionFlowchart({ competitorName = 'Alternative' }: De
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h4 className="text-sm font-bold text-gray-900 mb-1">UAE Focus</h4>
-              <p className="text-xs text-gray-500">Built for Dubai & Gulf businesses</p>
+              <h4 className="text-sm font-bold text-gray-900 mb-1">Singapore Focus</h4>
+              <p className="text-xs text-gray-500">Built for Singapore & APAC businesses</p>
             </div>
           </div>
 

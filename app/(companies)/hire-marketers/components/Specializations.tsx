@@ -8,13 +8,13 @@ export default function Specializations() {
     ];
 
     return (
-        <section className="bg-white py-20">
-            <div className="max-w-[1280px] mx-auto px-12">
+        <section className="bg-white py-10 md:py-16 lg:py-20">
+            <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
                 <h2 className="text-[32px] font-bold text-[#0b152b] mb-4 text-center">
                     Top remote marketers are just a few clicks away
                 </h2>
                 <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
-                    HireDeveloper.ae offers pre-vetted remote marketers ready to excel in their field. Choose the role you need to get started.
+                    HireDeveloper.sg offers pre-vetted remote marketers ready to excel in their field. Choose the role you need to get started.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">

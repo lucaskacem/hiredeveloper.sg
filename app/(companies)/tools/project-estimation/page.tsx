@@ -41,7 +41,7 @@ const featureOptions = [
   { value: 'social', label: 'Social Login / OAuth', weeks: 1, cost: 2000 },
 ];
 
-const aedRate = 3.67;
+const sgdRate = 1.34;
 
 export default function ProjectEstimationPage() {
   const [projectType, setProjectType] = useState('');
@@ -72,10 +72,10 @@ export default function ProjectEstimationPage() {
   const hireDeveloperMin = Math.round(totalCostMin * 0.42);
   const hireDeveloperMax = Math.round(totalCostMax * 0.42);
 
-  const totalCostMinAED = Math.round(totalCostMin * aedRate);
-  const totalCostMaxAED = Math.round(totalCostMax * aedRate);
-  const hireDeveloperMinAED = Math.round(hireDeveloperMin * aedRate);
-  const hireDeveloperMaxAED = Math.round(hireDeveloperMax * aedRate);
+  const totalCostMinSGD = Math.round(totalCostMin * sgdRate);
+  const totalCostMaxSGD = Math.round(totalCostMax * sgdRate);
+  const hireDeveloperMinSGD = Math.round(hireDeveloperMin * sgdRate);
+  const hireDeveloperMaxSGD = Math.round(hireDeveloperMax * sgdRate);
 
   const handleCalculate = () => {
     if (projectType && complexity) {
@@ -88,7 +88,7 @@ export default function ProjectEstimationPage() {
     '@type': 'WebApplication',
     name: 'Project Estimation',
     description: 'Estimate the time and cost of your software project based on type, complexity, and features.',
-    url: 'https://hiredeveloper.ae/tools/project-estimation',
+    url: 'https://hiredeveloper.sg/tools/project-estimation',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -113,7 +113,7 @@ export default function ProjectEstimationPage() {
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h1 className="text-[42px] font-bold mb-4">Project Estimation</h1>
           <p className="text-xl text-gray-300 max-w-3xl">
             How long will your project take and what will it cost? Select the project type, complexity, and features.
@@ -123,7 +123,7 @@ export default function ProjectEstimationPage() {
 
       {/* Estimator */}
       <section className="py-16">
-        <div className="max-w-[1000px] mx-auto px-12">
+        <div className="max-w-[1000px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8">
 
             {/* Project Type */}
@@ -221,21 +221,21 @@ export default function ProjectEstimationPage() {
                     <p className="text-3xl font-bold text-[rgb(0,159,255)]">{totalWeeks} Weeks</p>
                   </div>
                   <div className="bg-gray-50 rounded-xl p-6 text-center border border-gray-200">
-                    <p className="text-sm text-gray-600 mb-1">UAE Market Price (USD)</p>
+                    <p className="text-sm text-gray-600 mb-1">Singapore Market Price (USD)</p>
                     <p className="text-2xl font-bold text-gray-400 line-through">
                       ${totalCostMin.toLocaleString('en-US')}&ndash;${totalCostMax.toLocaleString('en-US')}
                     </p>
                     <p className="text-xs text-gray-400 mt-1">
-                      {totalCostMinAED.toLocaleString('en-US')}&ndash;{totalCostMaxAED.toLocaleString('en-US')} AED
+                      {totalCostMinSGD.toLocaleString('en-US')}&ndash;{totalCostMaxSGD.toLocaleString('en-US')} SGD
                     </p>
                   </div>
                   <div className="bg-[rgb(23,162,69)]/5 rounded-xl p-6 text-center border border-[rgb(23,162,69)]/20">
-                    <p className="text-sm text-gray-600 mb-1">With HireDeveloper.ae</p>
+                    <p className="text-sm text-gray-600 mb-1">With HireDeveloper.sg</p>
                     <p className="text-3xl font-bold text-[rgb(23,162,69)]">
                       ${hireDeveloperMin.toLocaleString('en-US')}&ndash;${hireDeveloperMax.toLocaleString('en-US')}
                     </p>
                     <p className="text-xs text-[rgb(23,162,69)] mt-1">
-                      {hireDeveloperMinAED.toLocaleString('en-US')}&ndash;{hireDeveloperMaxAED.toLocaleString('en-US')} AED
+                      {hireDeveloperMinSGD.toLocaleString('en-US')}&ndash;{hireDeveloperMaxSGD.toLocaleString('en-US')} SGD
                     </p>
                   </div>
                 </div>
@@ -275,7 +275,7 @@ export default function ProjectEstimationPage() {
                     Save Up to 58% on Implementation
                   </p>
                   <p className="text-gray-600 mb-4">
-                    Have your project built by our vetted remote developers based in the UAE and beyond.
+                    Have your project built by our vetted remote developers based in Singapore and beyond.
                   </p>
                   <a
                     href="/hire-developers"

@@ -1,4 +1,4 @@
-# hiredeveloper.ae — Deployment Guide
+# hiredeveloper.sg — Deployment Guide
 
 ## Stack
 - Next.js 16 (SSR — server-side rendering)
@@ -11,8 +11,8 @@
 
 ## Setup
 ```bash
-git clone git@github.com:lucaskacem/hiredeveloper.ae.git
-cd hiredeveloper.ae
+git clone git@github.com:lucaskacem/hiredeveloper.sg.git
+cd hiredeveloper.sg
 npm install
 ```
 
@@ -37,11 +37,11 @@ pm2 save
 ```
 
 ## Nginx
-Reverse proxy to port 4002. Domain: hiredeveloper.ae
+Reverse proxy to port 4002. Domain: hiredeveloper.sg
 
 ## Notes
 - SSR site (needs Node.js process running, NOT static)
-- ~500+ dynamic pages (developer/marketer hiring, UAE/GCC cities)
+- ~500+ dynamic pages (developer/marketer hiring, Singapore/APAC cities)
 - Contact form sends to lucas@digitalunicorn.fr + contact@digitalunicorn.fr
 - Rate limited: 5 requests/hour per IP on /api/contact
 - Leads backed up to .leads/leads.json

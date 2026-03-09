@@ -60,9 +60,9 @@ const questions: QuizQuestion[] = [
   },
   {
     id: 6,
-    question: 'How important is UAE / Gulf market alignment to you?',
+    question: 'How important is Singapore / Southeast Asian market alignment to you?',
     options: [
-      { label: 'Very important – Sunday-Thursday, GMT+4 timezone is a must', score: 3 },
+      { label: 'Very important – Monday-Friday, GMT+8 timezone is a must', score: 3 },
       { label: 'Nice to have, but not required', score: 2 },
       { label: 'Not relevant – global talent is fine', score: 1 },
     ],
@@ -76,22 +76,22 @@ function getResult(totalScore: number): {
 } {
   if (totalScore >= 14) {
     return {
-      title: '🇦🇪 HireDeveloper.ae is the perfect fit for you!',
+      title: '🇸🇬 HireDeveloper.sg is the perfect fit for you!',
       description:
-        'Your requirements align perfectly with what we offer. 48-hour matching, transparent pricing, UAE market focus, and top 2% vetted developers — exactly what you need.',
+        'Your requirements align perfectly with what we offer. 48-hour matching, transparent pricing, Singapore market focus, and top 2% vetted developers — exactly what you need.',
       recommendation: 'Start risk-free today. $0 until you hire.',
     };
   }
   if (totalScore >= 10) {
     return {
-      title: '🇦🇪 HireDeveloper.ae is a strong option for you!',
+      title: '🇸🇬 HireDeveloper.sg is a strong option for you!',
       description:
-        'Risk-free trial, personal matching, and flexible contracts — HireDeveloper.ae is a solid choice for your business. In your team within 48 hours, ready to work.',
+        'Risk-free trial, personal matching, and flexible contracts — HireDeveloper.sg is a solid choice for your business. In your team within 48 hours, ready to work.',
       recommendation: 'Let\'s discuss the details in a quick call.',
     };
   }
   return {
-    title: 'HireDeveloper.ae can work for you too',
+    title: 'HireDeveloper.sg can work for you too',
     description:
       'Your requirements are a bit more specialized, but that\'s exactly what we have flexible solutions for. Let\'s talk briefly and find the best approach for your project.',
     recommendation: 'Talk to us — no obligation, no commitment.',
@@ -136,7 +136,7 @@ export default function ComparisonQuiz() {
 
   return (
     <section className="py-16">
-      <div className="max-w-[1280px] mx-auto px-12">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8">
             <span className="inline-block bg-[rgb(0,159,255)]/10 text-[rgb(0,159,255)] text-sm font-semibold px-3 py-1 rounded-full mb-4">

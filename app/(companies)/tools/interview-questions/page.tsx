@@ -501,7 +501,7 @@ export default function InterviewQuestionsPage() {
     '@type': 'WebApplication',
     name: 'Interview Questions Generator',
     description: 'Generate technical interview questions for developers by technology and difficulty level.',
-    url: 'https://hiredeveloper.ae/tools/interview-questions',
+    url: 'https://hiredeveloper.sg/tools/interview-questions',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -526,7 +526,7 @@ export default function InterviewQuestionsPage() {
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h1 className="text-[42px] font-bold mb-4">Interview Questions Generator</h1>
           <p className="text-xl text-gray-300 max-w-3xl">
             Technical interview questions tailored to your technology and desired level. Simply generate them.
@@ -536,7 +536,7 @@ export default function InterviewQuestionsPage() {
 
       {/* Generator */}
       <section className="py-16">
-        <div className="max-w-[900px] mx-auto px-12">
+        <div className="max-w-[900px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Generate Questions</h2>
 

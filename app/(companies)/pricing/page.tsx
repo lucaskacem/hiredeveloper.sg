@@ -7,9 +7,9 @@ import RelatedLinks from '../components/RelatedLinks';
 import OpenModalButton from '../components/OpenModalButton';
 
 export const metadata: Metadata = {
-  title: 'Pricing | Transparent Pricing Model | HireDeveloper.ae',
+  title: 'Pricing | Transparent Pricing Model | HireDeveloper.sg',
   description:
-    'Learn about HireDeveloper.ae pricing. $0 until you hire, then a fair placement fee. No hidden costs, no risk.',
+    'Learn about HireDeveloper.sg pricing. $0 until you hire, then a fair placement fee. No hidden costs, no risk.',
   robots: { index: true, follow: true },
 };
 
@@ -17,7 +17,7 @@ function PageJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'Pricing - HireDeveloper.ae',
+    name: 'Pricing - HireDeveloper.sg',
     description: 'Transparent pricing model: No upfront fees. You only pay upon successful hire.',
   };
 
@@ -53,14 +53,14 @@ export default function PricingPage() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero */}
-      <section className="bg-white py-20 border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-white py-10 md:py-16 lg:py-20 border-b border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-[48px] font-bold text-gray-900 mb-6">
+            <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 mb-6">
               Transparent Pricing
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-4">
-              At HireDeveloper.ae, you only pay once you&apos;ve found the perfect candidate.
+              At HireDeveloper.sg, you only pay once you&apos;ve found the perfect candidate.
               No upfront fees, no subscriptions, no hidden costs.
             </p>
             <p className="text-lg text-[rgb(0,159,255)] font-semibold">
@@ -71,9 +71,9 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing model */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-16">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-16">
             How Our Pricing Model Works
           </h2>
 
@@ -124,9 +124,9 @@ export default function PricingPage() {
       </section>
 
       {/* Engagement models */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Flexible Engagement Models
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
@@ -186,7 +186,7 @@ export default function PricingPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[rgb(23,162,69)] font-bold mt-0.5">&#10003;</span>
-                  Up to 60% savings vs. Dubai/Abu Dhabi salaries
+                  Up to 60% savings vs. Singapore/Marina Bay salaries
                 </li>
               </ul>
               <div className="mt-6 pt-6 border-t border-gray-200">
@@ -200,9 +200,9 @@ export default function PricingPage() {
       </section>
 
       {/* What's included */}
-      <section className="bg-gray-50 py-20 border-t border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-16">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20 border-t border-gray-200">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-16">
             What&apos;s Included in Every Plan
           </h2>
 
@@ -254,10 +254,10 @@ export default function PricingPage() {
       </section>
 
       {/* FAQ section */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-[40px] font-bold text-gray-900 text-center mb-12">
+            <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-12">
               Frequently Asked Questions About Pricing
             </h2>
 
@@ -302,7 +302,7 @@ export default function PricingPage() {
 
       {/* CTA */}
       <section className="bg-gray-50 py-16 border-t border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full text-center">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Request a Custom Quote
           </h2>

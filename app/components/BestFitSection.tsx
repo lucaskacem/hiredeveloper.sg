@@ -75,8 +75,8 @@ export default function BestFitSection() {
   ];
 
   return (
-    <section className="bg-white py-16 md:py-0 md:h-[580px] flex items-center">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 w-full">
+    <section className="bg-white py-10 md:py-0 md:h-[580px] flex items-center overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
         {/* Section Heading */}
         <h2 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 text-center mb-8 md:mb-12">
           {t('bestFit.title')}

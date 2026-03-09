@@ -6,7 +6,7 @@ import FinalCTA from '../components/FinalCTA';
 import RelatedLinks from '../components/RelatedLinks';
 
 export const metadata: Metadata = {
-  title: 'Resources for Talent | Guides, Tools & Tips | HireDeveloper.ae',
+  title: 'Resources for Talent | Guides, Tools & Tips | HireDeveloper.sg',
   description:
     'Resources for remote talent: salary calculator, application tips, interview preparation, remote work guides, and more. Everything for a successful remote career.',
   robots: { index: true, follow: true },
@@ -16,7 +16,7 @@ function PageJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Resources for Talent - HireDeveloper.ae',
+    name: 'Resources for Talent - HireDeveloper.sg',
     description: 'Guides, tools, and tips for a successful remote career.',
   };
 
@@ -114,7 +114,7 @@ export default function TalentResourcesPage() {
     {
       title: 'Time Zone Management',
       content:
-        'When working for a UAE-based company, ensure you have at least 4-6 hours of overlap with Gulf Standard Time (GST). Communicate your working hours clearly and use tools like World Time Buddy to schedule meetings.',
+        'When working for a Singapore-based company, ensure you have at least 4-6 hours of overlap with Singapore Standard Time (SGT). Communicate your working hours clearly and use tools like World Time Buddy to schedule meetings.',
     },
     {
       title: 'Professional Development',
@@ -140,11 +140,11 @@ export default function TalentResourcesPage() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero */}
-      <section className="bg-white py-20 border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-white py-10 md:py-16 lg:py-20 border-b border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-[rgb(0,159,255)] font-semibold text-lg mb-4">For Talent</p>
-            <h1 className="text-[48px] font-bold text-gray-900 mb-6">
+            <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 mb-6">
               Resources for Talent
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
@@ -156,9 +156,9 @@ export default function TalentResourcesPage() {
       </section>
 
       {/* Tools */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Useful Tools
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
@@ -181,13 +181,13 @@ export default function TalentResourcesPage() {
       </section>
 
       {/* Interview Guides */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Interview Preparation
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
-            How to get ready for the application process at HireDeveloper.ae.
+            How to get ready for the application process at HireDeveloper.sg.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -210,9 +210,9 @@ export default function TalentResourcesPage() {
       </section>
 
       {/* Remote Work Guides */}
-      <section className="bg-gray-50 py-20 border-t border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20 border-t border-gray-200">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Remote Work Guides
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
@@ -231,13 +231,13 @@ export default function TalentResourcesPage() {
       </section>
 
       {/* Vetting Process */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Our Vetting Process
           </h2>
           <p className="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto">
-            What to expect during the HireDeveloper.ae screening process.
+            What to expect during the HireDeveloper.sg screening process.
           </p>
 
           <div className="max-w-3xl mx-auto space-y-8">
@@ -285,17 +285,17 @@ export default function TalentResourcesPage() {
       </section>
 
       {/* FAQ for talents */}
-      <section className="bg-gray-50 py-20 border-t border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20 border-t border-gray-200">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-[40px] font-bold text-gray-900 text-center mb-12">
+            <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-12">
               Frequently Asked Questions from Talent
             </h2>
 
             <div className="space-y-6">
               {[
                 {
-                  q: 'Does applying to HireDeveloper.ae cost anything?',
+                  q: 'Does applying to HireDeveloper.sg cost anything?',
                   a: 'No, everything is free. Application, vetting, and network admission cost you nothing. We only earn when you are successfully placed.',
                 },
                 {
@@ -303,8 +303,8 @@ export default function TalentResourcesPage() {
                   a: 'Salaries vary depending on role, experience, and engagement model. As a developer, you can earn between $3,000 and $12,000 USD per month. Use our Salary Calculator for an individual estimate.',
                 },
                 {
-                  q: 'Do I need to speak Arabic?',
-                  a: 'Not necessarily. Many of our companies work in English. However, Arabic skills are an advantage and increase your chances, especially with companies that require direct client interaction.',
+                  q: 'Do I need to speak Chinese or Malay?',
+                  a: 'Not necessarily. Many of our companies work in English. However, Mandarin or Malay language skills are an advantage and increase your chances, especially with companies that require direct client interaction.',
                 },
                 {
                   q: 'Can I work for multiple companies simultaneously?',
@@ -312,7 +312,7 @@ export default function TalentResourcesPage() {
                 },
                 {
                   q: 'How do I get paid?',
-                  a: 'HireDeveloper.ae ensures timely, secure payments. We support various payment methods and currencies. Billing is handled transparently through our platform.',
+                  a: 'HireDeveloper.sg ensures timely, secure payments. We support various payment methods and currencies. Billing is handled transparently through our platform.',
                 },
               ].map((item) => (
                 <div key={item.q} className="p-6 bg-white rounded-lg border border-gray-200">

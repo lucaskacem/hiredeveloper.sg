@@ -1,7 +1,7 @@
 export default function SeoContent() {
     return (
-        <section className="bg-white py-20 border-t border-gray-100">
-            <div className="max-w-[1000px] mx-auto px-12">
+        <section className="bg-white py-10 md:py-16 lg:py-20 border-t border-gray-100">
+            <div className="max-w-[1000px] mx-auto px-4 md:px-6 lg:px-12">
                 <h2 className="text-[32px] font-bold text-[#0b152b] mb-12">
                     How to Hire Top Digital Marketers
                 </h2>
@@ -51,7 +51,7 @@ export default function SeoContent() {
                     <div>
                         <h3 className="text-xl font-bold text-[#0b152b] mb-4">Cost of Hiring</h3>
                         <p>
-                            Hourly rates for freelance digital marketers vary by location, experience, and specialization. At HireDeveloper.ae, you'll find top-tier talent ranging from junior specialists to fractional CMOs. We offer transparent pricing so you always know what you're paying.
+                            Hourly rates for freelance digital marketers vary by location, experience, and specialization. At HireDeveloper.sg, you'll find top-tier talent ranging from junior specialists to fractional CMOs. We offer transparent pricing so you always know what you're paying.
                         </p>
                     </div>
                 </div>

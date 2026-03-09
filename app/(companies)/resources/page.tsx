@@ -6,7 +6,7 @@ import FinalCTA from '../components/FinalCTA';
 import RelatedLinks from '../components/RelatedLinks';
 
 export const metadata: Metadata = {
-  title: 'Resources for Companies | Guides, Tools & Blog | HireDeveloper.ae',
+  title: 'Resources for Companies | Guides, Tools & Blog | HireDeveloper.sg',
   description:
     'Discover our resources for companies: hiring guides, cost calculators, blog articles, interview questions, and more. Everything for successful remote hiring.',
   robots: { index: true, follow: true },
@@ -16,7 +16,7 @@ function PageJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Resources for Companies - HireDeveloper.ae',
+    name: 'Resources for Companies - HireDeveloper.sg',
     description: 'Guides, tools, blog articles, and more for successful remote hiring.',
   };
 
@@ -81,7 +81,7 @@ export default function ResourcesPage() {
   const guides = [
     {
       title: 'How It Works',
-      description: 'Learn in 3 simple steps how to hire through HireDeveloper.ae.',
+      description: 'Learn in 3 simple steps how to hire through HireDeveloper.sg.',
       href: '/how-it-works',
     },
     {
@@ -96,17 +96,17 @@ export default function ResourcesPage() {
     },
     {
       title: 'Case Studies',
-      description: 'Success stories from companies that hired through HireDeveloper.ae.',
+      description: 'Success stories from companies that hired through HireDeveloper.sg.',
       href: '/case-studies',
     },
     {
       title: 'FAQ',
-      description: 'Answers to the most frequently asked questions about HireDeveloper.ae.',
+      description: 'Answers to the most frequently asked questions about HireDeveloper.sg.',
       href: '/faq',
     },
     {
       title: 'Provider Comparison',
-      description: 'How HireDeveloper.ae compares to other platforms.',
+      description: 'How HireDeveloper.sg compares to other platforms.',
       href: '/comparison',
     },
   ];
@@ -166,10 +166,10 @@ export default function ResourcesPage() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero */}
-      <section className="bg-white py-20 border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+      <section className="bg-white py-10 md:py-16 lg:py-20 border-b border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-[48px] font-bold text-gray-900 mb-6">
+            <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 mb-6">
               Resources for Companies
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
@@ -181,9 +181,9 @@ export default function ResourcesPage() {
       </section>
 
       {/* Tools */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Interactive Tools
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
@@ -212,9 +212,9 @@ export default function ResourcesPage() {
       </section>
 
       {/* Guides */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Guides & Resources
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
@@ -237,9 +237,9 @@ export default function ResourcesPage() {
       </section>
 
       {/* Blog Articles */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-gray-50 py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Blog Articles
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
@@ -272,9 +272,9 @@ export default function ResourcesPage() {
       </section>
 
       {/* Hiring Pages */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
-          <h2 className="text-[40px] font-bold text-gray-900 text-center mb-4">
+      <section className="bg-white py-10 md:py-16 lg:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-gray-900 text-center mb-4">
             Talent by Category
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">

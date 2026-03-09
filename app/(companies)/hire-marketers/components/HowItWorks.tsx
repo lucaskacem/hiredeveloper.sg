@@ -19,9 +19,9 @@ export default function HowItWorks() {
 
     return (
         <section className="bg-white py-24">
-            <div className="max-w-[1280px] mx-auto px-12">
+            <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
                 <h2 className="text-[36px] font-bold text-[#0b152b] text-center mb-16">
-                    It's easy to hire with HireDeveloper.ae
+                    It's easy to hire with HireDeveloper.sg
                 </h2>
 
                 <div className="flex flex-col md:flex-row items-start justify-between relative gap-8">

@@ -1,6 +1,6 @@
 // -----------------------------------------------------------------------------
-// locations.ts — Comprehensive location data for UAE and Gulf region
-// Used for programmatic SEO pages on the HireDeveloper.ae hiring platform
+// locations.ts — Comprehensive location data for Singapore
+// Used for programmatic SEO pages on the HireDeveloper.sg hiring platform
 // -----------------------------------------------------------------------------
 
 // ---------------------------------------------------------------------------
@@ -21,14 +21,12 @@ export interface TechHub {
 export interface City {
   slug: string;
   name: string;
-  nameAr: string;
   population: number;
   lat: number;
   lng: number;
   wikipedia: string;
   description: string;
-  descriptionAr: string;
-  /** Optional rich data for UAE cities */
+  /** Optional rich data for Singapore areas */
   freeZones?: FreeZone[];
   techHubs?: TechHub[];
   majorEmployers?: string[];
@@ -40,17 +38,14 @@ export interface City {
 export interface Region {
   slug: string;
   name: string;
-  nameAr: string;
   cities: City[];
 }
 
 export interface Country {
   slug: string;
   name: string;
-  nameAr: string;
   demonym: string;
   metaDescription: string;
-  metaDescriptionAr: string;
   regions: Region[];
 }
 
@@ -60,578 +55,550 @@ export interface Country {
 
 export const countries: Country[] = [
   // ==========================================================================
-  // UNITED ARAB EMIRATES — 7 Emirates
+  // SINGAPORE — 5 Planning Regions
   // ==========================================================================
   {
-    slug: 'uae',
-    name: 'United Arab Emirates',
-    nameAr: 'الإمارات العربية المتحدة',
-    demonym: 'Emirati',
+    slug: 'singapore',
+    name: 'Singapore',
+    demonym: 'Singaporean',
     metaDescription:
-      'Hire pre-vetted remote developers across all 7 UAE emirates. Top 2% talent from Dubai to Abu Dhabi, matched in 48 hours. Save 40-60% vs local hiring.',
-    metaDescriptionAr: 'وظّف أفضل المطورين عن بعد في جميع إمارات الدولة السبع. أفضل 2% من المواهب من دبي إلى أبوظبي، مطابقة خلال 48 ساعة. وفّر 40-60% مقارنة بالتوظيف المحلي.',
+      'Hire pre-vetted remote developers across Singapore. Top 2% talent from Marina Bay to Jurong, matched in 48 hours. Save 40-60% vs local hiring.',
     regions: [
+      // ----------------------------------------------------------------------
+      // CENTRAL REGION
+      // ----------------------------------------------------------------------
       {
-        slug: 'dubai',
-        name: 'Dubai',
-        nameAr: 'دبي',
-        cities: [
+        slug: 'central-region',
+        name: 'Central Region',
+            cities: [
           {
-            slug: 'dubai',
-            name: 'Dubai',
-            nameAr: 'دبي',
-            population: 3500000,
-            lat: 25.2048,
-            lng: 55.2708,
-            wikipedia: 'https://en.wikipedia.org/wiki/Dubai',
+            slug: 'marina-bay',
+            name: 'Marina Bay',
+                    population: 15000,
+            lat: 1.2814,
+            lng: 103.8585,
+            wikipedia: 'https://en.wikipedia.org/wiki/Marina_Bay,_Singapore',
             description:
-              'Dubai is the business hub of the Middle East, home to DIFC, Dubai Internet City, and Dubai Silicon Oasis. A thriving tech ecosystem with thousands of startups and enterprises makes it the top destination for hiring developers in the region.',
-            descriptionAr: 'دبي هي مركز الأعمال في الشرق الأوسط، وموطن مركز دبي المالي العالمي ومدينة دبي للإنترنت وواحة دبي للسيليكون. تضم منظومة تقنية مزدهرة بآلاف الشركات الناشئة والمؤسسات مما يجعلها الوجهة الأولى لتوظيف المطورين في المنطقة.',
-            image: '/images/dubai/skyline.svg',
-            imageAlt: 'Dubai skyline at sunset with Burj Khalifa - hire developers in Dubai UAE',
+              'Marina Bay is Singapore\'s premier financial district, home to Marina Bay Financial Centre, Marina Bay Sands, and the headquarters of major global banks. As the centrepiece of Singapore\'s CBD, it hosts the highest concentration of fintech firms, multinational tech offices, and financial institutions in Southeast Asia.',
+            image: '/images/singapore/marina-bay.svg',
+            imageAlt: 'Marina Bay Singapore skyline - hire developers in Singapore\'s financial district',
             freeZones: [
-              { name: 'Dubai Internet City (DIC)', slug: 'dic', focus: 'Technology and ICT companies — home to Google, Microsoft, LinkedIn, Meta regional HQs' },
-              { name: 'Dubai International Financial Centre (DIFC)', slug: 'difc', focus: 'Fintech, banking, and financial services — 400+ financial firms' },
-              { name: 'Dubai Silicon Oasis (DSO)', slug: 'dso', focus: 'Semiconductor, electronics, and software development — integrated tech park' },
-              { name: 'Dubai Multi Commodities Centre (DMCC)', slug: 'dmcc', focus: 'Commodities trading, blockchain, and Web3 companies — 22,000+ member companies' },
-              { name: 'Dubai Media City (DMC)', slug: 'dmc', focus: 'Media, marketing, and digital content — CNN, Reuters, BBC regional offices' },
-              { name: 'Dubai Design District (d3)', slug: 'd3', focus: 'Design, fashion, and creative tech companies' },
+              { name: 'Marina Bay Financial Centre', slug: 'mbfc', focus: 'Financial services, fintech, and global banking headquarters' },
+              { name: 'One Raffles Quay', slug: 'one-raffles-quay', focus: 'Grade A office space for banking, tech, and professional services' },
             ],
             techHubs: [
-              { name: 'Dubai Internet City', description: 'The Middle East\'s largest ICT hub with 1,600+ companies and 30,000+ knowledge workers' },
-              { name: 'Dubai Silicon Oasis', description: 'Integrated technology park with co-working spaces, incubators, and Rochester Institute of Technology campus' },
-              { name: 'DIFC Innovation Hub', description: 'Largest fintech accelerator in the MENA region, housing 500+ innovation-focused companies' },
-              { name: 'Dubai Marina & JLT', description: 'Dense cluster of tech agencies, SaaS companies, and remote-first startups near DMCC free zone' },
-              { name: 'in5 Tech', description: 'Government-backed innovation center supporting tech startups with funding and mentorship' },
+              { name: 'Marina Bay Financial Centre', description: 'Three-tower office complex housing DBS, Standard Chartered, Microsoft, and leading fintech firms' },
+              { name: 'Asia Square', description: 'Premium Grade A office towers hosting Google\'s APAC headquarters and major tech companies' },
+              { name: 'One Raffles Quay', description: 'Iconic waterfront office complex home to JP Morgan, Barclays, and tech-forward financial firms' },
             ],
-            majorEmployers: ['Emirates Group', 'Careem (Uber)', 'Noon', 'Souq (Amazon)', 'DEWA', 'Talabat', 'Dubizzle', 'Property Finder', 'Kitopi', 'Majid Al Futtaim'],
+            majorEmployers: ['DBS Bank', 'Standard Chartered', 'Microsoft', 'Google (APAC HQ)', 'JP Morgan', 'Barclays', 'ByteDance', 'Stripe'],
             hiringFacts: [
-              'Dubai is home to 30,000+ active tech companies',
-              'Sunday-Thursday work week (UAE standard)',
-              'Zero personal income tax for all residents',
-              'GMT+4 timezone bridges Asia, Europe, and Africa business hours',
-              '200+ nationalities live and work in Dubai',
-              '95%+ internet penetration rate — highest in the MENA region',
-              'Golden Visa available for tech professionals and entrepreneurs',
-              'GITEX Global — world\'s largest tech show — is held annually in Dubai',
+              'Marina Bay is Singapore\'s #1 financial district with 200+ financial institutions',
+              'Home to Google\'s Asia-Pacific headquarters at Asia Square',
+              'Average software engineer salary in the CBD: SGD 84,000-130,000/year',
+              'English is the primary business language across all industries',
+              'GMT+8 timezone bridges Asia, Australia, and European business hours',
+              'Singapore ranks #1 in Asia for ease of doing business (World Bank)',
+              '0% capital gains tax for businesses',
+              'Smart Nation initiative drives demand for developers across all sectors',
             ],
           },
           {
-            slug: 'dubai-marina',
-            name: 'Dubai Marina',
-            nameAr: 'دبي مارينا',
-            population: 50000,
-            lat: 25.0805,
-            lng: 55.1403,
-            wikipedia: 'https://en.wikipedia.org/wiki/Dubai_Marina',
+            slug: 'raffles-place',
+            name: 'Raffles Place',
+                    population: 5000,
+            lat: 1.2840,
+            lng: 103.8517,
+            wikipedia: 'https://en.wikipedia.org/wiki/Raffles_Place',
             description:
-              'Dubai Marina is a vibrant waterfront community and one of the most popular residential areas for tech professionals in Dubai. Its proximity to Dubai Internet City and Media City makes it a convenient base for developers and digital workers.',
-            descriptionAr: 'دبي مارينا مجتمع ساحلي نابض بالحياة ومن أكثر المناطق السكنية شعبية بين المتخصصين في التقنية. قربها من مدينة دبي للإنترنت ومدينة دبي للإعلام يجعلها قاعدة مثالية للمطورين والعاملين الرقميين.',
-            hiringFacts: [
-              'Minutes from Dubai Internet City and Dubai Media City',
-              'High concentration of tech professionals and co-working spaces',
-              'Excellent public transport via Dubai Metro and Tram',
-            ],
-          },
-          {
-            slug: 'jumeirah-lake-towers',
-            name: 'Jumeirah Lake Towers',
-            nameAr: 'أبراج بحيرات جميرا',
-            population: 60000,
-            lat: 25.0766,
-            lng: 55.1389,
-            wikipedia: 'https://en.wikipedia.org/wiki/Jumeirah_Lake_Towers',
-            description:
-              'Jumeirah Lake Towers (JLT) is a mixed-use free zone district adjacent to Dubai Marina, housing hundreds of tech companies, software agencies, and IT consultancies. The DMCC Free Zone headquartered here is one of the largest free zones in the UAE.',
-            descriptionAr: 'أبراج بحيرات جميرا (JLT) منطقة متعددة الاستخدامات ومنطقة حرة مجاورة لدبي مارينا، تضم مئات شركات التقنية ووكالات البرمجيات واستشارات تقنية المعلومات. المنطقة الحرة DMCC المقرّة هنا من أكبر المناطق الحرة في الإمارات.',
+              'Raffles Place is the historic heart of Singapore\'s Central Business District and the traditional core of the city\'s financial sector. It houses the headquarters of Singapore\'s largest banks — OCBC, UOB — and global investment banks including Goldman Sachs and JPMorgan.',
             freeZones: [
-              { name: 'DMCC Free Zone', slug: 'dmcc', focus: 'Multi-commodities, blockchain, crypto, and Web3 companies — 22,000+ member companies' },
-            ],
-            hiringFacts: [
-              'One of the most affordable free zone office locations in Dubai',
-              'Home to hundreds of tech startups and software agencies',
-              'DMCC is the world\'s #1 free zone for seven consecutive years',
-            ],
-          },
-          {
-            slug: 'dubai-internet-city',
-            name: 'Dubai Internet City',
-            nameAr: 'مدينة دبي للإنترنت',
-            population: 0,
-            lat: 25.0952,
-            lng: 55.152,
-            wikipedia: 'https://en.wikipedia.org/wiki/Dubai_Internet_City',
-            description:
-              'Dubai Internet City (DIC) is a dedicated technology free zone and the Middle East\'s largest ICT hub. Home to regional offices of Google, Microsoft, LinkedIn, Meta, and hundreds of tech startups, it is the epicenter of software development hiring in the Gulf.',
-            descriptionAr: 'مدينة دبي للإنترنت (DIC) منطقة حرة مخصصة للتكنولوجيا وأكبر مركز لتقنية المعلومات والاتصالات في الشرق الأوسط. تستضيف المكاتب الإقليمية لشركات Google وMicrosoft وLinkedIn وMeta ومئات الشركات الناشئة.',
-            freeZones: [
-              { name: 'Dubai Internet City (DIC)', slug: 'dic', focus: 'Technology, software, and internet companies — 1,600+ registered firms' },
-            ],
-            majorEmployers: ['Google', 'Microsoft', 'LinkedIn', 'Meta', 'SAP', 'Oracle', 'IBM', 'Dell', 'HP', 'Cisco'],
-            hiringFacts: [
-              '1,600+ tech companies in a single free zone',
-              '30,000+ knowledge workers on campus',
-              '100% foreign ownership allowed',
-              'Zero corporate tax for qualifying activities',
-            ],
-          },
-        ],
-      },
-      {
-        slug: 'abu-dhabi',
-        name: 'Abu Dhabi',
-        nameAr: 'أبوظبي',
-        cities: [
-          {
-            slug: 'abu-dhabi',
-            name: 'Abu Dhabi',
-            nameAr: 'أبوظبي',
-            population: 1500000,
-            lat: 24.4539,
-            lng: 54.3773,
-            wikipedia: 'https://en.wikipedia.org/wiki/Abu_Dhabi',
-            description:
-              'Abu Dhabi is the capital of the UAE, a growing hub for AI, fintech, and government technology. Hub71 and ADGM attract global tech talent, while major government digital transformation projects create strong demand for skilled developers.',
-            descriptionAr: 'أبوظبي عاصمة الإمارات ومركز متنامٍ للذكاء الاصطناعي والتكنولوجيا المالية والتقنية الحكومية. يستقطب Hub71 وسوق أبوظبي العالمي المواهب التقنية العالمية، بينما تخلق مشاريع التحول الرقمي الحكومية طلباً قوياً على المطورين المهرة.',
-            image: '/images/abu-dhabi/skyline.svg',
-            imageAlt: 'Abu Dhabi skyline with Etihad Towers - hire developers in Abu Dhabi UAE',
-            freeZones: [
-              { name: 'Abu Dhabi Global Market (ADGM)', slug: 'adgm', focus: 'International financial center — fintech sandbox and innovation hub on Al Maryah Island' },
-              { name: 'twofour54', slug: 'twofour54', focus: 'Media, entertainment, and digital content production zone' },
-              { name: 'Masdar City Free Zone', slug: 'masdar', focus: 'Clean technology, renewable energy, and sustainability-focused startups' },
-              { name: 'Abu Dhabi Airports Free Zone (ADAFZ)', slug: 'adafz', focus: 'Logistics, aviation tech, and trade companies' },
+              { name: 'Raffles Place Financial Hub', slug: 'raffles-place-hub', focus: 'Core CBD for banking, financial services, and enterprise technology' },
             ],
             techHubs: [
-              { name: 'Hub71', description: 'Abu Dhabi\'s global tech ecosystem backed by Mubadala — 200+ startups, $2B+ in collective valuation' },
-              { name: 'ADGM', description: 'Fintech regulatory sandbox attracting blockchain, DeFi, and digital banking startups' },
-              { name: 'Masdar City', description: 'World\'s first carbon-neutral city — cleantech, IoT, and sustainability innovation hub' },
-              { name: 'Mohamed bin Zayed University of AI (MBZUAI)', description: 'World\'s first graduate-level AI university, driving Abu Dhabi\'s position as a global AI capital' },
+              { name: 'One Raffles Place', description: 'Landmark office tower in the CBD core, home to financial institutions and enterprise tech firms' },
+              { name: 'Republic Plaza', description: 'One of Singapore\'s tallest buildings housing banks, law firms, and tech consultancies' },
             ],
-            majorEmployers: ['ADNOC', 'Etihad Airways', 'Mubadala', 'G42', 'Abu Dhabi Digital Authority', 'First Abu Dhabi Bank', 'EDGE Group', 'Presight AI', 'Aldar Properties', 'Abu Dhabi Ports'],
+            majorEmployers: ['OCBC Bank', 'UOB', 'Goldman Sachs', 'JPMorgan', 'Credit Suisse', 'Citibank', 'Deutsche Bank', 'McKinsey & Company'],
             hiringFacts: [
-              'Abu Dhabi Digital Authority drives one of the largest gov-tech programs in the MENA region',
-              'Hub71 provides up to $500K in incentives for qualifying tech startups',
-              'G42 and MBZUAI make Abu Dhabi a leading AI research center globally',
-              'ADGM is the first jurisdiction in the MENA region with a comprehensive digital assets framework',
-              'Golden Visa program for tech professionals, researchers, and entrepreneurs',
+              'Raffles Place is the traditional financial heart of Singapore since the 1800s',
+              'Home to SGX (Singapore Exchange) — Southeast Asia\'s largest stock exchange',
+              'High demand for fintech, quantitative developers, and enterprise software engineers',
+              'Directly connected by MRT to all major residential and business hubs',
             ],
           },
           {
-            slug: 'al-ain',
-            name: 'Al Ain',
-            nameAr: 'العين',
-            population: 766936,
-            lat: 24.1917,
-            lng: 55.7606,
-            wikipedia: 'https://en.wikipedia.org/wiki/Al_Ain',
+            slug: 'orchard',
+            name: 'Orchard',
+                    population: 10000,
+            lat: 1.3048,
+            lng: 103.8318,
+            wikipedia: 'https://en.wikipedia.org/wiki/Orchard_Road',
             description:
-              'Al Ain is the UAE\'s fourth-largest city and an important educational center, home to UAE University. Known as the Garden City, it has a growing tech community supported by government initiatives and university research programs.',
-            descriptionAr: 'العين رابع أكبر مدينة في الإمارات ومركز تعليمي مهم يضم جامعة الإمارات. تُعرف بمدينة الحدائق ولديها مجتمع تقني متنامٍ تدعمه المبادرات الحكومية وبرامج البحث الجامعية.',
-          },
-          {
-            slug: 'masdar-city',
-            name: 'Masdar City',
-            nameAr: 'مدينة مصدر',
-            population: 1300,
-            lat: 24.4281,
-            lng: 54.6165,
-            wikipedia: 'https://en.wikipedia.org/wiki/Masdar_City',
-            description:
-              'Masdar City is a pioneering sustainable urban development and clean technology cluster in Abu Dhabi. It hosts the Masdar Institute of Science and Technology, numerous green-tech startups, and the headquarters of the International Renewable Energy Agency (IRENA).',
-            descriptionAr: 'مدينة مصدر مشروع حضري مستدام رائد ومجمع للتكنولوجيا النظيفة في أبوظبي. تستضيف معهد مصدر للعلوم والتكنولوجيا والعديد من الشركات الناشئة في التقنية الخضراء ومقر الوكالة الدولية للطاقة المتجددة (IRENA).',
-            freeZones: [
-              { name: 'Masdar City Free Zone', slug: 'masdar', focus: 'Clean technology, renewable energy, IoT, and sustainability startups' },
+              'Orchard is Singapore\'s iconic shopping and lifestyle belt, but it is also a significant business hub. Home to numerous co-working spaces, creative agencies, adtech firms, and the regional offices of consumer tech companies, Orchard blends retail innovation with tech entrepreneurship.',
+            techHubs: [
+              { name: 'Shaw Centre & Ngee Ann City', description: 'Mixed-use towers housing co-working spaces, adtech companies, and creative agencies' },
+              { name: 'Orchard Central', description: 'Hub for digital marketing agencies, UX studios, and consumer tech startups' },
             ],
-            majorEmployers: ['IRENA', 'Siemens', 'Masdar (Abu Dhabi Future Energy)', 'Khalifa University'],
+            majorEmployers: ['WeWork Orchard', 'JustCo', 'Various creative and adtech agencies', 'Retail tech startups'],
             hiringFacts: [
-              'Headquarters of the International Renewable Energy Agency (IRENA)',
-              'Focus on cleantech, IoT sensors, and smart city applications',
-              'Integrated with Khalifa University for research collaborations',
+              'Growing cluster of adtech, retail tech, and consumer app companies',
+              'Multiple co-working spaces catering to startups and freelancers',
+              'Strong presence of digital marketing and UX/UI design agencies',
             ],
           },
-        ],
-      },
-      {
-        slug: 'sharjah',
-        name: 'Sharjah',
-        nameAr: 'الشارقة',
-        cities: [
           {
-            slug: 'sharjah',
-            name: 'Sharjah',
-            nameAr: 'الشارقة',
-            population: 1400000,
-            lat: 25.3463,
-            lng: 55.4209,
-            wikipedia: 'https://en.wikipedia.org/wiki/Sharjah_(city)',
+            slug: 'tanjong-pagar',
+            name: 'Tanjong Pagar',
+                    population: 20000,
+            lat: 1.2764,
+            lng: 103.8465,
+            wikipedia: 'https://en.wikipedia.org/wiki/Tanjong_Pagar',
             description:
-              'Sharjah is the cultural capital of the UAE and the third-largest emirate by population. With the Sharjah Research Technology and Innovation Park (SRTIP) and multiple free zones, it offers cost-effective options for tech companies looking to hire developers near Dubai.',
-            descriptionAr: 'الشارقة العاصمة الثقافية للإمارات وثالث أكبر إمارة من حيث عدد السكان. مع وجود مجمع الشارقة للبحوث والتكنولوجيا والابتكار والعديد من المناطق الحرة، توفر خيارات فعّالة من حيث التكلفة لشركات التقنية الباحثة عن توظيف مطورين بالقرب من دبي.',
-            image: '/images/locations/sharjah.svg',
-            imageAlt: 'Sharjah UAE - cultural capital and tech hub for hiring developers',
+              'Tanjong Pagar is a CBD extension district home to Tanjong Pagar Centre — Singapore\'s tallest building — and a growing cluster of tech companies, startups, and venture capital firms. Its blend of heritage shophouses and modern skyscrapers makes it a vibrant base for tech talent.',
+            image: '/images/singapore/cbd.svg',
+            imageAlt: 'Tanjong Pagar Singapore - CBD extension with tech companies and startups',
+            techHubs: [
+              { name: 'Tanjong Pagar Centre', description: 'Singapore\'s tallest building (290m) housing WeWork, tech firms, and the Guoco Tower co-working hub' },
+              { name: 'AXA Tower & Mapletree Business City', description: 'Large-format offices near the CBD hosting enterprise tech and SaaS companies' },
+            ],
+            majorEmployers: ['Tencent', 'Sea Group (regional)', 'Visa', 'WeWork', 'Various VC-backed startups'],
+            hiringFacts: [
+              'Tanjong Pagar Centre (Guoco Tower) is Singapore\'s tallest building at 290 metres',
+              'Growing hub for fintech startups and venture capital firms',
+              'Heritage shophouses converted into trendy startup offices and co-working spaces',
+              'Excellent connectivity — Tanjong Pagar MRT station is on the East-West Line',
+            ],
+          },
+          {
+            slug: 'bugis',
+            name: 'Bugis',
+                    population: 15000,
+            lat: 1.3009,
+            lng: 103.8558,
+            wikipedia: 'https://en.wikipedia.org/wiki/Bugis,_Singapore',
+            description:
+              'Bugis is a cultural and commercial district in the heart of Singapore, rapidly emerging as a tech hub. The area is home to the government\'s technology offices, multiple co-working spaces, and a vibrant community of developers and digital creators drawn by its central location and lively atmosphere.',
+            techHubs: [
+              { name: 'Bugis Junction & Bugis+', description: 'Mixed-use complexes with co-working spaces and tech company offices' },
+              { name: 'GovTech Hive', description: 'Singapore Government Technology Agency\'s innovation space for digital government services' },
+            ],
+            majorEmployers: ['GovTech Singapore', 'Various tech startups', 'Digital agencies', 'Co-working operators'],
+            hiringFacts: [
+              'Home to GovTech Singapore — the agency driving Smart Nation digital services',
+              'Central location with two MRT lines (East-West and Downtown)',
+              'Growing community of indie developers, digital creators, and startup founders',
+              'Affordable office space compared to Marina Bay and Raffles Place',
+            ],
+          },
+          {
+            slug: 'one-north',
+            name: 'one-north',
+                    population: 10000,
+            lat: 1.2996,
+            lng: 103.7873,
+            wikipedia: 'https://en.wikipedia.org/wiki/One-north',
+            description:
+              'one-north is Singapore\'s premier science, technology, and innovation district. Spanning 200 hectares, it houses Fusionopolis (ICT and media), Biopolis (biomedical sciences), LaunchPad (startups), and Block71 — one of the world\'s most tightly packed startup ecosystems. It is the epicentre of deep tech and R&D hiring in Singapore.',
+            image: '/images/singapore/one-north.svg',
+            imageAlt: 'one-north Singapore - Fusionopolis and Biopolis tech and science park',
             freeZones: [
-              { name: 'Sharjah Media City (Shams)', slug: 'shams', focus: 'Media, digital marketing, IT, and e-commerce companies — 100% foreign ownership' },
-              { name: 'Sharjah Research Technology and Innovation Park (SRTI Park)', slug: 'srti-park', focus: 'Research-driven tech companies, university collaborations, and deep-tech startups' },
-              { name: 'Hamriyah Free Zone', slug: 'hamriyah', focus: 'Manufacturing, logistics, and industrial tech companies' },
-              { name: 'Sharjah Airport International Free Zone (SAIF Zone)', slug: 'saif', focus: 'Trade, logistics, and commercial enterprises' },
+              { name: 'one-north Innovation District', slug: 'one-north-district', focus: 'Science, technology, and R&D — home to Fusionopolis, Biopolis, and 400+ companies' },
             ],
             techHubs: [
-              { name: 'SRTI Park', description: 'Sharjah\'s research and technology park — partnerships with University of Sharjah and American University of Sharjah' },
-              { name: 'Sharjah University City', description: 'Cluster of 16+ universities producing thousands of IT and engineering graduates annually' },
-              { name: 'Shams Free Zone', description: 'One of the most affordable free zones in the UAE — popular with remote-first tech companies' },
+              { name: 'Fusionopolis', description: 'Singapore\'s flagship ICT and media R&D hub — home to A*STAR research institutes and leading tech companies' },
+              { name: 'Biopolis', description: 'World-class biomedical research hub with 2,000+ scientists across seven research institutes' },
+              { name: 'LaunchPad @ one-north', description: 'JTC\'s startup incubator with 800+ startups and entrepreneurs, affordable co-working and office space' },
+              { name: 'Block71', description: 'Legendary startup hub dubbed the "world\'s most tightly packed entrepreneurial ecosystem" — 250+ startups in a single block' },
             ],
-            majorEmployers: ['Bee\'ah', 'Sharjah Electricity and Water Authority', 'Air Arabia', 'University of Sharjah', 'American University of Sharjah'],
+            majorEmployers: ['A*STAR', 'Grab', 'Shopee (Sea Group)', 'Razer', 'Acronis', 'Garena', 'Ubisoft Singapore', 'Procter & Gamble Innovation Centre'],
             hiringFacts: [
-              '30-40% lower office rents compared to Dubai',
-              '20-minute drive to Dubai Internet City',
-              'University City produces thousands of STEM graduates annually',
-              'Shams free zone offers licenses from AED 5,750/year — among the cheapest in the UAE',
-              'No personal or corporate income tax',
+              'one-north houses 400+ companies and 50,000+ workers across science and tech',
+              'Block71 is home to 250+ startups — one of the world\'s densest startup ecosystems',
+              'A*STAR operates 11 research institutes focused on AI, cybersecurity, and data science',
+              'Grab and Shopee — Southeast Asia\'s two largest tech unicorns — are headquartered here',
+              'Average deep tech engineer salary: SGD 90,000-150,000/year',
+              'Fusionopolis houses the Infocomm Media Development Authority (IMDA)',
+            ],
+          },
+          {
+            slug: 'buona-vista',
+            name: 'Buona Vista',
+                    population: 15000,
+            lat: 1.3073,
+            lng: 103.7905,
+            wikipedia: 'https://en.wikipedia.org/wiki/Buona_Vista,_Singapore',
+            description:
+              'Buona Vista is adjacent to one-north and serves as the gateway to Singapore\'s science and technology corridor. The area benefits from proximity to the National University of Singapore (NUS) and is home to many tech workers, research professionals, and startup founders.',
+            techHubs: [
+              { name: 'The Star Vista & Rochester Park', description: 'Commercial cluster near one-north with restaurants, offices, and co-working spaces popular with tech workers' },
+              { name: 'NUS Enterprise', description: 'National University of Singapore\'s entrepreneurship centre supporting deep-tech startups and university spin-offs' },
+            ],
+            majorEmployers: ['National University of Singapore', 'NUS Enterprise spin-offs', 'Various one-north companies', 'Research institutes'],
+            hiringFacts: [
+              'Adjacent to one-north — Singapore\'s largest science and tech park',
+              'Close to NUS — ranked #1 university in Asia (QS Rankings)',
+              'Buona Vista MRT interchange connects the Circle and East-West Lines',
+              'Popular residential area for tech professionals working at one-north, NUS, and NTU',
             ],
           },
         ],
       },
+
+      // ----------------------------------------------------------------------
+      // EAST REGION
+      // ----------------------------------------------------------------------
       {
-        slug: 'ajman',
-        name: 'Ajman',
-        nameAr: 'عجمان',
-        cities: [
+        slug: 'east-region',
+        name: 'East Region',
+            cities: [
           {
-            slug: 'ajman',
-            name: 'Ajman',
-            nameAr: 'عجمان',
-            population: 540000,
-            lat: 25.4052,
-            lng: 55.5136,
-            wikipedia: 'https://en.wikipedia.org/wiki/Ajman',
+            slug: 'tampines',
+            name: 'Tampines',
+                    population: 260000,
+            lat: 1.3496,
+            lng: 103.9568,
+            wikipedia: 'https://en.wikipedia.org/wiki/Tampines',
             description:
-              'Ajman is the smallest emirate by area but has a rapidly growing economy with competitive free zone offerings. The Ajman Free Zone attracts SMEs and tech startups with affordable licensing, making it a cost-effective base for development teams.',
-            descriptionAr: 'عجمان أصغر إمارة مساحةً لكنها تتمتع باقتصاد سريع النمو مع عروض مناطق حرة تنافسية. تجذب المنطقة الحرة بعجمان الشركات الصغيرة والمتوسطة والشركات التقنية الناشئة بتراخيص بأسعار معقولة.',
-            image: '/images/locations/ajman.svg',
-            imageAlt: 'Ajman UAE - affordable free zone for tech startups and SMEs',
+              'Tampines is one of Singapore\'s largest and most established residential towns and a designated regional centre in the east. It is a major employment hub with Tampines Concourse, numerous corporate offices, and a thriving community of tech professionals living in the area.',
+            techHubs: [
+              { name: 'Tampines Concourse', description: 'Business hub in the east with corporate offices, government agencies, and IT companies' },
+              { name: 'Our Tampines Hub', description: 'Singapore\'s largest integrated community hub — serves as a model for Smart Nation initiatives' },
+            ],
+            majorEmployers: ['NTUC Enterprise', 'CPIB', 'Various SME tech companies', 'Retail and logistics tech firms'],
+            hiringFacts: [
+              'Tampines is a designated URA regional centre — the largest in east Singapore',
+              'Home to many tech professionals who commute to Changi Business Park and the CBD',
+              'Our Tampines Hub showcases Singapore\'s Smart Nation community technology',
+              'Well-served by the East-West and Downtown MRT Lines',
+            ],
+          },
+          {
+            slug: 'changi-business-park',
+            name: 'Changi Business Park',
+                    population: 5000,
+            lat: 1.3340,
+            lng: 103.9670,
+            wikipedia: 'https://en.wikipedia.org/wiki/Changi_Business_Park',
+            description:
+              'Changi Business Park (CBP) is a major technology and business hub in eastern Singapore, home to the regional offices of global IT companies including IBM, HP, Infosys, and CGI. Its proximity to Changi Airport and excellent connectivity make it a preferred location for tech operations centres and software development teams.',
+            image: '/images/singapore/changi.svg',
+            imageAlt: 'Changi Business Park Singapore - tech hub with IBM, HP, and Infosys offices',
             freeZones: [
-              { name: 'Ajman Free Zone (AFZ)', slug: 'afz', focus: 'SMEs, tech startups, and e-commerce — one of the most affordable free zones in the UAE' },
-              { name: 'Ajman Media City Free Zone', slug: 'ajman-media', focus: 'Digital media, IT services, and freelancer licenses' },
+              { name: 'Changi Free Trade Zone', slug: 'changi-ftz', focus: 'Logistics, air cargo, and trade-related technology companies near Changi Airport' },
             ],
+            techHubs: [
+              { name: 'Changi Business Park', description: 'Major business park with 70+ buildings hosting global tech companies, IT services firms, and shared services centres' },
+              { name: 'Singapore Changi Airport (T5 Development)', description: 'World\'s best airport driving aviation tech, logistics AI, and smart infrastructure projects' },
+            ],
+            majorEmployers: ['IBM', 'HP', 'Infosys', 'CGI', 'Changi Airport Group', 'DXC Technology', 'Honeywell', 'Micron Technology'],
             hiringFacts: [
-              'Among the most affordable business setup costs in the UAE',
-              '30 minutes from Dubai and Sharjah tech hubs',
-              'Ajman Free Zone offers flexi-desk licenses for remote teams',
-              'Growing digital infrastructure and smart city initiatives',
+              'Changi Business Park houses 70+ buildings with 85,000+ workers',
+              'IBM, HP, Infosys, and CGI operate major development centres here',
+              'Adjacent to Changi Airport — the world\'s best airport (Skytrax)',
+              'Strong demand for enterprise Java, cloud, and DevOps engineers',
+              'Changi Free Trade Zone supports logistics tech and supply chain innovation',
+            ],
+          },
+          {
+            slug: 'paya-lebar',
+            name: 'Paya Lebar',
+                    population: 30000,
+            lat: 1.3181,
+            lng: 103.8912,
+            wikipedia: 'https://en.wikipedia.org/wiki/Paya_Lebar',
+            description:
+              'Paya Lebar is rapidly transforming into a vibrant commercial hub with the opening of Paya Lebar Quarter (PLQ) — a mixed-use development that has attracted tech companies, media firms, and startups. Singtel\'s corporate headquarters and SPH Media are based here, making it a growing centre for telecoms and media technology.',
+            techHubs: [
+              { name: 'Paya Lebar Quarter (PLQ)', description: 'Three-tower commercial development housing Singtel HQ, co-working spaces, and tech companies' },
+              { name: 'Singapore Post Centre', description: 'Business complex with logistics tech companies and e-commerce operations' },
+            ],
+            majorEmployers: ['Singtel', 'SPH Media', 'Grab (operations)', 'Various tech startups', 'E-commerce companies'],
+            hiringFacts: [
+              'Paya Lebar Quarter (PLQ) opened in 2019 and has rapidly attracted tech tenants',
+              'Singtel — Southeast Asia\'s largest telecoms company — is headquartered here',
+              'MRT interchange connects East-West and Circle Lines for excellent connectivity',
+              'Growing cluster of media tech, adtech, and e-commerce companies',
+            ],
+          },
+          {
+            slug: 'pasir-ris',
+            name: 'Pasir Ris',
+                    population: 150000,
+            lat: 1.3721,
+            lng: 103.9474,
+            wikipedia: 'https://en.wikipedia.org/wiki/Pasir_Ris',
+            description:
+              'Pasir Ris is a large residential town in northeastern Singapore, popular with families and tech professionals working in Changi Business Park and Tampines. The upcoming Cross Island MRT Line will significantly improve connectivity, further boosting its appeal as a home base for developers.',
+            hiringFacts: [
+              'Popular residential area for tech professionals working at Changi Business Park',
+              'Close proximity to Changi Airport and industrial zones',
+              'Cross Island MRT Line (opening mid-2030s) will enhance connectivity',
+              'Affordable housing compared to central Singapore, attracting young tech workers',
+            ],
+          },
+          {
+            slug: 'bedok',
+            name: 'Bedok',
+                    population: 290000,
+            lat: 1.3236,
+            lng: 103.9273,
+            wikipedia: 'https://en.wikipedia.org/wiki/Bedok',
+            description:
+              'Bedok is one of Singapore\'s largest and most mature residential towns, home to nearly 290,000 residents. Its excellent transport links via the East-West and Downtown MRT Lines make it a convenient residential hub for developers working across east and central Singapore.',
+            hiringFacts: [
+              'One of Singapore\'s largest residential towns with 290,000+ residents',
+              'Served by both East-West and Downtown MRT Lines',
+              'Many tech professionals live in Bedok and commute to Changi Business Park or the CBD',
+              'Bedok Town Centre is a thriving commercial hub with growing office space',
             ],
           },
         ],
       },
+
+      // ----------------------------------------------------------------------
+      // NORTH REGION
+      // ----------------------------------------------------------------------
       {
-        slug: 'ras-al-khaimah',
-        name: 'Ras Al Khaimah',
-        nameAr: 'رأس الخيمة',
-        cities: [
+        slug: 'north-region',
+        name: 'North Region',
+            cities: [
           {
-            slug: 'ras-al-khaimah',
-            name: 'Ras Al Khaimah',
-            nameAr: 'رأس الخيمة',
-            population: 400000,
-            lat: 25.7895,
-            lng: 55.9432,
-            wikipedia: 'https://en.wikipedia.org/wiki/Ras_Al_Khaimah',
+            slug: 'woodlands',
+            name: 'Woodlands',
+                    population: 250000,
+            lat: 1.4382,
+            lng: 103.7891,
+            wikipedia: 'https://en.wikipedia.org/wiki/Woodlands,_Singapore',
             description:
-              'Ras Al Khaimah (RAK) is the northernmost emirate and one of the fastest-growing in the UAE. The RAK Digital Assets Oasis and free zone ecosystem attract blockchain companies, fintech firms, and software developers seeking a business-friendly environment.',
-            descriptionAr: 'رأس الخيمة الإمارة الأشمالية ومن أسرع الإمارات نمواً. تجذب واحة رأس الخيمة للأصول الرقمية ومنظومة المناطق الحرة شركات البلوك تشين والتكنولوجيا المالية والمطورين الباحثين عن بيئة أعمال مواتية.',
-            image: '/images/locations/ras-al-khaimah.svg',
-            imageAlt: 'Ras Al Khaimah UAE - RAKEZ free zone and growing tech scene',
+              'Woodlands is a major regional centre in northern Singapore, undergoing significant transformation with the Woodlands Regional Centre masterplan. Home to Republic Polytechnic and growing commercial developments, it is being positioned as a key employment hub to reduce reliance on the CBD.',
+            techHubs: [
+              { name: 'Woodlands Regional Centre', description: 'Emerging business hub planned as a northern gateway with new commercial and tech developments' },
+              { name: 'Republic Polytechnic', description: 'Polytechnic producing IT, engineering, and digital media graduates for Singapore\'s tech workforce' },
+            ],
+            majorEmployers: ['Republic Polytechnic', 'SMRT Corporation', 'Various manufacturing and logistics tech companies'],
+            hiringFacts: [
+              'Woodlands Regional Centre is being developed as a major northern employment hub',
+              'Home to Republic Polytechnic producing thousands of IT graduates annually',
+              'Thomson-East Coast MRT Line provides direct connection to the CBD',
+              'Connected to Johor Bahru, Malaysia via the Causeway — cross-border tech talent pool',
+            ],
+          },
+          {
+            slug: 'sembawang',
+            name: 'Sembawang',
+                    population: 100000,
+            lat: 1.4491,
+            lng: 103.8185,
+            wikipedia: 'https://en.wikipedia.org/wiki/Sembawang',
+            description:
+              'Sembawang is a residential town in northern Singapore with a mix of public and private housing. The area has a growing community of tech workers attracted by its quieter environment and improving connectivity via the North-South MRT Line.',
+            hiringFacts: [
+              'Quieter residential town popular with families in the tech sector',
+              'Connected to the CBD via the North-South MRT Line',
+              'Close to the former Sembawang Shipyard and defence tech clusters',
+              'More affordable housing options compared to central Singapore',
+            ],
+          },
+          {
+            slug: 'yishun',
+            name: 'Yishun',
+                    population: 220000,
+            lat: 1.4304,
+            lng: 103.8354,
+            wikipedia: 'https://en.wikipedia.org/wiki/Yishun',
+            description:
+              'Yishun is one of Singapore\'s largest residential towns in the north, with over 220,000 residents. Khoo Teck Puat Hospital and Northpoint City serve as anchors, while the area is home to a growing number of tech professionals attracted by affordable housing and good MRT connectivity.',
+            hiringFacts: [
+              'Over 220,000 residents — one of the most populated towns in the north',
+              'Northpoint City is the largest mall in northern Singapore',
+              'North-South MRT Line provides direct access to the CBD',
+              'Active grassroots tech meetup and coding community',
+            ],
+          },
+        ],
+      },
+
+      // ----------------------------------------------------------------------
+      // NORTH-EAST REGION
+      // ----------------------------------------------------------------------
+      {
+        slug: 'north-east-region',
+        name: 'North-East Region',
+            cities: [
+          {
+            slug: 'sengkang',
+            name: 'Sengkang',
+                    population: 240000,
+            lat: 1.3917,
+            lng: 103.8953,
+            wikipedia: 'https://en.wikipedia.org/wiki/Sengkang',
+            description:
+              'Sengkang is a rapidly growing new town in northeastern Singapore with a young population and strong community of tech professionals. The Sengkang-Punggol corridor is being developed as a tech-forward residential area, with the nearby Punggol Digital District expected to create thousands of tech jobs.',
+            hiringFacts: [
+              'Young and growing population — average age lower than Singapore\'s national average',
+              'Close to the upcoming Punggol Digital District (opening 2024-2025)',
+              'Connected via the North-East MRT Line and Sengkang LRT',
+              'Popular with young tech professionals and families due to newer, affordable housing',
+            ],
+          },
+          {
+            slug: 'punggol',
+            name: 'Punggol',
+                    population: 200000,
+            lat: 1.4051,
+            lng: 103.9024,
+            wikipedia: 'https://en.wikipedia.org/wiki/Punggol',
+            description:
+              'Punggol is Singapore\'s designated "Digital District" and one of the most exciting tech developments in Southeast Asia. The Punggol Digital District (PDD) will house the Singapore Institute of Technology campus, JTC business park, and a cluster of cybersecurity, AI, and digital technology companies. It represents Singapore\'s vision for a future-ready tech ecosystem.',
+            image: '/images/singapore/sentosa.svg',
+            imageAlt: 'Punggol Digital District Singapore - future tech hub for AI and cybersecurity',
             freeZones: [
-              { name: 'RAK Economic Zone (RAKEZ)', slug: 'rakez', focus: 'Multi-sector free zone — 15,000+ companies from 100+ countries, very competitive pricing' },
-              { name: 'RAK Digital Assets Oasis (RAK DAO)', slug: 'rak-dao', focus: 'World\'s first free zone dedicated to digital and virtual asset companies, blockchain, and Web3' },
-              { name: 'RAK International Corporate Centre (RAK ICC)', slug: 'rak-icc', focus: 'International business and holding companies' },
+              { name: 'Punggol Digital District', slug: 'pdd', focus: 'Cybersecurity, AI, digital technology, and Smart Nation projects — integrated with SIT campus' },
             ],
+            techHubs: [
+              { name: 'Punggol Digital District (PDD)', description: 'Singapore\'s first enterprise district with an integrated university campus (SIT), JTC business park, and community facilities' },
+              { name: 'Singapore Institute of Technology (SIT)', description: 'Applied university producing industry-ready graduates in cybersecurity, software engineering, and data science' },
+            ],
+            majorEmployers: ['Singapore Institute of Technology', 'JTC Corporation', 'Cybersecurity companies (upcoming PDD tenants)', 'AI startups'],
             hiringFacts: [
-              'RAKEZ is one of the fastest-growing free zones in the UAE',
-              'RAK DAO is the world\'s first dedicated Web3 and digital assets free zone',
-              'Up to 50% cheaper than Dubai for business setup and operations',
-              'Growing number of blockchain and crypto companies establishing here',
-              'Home to Jebel Jais — the UAE\'s highest peak and eco-tourism destination',
+              'Punggol Digital District (PDD) is Singapore\'s flagship enterprise district for cybersecurity and tech',
+              'SIT will relocate its campus to PDD, creating a live-learn-work-play tech ecosystem',
+              'JTC is developing 100,000 sqm of business space for tech companies in PDD',
+              'Strong government investment in making Punggol a testbed for Smart Nation solutions',
+              'Expected to create over 28,000 jobs when fully developed',
+            ],
+          },
+          {
+            slug: 'hougang',
+            name: 'Hougang',
+                    population: 230000,
+            lat: 1.3612,
+            lng: 103.8863,
+            wikipedia: 'https://en.wikipedia.org/wiki/Hougang',
+            description:
+              'Hougang is one of the oldest and most established residential towns in northeastern Singapore, with a mature community of over 230,000 residents. The area is well-connected to the CBD via the North-East MRT Line and is a popular residential choice for tech professionals working across central and eastern Singapore.',
+            hiringFacts: [
+              'One of northeastern Singapore\'s most established towns with 230,000+ residents',
+              'Direct MRT access to the CBD via the North-East Line',
+              'Affordable alternative to central living for tech workers',
+              'Active community with several tech meetup groups and coders\' communities',
+            ],
+          },
+          {
+            slug: 'serangoon',
+            name: 'Serangoon',
+                    population: 120000,
+            lat: 1.3500,
+            lng: 103.8718,
+            wikipedia: 'https://en.wikipedia.org/wiki/Serangoon',
+            description:
+              'Serangoon is a vibrant residential and commercial district anchored by NEX — one of the largest suburban malls in Singapore. Its MRT interchange (North-East and Circle Lines) makes it a highly accessible residential hub for tech professionals working across different parts of Singapore.',
+            techHubs: [
+              { name: 'NEX Mall & Serangoon Central', description: 'Commercial hub with growing office space and co-working facilities for tech professionals' },
+            ],
+            majorEmployers: ['Various SME tech companies', 'Co-working operators', 'Retail tech firms'],
+            hiringFacts: [
+              'Serangoon MRT is an interchange station connecting Circle and North-East Lines',
+              'NEX is one of the largest suburban malls — a commercial anchor for the northeast',
+              'Growing office and co-working space for tech SMEs and remote workers',
+              'Popular residential area for tech professionals due to excellent connectivity',
             ],
           },
         ],
       },
+
+      // ----------------------------------------------------------------------
+      // WEST REGION
+      // ----------------------------------------------------------------------
       {
-        slug: 'fujairah',
-        name: 'Fujairah',
-        nameAr: 'الفجيرة',
-        cities: [
+        slug: 'west-region',
+        name: 'West Region',
+            cities: [
           {
-            slug: 'fujairah',
-            name: 'Fujairah',
-            nameAr: 'الفجيرة',
-            population: 225000,
-            lat: 25.1288,
-            lng: 56.3265,
-            wikipedia: 'https://en.wikipedia.org/wiki/Fujairah',
+            slug: 'jurong-east',
+            name: 'Jurong East',
+                    population: 85000,
+            lat: 1.3329,
+            lng: 103.7436,
+            wikipedia: 'https://en.wikipedia.org/wiki/Jurong_East',
             description:
-              'Fujairah is the only emirate situated entirely on the Gulf of Oman coast. Its Creative City free zone focuses on media, technology, and creative industries, offering affordable business setup for IT companies and freelance developers.',
-            descriptionAr: 'الفجيرة الإمارة الوحيدة الواقعة بالكامل على ساحل خليج عُمان. تركز منطقتها الحرة Creative City على الإعلام والتكنولوجيا والصناعات الإبداعية، وتقدم تأسيس أعمال بأسعار معقولة لشركات تقنية المعلومات والمطورين المستقلين.',
-            image: '/images/locations/fujairah.svg',
-            imageAlt: 'Fujairah UAE - Creative City free zone for tech and media companies',
+              'Jurong East is being developed into Singapore\'s second CBD through the Jurong Lake District (JLD) masterplan — the largest business district outside the city centre. Home to JTC Corporation headquarters and the upcoming Jurong Innovation District, it is set to become a major tech and innovation hub in western Singapore.',
+            image: '/images/singapore/jurong.svg',
+            imageAlt: 'Jurong East Singapore - Jurong Lake District future second CBD',
             freeZones: [
-              { name: 'Fujairah Creative City', slug: 'fujairah-creative', focus: 'Media, technology, creative industries, and IT consulting — popular with freelance developers' },
-              { name: 'Fujairah Free Zone (FFZ)', slug: 'ffz', focus: 'Trade, logistics, and light manufacturing companies' },
+              { name: 'Jurong Innovation District (JID)', slug: 'jid', focus: 'Advanced manufacturing, robotics, Industry 4.0, and engineering innovation' },
+              { name: 'Jurong Port Free Trade Zone', slug: 'jurong-port-ftz', focus: 'Maritime logistics, port technology, and supply chain innovation' },
             ],
+            techHubs: [
+              { name: 'Jurong Innovation District', description: 'JTC\'s integrated innovation district for advanced manufacturing, AI, and robotics — adjacent to NTU' },
+              { name: 'JTC LaunchPad @ Jurong', description: 'Startup and scaleup space in western Singapore for Industry 4.0 and deep tech companies' },
+              { name: 'International Business Park', description: 'Established business park near Jurong East with IT companies, shared services centres, and tech firms' },
+            ],
+            majorEmployers: ['JTC Corporation', 'PSA International', 'Ng Teng Fong General Hospital', 'Various Industry 4.0 companies'],
             hiringFacts: [
-              'Creative City offers some of the UAE\'s most affordable freelance licenses',
-              'Strategic location on the Gulf of Oman — outside the Strait of Hormuz',
-              'Growing data center infrastructure due to submarine cable landing points',
+              'Jurong Lake District will be Singapore\'s largest business district outside the CBD',
+              'Jurong Innovation District is being developed adjacent to NTU for industry-university collaboration',
+              'International Business Park houses hundreds of tech and IT services companies',
+              'High-Speed Rail terminal (future) will connect to Kuala Lumpur',
+              'Strong demand for robotics, IoT, and advanced manufacturing engineers',
             ],
           },
-        ],
-      },
-      {
-        slug: 'umm-al-quwain',
-        name: 'Umm Al Quwain',
-        nameAr: 'أم القيوين',
-        cities: [
           {
-            slug: 'umm-al-quwain',
-            name: 'Umm Al Quwain',
-            nameAr: 'أم القيوين',
-            population: 80000,
-            lat: 25.5647,
-            lng: 55.5554,
-            wikipedia: 'https://en.wikipedia.org/wiki/Umm_Al_Quwain',
+            slug: 'jurong-west',
+            name: 'Jurong West',
+                    population: 300000,
+            lat: 1.3404,
+            lng: 103.7090,
+            wikipedia: 'https://en.wikipedia.org/wiki/Jurong_West',
             description:
-              'Umm Al Quwain is a tranquil emirate offering one of the most affordable business environments in the UAE. Its free trade zone provides cost-effective licensing for small tech companies and remote development teams.',
-            descriptionAr: 'أم القيوين إمارة هادئة تقدم واحدة من أكثر بيئات الأعمال معقولية في الإمارات. توفر منطقتها الحرة للتجارة تراخيص فعّالة من حيث التكلفة لشركات التقنية الصغيرة وفرق التطوير عن بعد.',
-            image: '/images/locations/umm-al-quwain.svg',
-            imageAlt: 'Umm Al Quwain UAE - affordable emerging digital hub',
+              'Jurong West is the most populated town in western Singapore with over 300,000 residents. It combines residential living with proximity to Jurong Industrial Estate and the Tuas industrial zone, making it a residential base for engineers and tech professionals working in advanced manufacturing, logistics, and industrial technology.',
             freeZones: [
-              { name: 'Umm Al Quwain Free Trade Zone (UAQFTZ)', slug: 'uaqftz', focus: 'Trade, small businesses, and cost-effective company formation' },
+              { name: 'Tuas Mega Port (upcoming)', slug: 'tuas-megaport', focus: 'World\'s largest fully automated port — maritime tech, automation, and logistics AI' },
             ],
             hiringFacts: [
-              'Most affordable emirate for business setup in the UAE',
-              '45 minutes from Dubai — accessible for day trips',
-              'Quiet environment suited for focused development work',
-              'Growing government investment in digital infrastructure',
+              'Most populated town in western Singapore with 300,000+ residents',
+              'Close to Jurong Industrial Estate — Singapore\'s largest industrial zone',
+              'Tuas Mega Port (opening in phases) will drive demand for automation and logistics tech',
+              'Affordable housing popular with tech professionals working in the west',
             ],
           },
-        ],
-      },
-    ],
-  },
-
-  // ==========================================================================
-  // SAUDI ARABIA — 3 Key Regions
-  // ==========================================================================
-  {
-    slug: 'saudi-arabia',
-    name: 'Saudi Arabia',
-    nameAr: 'المملكة العربية السعودية',
-    demonym: 'Saudi',
-    metaDescription:
-      'Hire pre-vetted remote developers in Saudi Arabia. Top 2% talent in Riyadh, Jeddah, and Dammam for Vision 2030 projects. Get matched in 48 hours.',
-    metaDescriptionAr: 'وظّف أفضل المطورين عن بعد في السعودية. أفضل 2% من المواهب في الرياض وجدة والدمام لمشاريع رؤية 2030. مطابقة خلال 48 ساعة.',
-    regions: [
-      {
-        slug: 'riyadh-region',
-        name: 'Riyadh Region',
-        nameAr: 'منطقة الرياض',
-        cities: [
           {
-            slug: 'riyadh',
-            name: 'Riyadh',
-            nameAr: 'الرياض',
-            population: 7600000,
-            lat: 24.7136,
-            lng: 46.6753,
-            wikipedia: 'https://en.wikipedia.org/wiki/Riyadh',
+            slug: 'clementi',
+            name: 'Clementi',
+                    population: 80000,
+            lat: 1.3162,
+            lng: 103.7649,
+            wikipedia: 'https://en.wikipedia.org/wiki/Clementi,_Singapore',
             description:
-              'Riyadh is the capital of Saudi Arabia and the largest city in the Gulf region. With Vision 2030 driving massive digital transformation, the city is home to NEOM Tech, Saudi Data and AI Authority (SDAIA), and a booming startup ecosystem fueled by billions in government tech investment.',
-            descriptionAr: 'الرياض عاصمة المملكة العربية السعودية وأكبر مدينة في منطقة الخليج. مع رؤية 2030 التي تقود تحولاً رقمياً ضخماً، تضم المدينة NEOM Tech وهيئة البيانات والذكاء الاصطناعي السعودية (سدايا) ومنظومة شركات ناشئة مزدهرة مدعومة بمليارات الاستثمارات الحكومية في التقنية.',
-          },
-        ],
-      },
-      {
-        slug: 'makkah-region',
-        name: 'Makkah Region',
-        nameAr: 'منطقة مكة المكرمة',
-        cities: [
-          {
-            slug: 'jeddah',
-            name: 'Jeddah',
-            nameAr: 'جدة',
-            population: 4600000,
-            lat: 21.4858,
-            lng: 39.1925,
-            wikipedia: 'https://en.wikipedia.org/wiki/Jeddah',
-            description:
-              'Jeddah is Saudi Arabia\'s commercial capital and the gateway to Makkah, with a thriving business district along the Corniche. The city\'s tech scene is growing rapidly with co-working spaces, accelerators, and a strong demand for full-stack developers and mobile engineers.',
-            descriptionAr: 'جدة العاصمة التجارية للمملكة العربية السعودية وبوابة مكة المكرمة. ينمو المشهد التقني في المدينة بسرعة مع مساحات العمل المشتركة والمسرّعات والطلب القوي على مطوري Full-Stack ومهندسي تطبيقات الجوال.',
-          },
-        ],
-      },
-      {
-        slug: 'eastern-province',
-        name: 'Eastern Province',
-        nameAr: 'المنطقة الشرقية',
-        cities: [
-          {
-            slug: 'dammam',
-            name: 'Dammam',
-            nameAr: 'الدمام',
-            population: 1200000,
-            lat: 26.4207,
-            lng: 50.0888,
-            wikipedia: 'https://en.wikipedia.org/wiki/Dammam',
-            description:
-              'Dammam is the capital of the Eastern Province and the center of Saudi Arabia\'s oil industry. The city has a growing tech sector driven by Saudi Aramco\'s digital initiatives, KFUPM research, and increasing demand for IoT, AI, and enterprise software developers.',
-            descriptionAr: 'الدمام عاصمة المنطقة الشرقية ومركز صناعة النفط في السعودية. تشهد المدينة نمواً في القطاع التقني مدفوعاً بمبادرات أرامكو الرقمية وأبحاث جامعة الملك فهد للبترول والمعادن والطلب المتزايد على مطوري IoT والذكاء الاصطناعي وبرمجيات المؤسسات.',
+              'Clementi is a mature residential town adjacent to the National University of Singapore (NUS) — Asia\'s top-ranked university. The area has a strong academic and research ecosystem, making it a natural residential hub for researchers, data scientists, and tech professionals connected to the university and one-north.',
+            techHubs: [
+              { name: 'National University of Singapore (NUS)', description: 'Asia\'s #1 university (QS Rankings) with world-class computer science, AI, and engineering programs' },
+              { name: 'NUS Enterprise / BLOCK71', description: 'University-linked startup ecosystem producing dozens of deep-tech spin-offs annually' },
+            ],
+            majorEmployers: ['National University of Singapore', 'NUS spin-off companies', 'Research institutes'],
+            hiringFacts: [
+              'Adjacent to NUS — ranked #1 in Asia for computer science and engineering',
+              'NUS produces 2,000+ computing and engineering graduates annually',
+              'Strong ecosystem for AI, cybersecurity, and fintech research commercialisation',
+              'East-West MRT Line provides direct connectivity to one-north and the CBD',
+            ],
           },
           {
-            slug: 'neom',
-            name: 'NEOM',
-            nameAr: 'نيوم',
-            population: 0,
-            lat: 27.95,
-            lng: 35.5833,
-            wikipedia: 'https://en.wikipedia.org/wiki/Neom',
+            slug: 'bukit-batok',
+            name: 'Bukit Batok',
+                    population: 140000,
+            lat: 1.3590,
+            lng: 103.7637,
+            wikipedia: 'https://en.wikipedia.org/wiki/Bukit_Batok',
             description:
-              'NEOM is Saudi Arabia\'s $500 billion megacity project on the Red Sea coast, envisioned as a global hub for innovation and technology. The project demands thousands of developers across AI, robotics, smart city infrastructure, and sustainable tech.',
-            descriptionAr: 'نيوم مشروع المدينة السعودية الضخم بقيمة 500 مليار دولار على ساحل البحر الأحمر، يُتصوَّر كمركز عالمي للابتكار والتكنولوجيا. يتطلب المشروع آلاف المطورين في مجالات الذكاء الاصطناعي والروبوتات والبنية التحتية للمدن الذكية والتقنية المستدامة.',
-          },
-        ],
-      },
-    ],
-  },
-
-  // ==========================================================================
-  // QATAR
-  // ==========================================================================
-  {
-    slug: 'qatar',
-    name: 'Qatar',
-    nameAr: 'قطر',
-    demonym: 'Qatari',
-    metaDescription:
-      'Hire pre-vetted remote developers in Qatar. Top 2% talent in Doha for Qatar National Vision 2030 projects. Get matched in 48 hours, $0 upfront.',
-    metaDescriptionAr: 'وظّف أفضل المطورين عن بعد في قطر. أفضل 2% من المواهب في الدوحة لمشاريع رؤية قطر الوطنية 2030. مطابقة خلال 48 ساعة، $0 مقدماً.',
-    regions: [
-      {
-        slug: 'qatar',
-        name: 'Qatar',
-        nameAr: 'قطر',
-        cities: [
-          {
-            slug: 'doha',
-            name: 'Doha',
-            nameAr: 'الدوحة',
-            population: 2382000,
-            lat: 25.2854,
-            lng: 51.531,
-            wikipedia: 'https://en.wikipedia.org/wiki/Doha',
-            description:
-              'Doha is the capital and economic hub of Qatar, home to Qatar Science & Technology Park, Qatar Financial Centre, and a rapidly growing tech ecosystem. The city\'s National Vision 2030 and post-FIFA 2022 digital infrastructure create strong demand for software developers.',
-            descriptionAr: 'الدوحة عاصمة قطر ومركزها الاقتصادي، موطن واحة قطر للعلوم والتكنولوجيا ومركز قطر المالي ومنظومة تقنية سريعة النمو. تخلق رؤية قطر الوطنية 2030 والبنية التحتية الرقمية بعد كأس العالم 2022 طلباً قوياً على مطوري البرمجيات.',
-          },
-        ],
-      },
-    ],
-  },
-
-  // ==========================================================================
-  // BAHRAIN
-  // ==========================================================================
-  {
-    slug: 'bahrain',
-    name: 'Bahrain',
-    nameAr: 'البحرين',
-    demonym: 'Bahraini',
-    metaDescription:
-      'Hire pre-vetted remote developers in Bahrain. Top 2% talent in Manama\'s fintech ecosystem. Get matched in 48 hours, $0 until you hire.',
-    metaDescriptionAr: 'وظّف أفضل المطورين عن بعد في البحرين. أفضل 2% من المواهب في منظومة التكنولوجيا المالية بالمنامة. مطابقة خلال 48 ساعة، $0 حتى التوظيف.',
-    regions: [
-      {
-        slug: 'bahrain',
-        name: 'Bahrain',
-        nameAr: 'البحرين',
-        cities: [
-          {
-            slug: 'manama',
-            name: 'Manama',
-            nameAr: 'المنامة',
-            population: 411000,
-            lat: 26.2235,
-            lng: 50.5876,
-            wikipedia: 'https://en.wikipedia.org/wiki/Manama',
-            description:
-              'Manama is the capital of Bahrain and a leading fintech hub in the Middle East. Home to Bahrain FinTech Bay, the Central Bank of Bahrain\'s regulatory sandbox, and AWS\'s regional infrastructure, the city attracts developers specializing in financial technology and cloud services.',
-            descriptionAr: 'المنامة عاصمة البحرين ومركز رائد للتكنولوجيا المالية في الشرق الأوسط. تستضيف Bahrain FinTech Bay والبيئة التنظيمية التجريبية لمصرف البحرين المركزي والبنية التحتية الإقليمية لـ AWS، مما يجذب المطورين المتخصصين في التقنية المالية والخدمات السحابية.',
-          },
-        ],
-      },
-    ],
-  },
-
-  // ==========================================================================
-  // OMAN
-  // ==========================================================================
-  {
-    slug: 'oman',
-    name: 'Oman',
-    nameAr: 'عُمان',
-    demonym: 'Omani',
-    metaDescription:
-      'Hire pre-vetted remote developers in Oman. Top 2% talent in Muscat for Oman Vision 2040 digital projects. Get matched in 48 hours.',
-    metaDescriptionAr: 'وظّف أفضل المطورين عن بعد في عُمان. أفضل 2% من المواهب في مسقط لمشاريع رؤية عُمان 2040 الرقمية. مطابقة خلال 48 ساعة.',
-    regions: [
-      {
-        slug: 'oman',
-        name: 'Oman',
-        nameAr: 'عُمان',
-        cities: [
-          {
-            slug: 'muscat',
-            name: 'Muscat',
-            nameAr: 'مسقط',
-            population: 1421000,
-            lat: 23.588,
-            lng: 58.3829,
-            wikipedia: 'https://en.wikipedia.org/wiki/Muscat',
-            description:
-              'Muscat is the capital of the Sultanate of Oman and a steadily growing tech market. The Knowledge Oasis Muscat technology park, Oman Vision 2040 digital initiatives, and a focus on cybersecurity and e-government create increasing demand for skilled developers.',
-            descriptionAr: 'مسقط عاصمة سلطنة عُمان وسوق تقني في نمو مطّرد. يخلق مجمع واحة المعرفة مسقط التقني ومبادرات رؤية عُمان 2040 الرقمية والتركيز على الأمن السيبراني والحكومة الإلكترونية طلباً متزايداً على المطورين المهرة.',
-          },
-        ],
-      },
-    ],
-  },
-
-  // ==========================================================================
-  // KUWAIT
-  // ==========================================================================
-  {
-    slug: 'kuwait',
-    name: 'Kuwait',
-    nameAr: 'الكويت',
-    demonym: 'Kuwaiti',
-    metaDescription:
-      'Hire pre-vetted remote developers in Kuwait. Top 2% talent in Kuwait City for New Kuwait 2035 digital projects. Get matched in 48 hours.',
-    metaDescriptionAr: 'وظّف أفضل المطورين عن بعد في الكويت. أفضل 2% من المواهب في مدينة الكويت لمشاريع كويت جديدة 2035 الرقمية. مطابقة خلال 48 ساعة.',
-    regions: [
-      {
-        slug: 'kuwait',
-        name: 'Kuwait',
-        nameAr: 'الكويت',
-        cities: [
-          {
-            slug: 'kuwait-city',
-            name: 'Kuwait City',
-            nameAr: 'مدينة الكويت',
-            population: 3000000,
-            lat: 29.3759,
-            lng: 47.9774,
-            wikipedia: 'https://en.wikipedia.org/wiki/Kuwait_City',
-            description:
-              'Kuwait City is the capital and economic center of Kuwait, driving the country\'s New Kuwait 2035 vision. The city has a growing fintech and e-commerce sector, with government digital transformation projects fueling demand for full-stack, mobile, and cloud developers.',
-            descriptionAr: 'مدينة الكويت عاصمة الكويت ومركزها الاقتصادي، تقود رؤية كويت جديدة 2035. تشهد المدينة نمواً في قطاعي التكنولوجيا المالية والتجارة الإلكترونية، مع مشاريع التحول الرقمي الحكومية التي تغذي الطلب على مطوري Full-Stack والجوال والحوسبة السحابية.',
+              'Bukit Batok is a well-established residential town in western Singapore with a growing commercial sector. Its location near Jurong East and good connectivity make it an affordable residential base for tech professionals working across the western employment hubs.',
+            hiringFacts: [
+              'Well-connected to Jurong East (future second CBD) via one MRT stop',
+              'Bukit Batok MRT on the North-South Line provides direct CBD access',
+              'Affordable residential option popular with tech workers in the west',
+              'West Mall and Bukit Batok Central provide local commercial and co-working options',
+            ],
           },
         ],
       },

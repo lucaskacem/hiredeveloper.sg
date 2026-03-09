@@ -1,7 +1,7 @@
 'use client';
 
-import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from 'react';
-import { translations, supportedLanguages, type Language } from './translations';
+import { createContext, useContext, useCallback, type ReactNode } from 'react';
+import { translations, type Language } from './translations';
 
 interface LanguageContextValue {
   language: Language;
@@ -10,43 +10,17 @@ interface LanguageContextValue {
   toggleLanguage: () => void;
 }
 
-const validLanguages = supportedLanguages.map((l) => l.code);
-
-function isValidLanguage(lang: string | null): lang is Language {
-  return lang !== null && validLanguages.includes(lang as Language);
-}
-
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>('en');
+  const language: Language = 'en';
 
-  useEffect(() => {
-    const saved = localStorage.getItem('lang');
-    if (isValidLanguage(saved)) {
-      setLanguageState(saved);
-    }
+  const setLanguage = useCallback((_lang: Language) => {
+    // English-only — no-op
   }, []);
 
-  useEffect(() => {
-    const html = document.documentElement;
-    const langConfig = supportedLanguages.find((l) => l.code === language);
-    html.setAttribute('dir', langConfig?.dir ?? 'ltr');
-    html.setAttribute('lang', language);
-    localStorage.setItem('lang', language);
-  }, [language]);
-
-  const setLanguage = useCallback((lang: Language) => {
-    setLanguageState(lang);
-  }, []);
-
-  // Keep toggleLanguage for backwards compatibility (cycles through all languages)
   const toggleLanguage = useCallback(() => {
-    setLanguageState((prev) => {
-      const currentIndex = validLanguages.indexOf(prev);
-      const nextIndex = (currentIndex + 1) % validLanguages.length;
-      return validLanguages[nextIndex];
-    });
+    // English-only — no-op
   }, []);
 
   const t = useCallback(

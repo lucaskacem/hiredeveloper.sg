@@ -8,9 +8,9 @@ import FAQAccordion from './FAQAccordion';
 import InlineCTABanner from '../components/InlineCTABanner';
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions (FAQ) | HireDeveloper.ae',
+  title: 'Frequently Asked Questions (FAQ) | HireDeveloper.sg',
   description:
-    'Answers to the most common questions about HireDeveloper.ae: hiring, costs, developer quality, collaboration, locations, and more. Everything you need to know.',
+    'Answers to the most common questions about HireDeveloper.sg: hiring, costs, developer quality, collaboration, locations, and more. Everything you need to know.',
   robots: { index: true, follow: true },
 };
 
@@ -35,19 +35,19 @@ const faqSections: FAQSection[] = [
     title: 'General',
     items: [
       {
-        question: 'What is HireDeveloper.ae?',
+        question: 'What is HireDeveloper.sg?',
         answer:
-          'HireDeveloper.ae is a platform that connects businesses in the UAE and beyond with vetted remote talent worldwide. We place developers, designers, marketers, product managers, project managers, and assistants, both as freelancers and full-time employees.',
+          'HireDeveloper.sg is a platform that connects businesses in Singapore and beyond with vetted remote talent worldwide. We place developers, designers, marketers, product managers, project managers, and assistants, both as freelancers and full-time employees.',
       },
       {
-        question: 'How does HireDeveloper.ae work?',
+        question: 'How does HireDeveloper.sg work?',
         answer:
-          'You describe your requirements and receive a selection of pre-vetted candidate profiles within 48 hours. After interviews and selection, you start the collaboration immediately. HireDeveloper.ae handles quality assurance, contracts, and billing.',
+          'You describe your requirements and receive a selection of pre-vetted candidate profiles within 48 hours. After interviews and selection, you start the collaboration immediately. HireDeveloper.sg handles quality assurance, contracts, and billing.',
       },
       {
-        question: 'Who is HireDeveloper.ae for?',
+        question: 'Who is HireDeveloper.sg for?',
         answer:
-          'HireDeveloper.ae is ideal for startups, SMEs, and enterprises in Dubai, Abu Dhabi, and across the UAE that need qualified remote talent quickly without months-long recruitment processes. Whether it is a single project or an entire team, we have the right solution.',
+          'HireDeveloper.sg is ideal for startups, SMEs, and enterprises in Singapore, and across Singapore that need qualified remote talent quickly without months-long recruitment processes. Whether it is a single project or an entire team, we have the right solution.',
       },
       {
         question: 'In which industries are your talents experienced?',
@@ -55,12 +55,12 @@ const faqSections: FAQSection[] = [
           'Our talents bring experience from many industries: FinTech, e-commerce, SaaS, healthcare, logistics, media, education, real estate, oil & gas, and more. We match you specifically with people who know your industry.',
       },
       {
-        question: 'How does HireDeveloper.ae differ from traditional recruitment agencies?',
+        question: 'How does HireDeveloper.sg differ from traditional recruitment agencies?',
         answer:
           'Traditional agencies work differently. We focus on vetted remote talent and have a rigorous screening process: only the top 2% make it into our network. You only pay upon successful hire, with no upfront fees or long-term contracts.',
       },
       {
-        question: 'Can I try HireDeveloper.ae for free?',
+        question: 'Can I try HireDeveloper.sg for free?',
         answer:
           'Yes. Registration and requests are free. You only pay when you hire someone. No risk, no hidden costs.',
       },
@@ -71,7 +71,7 @@ const faqSections: FAQSection[] = [
     title: 'Hiring',
     items: [
       {
-        question: 'How do I hire through HireDeveloper.ae?',
+        question: 'How do I hire through HireDeveloper.sg?',
         answer:
           'Describe your requirements through our contact form. Our team presents you with a selection of pre-vetted candidates within 48 hours. After interviews, you choose the best candidate and start the collaboration.',
       },
@@ -107,7 +107,7 @@ const faqSections: FAQSection[] = [
     title: 'Costs',
     items: [
       {
-        question: 'What does HireDeveloper.ae cost?',
+        question: 'What does HireDeveloper.sg cost?',
         answer:
           'There are no upfront fees. You only pay when you successfully hire a candidate. Costs vary depending on the experience level, specialization, and contract model of the talent.',
       },
@@ -124,7 +124,7 @@ const faqSections: FAQSection[] = [
       {
         question: 'How much do I save compared to local hires?',
         answer:
-          'On average, our clients save up to 60% on staffing costs compared to local hires in Dubai and Abu Dhabi, with the same quality. Use our Team Cost Calculator to estimate your individual savings.',
+          'On average, our clients save up to 60% on staffing costs compared to local hires in Singapore, with the same quality. Use our Team Cost Calculator to estimate your individual savings.',
       },
       {
         question: 'Is there a money-back guarantee?',
@@ -138,7 +138,7 @@ const faqSections: FAQSection[] = [
     title: 'Developers',
     items: [
       {
-        question: 'How are developers vetted at HireDeveloper.ae?',
+        question: 'How are developers vetted at HireDeveloper.sg?',
         answer:
           'Our vetting process includes multiple stages: resume and portfolio review, technical assessments and live coding tests, communication evaluation in English, and reference checks. Only about 2% of all applicants are accepted.',
       },
@@ -148,9 +148,9 @@ const faqSections: FAQSection[] = [
           'We cover all major technologies: JavaScript, TypeScript, Python, Java, PHP, Ruby, Go, C#, Rust, Kotlin, Swift, and many more. As well as frameworks like React, Next.js, Angular, Vue.js, Node.js, Django, Laravel, and Spring Boot.',
       },
       {
-        question: 'Can your developers communicate in Arabic?',
+        question: 'Can your developers communicate in Chinese or Malay?',
         answer:
-          'Some of our talents speak Arabic or have advanced Arabic language skills. During candidate selection, we take your language requirements into account and ensure communication works well.',
+          'Some of our talents speak Mandarin, Malay, or other Asian languages. During candidate selection, we take your language requirements into account and ensure communication works well.',
       },
       {
         question: 'How do you ensure ongoing quality?',
@@ -176,7 +176,7 @@ const faqSections: FAQSection[] = [
       {
         question: 'In which time zones do your talents work?',
         answer:
-          'Our talents are distributed worldwide and cover all time zones. We can specifically recommend candidates who work in your time zone or with significant overlap (e.g., GST/Gulf Standard Time for the UAE).',
+          'Our talents are distributed worldwide and cover all time zones. We can specifically recommend candidates who work in your time zone or with significant overlap (e.g., SGT/Singapore Standard Time for Singapore).',
       },
       {
         question: 'Which communication tools are used?',
@@ -212,32 +212,32 @@ const faqSections: FAQSection[] = [
       {
         question: 'Which countries do your talents come from?',
         answer:
-          'Our talents come from over 50 countries worldwide, including Eastern Europe (Poland, Ukraine, Romania), Latin America (Brazil, Argentina, Mexico), South Asia (India, Pakistan), and Africa (Nigeria, Egypt, Kenya). We also place talents within the UAE and broader GCC region.',
+          'Our talents come from over 50 countries worldwide, including Eastern Europe (Poland, Ukraine, Romania), Latin America (Brazil, Argentina, Mexico), South Asia (India, Pakistan), and Africa (Nigeria, Egypt, Kenya). We also place talents within Singapore and broader APAC region.',
       },
       {
         question: 'Can remote talents also work on-site?',
         answer:
-          'Typically, our talents work remotely. However, upon request, we can also place candidates who are willing to work on-site occasionally or permanently in Dubai or Abu Dhabi. This depends on visa and work permit regulations.',
+          'Typically, our talents work remotely. However, upon request, we can also place candidates who are willing to work on-site occasionally or permanently in Singapore or Marina Bay. This depends on visa and work permit regulations.',
       },
       {
         question: 'How do you handle different time zones?',
         answer:
-          'We take your time zone preferences into account during candidate selection. For companies in the UAE, we recommend talents with at least 4-6 hours of overlap with Gulf Standard Time (GST). Our Eastern European and African talents often offer near-complete time zone overlap.',
+          'We take your time zone preferences into account during candidate selection. For companies in Singapore, we recommend talents with at least 4-6 hours of overlap with Singapore Standard Time (SGT). Our Eastern European and African talents often offer near-complete time zone overlap.',
       },
       {
         question: 'Are there legal considerations when hiring international talent?',
         answer:
-          'Yes, different tax and labor law regulations apply depending on the country. We help you with Employer-of-Record solutions and ensure all contracts are legally compliant under UAE law. This way, you avoid unnecessary risk with international hires.',
+          'Yes, different tax and labor law regulations apply depending on the country. We help you with Employer-of-Record solutions and ensure all contracts are legally compliant under Singapore law. This way, you avoid unnecessary risk with international hires.',
       },
       {
-        question: 'Do you also have talents based in the UAE?',
+        question: 'Do you also have talents based in Singapore?',
         answer:
-          'Yes, we have remote talents based in the UAE and GCC region. These candidates offer the advantage of the same time zone, cultural proximity, and legal framework. Visit our location pages for Dubai, Abu Dhabi, and other cities.',
+          'Yes, we have remote talents based in Singapore and APAC region. These candidates offer the advantage of the same time zone, cultural proximity, and legal framework. Visit our location pages for Singapore, and other cities.',
       },
       {
         question: 'How do you ensure data security with international teams?',
         answer:
-          'All our contracts include data protection clauses compliant with UAE Federal Decree-Law No. 45/2021 and DIFC Data Protection Law. Our talents are trained in handling sensitive data and adhere to international data protection standards. Upon request, they work exclusively within your infrastructure.',
+          'All our contracts include data protection clauses compliant with Singapore Personal Data Protection Act (PDPA). Our talents are trained in handling sensitive data and adhere to international data protection standards. Upon request, they work exclusively within your infrastructure.',
       },
     ],
   },
@@ -303,13 +303,13 @@ export default function FAQPage() {
 
       {/* Hero */}
       <section className="bg-white py-16 border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-[48px] font-bold text-gray-900 mb-4">
+            <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 mb-4">
               Frequently Asked Questions
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Everything you need to know about HireDeveloper.ae: from hiring and costs to collaborating with remote talent.
+              Everything you need to know about HireDeveloper.sg: from hiring and costs to collaborating with remote talent.
             </p>
           </div>
         </div>
@@ -317,7 +317,7 @@ export default function FAQPage() {
 
       {/* Section navigation */}
       <nav className="bg-gray-50 border-b border-gray-200 sticky top-[116px] z-40">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="flex items-center gap-6 overflow-x-auto py-4">
             {faqSections.map((section) => (
               <a
@@ -334,7 +334,7 @@ export default function FAQPage() {
 
       {/* FAQ sections */}
       <div className="py-16">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto space-y-16">
             {faqSections.map((section) => (
               <section key={section.id} id={section.id}>
@@ -355,7 +355,7 @@ export default function FAQPage() {
 
       {/* Contact note */}
       <section className="bg-gray-50 py-12 border-t border-gray-200">
-        <div className="max-w-[1280px] mx-auto px-12 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-gray-600">
               Did not find your question? Simply reach out to us.

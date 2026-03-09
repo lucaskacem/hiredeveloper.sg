@@ -69,39 +69,36 @@ export default function WhyChooseArc() {
   ];
 
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 w-full">
+    <section className="bg-gray-50 py-12 md:py-20">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
         {/* Section Heading */}
-        <h2 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 text-center mb-4 md:mb-6">
+        <h2 className="text-[24px] sm:text-[28px] md:text-[40px] lg:text-[48px] font-bold text-gray-900 text-center mb-3 md:mb-6">
           {t('whyChoose.title')}
         </h2>
-        <p className="text-center text-sm text-gray-500 mb-8 md:mb-12">
-          🇦🇪 {t('whyChoose.subtitle')}
+        <p className="text-center text-xs md:text-sm text-gray-500 mb-6 md:mb-12">
+          🇸🇬 {t('whyChoose.subtitle')}
         </p>
 
-        {/* Features Grid - Max 2 columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           {features.map((feature) => {
             const IconComponent = iconMap[feature.id];
             return (
               <div
                 key={feature.id}
-                className="flex items-start gap-6 border border-gray-200 rounded-lg bg-white p-6"
+                className="flex items-start gap-4 md:gap-6 border border-gray-200 rounded-lg bg-white p-4 md:p-6"
               >
                 {/* Icon */}
-                <div className="shrink-0 w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center">
+                <div className="shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-blue-50 flex items-center justify-center [&_svg]:w-8 [&_svg]:h-8 md:[&_svg]:w-12 md:[&_svg]:h-12">
                   <IconComponent />
                 </div>
 
                 {/* Content */}
-                <div className="flex-1">
-                  {/* Title */}
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-base md:text-xl font-semibold text-gray-900 mb-1 md:mb-2">
                     {feature.title}
                   </h3>
-
-                  {/* Description */}
-                  <p className="text-base text-gray-600 leading-relaxed">
+                  <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                     {feature.description}
                   </p>
                 </div>

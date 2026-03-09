@@ -6,8 +6,8 @@ export default function FooterCTA() {
     const { openModal } = useLeadFormModal();
 
     return (
-        <section className="bg-white py-20 border-t border-gray-100">
-            <div className="max-w-[1280px] mx-auto px-12 text-center">
+        <section className="bg-white py-10 md:py-16 lg:py-20 border-t border-gray-100">
+            <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 text-center">
                 <h2 className="text-[32px] md:text-[40px] font-bold text-[#0b152b] mb-4">
                     Your future marketing expert is just a click away!
                 </h2>

@@ -55,7 +55,7 @@ export default function TechnologyComparisonPage() {
     '@type': 'WebApplication',
     name: 'Technology Comparison',
     description: 'Compare technologies side by side: popularity, salaries, use cases, and more.',
-    url: 'https://hiredeveloper.ae/tools/technology-comparison',
+    url: 'https://hiredeveloper.sg/tools/technology-comparison',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -102,7 +102,7 @@ export default function TechnologyComparisonPage() {
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
-        <div className="max-w-[1280px] mx-auto px-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
           <h1 className="text-[42px] font-bold mb-4">Technology Comparison</h1>
           <p className="text-xl text-gray-300 max-w-3xl">
             Two technologies, one comparison. Popularity, salaries, learning curve, and job market at a glance.
@@ -112,7 +112,7 @@ export default function TechnologyComparisonPage() {
 
       {/* Selector */}
       <section className="py-16">
-        <div className="max-w-[1000px] mx-auto px-12">
+        <div className="max-w-[1000px] mx-auto px-4 md:px-6 lg:px-12">
           <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Select Technologies</h2>
 

@@ -9,9 +9,9 @@ interface BreadcrumbProps {
 
 export default function Breadcrumb({ items }: BreadcrumbProps) {
   return (
-    <nav aria-label="Breadcrumb" className="bg-white py-4">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12">
-        <ol className="flex items-center flex-wrap text-sm">
+    <nav aria-label="Breadcrumb" className="bg-white py-3 md:py-4 overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12">
+        <ol className="flex items-center flex-wrap text-xs md:text-sm">
           {items.map((item, index) => {
             const isLast = index === items.length - 1;
 

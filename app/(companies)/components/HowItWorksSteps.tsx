@@ -24,15 +24,15 @@ const stepImages: Record<string, string> = {
 export default function HowItWorksSteps({ steps, category }: HowItWorksStepsProps) {
   const { openModal } = useLeadFormModal();
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 w-full">
+    <section className="bg-gray-50 py-10 md:py-16 lg:py-20 overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-12 w-full">
         {/* Section Heading */}
-        <h2 className="text-[40px] font-bold text-gray-900 text-center mb-16">
-          It&apos;s easy to hire full-time &amp; freelance {category} with HireDeveloper.ae
+        <h2 className="text-[22px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-bold text-gray-900 text-center mb-8 md:mb-12 lg:mb-16">
+          It&apos;s easy to hire full-time &amp; freelance {category} with HireDeveloper.sg
         </h2>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8 md:mb-12">
           {steps.map((step) => (
             <div key={step.number} className="text-center">
               {/* Illustration */}
@@ -53,7 +53,7 @@ export default function HowItWorksSteps({ steps, category }: HowItWorksStepsProp
               </div>
 
               {/* Title */}
-              <h3 className="text-[24px] font-bold text-gray-900 mb-3">
+              <h3 className="text-[20px] sm:text-[22px] md:text-[24px] font-bold text-gray-900 mb-3">
                 {step.title}
               </h3>
 
@@ -71,7 +71,7 @@ export default function HowItWorksSteps({ steps, category }: HowItWorksStepsProp
         </div>
 
         {/* CTAs */}
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <button onClick={openModal} className="px-8 py-3 text-base font-semibold text-white bg-[rgb(23,162,69)] rounded-md hover:bg-[rgb(20,145,60)] transition-colors">
             Hire Now
           </button>
