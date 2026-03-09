@@ -6,8 +6,11 @@ import { competitors } from '@/app/data/competitors';
 
 const BASE_URL = 'https://hiredeveloper.sg';
 
+// Use a fixed date so Google doesn't ignore lastmod (updated on each deploy)
+const LAST_UPDATED = '2026-03-09T00:00:00.000Z';
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date().toISOString();
+  const now = LAST_UPDATED;
 
   // ---- Static pages ----
   const staticPages: MetadataRoute.Sitemap = [

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     default: "Hire Top Talent in Singapore | HireDeveloper.sg",
     template: "%s",
   },
-  description: "Hire the top 2% of vetted remote developers, designers, marketers and more in Singapore. Pre-screened talent ready for interviews. Start risk-free.",
+  description: "Hire the top 2% of vetted developers, designers, and marketers in Singapore. Pre-screened talent ready for interviews in 48h. $0 until you hire.",
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '48x48' },
@@ -99,7 +99,7 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'HireDeveloper.sg',
               url: 'https://hiredeveloper.sg',
-              logo: 'https://hiredeveloper.sg/images/logo.png',
+              logo: 'https://hiredeveloper.sg/favicon.svg',
               description: 'Hire the top 2% of vetted developers, designers, marketers and more in Singapore. Pre-screened talent ready for interviews.',
               email: 'hello@hiredeveloper.sg',
               areaServed: {

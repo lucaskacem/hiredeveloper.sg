@@ -28,10 +28,11 @@ export function organizationSchema() {
     '@type': 'Organization',
     name: 'HireDeveloper.sg',
     url: BASE_URL,
-    logo: `${BASE_URL}/images/logo.png`,
+    logo: `${BASE_URL}/favicon.svg`,
     description:
       'Premium talent marketplace connecting Singapore/APAC companies with the top 2% of vetted remote developers, designers, marketers, and more.',
     foundingDate: '2024',
+    email: 'hello@hiredeveloper.sg',
     areaServed: [
       { '@type': 'Country', name: 'Singapore' },
     ],
@@ -40,7 +41,12 @@ export function organizationSchema() {
       contactType: 'customer service',
       availableLanguage: ['English', 'Chinese', 'Malay'],
     },
-    sameAs: [],
+    sameAs: [
+      'https://www.linkedin.com/company/hiredeveloper-sg',
+      'https://x.com/hiredevelopersg',
+      'https://www.youtube.com/@hiredevelopersg',
+      'https://www.facebook.com/hiredevelopersg',
+    ],
   };
 }
 
@@ -199,7 +205,7 @@ export function articleSchema(opts: {
       url: BASE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${BASE_URL}/images/logo.png`,
+        url: `${BASE_URL}/favicon.svg`,
       },
     },
   };
