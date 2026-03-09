@@ -158,9 +158,9 @@ export default function HireProjectManagersPage() {
       <HireHero
         category="project-managers"
         count={6789}
-        description="HireDeveloper.sg has 6,789 vetted remote project managers ready for interviews. Find experienced project managers, Scrum Masters, program managers, and Agile coaches to lead your projects in Singapore."
+        description="HireDeveloper.sg has 6,789 vetted project managers ready for interviews. Find experienced project managers, Scrum Masters, program managers, and Agile coaches to lead your projects in Singapore."
       />
-      <TalentShowcase heading="6,789 remote project managers available:" profiles={profiles} category="project managers" />
+      <TalentShowcase heading="6,789 project managers available:" profiles={profiles} category="project managers" />
       <StatsTestimonials stats={stats} testimonials={testimonials} />
       <CategoriesGrid heading="Hire Project Managers in Singapore by Specialization" subheading="HireDeveloper.sg offers pre-vetted project managers with PMP, PRINCE2, and Agile certifications." sections={categorySections} />
       <HowItWorksSteps steps={steps} category="project managers" />
@@ -176,7 +176,7 @@ export default function HireProjectManagersPage() {
 
       <HiringProcessFlowchart industry="your project management team" />
 
-      <ResourcesSection heading="Resources for hiring project management experts" subheading="Learn more about how to hire remote project managers and deliver projects successfully!" articles={articles} />
+      <ResourcesSection heading="Resources for hiring project management experts" subheading="Learn more about how to hire project managers and deliver projects successfully!" articles={articles} />
 
       <RelatedLinks
         title="Also Hire"

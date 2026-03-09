@@ -89,7 +89,7 @@ const faqData: Record<string, FAQItem[]> = {
       answer: 'Every product manager undergoes assessments in product strategy, stakeholder communication, agile methodologies, and technical understanding. Only experienced experts with proven track records are accepted.',
     },
     {
-      question: 'How quickly can I hire a remote product manager?',
+      question: 'How quickly can I hire a product manager?',
       answer: 'Within 48 hours you will receive pre-vetted candidate profiles. Most companies hire a product manager within 1-2 weeks.',
     },
     {
@@ -111,7 +111,7 @@ const faqData: Record<string, FAQItem[]> = {
       answer: 'Every project manager undergoes assessments in project planning, risk management, stakeholder communication, and methodology expertise. Many are PMP, PSM, or PRINCE2 certified.',
     },
     {
-      question: 'How quickly can I hire a remote project manager?',
+      question: 'How quickly can I hire a project manager?',
       answer: 'Within 48 hours you will receive pre-vetted candidate profiles. Most companies hire a project manager within 1-2 weeks.',
     },
     {

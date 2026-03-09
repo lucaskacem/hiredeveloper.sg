@@ -159,9 +159,9 @@ export default function HireProductManagersPage() {
       <HireHero
         category="product-managers"
         count={5678}
-        description="HireDeveloper.sg has 5,678 vetted remote product managers ready for interviews. Find experienced product managers, product owners, technical PMs, and AI product managers to drive your product strategy forward in Singapore."
+        description="HireDeveloper.sg has 5,678 vetted product managers ready for interviews. Find experienced product managers, product owners, technical PMs, and AI product managers to drive your product strategy forward in Singapore."
       />
-      <TalentShowcase heading="5,678 remote product managers available:" profiles={profiles} category="product managers" />
+      <TalentShowcase heading="5,678 product managers available:" profiles={profiles} category="product managers" />
       <StatsTestimonials stats={stats} testimonials={testimonials} />
       <CategoriesGrid heading="Hire Product Managers in Singapore by Specialization" subheading="HireDeveloper.sg offers pre-vetted product managers with deep experience across fintech, e-commerce, healthtech, and more." sections={categorySections} />
       <HowItWorksSteps steps={steps} category="product managers" />
@@ -177,7 +177,7 @@ export default function HireProductManagersPage() {
 
       <HiringProcessFlowchart industry="your product management team" />
 
-      <ResourcesSection heading="Resources for hiring product management experts" subheading="Learn more about how to hire remote product managers and build exceptional product teams!" articles={articles} />
+      <ResourcesSection heading="Resources for hiring product management experts" subheading="Learn more about how to hire product managers and build exceptional product teams!" articles={articles} />
 
       <RelatedLinks
         title="Also Hire"

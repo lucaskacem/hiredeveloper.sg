@@ -240,7 +240,7 @@ export default function HireDesignersPage() {
 
       {/* Talent Showcase */}
       <TalentShowcase
-        heading="2,005 remote product designers and experts available:"
+        heading="2,005 product designers and experts available:"
         profiles={profiles}
         category="designers"
       />
@@ -289,7 +289,7 @@ export default function HireDesignersPage() {
 
       <ResourcesSection
         heading="Resources for hiring design experts"
-        subheading="Learn more about how to hire remote designers and creative experts!"
+        subheading="Learn more about how to hire designers and creative experts!"
         articles={[
           { title: "Finding Freelance Developers: 21+ Expert Tips & Strategies", image: "/images/blog/people-search.svg", url: "/employer-blog/how-to-find-developers" },
           { title: "Is Your Developer Ready for Remote Work?", image: "/images/blog/remote-team.svg", url: "/employer-blog/remote-ready-interview-questions" },

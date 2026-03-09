@@ -155,7 +155,7 @@ export default async function PMSubcategoryPage({ params }: Props) {
       />
 
       <TalentShowcase
-        heading={`${data.heroCount.toLocaleString('en-US')}+ remote ${data.name.toLowerCase()} available:`}
+        heading={`${data.heroCount.toLocaleString('en-US')}+ ${data.name.toLowerCase()} available:`}
         profiles={profiles}
         category="product managers"
       />

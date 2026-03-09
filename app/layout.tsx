@@ -64,21 +64,21 @@ export const metadata: Metadata = {
     alternateLocale: ['zh_SG', 'ms_SG', 'ta_SG'],
     url: 'https://hiredeveloper.sg',
     siteName: 'HireDeveloper.sg',
-    title: 'Hire Top Remote Talent | HireDeveloper.sg',
-    description: 'Hire the top 2% of vetted remote developers, designers, marketers and more in Singapore. Pre-screened talent ready for interviews. Start risk-free.',
+    title: 'Hire Top Talent in Singapore | HireDeveloper.sg',
+    description: 'Hire the top 2% of vetted developers, designers, marketers and more in Singapore. Pre-screened talent ready for interviews. Start risk-free.',
     images: [
       {
         url: '/images/og-default.png',
         width: 1200,
         height: 630,
-        alt: 'HireDeveloper.sg - Hire Top Remote Talent in Singapore',
+        alt: 'HireDeveloper.sg - Hire Top Talent in Singapore',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hire Top Remote Talent | HireDeveloper.sg',
-    description: 'Hire the top 2% of vetted remote developers, designers, marketers and more in Singapore. Start risk-free.',
+    title: 'Hire Top Talent in Singapore | HireDeveloper.sg',
+    description: 'Hire the top 2% of vetted developers, designers, marketers and more in Singapore. Start risk-free.',
     images: ['/images/og-default.png'],
   },
 };

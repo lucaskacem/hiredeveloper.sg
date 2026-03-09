@@ -9,9 +9,9 @@ import InlineCTABanner from '../components/InlineCTABanner';
 import { countries, getTopCitiesForCountry } from '@/app/data/locations';
 
 export const metadata: Metadata = {
-  title: 'Hire Remote Developers by Location | HireDeveloper.sg',
+  title: 'Hire Developers by Location | HireDeveloper.sg',
   description:
-    'Find and hire the best remote developers across Singapore. Access top-tier programmers in Marina Bay, CBD, one-north, Changi Business Park, and every major tech district.',
+    'Find and hire the best developers across Singapore. Access top-tier programmers in Marina Bay, CBD, one-north, Changi Business Park, and every major tech district.',
   robots: { index: true, follow: true },
   alternates: {
     canonical: 'https://hiredeveloper.sg/locations',
@@ -134,7 +134,7 @@ export default function LocationsPage() {
       />
 
       <FinalCTA
-        heading="Find Remote Developers in Your Region!"
+        heading="Find Developers in Your Region!"
         subheading="Start risk-free. Access pre-vetted programmers worldwide."
         ctaText="Hire Talent"
       />

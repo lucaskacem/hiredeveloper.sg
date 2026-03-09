@@ -22,8 +22,8 @@ import InlineCTABanner from '../components/InlineCTABanner';
 
 const year = new Date().getFullYear();
 export const metadata: Metadata = {
-  title: `Hire Top Remote Developers - ${year} | HireDeveloper.sg`,
-  description: `Hire the best remote developers, engineers, and programmers. Over 90,000 vetted freelance and full-time experts ready for interviews. Updated for ${year}.`,
+  title: `Hire Top Developers in Singapore - ${year} | HireDeveloper.sg`,
+  description: `Hire the best developers, engineers, and programmers in Singapore. Over 90,000 vetted freelance and full-time experts ready for interviews. Updated for ${year}.`,
   alternates: {
     canonical: 'https://hiredeveloper.sg/hire-developers',
   },
@@ -93,7 +93,7 @@ export default function HireDevelopersPage() {
   const categorySections = [
     {
       id: "roles",
-      title: "Find and Hire Remote Developers by Role",
+      title: "Find and Hire Developers by Role",
       items: [
         { name: "AI Developers", icon: "ai-plain.svg", url: "/hire-developers/ai" },
         { name: "Data Scientists", icon: "data-science-plain.svg", url: "/hire-developers/data-science" },
@@ -109,7 +109,7 @@ export default function HireDevelopersPage() {
     },
     {
       id: "skills",
-      title: "Find and Hire Remote Engineers by Skill",
+      title: "Find and Hire Engineers by Skill",
       items: [
         { name: "JavaScript Developers", icon: "javascript-plain.svg", url: "/hire-developers/javascript" },
         { name: "TypeScript Developers", icon: "typescript-plain.svg", url: "/hire-developers/typescript" },
@@ -316,7 +316,7 @@ export default function HireDevelopersPage() {
       </section>
 
       <TalentShowcase
-        heading="90,921 remote developers and experts available:"
+        heading="90,921 developers and experts available:"
         profiles={profiles}
         category="developers"
       />
@@ -332,8 +332,8 @@ export default function HireDevelopersPage() {
       />
 
       <CategoriesGrid
-        heading="Top remote developers are just a few clicks away"
-        subheading="HireDeveloper.sg offers pre-vetted full-time and freelance developers proficient in every programming language, framework, and technology. Browse our popular remote engineer specializations below."
+        heading="Top developers are just a few clicks away"
+        subheading="HireDeveloper.sg offers pre-vetted full-time and freelance developers proficient in every programming language, framework, and technology. Browse our popular engineer specializations below."
         sections={categorySections}
       />
 
@@ -350,8 +350,8 @@ export default function HireDevelopersPage() {
       <CompaniesTestimonials testimonials={companiesTestimonials} />
 
       <DedicatedTeamSection
-        heading="Build your dedicated team of remote developers"
-        description="HireDeveloper.sg helps you build your team with our global network of software developers, available for freelance contracts or full-time remote positions."
+        heading="Build your dedicated team of developers"
+        description="HireDeveloper.sg helps you build your team with our global network of software developers, available for freelance contracts or full-time positions."
         features={dedicatedTeamFeatures}
       />
 
@@ -366,7 +366,7 @@ export default function HireDevelopersPage() {
 
       <ResourcesSection
         heading="Resources for Hiring Engineering Experts"
-        subheading="Learn more about how to hire remote developers, key interview questions for freelance developers, and much more!"
+        subheading="Learn more about how to hire developers, key interview questions for freelance developers, and much more!"
         articles={articles}
       />
 
@@ -447,7 +447,7 @@ export default function HireDevelopersPage() {
       <HiringProcessFlowchart industry="your development project" />
 
       <FinalCTA
-        heading="Your future remote developer is just around the corner!"
+        heading="Your future developer is just around the corner!"
         subheading="Start risk-free."
         ctaText="Hire Talent"
       />

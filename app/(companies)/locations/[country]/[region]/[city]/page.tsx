@@ -32,8 +32,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   for (let i = 0; i < hashStr.length; i++) h = ((h << 5) - h + hashStr.charCodeAt(i)) | 0;
   const showYear = Math.abs(h) % 100 < 30;
   return {
-    title: showYear ? `Hire Remote Developers in ${data.city.name} - ${year} | HireDeveloper.sg` : `Hire Remote Developers in ${data.city.name} | HireDeveloper.sg`,
-    description: showYear ? `Find and hire the best remote developers in ${data.city.name}, ${data.region.name}. Access vetted programmers with local expertise. Top-rated in ${year}.` : `Find and hire the best remote developers in ${data.city.name}, ${data.region.name}. Access vetted programmers with local expertise.`,
+    title: showYear ? `Hire Developers in ${data.city.name} - ${year} | HireDeveloper.sg` : `Hire Developers in ${data.city.name} | HireDeveloper.sg`,
+    description: showYear ? `Find and hire the best developers in ${data.city.name}, ${data.region.name}. Access vetted programmers with local expertise. Top-rated in ${year}.` : `Find and hire the best developers in ${data.city.name}, ${data.region.name}. Access vetted programmers with local expertise.`,
     robots: { index: true, follow: true },
     alternates: {
       canonical: `https://hiredeveloper.sg/locations/${country}/${region}/${city}`,
@@ -512,7 +512,7 @@ export default async function CityPage({ params }: Props) {
 
       <FinalCTA
         heading={`Find Top Developers in ${data.city.name}!`}
-        subheading={`Start now and hire the best remote developers from ${data.city.name}, ${data.region.name}.`}
+        subheading={`Start now and hire the best developers from ${data.city.name}, ${data.region.name}.`}
         ctaText="Hire Talent"
       />
 

@@ -299,7 +299,7 @@ export default function ResourcesPage() {
       <RelatedLinks title="More Pages" links={relatedLinks} />
 
       <FinalCTA
-        heading="Ready to Build Your Remote Team?"
+        heading="Ready to Build Your Team?"
         subheading="Receive vetted candidate profiles within 48 hours. Risk-free with no upfront costs."
         ctaText="Get Started"
       />

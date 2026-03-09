@@ -157,25 +157,25 @@ export default function HireAssistantsPage() {
       <HireHero
         category="assistants"
         count={4532}
-        description="HireDeveloper.sg has 4,532 vetted remote assistants ready for interviews. Find virtual assistants, executive assistants, and administrative assistants to support your business operations in Singapore."
+        description="HireDeveloper.sg has 4,532 vetted assistants ready for interviews. Find virtual assistants, executive assistants, and administrative assistants to support your business operations in Singapore."
       />
-      <TalentShowcase heading="4,532 remote assistants available:" profiles={profiles} category="assistants" />
+      <TalentShowcase heading="4,532 assistants available:" profiles={profiles} category="assistants" />
       <StatsTestimonials stats={stats} testimonials={testimonials} />
-      <CategoriesGrid heading="Hire Remote Assistants in Singapore by Specialization" subheading="HireDeveloper.sg offers pre-vetted assistants ready to support your business needs." sections={categorySections} />
+      <CategoriesGrid heading="Hire Assistants in Singapore by Specialization" subheading="HireDeveloper.sg offers pre-vetted assistants ready to support your business needs." sections={categorySections} />
       <HowItWorksSteps steps={steps} category="assistants" />
 
       <WhyChooseArc />
 
       <HiringGuideSection
-        heading="How to Hire Top Remote Assistants in Singapore"
+        heading="How to Hire Top Assistants in Singapore"
         sections={guideSections}
       />
 
       <FAQSection category="assistants" />
 
-      <HiringProcessFlowchart industry="your remote support team" />
+      <HiringProcessFlowchart industry="your support team" />
 
-      <ResourcesSection heading="Resources for hiring remote assistants" subheading="Learn more about how to hire remote assistants and maximize productivity!" articles={articles} />
+      <ResourcesSection heading="Resources for hiring assistants" subheading="Learn more about how to hire assistants and maximize productivity!" articles={articles} />
 
       <RelatedLinks
         title="Also Hire"
@@ -199,7 +199,7 @@ export default function HireAssistantsPage() {
       />
 
       <FinalCTA
-        heading="Hire Remote Assistants in Singapore — Start Risk-Free"
+        heading="Hire Assistants in Singapore — Start Risk-Free"
         subheading="3 specializations. Pre-vetted candidates in 48 hours. $0 until you hire."
         ctaText="Hire Talent"
       />

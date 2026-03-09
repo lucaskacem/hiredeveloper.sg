@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   for (let i = 0; i < country.length; i++) h = ((h << 5) - h + country.charCodeAt(i)) | 0;
   const showYear = Math.abs(h) % 100 < 30;
   return {
-    title: showYear ? `Hire Remote Developers in ${data.name} - ${year} | HireDeveloper.sg` : `Hire Remote Developers in ${data.name} | HireDeveloper.sg`,
+    title: showYear ? `Hire Developers in ${data.name} - ${year} | HireDeveloper.sg` : `Hire Developers in ${data.name} | HireDeveloper.sg`,
     description: showYear ? `${data.metaDescription} Top-rated in ${year}.` : data.metaDescription,
     robots: { index: true, follow: true },
     alternates: {

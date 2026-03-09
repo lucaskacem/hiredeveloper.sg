@@ -105,7 +105,7 @@ export default function MarketerSubcategoryPageContent({
       />
 
       <TalentShowcase
-        heading={`${heroCount.toLocaleString('en-US')} remote ${dataName} available:`}
+        heading={`${heroCount.toLocaleString('en-US')} ${dataName} available:`}
         profiles={profiles}
         category="marketers"
       />

@@ -13,8 +13,8 @@ import SingaporeTechHub from './components/SingaporeTechHub';
 import SchemaMarkup, { organizationSchema, webSiteSchema } from './components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: "Hire Top Remote Talent in Singapore | HireDeveloper.sg",
-  description: "Hire the top 2% of vetted remote developers, designers, marketers, and project managers in Singapore. Pre-screened freelance and full-time talent ready for interviews. Start risk-free.",
+  title: "Hire Top Talent in Singapore | HireDeveloper.sg",
+  description: "Hire the top 2% of vetted developers, designers, marketers, and project managers in Singapore. Pre-screened freelance and full-time talent ready for interviews. Start risk-free.",
   alternates: {
     canonical: 'https://hiredeveloper.sg',
   },

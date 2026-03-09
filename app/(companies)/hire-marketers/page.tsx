@@ -202,7 +202,7 @@ export default function HireMarketersPage() {
 
     const guideSections = [
         {
-            title: "Why hire remote marketers in Singapore?",
+            title: "Why hire marketers in Singapore?",
             subsections: [
                 {
                     subtitle: "Access 25 Marketing Specializations",
@@ -276,7 +276,7 @@ export default function HireMarketersPage() {
             </section>
 
             <TalentShowcase
-                heading="3,421 remote marketers available:"
+                heading="3,421 marketers available:"
                 profiles={profiles}
                 category="marketers"
             />
