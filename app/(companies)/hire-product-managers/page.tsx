@@ -145,8 +145,30 @@ export default function HireProductManagersPage() {
     }
   ];
 
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Hire Product Managers in Singapore',
+    description: `Hire experienced remote product managers, product owners, and technical PMs in Singapore. Over 5,600 vetted experts ready for interviews. Updated for ${year}.`,
+    url: 'https://hiredeveloper.sg/hire-product-managers',
+    provider: {
+      '@type': 'Organization',
+      name: 'HireDeveloper.sg',
+      url: 'https://hiredeveloper.sg',
+    },
+    serviceType: 'Product Manager Recruitment',
+    areaServed: { '@type': 'Country', name: 'Singapore' },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+      description: '$0 until you hire',
+    },
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <Header />
 
       <Breadcrumb

@@ -215,8 +215,30 @@ export default function HireDesignersPage() {
     }
   ];
 
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Hire Top Designers in Singapore',
+    description: `Hire the best freelance and full-time product designers in Singapore. Vetted UX/UI designers ready for interviews. Updated for ${year}.`,
+    url: 'https://hiredeveloper.sg/hire-designers',
+    provider: {
+      '@type': 'Organization',
+      name: 'HireDeveloper.sg',
+      url: 'https://hiredeveloper.sg',
+    },
+    serviceType: 'Designer Recruitment',
+    areaServed: { '@type': 'Country', name: 'Singapore' },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+      description: '$0 until you hire',
+    },
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <Header />
 
       {/* Hero Section */}

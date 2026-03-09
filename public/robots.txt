@@ -1,7 +1,62 @@
 # robots.txt for hiredeveloper.sg
-User-agent: *
+
+# Search engines
+User-agent: Googlebot
 Allow: /
 
+User-agent: Bingbot
+Allow: /
+
+# AI crawlers — explicitly allowed for maximum AI visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: FacebookExternalHit
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Block low-value scrapers (bulk training, no citation)
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Default
+User-agent: *
+Allow: /
 Disallow: /api/
 Disallow: /_next/
 

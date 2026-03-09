@@ -6,7 +6,7 @@ import RelatedLinks from '@/app/(companies)/components/RelatedLinks';
 export function generateMetadata(): Metadata {
   return {
     title: 'Find Freelance Developers in Singapore & APAC: 21+ Expert Tips | HireDeveloper.sg',
-    description: 'Over 21 proven strategies to find freelance developers in Singapore, and Singapore. Expert tips on platforms, vetting, and hiring top talent in the APAC.',
+    description: 'Over 21 proven strategies to find freelance developers in Singapore and APAC. Expert tips on platforms, vetting, and hiring top talent for your business.',
     robots: { index: true, follow: true },
     alternates: {
       canonical: 'https://hiredeveloper.sg/employer-blog/how-to-find-developers',

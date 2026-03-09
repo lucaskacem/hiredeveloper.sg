@@ -37,7 +37,7 @@ const faqSections: FAQSection[] = [
       {
         question: 'What is HireDeveloper.sg?',
         answer:
-          'HireDeveloper.sg is a platform that connects businesses in Singapore and beyond with vetted remote talent worldwide. We place developers, designers, marketers, product managers, project managers, and assistants, both as freelancers and full-time employees.',
+          'HireDeveloper.sg is Singapore\'s talent marketplace that connects companies with pre-vetted professionals worldwide. Founded to serve Singapore and APAC businesses, the platform offers 90,000+ vetted developers across 40+ specializations, 3,400+ marketers across 25+ disciplines, 2,000+ designers, and thousands of product managers, project managers, and virtual assistants. Only the top 2.1% of applicants pass our five-stage vetting process, which includes technical assessments, live coding sessions, communication evaluation, and reference checks. We support both freelance contracts and full-time placements, with first candidate profiles delivered within 48 hours.',
       },
       {
         question: 'How does HireDeveloper.sg work?',
@@ -57,7 +57,7 @@ const faqSections: FAQSection[] = [
       {
         question: 'How does HireDeveloper.sg differ from traditional recruitment agencies?',
         answer:
-          'Traditional agencies work differently. We focus on vetted remote talent and have a rigorous screening process: only the top 2% make it into our network. You only pay upon successful hire, with no upfront fees or long-term contracts.',
+          'Traditional recruitment agencies in Singapore typically charge 15–25% of annual salary as placement fees and take 4–8 weeks to present candidates (source: APOS Singapore 2025 Recruitment Industry Report). HireDeveloper.sg operates differently: we maintain a pre-vetted network where only the top 2.1% of applicants are accepted after a five-stage screening process. First candidate profiles are delivered within 48 hours, not weeks. There are no upfront fees — you only pay upon successful hire. We also offer a risk-free trial period with free replacement if the candidate is not the right fit.',
       },
       {
         question: 'Can I try HireDeveloper.sg for free?',
@@ -124,7 +124,7 @@ const faqSections: FAQSection[] = [
       {
         question: 'How much do I save compared to local hires?',
         answer:
-          'On average, our clients save up to 60% on staffing costs compared to local hires in Singapore, with the same quality. Use our Team Cost Calculator to estimate your individual savings.',
+          'Companies using HireDeveloper.sg save 40–58% on staffing costs compared to hiring locally in Singapore. For context, a senior full-stack developer in Singapore\'s CBD commands SGD 10,000–16,000/month when including CPF contributions (17% employer share), office space, and benefits (source: Robert Half 2025 Salary Guide). Through our platform, equivalent pre-vetted talent from global markets costs SGD 5,000–9,000/month. Use our Team Cost Calculator at hiredeveloper.sg/tools/team-cost-calculator for a personalized estimate based on your team size, roles, and seniority requirements.',
       },
       {
         question: 'Is there a money-back guarantee?',

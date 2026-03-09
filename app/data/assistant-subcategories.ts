@@ -304,4 +304,4 @@ export function getRelatedAssistantSubcategories(slug: string, limit: number = 8
     .slice(0, limit);
 }
 
-export { assistantSubcategories, generateAssistantProfiles, generateAssistantGuideSections };
+export { assistantSubcategories };

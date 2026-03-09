@@ -222,7 +222,7 @@ export const translations: Record<Language, Translations> = {
     'hireHero.getMatched': 'Get Matched in 48h',
     'hireHero.zeroCost': '$0 until you hire',
     'hireHero.placements': '10,000+ Placements',
-    'hireHero.rating': '4.8/5 Rating',
+    'hireHero.rating': '4.9/5 Rating',
     'hireHero.satisfaction': '97% Satisfaction',
     'hireHero.matching48h': '48h Matching',
     'hireHero.zeroTax': 'Low Corporate Tax',

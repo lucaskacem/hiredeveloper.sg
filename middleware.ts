@@ -10,7 +10,7 @@ export function middleware(req: NextRequest) {
 
     // Always allow search engine crawlers through, even if auth is enabled
     const userAgent = req.headers.get('user-agent') || '';
-    const crawlerPatterns = /Googlebot|Bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot|Sogou|facebookexternalhit|Twitterbot|LinkedInBot|WhatsApp|TelegramBot|Applebot/i;
+    const crawlerPatterns = /Googlebot|Google-Extended|Bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot|Sogou|facebookexternalhit|Twitterbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|GPTBot|ChatGPT-User|OAI-SearchBot|ClaudeBot|anthropic-ai|PerplexityBot|Amazonbot|Diffbot|cohere-ai/i;
     if (crawlerPatterns.test(userAgent)) {
         return NextResponse.next();
     }

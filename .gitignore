@@ -48,3 +48,8 @@ scripts/drip-state.json
 
 # general logs
 *.log
+
+# GEO audit reports (not for public/Google)
+GEO-*.md
+GEO-*.pdf
+llms.txt

@@ -4,7 +4,7 @@ import { useLeadFormModal } from '../../components/LeadFormModalProvider';
 
 export default function HeroSection() {
     const { openModal } = useLeadFormModal();
-    const trustMetrics = ['10,000+ placements', '4.8/5 rating', '97% satisfaction', '48h matching'];
+    const trustMetrics = ['10,000+ placements', '4.9/5 rating', '97% satisfaction', '48h matching'];
 
     return (
         <section className="bg-[#0b152b] py-10 md:py-16 lg:py-20 overflow-hidden relative">

@@ -144,8 +144,30 @@ export default function HireProjectManagersPage() {
     }
   ];
 
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Hire Project Managers in Singapore',
+    description: `Hire experienced remote project managers, Scrum Masters, and program managers in Singapore. Over 6,700 vetted experts with proven track records. Updated for ${year}.`,
+    url: 'https://hiredeveloper.sg/hire-project-managers',
+    provider: {
+      '@type': 'Organization',
+      name: 'HireDeveloper.sg',
+      url: 'https://hiredeveloper.sg',
+    },
+    serviceType: 'Project Manager Recruitment',
+    areaServed: { '@type': 'Country', name: 'Singapore' },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+      description: '$0 until you hire',
+    },
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <Header />
 
       <Breadcrumb

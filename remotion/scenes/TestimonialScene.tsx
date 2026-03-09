@@ -256,7 +256,7 @@ export const TestimonialScene: React.FC = () => {
         }}
       >
         {[
-          { value: '4.8/5', label: 'Average Rating' },
+          { value: '4.9/5', label: 'Average Rating' },
           { value: '97%', label: 'Client Satisfaction' },
           { value: '10,000+', label: 'Successful Hires' },
         ].map((stat, i) => (

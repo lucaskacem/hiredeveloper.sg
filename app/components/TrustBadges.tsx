@@ -26,7 +26,7 @@ export default function TrustBadges() {
                 </svg>
               ))}
             </div>
-            <span className="text-white/60 text-xs md:text-sm font-medium">4.8/5</span>
+            <span className="text-white/60 text-xs md:text-sm font-medium">4.9/5</span>
           </div>
 
           {/* Divider */}

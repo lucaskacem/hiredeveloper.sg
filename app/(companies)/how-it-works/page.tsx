@@ -118,7 +118,7 @@ export default function HowItWorksPage() {
               <p className="text-base text-gray-700 leading-relaxed mb-2">
                 Tell us what role you need to fill, what skills are required, and
                 what your budget looks like. Our matching team starts immediately, searching
-                a pool of over 350,000 vetted talents for the right people.
+                our network of 90,000+ vetted developers, designers, marketers, and other professionals.
               </p>
               <p className="text-sm text-gray-600">Takes only 5 minutes</p>
             </div>
@@ -228,12 +228,12 @@ export default function HowItWorksPage() {
             </div>
 
             <div className="p-8 bg-gray-50 rounded-xl border border-gray-200">
-              <div className="text-3xl mb-4 text-[rgb(0,159,255)]">350K+</div>
+              <div className="text-3xl mb-4 text-[rgb(0,159,255)]">90K+</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Massive Talent Pool</h3>
               <p className="text-gray-600 leading-relaxed">
-                Over 350,000 vetted remote talents worldwide: developers, designers,
-                marketers, product managers, project managers, assistants. Whatever role
-                you need, we find someone.
+                Over 90,000 vetted professionals worldwide: 40+ developer specializations,
+                25+ marketing roles, designers, product managers, project managers, and assistants
+                across 50+ countries. Whatever role you need, we find someone.
               </p>
             </div>
 

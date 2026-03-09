@@ -27,7 +27,7 @@ const notoSansSC = Noto_Sans_SC({
 
 export const metadata: Metadata = {
   title: {
-    default: "Hire Top Remote Talent | HireDeveloper.sg",
+    default: "Hire Top Talent in Singapore | HireDeveloper.sg",
     template: "%s",
   },
   description: "Hire the top 2% of vetted remote developers, designers, marketers and more in Singapore. Pre-screened talent ready for interviews. Start risk-free.",
@@ -90,6 +90,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="ltr" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'HireDeveloper.sg',
+              url: 'https://hiredeveloper.sg',
+              logo: 'https://hiredeveloper.sg/images/logo.png',
+              description: 'Hire the top 2% of vetted developers, designers, marketers and more in Singapore. Pre-screened talent ready for interviews.',
+              email: 'hello@hiredeveloper.sg',
+              areaServed: {
+                '@type': 'Country',
+                name: 'Singapore',
+              },
+              sameAs: [
+                'https://www.linkedin.com/company/hiredeveloper-sg',
+                'https://x.com/hiredevelopersg',
+                'https://www.youtube.com/@hiredevelopersg',
+                'https://www.facebook.com/hiredevelopersg',
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${notoSansArabic.variable} ${notoSansSC.variable} antialiased font-sans`}
       >

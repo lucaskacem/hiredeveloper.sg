@@ -246,8 +246,30 @@ export default function HireMarketersPage() {
         { title: "Managing Remote Marketing Teams", image: "/images/blog/project-completed.svg", url: "/employer-blog/how-to-manage-developers-remote-team" }
     ];
 
+    const serviceJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        name: 'Hire Top Marketers in Singapore',
+        description: `Hire the best remote marketers, growth experts, and content strategists in Singapore. Over 3,400 vetted freelance and full-time marketing professionals ready for interviews. Updated for ${year}.`,
+        url: 'https://hiredeveloper.sg/hire-marketers',
+        provider: {
+            '@type': 'Organization',
+            name: 'HireDeveloper.sg',
+            url: 'https://hiredeveloper.sg',
+        },
+        serviceType: 'Marketing Talent Recruitment',
+        areaServed: { '@type': 'Country', name: 'Singapore' },
+        offers: {
+            '@type': 'Offer',
+            price: '0',
+            priceCurrency: 'USD',
+            description: '$0 until you hire',
+        },
+    };
+
     return (
         <div className="min-h-screen bg-white">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <Header />
 
             <Breadcrumb

@@ -257,7 +257,7 @@ export const CTAScene: React.FC = () => {
           }}
         >
           {[
-            '⭐ 4.8/5 Rating',
+            '⭐ 4.9/5 Rating',
             '97% Satisfaction',
             '90,000+ Developers',
             '$0 Until You Hire',

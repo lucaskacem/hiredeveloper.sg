@@ -151,7 +151,7 @@ export const StatsScene: React.FC = () => {
             }),
           }}
         >
-          ⭐ 4.8/5 Rating &nbsp;&nbsp;|&nbsp;&nbsp; 97% Client Satisfaction &nbsp;&nbsp;|&nbsp;&nbsp; $0 Until You Hire
+          ⭐ 4.9/5 Rating &nbsp;&nbsp;|&nbsp;&nbsp; 97% Client Satisfaction &nbsp;&nbsp;|&nbsp;&nbsp; $0 Until You Hire
         </div>
       </div>
 
