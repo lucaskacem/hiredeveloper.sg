@@ -12,7 +12,7 @@ import { COLORS, FONT } from '../styles';
 import { GlowText } from '../components/GlowText';
 import { Particles } from '../components/Particles';
 
-// AIDA: ATTENTION — Stop the scroll, UAE-first, premium feel
+// AIDA: ATTENTION — Stop the scroll, Singapore-first, premium feel
 export const IntroScene: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -39,7 +39,7 @@ export const IntroScene: React.FC = () => {
     extrapolateRight: 'clamp',
   });
 
-  // UAE Flag scale-in with bounce
+  // Singapore Flag scale-in with bounce
   const flagProgress = spring({
     frame: Math.max(0, frame - 2),
     fps,
@@ -69,29 +69,37 @@ export const IntroScene: React.FC = () => {
           left: 0,
           width: topLineWidth,
           height: 3,
-          background: `linear-gradient(90deg, ${COLORS.blue}, ${COLORS.green}, ${COLORS.blue})`,
+          background: `linear-gradient(90deg, ${COLORS.blue}, ${COLORS.sgRed}, ${COLORS.blue})`,
           zIndex: 50,
         }}
       />
 
-      {/* Dubai skyline with parallax zoom */}
+      {/* Singapore skyline photo with parallax zoom */}
       <div
         style={{
           position: 'absolute',
           width: '100%',
           height: '100%',
           transform: `scale(${zoom})`,
-          opacity: 0.2,
         }}
       >
         <Img
-          src={staticFile('images/dubai/skyline.svg')}
+          src={staticFile('images/video/singapore-night.jpg')}
           style={{
             position: 'absolute',
-            bottom: 0,
             width: '100%',
-            height: 'auto',
+            height: '100%',
+            objectFit: 'cover',
             filter: `brightness(0.6) hue-rotate(${interpolate(frame, [0, 150], [0, 15])}deg)`,
+          }}
+        />
+        {/* Dark overlay on photo */}
+        <div
+          style={{
+            position: 'absolute',
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.55)',
           }}
         />
       </div>
@@ -117,17 +125,17 @@ export const IntroScene: React.FC = () => {
           zIndex: 10,
         }}
       >
-        {/* UAE Flag — First thing visible */}
+        {/* Singapore Flag — First thing visible */}
         <div
           style={{
             fontSize: 80,
             marginBottom: 16,
             opacity: flagProgress,
             transform: `scale(${interpolate(flagProgress, [0, 1], [0.3, 1])})`,
-            filter: `drop-shadow(0 0 ${flagGlow}px ${COLORS.green}80)`,
+            filter: `drop-shadow(0 0 ${flagGlow}px ${COLORS.sgRed}80)`,
           }}
         >
-          🇦🇪
+          🇸🇬
         </div>
 
         {/* Brand name */}
@@ -147,7 +155,7 @@ export const IntroScene: React.FC = () => {
             textShadow: `0 0 20px ${COLORS.blue}40`,
           }}
         >
-          HireDeveloper.ae
+          HireDeveloper.sg
         </div>
 
         {/* Main headline — Power words */}
@@ -173,7 +181,7 @@ export const IntroScene: React.FC = () => {
           style={{
             width: lineWidth,
             height: 4,
-            background: `linear-gradient(90deg, transparent, ${COLORS.blue}, ${COLORS.green}, transparent)`,
+            background: `linear-gradient(90deg, transparent, ${COLORS.blue}, ${COLORS.sgRed}, transparent)`,
             marginTop: 24,
             borderRadius: 2,
           }}
@@ -202,7 +210,7 @@ export const IntroScene: React.FC = () => {
           In Your Team in 48h · Ready to Work
         </div>
 
-        {/* UAE city badges */}
+        {/* Singapore city badges */}
         <div
           style={{
             display: 'flex',
@@ -214,7 +222,7 @@ export const IntroScene: React.FC = () => {
             }),
           }}
         >
-          {['🇦🇪 Dubai', '🇦🇪 Abu Dhabi', '🇦🇪 All 7 Emirates'].map((city, i) => (
+          {['🇸🇬 Singapore', '🇸🇬 Marina Bay', '🇸🇬 All Singapore districts'].map((city, i) => (
             <span
               key={city}
               style={{

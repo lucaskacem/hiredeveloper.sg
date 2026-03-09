@@ -1,10 +1,12 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Img,
   interpolate,
   useCurrentFrame,
   spring,
   useVideoConfig,
+  staticFile,
 } from 'remotion';
 import { COLORS, FONT } from '../styles';
 import { CountUp } from '../components/CountUp';
@@ -34,6 +36,19 @@ export const StatsScene: React.FC = () => {
         opacity: fadeIn * fadeOut,
       }}
     >
+      {/* Background photo — office team */}
+      <Img
+        src={staticFile('images/video/office-team.jpg')}
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          opacity: 0.1,
+          filter: 'brightness(0.6)',
+        }}
+      />
+
       <Particles count={20} color={COLORS.blue} speed={0.4} />
 
       {/* Pre-headline — credibility trigger */}
@@ -217,7 +232,7 @@ export const StatsScene: React.FC = () => {
         </div>
       </div>
 
-      {/* UAE-specific bottom note */}
+      {/* Singapore-specific bottom note */}
       <div
         style={{
           position: 'absolute',
@@ -238,7 +253,7 @@ export const StatsScene: React.FC = () => {
             color: COLORS.gray300,
           }}
         >
-          🇦🇪 #1 Remote Talent Platform for UAE Businesses
+          🇸🇬 #1 Remote Talent Platform for Singapore Businesses
         </div>
       </div>
     </AbsoluteFill>

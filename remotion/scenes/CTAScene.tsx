@@ -1,10 +1,12 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Img,
   interpolate,
   useCurrentFrame,
   spring,
   useVideoConfig,
+  staticFile,
 } from 'remotion';
 import { COLORS, FONT } from '../styles';
 import { Particles } from '../components/Particles';
@@ -55,6 +57,31 @@ export const CTAScene: React.FC = () => {
         opacity: fadeIn,
       }}
     >
+      {/* Background photo — Singapore skyline */}
+      <Img
+        src={staticFile('images/video/singapore-night.jpg')}
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          opacity: 0.12,
+          filter: 'brightness(0.6)',
+        }}
+      />
+      {/* Background photo — meeting */}
+      <Img
+        src={staticFile('images/video/meeting.jpg')}
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          opacity: 0.06,
+          filter: 'brightness(0.5)',
+        }}
+      />
+
       <Particles count={35} color={COLORS.green} speed={0.8} />
 
       {/* Animated gradient background */}
@@ -89,7 +116,7 @@ export const CTAScene: React.FC = () => {
           alignItems: 'center',
         }}
       >
-        {/* UAE flag */}
+        {/* Singapore flag */}
         <div
           style={{
             fontSize: 60,
@@ -98,7 +125,7 @@ export const CTAScene: React.FC = () => {
             transform: `scale(${interpolate(flagProgress, [0, 1], [0.3, 1])})`,
           }}
         >
-          🇦🇪
+          🇸🇬
         </div>
 
         {/* Urgency pre-line */}
@@ -214,7 +241,7 @@ export const CTAScene: React.FC = () => {
             textShadow: `0 0 25px ${COLORS.blue}50, 0 0 50px ${COLORS.blue}20`,
           }}
         >
-          hiredeveloper.ae
+          hiredeveloper.sg
         </div>
 
         {/* Trust footer pills */}

@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 // =============================================================================
-// drip-publish.ts — Gradual pSEO page publisher for hiredeveloper.ae
+// drip-publish.ts — Gradual pSEO page publisher for hiredeveloper.sg
 // =============================================================================
 //
 // Publishes 2-5 pSEO pages per day at random times with NO algorithmic
@@ -25,7 +25,7 @@
 //
 // Cron setup (run once a day, e.g. at 6 AM server time)
 // -----------------------------------------------------
-//   0 6 * * * cd /path/to/hiredeveloper.ae && npx tsx scripts/drip-publish.ts >> /var/log/drip-publish.log 2>&1
+//   0 6 * * * cd /path/to/hiredeveloper.sg && npx tsx scripts/drip-publish.ts >> /var/log/drip-publish.log 2>&1
 //
 // The script is idempotent per calendar day (UTC). Running it multiple times
 // in the same day will NOT publish additional pages — it detects that today's
@@ -35,10 +35,10 @@
 // ------------------------------------
 //   {
 //     "published": {
-//       "/hire-developers/reactjs/dubai": "2025-06-12T09:23:17.442Z",
+//       "/hire-developers/reactjs/singapore": "2025-06-12T09:23:17.442Z",
 //       ...
 //     },
-//     "pending": ["/hire-developers/python/abu-dhabi", ...],
+//     "pending": ["/hire-developers/python/marina-bay", ...],
 //     "lastRunDate": "2025-06-12",
 //     "history": [
 //       { "date": "2025-06-12", "count": 3, "pages": [...] },
@@ -58,14 +58,14 @@ import * as path from "node:path";
 
 const PROJECT_ROOT = path.resolve(__dirname, "..");
 const STATE_FILE = path.join(__dirname, "drip-state.json");
-const BASE_URL = "https://hiredeveloper.ae";
+const BASE_URL = "https://hiredeveloper.sg";
 
 // Min / max pages per day (inclusive)
 const MIN_PAGES_PER_DAY = 2;
 const MAX_PAGES_PER_DAY = 5;
 
-// Weekend multiplier — on Fri/Sat (Gulf weekend) we sometimes publish less
-const WEEKEND_DAYS = [5, 6]; // Friday = 5, Saturday = 6
+// Weekend multiplier — on Sat/Sun (Singapore weekend) we sometimes publish less
+const WEEKEND_DAYS = [0, 6]; // Sunday = 0, Saturday = 6
 
 // ---------------------------------------------------------------------------
 // Cryptographically-secure random helpers

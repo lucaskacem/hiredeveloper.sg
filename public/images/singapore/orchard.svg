@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#f0f4f8"/>
+  <!-- Shopping district buildings -->
+  <rect x="60" y="80" width="50" height="140" fill="#4a5568" rx="2"/>
+  <rect x="120" y="60" width="45" height="160" fill="#718096" rx="2"/>
+  <rect x="175" y="90" width="55" height="130" fill="#4a5568" rx="2"/>
+  <rect x="240" y="70" width="40" height="150" fill="#718096" rx="2"/>
+  <rect x="290" y="100" width="50" height="120" fill="#4a5568" rx="2"/>
+  <!-- ION Orchard distinctive shape -->
+  <rect x="175" y="90" width="55" height="130" fill="#4a5568" rx="2"/>
+  <polygon points="175,90 202,50 230,90" fill="#4a5568"/>
+  <!-- Trees along road -->
+  <circle cx="80" cy="210" r="12" fill="#86efac" opacity="0.6"/>
+  <circle cx="150" cy="210" r="12" fill="#86efac" opacity="0.6"/>
+  <circle cx="250" cy="210" r="12" fill="#86efac" opacity="0.6"/>
+  <circle cx="320" cy="210" r="12" fill="#86efac" opacity="0.6"/>
+  <!-- Ground -->
+  <rect x="0" y="220" width="400" height="80" fill="#e2e8f0"/>
+  <!-- Label -->
+  <text x="200" y="255" text-anchor="middle" fill="#4a5568" font-family="system-ui" font-size="14" font-weight="bold">Orchard Road</text>
+  <text x="200" y="273" text-anchor="middle" fill="#718096" font-family="system-ui" font-size="11">Premier Shopping &amp; Business District</text>
+</svg>

@@ -1,10 +1,12 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Img,
   interpolate,
   useCurrentFrame,
   spring,
   useVideoConfig,
+  staticFile,
 } from 'remotion';
 import { COLORS, FONT } from '../styles';
 import { Particles } from '../components/Particles';
@@ -12,7 +14,7 @@ import { Particles } from '../components/Particles';
 // AIDA: ATTENTION (agitate) — Make them FEEL the pain
 const PAIN_POINTS = [
   { text: '3-6 months to hire', solution: '48h matching', icon: '⏳' },
-  { text: 'Office + visa + benefits', solution: 'Save 40-60%', icon: '💸' },
+  { text: 'S$10K+/mo per local hire', solution: 'Save 40-60%', icon: '💸' },
   { text: 'No quality guarantee', solution: 'Top 2% vetted', icon: '❌' },
 ];
 
@@ -28,6 +30,19 @@ export const ProblemScene: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.black, opacity: fadeIn * fadeOut }}>
+      {/* Background photo — modern office */}
+      <Img
+        src={staticFile('images/video/modern-office.jpg')}
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          opacity: 0.08,
+          filter: 'brightness(0.6)',
+        }}
+      />
+
       <Particles count={15} color={COLORS.red} speed={0.5} />
 
       {/* Title — Converting copy: agitate the problem */}
@@ -53,7 +68,7 @@ export const ProblemScene: React.FC = () => {
             opacity: interpolate(frame, [3, 12], [0, 1], { extrapolateRight: 'clamp', extrapolateLeft: 'clamp' }),
           }}
         >
-          🇦🇪 UAE Companies Lose Millions Every Year
+          🇸🇬 Singapore Companies Lose Millions Every Year
         </div>
 
         <div

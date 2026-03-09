@@ -1,10 +1,12 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Img,
   interpolate,
   useCurrentFrame,
   spring,
   useVideoConfig,
+  staticFile,
 } from 'remotion';
 import { COLORS, FONT } from '../styles';
 import { Particles } from '../components/Particles';
@@ -13,17 +15,17 @@ import { Particles } from '../components/Particles';
 const TESTIMONIALS = [
   {
     name: 'Sarah T.',
-    role: 'CTO, Dubai Fintech',
+    role: 'CTO, Singapore Fintech',
     quote: '"Found our entire dev team in 2 weeks. They were in our standup within 48 hours."',
-    initials: 'ST',
+    photo: staticFile('images/video/testimonial-sarah.jpg'),
     rating: 5,
     color: '#009FFF',
   },
   {
     name: 'Michael C.',
-    role: 'VP Engineering, Abu Dhabi',
+    role: 'VP Engineering, Marina Bay',
     quote: '"Our React developer was in our Slack on Day 1. Saved us 60% vs local hiring."',
-    initials: 'MC',
+    photo: staticFile('images/video/testimonial-michael.jpg'),
     rating: 5,
     color: '#17A245',
   },
@@ -41,6 +43,19 @@ export const TestimonialScene: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.black, opacity: fadeIn * fadeOut }}>
+      {/* Background photo — devs collaborating */}
+      <Img
+        src={staticFile('images/video/devs-collab.jpg')}
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          opacity: 0.12,
+          filter: 'brightness(0.6)',
+        }}
+      />
+
       <Particles count={25} color={COLORS.gold} speed={0.3} />
 
       {/* Premium gradient accent line at top */}
@@ -77,7 +92,7 @@ export const TestimonialScene: React.FC = () => {
             opacity: interpolate(frame, [5, 18], [0, 1], { extrapolateRight: 'clamp', extrapolateLeft: 'clamp' }),
           }}
         >
-          Real Results From Real UAE Companies
+          Real Results From Real Singapore Companies
         </div>
         <div
           style={{
@@ -88,7 +103,7 @@ export const TestimonialScene: React.FC = () => {
             opacity: interpolate(frame, [8, 22], [0, 1], { extrapolateRight: 'clamp', extrapolateLeft: 'clamp' }),
           }}
         >
-          🇦🇪 Trusted by <span style={{ color: COLORS.blue }}>500+ UAE Companies</span>
+          🇸🇬 Trusted by <span style={{ color: COLORS.blue }}>500+ Singapore Companies</span>
         </div>
       </div>
 
@@ -160,27 +175,20 @@ export const TestimonialScene: React.FC = () => {
                 {t.quote}
               </div>
 
-              {/* Author — SVG avatar instead of image */}
+              {/* Author — photo avatar */}
               <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                {/* Avatar circle with initials */}
-                <div
+                {/* Avatar photo */}
+                <Img
+                  src={t.photo}
                   style={{
                     width: 56,
                     height: 56,
                     borderRadius: 28,
-                    background: `linear-gradient(135deg, ${t.color}, ${t.color}80)`,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontFamily: FONT,
-                    fontSize: 20,
-                    fontWeight: 700,
-                    color: COLORS.white,
+                    objectFit: 'cover',
                     boxShadow: `0 0 15px ${t.color}40`,
+                    border: `2px solid ${t.color}60`,
                   }}
-                >
-                  {t.initials}
-                </div>
+                />
                 <div>
                   <div
                     style={{

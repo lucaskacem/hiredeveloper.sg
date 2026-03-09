@@ -170,7 +170,7 @@ export const RolesScene: React.FC = () => {
         })}
       </div>
 
-      {/* Bottom AE badge */}
+      {/* Bottom SG badge */}
       <div
         style={{
           position: 'absolute',
@@ -191,7 +191,7 @@ export const RolesScene: React.FC = () => {
             color: COLORS.gray300,
           }}
         >
-          🇦🇪 All roles aligned with UAE business hours · Sunday–Thursday
+          🇸🇬 All roles aligned with Singapore business hours · Monday–Friday
         </div>
       </div>
     </AbsoluteFill>

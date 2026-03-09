@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#141414"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#EF3340"/>
+      <stop offset="100%" stop-color="#FF5C6A"/>
+    </linearGradient>
+    <linearGradient id="skylineGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EF3340" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#EF3340" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern -->
+  <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accentGrad)"/>
+
+  <!-- Singapore Skyline silhouette at bottom -->
+  <g transform="translate(0, 0)">
+    <!-- Skyline fill area -->
+    <path d="
+      M 0 630
+      L 0 520
+      L 30 520 L 30 510 L 50 510 L 50 500 L 60 500 L 60 490 L 70 490 L 70 520
+      L 90 520 L 90 480 L 100 480 L 100 470 L 110 470 L 110 480 L 120 480 L 120 520
+      L 140 520 L 140 500 L 150 500 L 150 490 L 160 490 L 160 500 L 170 500 L 170 520
+      L 200 520 L 200 460 L 210 460 L 210 440 L 220 440 L 220 430 L 230 430 L 230 420 L 240 420 L 240 430 L 250 430 L 250 440 L 260 440 L 260 460 L 270 460 L 270 520
+      L 290 520 L 290 490 L 300 490 L 300 480 L 310 480 L 310 490 L 320 490 L 320 520
+      L 350 520 L 350 470 L 360 470 L 360 450 L 370 450 L 370 440 L 380 440 L 380 450 L 390 450 L 390 470 L 400 470 L 400 520
+      L 420 520
+      L 430 520 L 430 400 L 440 400 L 440 380 L 445 380 L 445 350 L 450 340 L 455 350 L 460 380 L 465 380 L 465 400 L 475 400 L 475 520
+      L 500 520 L 500 450 L 510 450 L 510 430 L 520 430 L 520 420 L 535 420 L 535 430 L 545 430 L 545 450 L 555 450 L 555 520
+      L 570 520
+      L 580 520 L 580 380 L 590 380 L 590 340 L 595 340 L 595 310 L 600 280 L 605 310 L 610 340 L 615 340 L 615 380 L 625 380 L 625 520
+      L 650 520 L 650 470 L 660 470 L 660 450 L 670 450 L 670 440 L 680 440 L 680 450 L 690 450 L 690 470 L 700 470 L 700 520
+      L 720 520 L 720 490 L 730 490 L 730 470 L 740 470 L 740 460 L 750 460 L 750 470 L 760 470 L 760 490 L 770 490 L 770 520
+      L 790 520 L 790 480 L 800 480 L 800 460 L 810 460 L 810 450 L 825 445 L 840 450 L 840 460 L 850 460 L 850 480 L 860 480 L 860 520
+      L 880 520 L 880 500 L 890 500 L 890 490 L 900 490 L 900 500 L 910 500 L 910 520
+      L 940 520 L 940 470 L 950 470 L 950 450 L 960 450 L 960 440 L 970 440 L 970 450 L 980 450 L 980 470 L 990 470 L 990 520
+      L 1010 520 L 1010 500 L 1020 500 L 1020 490 L 1030 490 L 1030 500 L 1040 500 L 1040 520
+      L 1060 520 L 1060 480 L 1070 480 L 1070 470 L 1080 470 L 1080 480 L 1090 480 L 1090 520
+      L 1110 520 L 1110 510 L 1120 510 L 1120 500 L 1130 500 L 1130 510 L 1140 510 L 1140 520
+      L 1170 520 L 1170 510 L 1180 510 L 1180 520
+      L 1200 520
+      L 1200 630
+      Z
+    " fill="url(#skylineGrad)"/>
+
+    <!-- Skyline outline -->
+    <path d="
+      M 0 520
+      L 30 520 L 30 510 L 50 510 L 50 500 L 60 500 L 60 490 L 70 490 L 70 520
+      L 90 520 L 90 480 L 100 480 L 100 470 L 110 470 L 110 480 L 120 480 L 120 520
+      L 140 520 L 140 500 L 150 500 L 150 490 L 160 490 L 160 500 L 170 500 L 170 520
+      L 200 520 L 200 460 L 210 460 L 210 440 L 220 440 L 220 430 L 230 430 L 230 420 L 240 420 L 240 430 L 250 430 L 250 440 L 260 440 L 260 460 L 270 460 L 270 520
+      L 290 520 L 290 490 L 300 490 L 300 480 L 310 480 L 310 490 L 320 490 L 320 520
+      L 350 520 L 350 470 L 360 470 L 360 450 L 370 450 L 370 440 L 380 440 L 380 450 L 390 450 L 390 470 L 400 470 L 400 520
+      L 420 520
+      L 430 520 L 430 400 L 440 400 L 440 380 L 445 380 L 445 350 L 450 340 L 455 350 L 460 380 L 465 380 L 465 400 L 475 400 L 475 520
+      L 500 520 L 500 450 L 510 450 L 510 430 L 520 430 L 520 420 L 535 420 L 535 430 L 545 430 L 545 450 L 555 450 L 555 520
+      L 570 520
+      L 580 520 L 580 380 L 590 380 L 590 340 L 595 340 L 595 310 L 600 280 L 605 310 L 610 340 L 615 340 L 615 380 L 625 380 L 625 520
+      L 650 520 L 650 470 L 660 470 L 660 450 L 670 450 L 670 440 L 680 440 L 680 450 L 690 450 L 690 470 L 700 470 L 700 520
+      L 720 520 L 720 490 L 730 490 L 730 470 L 740 470 L 740 460 L 750 460 L 750 470 L 760 470 L 760 490 L 770 490 L 770 520
+      L 790 520 L 790 480 L 800 480 L 800 460 L 810 460 L 810 450 L 825 445 L 840 450 L 840 460 L 850 460 L 850 480 L 860 480 L 860 520
+      L 880 520 L 880 500 L 890 500 L 890 490 L 900 490 L 900 500 L 910 500 L 910 520
+      L 940 520 L 940 470 L 950 470 L 950 450 L 960 450 L 960 440 L 970 440 L 970 450 L 980 450 L 980 470 L 990 470 L 990 520
+      L 1010 520 L 1010 500 L 1020 500 L 1020 490 L 1030 490 L 1030 500 L 1040 500 L 1040 520
+      L 1060 520 L 1060 480 L 1070 480 L 1070 470 L 1080 470 L 1080 480 L 1090 480 L 1090 520
+      L 1110 520 L 1110 510 L 1120 510 L 1120 500 L 1130 500 L 1130 510 L 1140 510 L 1140 520
+      L 1170 520 L 1170 510 L 1180 510 L 1180 520
+      L 1200 520
+    " fill="none" stroke="#EF3340" stroke-opacity="0.25" stroke-width="1"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="600" y="240" text-anchor="middle" fill="#ffffff" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="64" font-weight="700" letter-spacing="-1">
+    HireDeveloper.sg
+  </text>
+
+  <!-- Accent underline -->
+  <rect x="440" y="260" width="320" height="3" rx="1.5" fill="url(#accentGrad)"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="310" text-anchor="middle" fill="#a0a0a0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" letter-spacing="0.5">
+    Hire Top Developers in Singapore
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="360" text-anchor="middle" fill="#666666" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="400">
+    Pre-vetted talent ready within 48 hours
+  </text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accentGrad)"/>
+</svg>

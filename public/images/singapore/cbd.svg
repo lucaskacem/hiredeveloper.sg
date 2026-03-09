@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#f0f4f8"/>
+  <!-- CBD Skyscrapers -->
+  <rect x="80" y="60" width="35" height="160" fill="#4a5568" rx="2"/>
+  <rect x="125" y="40" width="40" height="180" fill="#718096" rx="2"/>
+  <rect x="175" y="70" width="30" height="150" fill="#4a5568" rx="2"/>
+  <rect x="215" y="50" width="35" height="170" fill="#718096" rx="2"/>
+  <rect x="260" y="80" width="40" height="140" fill="#4a5568" rx="2"/>
+  <rect x="310" y="55" width="30" height="165" fill="#718096" rx="2"/>
+  <!-- Raffles Place tower -->
+  <rect x="125" y="40" width="40" height="180" fill="#718096" rx="2"/>
+  <rect x="130" y="35" width="30" height="8" fill="#a0aec0"/>
+  <!-- Ground -->
+  <rect x="0" y="220" width="400" height="80" fill="#e2e8f0"/>
+  <!-- Label -->
+  <text x="200" y="255" text-anchor="middle" fill="#4a5568" font-family="system-ui" font-size="14" font-weight="bold">Central Business District</text>
+  <text x="200" y="273" text-anchor="middle" fill="#718096" font-family="system-ui" font-size="11">Raffles Place &amp; Tanjong Pagar</text>
+</svg>

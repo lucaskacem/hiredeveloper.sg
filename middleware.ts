@@ -32,7 +32,7 @@ export function middleware(req: NextRequest) {
     return new NextResponse('Authentication Required', {
         status: 401,
         headers: {
-            'WWW-Authenticate': 'Basic realm="HireDeveloper.ae"',
+            'WWW-Authenticate': 'Basic realm="HireDeveloper.sg"',
         },
     });
 }

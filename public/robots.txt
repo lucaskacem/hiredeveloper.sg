@@ -1,8 +1,8 @@
-# robots.txt for hiredeveloper.ae
+# robots.txt for hiredeveloper.sg
 User-agent: *
 Allow: /
 
 Disallow: /api/
 Disallow: /_next/
 
-Sitemap: https://hiredeveloper.ae/sitemap.xml
+Sitemap: https://hiredeveloper.sg/sitemap.xml

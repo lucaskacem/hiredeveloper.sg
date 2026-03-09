@@ -1,4 +1,4 @@
-// HireDeveloper.ae Brand Styles for Remotion Video
+// HireDeveloper.sg Brand Styles for Remotion Video
 export const COLORS = {
   black: '#000000',
   white: '#FFFFFF',
@@ -6,6 +6,8 @@ export const COLORS = {
   blueDark: '#0066CC',
   green: '#17A245',
   greenDark: '#148D3C',
+  sgRed: '#EF3340',
+  sgRedDark: '#CC2936',
   buttonBlue: '#0050ff',
   gray100: '#F3F4F6',
   gray300: '#D1D5DB',
@@ -38,6 +40,6 @@ export const SCENES = {
   howItWorks: { start: 570, duration: 210 },  // 19-26s
   roles: { start: 780, duration: 180 },       // 26-32s
   testimonial: { start: 960, duration: 210 }, // 32-39s
-  uaeFocus: { start: 1170, duration: 270 },   // 39-48s
+  sgFocus: { start: 1170, duration: 270 },     // 39-48s
   cta: { start: 1440, duration: 360 },        // 48-60s (longer CTA)
 } as const;

@@ -1,11 +1,11 @@
 {
-  "name": "HireDeveloper.ae",
-  "short_name": "HireDev",
-  "description": "Hire top remote talent for UAE & Dubai businesses",
+  "name": "HireDeveloper.sg - Hire Top Developers in Singapore",
+  "short_name": "HireDeveloper.sg",
+  "description": "Hire top remote talent for Singapore businesses",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#009FFF",
+  "theme_color": "#EF3340",
   "icons": [
     {
       "src": "/favicon.svg",

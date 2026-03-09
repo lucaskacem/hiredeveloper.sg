@@ -7,13 +7,13 @@ import { StatsScene } from './scenes/StatsScene';
 import { HowItWorksScene } from './scenes/HowItWorksScene';
 import { RolesScene } from './scenes/RolesScene';
 import { TestimonialScene } from './scenes/TestimonialScene';
-import { UAEFocusScene } from './scenes/UAEFocusScene';
+import { SingaporeFocusScene } from './scenes/SingaporeFocusScene';
 import { CTAScene } from './scenes/CTAScene';
 
 export const MarketingVideo: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.black }}>
-      {/* ATTENTION — Hook with UAE flag + Dubai skyline */}
+      {/* ATTENTION — Hook with Singapore flag + Singapore skyline */}
       <Sequence from={SCENES.intro.start} durationInFrames={SCENES.intro.duration}>
         <IntroScene />
       </Sequence>
@@ -43,9 +43,9 @@ export const MarketingVideo: React.FC = () => {
         <TestimonialScene />
       </Sequence>
 
-      {/* DESIRE — UAE-specific value */}
-      <Sequence from={SCENES.uaeFocus.start} durationInFrames={SCENES.uaeFocus.duration}>
-        <UAEFocusScene />
+      {/* DESIRE — Singapore-specific value */}
+      <Sequence from={SCENES.sgFocus.start} durationInFrames={SCENES.sgFocus.duration}>
+        <SingaporeFocusScene />
       </Sequence>
 
       {/* ACTION — CTA with urgency */}

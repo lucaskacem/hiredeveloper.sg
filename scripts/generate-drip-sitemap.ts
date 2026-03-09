@@ -23,7 +23,7 @@ import * as path from "node:path";
 const PROJECT_ROOT = path.resolve(__dirname, "..");
 const STATE_FILE = path.join(__dirname, "drip-state.json");
 const SITEMAP_PATH = path.join(PROJECT_ROOT, "public", "sitemap-pseo.xml");
-const BASE_URL = "https://hiredeveloper.ae";
+const BASE_URL = "https://hiredeveloper.sg";
 
 // ---------------------------------------------------------------------------
 // Types

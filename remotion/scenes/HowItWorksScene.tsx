@@ -20,7 +20,7 @@ const STEPS = [
   {
     number: '02',
     title: 'Interview Top Matches',
-    description: 'Meet pre-vetted, UAE-aligned candidates within 48 hours.',
+    description: 'Meet pre-vetted, Singapore-aligned candidates within 48 hours.',
     icon: '🎯',
   },
   {
