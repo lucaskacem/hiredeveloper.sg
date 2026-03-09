@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useLeadFormModal } from '../(companies)/components/LeadFormModalProvider';
 import { useLanguage } from '../i18n/LanguageContext';
+import SummarizeWith from './SummarizeWith';
 
 export default function HeroSection() {
   const { openModal } = useLeadFormModal();
@@ -32,9 +33,14 @@ export default function HeroSection() {
             </h1>
 
             {/* Subheading */}
-            <p className="text-sm md:text-base lg:text-lg text-white/85 leading-relaxed max-w-[520px] mb-6 md:mb-8">
+            <p className="text-sm md:text-base lg:text-lg text-white/85 leading-relaxed max-w-[520px] mb-4 md:mb-6">
               {t('hero.subtitle')}
             </p>
+
+            {/* Summarize with AI */}
+            <div className="mb-6 md:mb-8">
+              <SummarizeWith pageUrl="https://hiredeveloper.sg" />
+            </div>
 
             {/* CTA Button */}
             <button

@@ -6,6 +6,7 @@ import Breadcrumb from '../components/Breadcrumb';
 import RelatedLinks from '../components/RelatedLinks';
 import FinalCTA from '../components/FinalCTA';
 import InlineCTABanner from '../components/InlineCTABanner';
+import SummarizeWith from '@/app/components/SummarizeWith';
 import { countries, getTopCitiesForCountry } from '@/app/data/locations';
 
 export const metadata: Metadata = {
@@ -36,13 +37,14 @@ export default function LocationsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Hire Remote Developers by Location
+                Hire Developers by Location
               </h1>
-              <p className="text-lg text-gray-300 max-w-3xl mx-auto lg:mx-0">
-                Find and hire the best remote developers across Singapore. Access
+              <p className="text-lg text-gray-300 max-w-3xl mx-auto lg:mx-0 mb-6">
+                Find and hire the best developers across Singapore. Access
                 top-tier programmers in Marina Bay, CBD, one-north, Changi Business
                 Park, and every major tech district.
               </p>
+              <SummarizeWith pageUrl="https://hiredeveloper.sg/locations" />
             </div>
             <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden shadow-[0_20px_60px_rgba(255,255,255,0.05)] border border-white/10 hidden lg:block">
               <video autoPlay loop muted playsInline className="w-full h-full object-cover">

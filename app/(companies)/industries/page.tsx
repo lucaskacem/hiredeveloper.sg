@@ -7,6 +7,7 @@ import FinalCTA from '../components/FinalCTA';
 import HiringProcessFlowchart from '../components/HiringProcessFlowchart';
 import RelatedLinks from '../components/RelatedLinks';
 import { industries } from '@/app/data/industries';
+import SummarizeWith from '@/app/components/SummarizeWith';
 
 const year = new Date().getFullYear();
 
@@ -52,10 +53,13 @@ export default function IndustriesPage() {
           <h1 className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[52px] font-bold text-white mb-4">
             Hire Developers by Industry in Singapore
           </h1>
-          <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mb-6">
             Every industry has unique technical requirements. Our pre-vetted developers bring domain expertise
             in Singapore&apos;s fastest-growing sectors — from MAS-regulated fintech to Smart Nation govtech.
           </p>
+          <div className="flex justify-center">
+            <SummarizeWith pageUrl="https://hiredeveloper.sg/industries" />
+          </div>
         </div>
       </section>
 

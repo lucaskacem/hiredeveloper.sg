@@ -2,6 +2,7 @@
 
 import { useLeadFormModal } from './LeadFormModalProvider';
 import { useLanguage } from '@/app/i18n/LanguageContext';
+import SummarizeWith from '@/app/components/SummarizeWith';
 
 interface HireHeroProps {
   category: 'developers' | 'designers' | 'marketers' | 'product-managers' | 'project-managers' | 'assistants';
@@ -54,9 +55,14 @@ export default function HireHero({ category, count, description }: HireHeroProps
           </h1>
 
           {/* Description */}
-          <p className="text-base md:text-lg text-white/85 leading-relaxed mb-6 md:mb-8">
+          <p className="text-base md:text-lg text-white/85 leading-relaxed mb-4 md:mb-6">
             {description}
           </p>
+
+          {/* Summarize with AI */}
+          <div className="mb-6 md:mb-8">
+            <SummarizeWith pageUrl={typeof window !== 'undefined' ? window.location.href : `https://hiredeveloper.sg/hire-${category}`} />
+          </div>
 
           {/* Badges */}
           <div className="flex items-center gap-3 md:gap-6 mb-6 md:mb-8 flex-wrap">
